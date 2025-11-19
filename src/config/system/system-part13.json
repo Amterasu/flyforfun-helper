@@ -1,0 +1,180 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "content_cn": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "🎯 1v1 bonus": {
+      "title": "🎯 1v1 bonus",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Game Version 1.1.3 Patch Notes](https://universe.flyff.com/news/patchnotes113 \"Game Version 1.1.3 Patch Notes\")"
+          ],
+          "quotes_cn": [
+            "来源:[Game Version 1.1.3 Patch Notes](https://universe.flyff.com/news/patchnotes113 \"Game Version 1.1.3 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[📣patch-notes @gm_shadow @[GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/959370780666396703/1030383740632965120 \"📣patch-notes @gm_shadow @[GM] Shadow (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[📣patch-notes @gm_shadow @[GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/959370780666396703/1030383740632965120 \"📣patch-notes @gm_shadow @[GM] Shadow (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1177176494221566062 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1177176494221566062 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffexperiencecalculator.js#L98 \"getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js\")"
+          ],
+          "quotes_cn": [
+            "来源:[getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffexperiencecalculator.js#L98 \"getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/experience_bonus_1v1.png\" alt=\"experience_bonus_1v1.png\" width=\"800\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "New mechanism to the game: low, regular and captain monsters level `30+` killed by at least `80%` of damage inflicted from single target attacks and skills will have an increased experience and drop rate.",
+              "content_cn": "游戏新机制：低阶怪物、普通怪物和队长怪物等级 `30+` 被单一目标攻击和技能造成的伤害至少 `80%` 击杀后，经验值和掉落率都会增加。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "monster's rank: small, normal, captain."
+          ],
+          "quotes_cn": [
+            "怪物等级：小型、普通、队长。"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "遊戲新機制：`30` 級以上的低階怪物、普通怪物、隊長怪物被單一目標攻擊和技能造成的傷害至少 `80%` 擊殺後，經驗值和掉落率都會增加。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "The experience and drop rate increase is currently `20%` for monsters level `30` and increases gradually to reach `35%` for monsters level `120 ~ 140`.",
+              "content_cn": "目前 `30` 级怪物的经验和掉落率增加为 `20%`，并逐渐增加，对于怪物等级 `120 ~ 140` 达到 `35%`。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "目前 `30` 級怪物的經驗和掉落率增加為 `20%`，並逐漸增加，對於怪物等級 `120 ~ 140` 達到 `35%`。"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Game Version 1.3.1 Patch Notes](https://universe.flyff.com/news/patchnotes131 \"Game Version 1.3.1 Patch Notes\")"
+          ],
+          "quotes_cn": [
+            "来源:[Game Version 1.3.1 Patch Notes](https://universe.flyff.com/news/patchnotes131 \"Game Version 1.3.1 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[📣patch-notes @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/959370780666396703/1177171087008727120 \"📣patch-notes @wemadeconnect @[GM] Pang (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[📣patch-notes @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/959370780666396703/1177171087008727120 \"📣patch-notes @wemadeconnect @[GM] Pang (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Increased the 1v1 Exp and Drop bonus of new levels. It was `35%` before and is now ranging from `90.4423%` at `141` to `102.5%` at `160`. (At levels `161` and higher, remains `102.5%`.)",
+              "content_cn": "增加了新等级的 `1v1` 经验值和掉落奖励。之前是 `35%`，现在从等级 `141` 时的 `90.4423%` 到 `160` 时的 `102.5%`。(在 `161` 以上，仍为 `102.5%`。)",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "增加了新等級的 `1v1` 經驗值和掉落獎勵。之前是 `35%`，現在從等級 `141` 時的 `90.4423%` 到 `160` 時的 `102.5%`。(在 `161` 以上，仍為 `102.5%`。)"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1177233268349870182 \"@navi2765 @Navi (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1177233268349870182 \"@navi2765 @Navi (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "1v1 Exp and Drop bonus are based on monster level. Meaning that you can take advantage of this exp increase as soon as you are strong enough to fight monsters level 141 and above.",
+              "content_cn": "`1v1` 经验值和掉落奖励基于怪物等级。这意味着，只要您足够强大，可以对抗 `141` 级及以上的怪物，您就可以利用此经验值增加。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "`1v1` 經驗值和掉落獎勵基於怪物等級。這意味著，只要您足夠強大，可以對抗 `141` 級及以上的怪物，您就可以利用此經驗值增加。"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

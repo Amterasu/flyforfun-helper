@@ -1,0 +1,106 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "content_cn": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "👕 fitting room": {
+      "title": "👕 fitting room",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "text",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=fitting+room).**",
+          "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=fitting+room)。**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=fitting+room"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Game Version 1.2.7 Patch Notes](https://universe.flyff.com/news/patchnotes127 \"Game Version 1.2.7 Patch Notes\")"
+          ],
+          "quotes_cn": [
+            "来源:[游戏版本1.2.7更新说明](https://universe.flyff.com/news/patchnotes127 \"游戏版本1.2.7更新说明\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "A new window has been added that players may access through the start menu → Helper → Fitting Room. This window allows players to preview items on their character, see item stats, and play around with animations.",
+              "content_cn": "新增了一个窗口，玩家可以通过开始菜单→助手→试衣间访问。此窗口允许玩家在角色上预览物品、查看物品属性以及尝试动画。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Added a Reset Equipment button to the Fitting Room. **[Minor Fixes after 3/14 Maintenance](https://universe.flyff.com/news/minorfixesmarch14 \"Minor Fixes after 3/14 Maintenance\")**",
+              "content_cn": "在试衣间添加了重置装备按钮。**[3月14日维护后的小修复](https://universe.flyff.com/news/minorfixesmarch14 \"3月14日维护后的小修复\")**",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Added a Equip (L) button to the Fitting Room for Blade weapons. **[Minor Fixes after 3/14 Maintenance](https://universe.flyff.com/news/minorfixesmarch14 \"Minor Fixes after 3/14 Maintenance\")**",
+              "content_cn": "在试衣间为双刀武器添加了装备（左）按钮。**[3月14日维护后的小修复](https://universe.flyff.com/news/minorfixesmarch14 \"3月14日维护后的小修复\")**",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/fitting_room/fitting_room.png\" alt=\"fitting_room.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/fitting_room/fitting_room_window.png\" alt=\"fitting_room_window.png\" width=\"500\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

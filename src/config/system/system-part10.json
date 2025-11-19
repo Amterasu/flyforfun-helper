@@ -1,0 +1,94 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ],
+      "content_cn": "[🔝 返回顶部](#universe-document)"
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "🏰 guild level": {
+      "title": "🏰 guild level",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "text",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=guild+level).**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=guild+level"
+            }
+          ],
+          "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=guild+level)。**"
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1173045738230521926 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[@bluechromed @[开发者] Blukie（Flyff Universe官方 Discord）](https://discord.com/channels/778915844070834186/1000058902576119878/1173045738230521926 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[@kroontje @[Mod] Kroontje (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1201432655619702885 \"@kroontje @[Mod] Kroontje (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[@kroontje @[管理员] Kroontje（Flyff Universe官方 Discord）](https://discord.com/channels/778915844070834186/1076577555546656850/1201432655619702885 \"@kroontje @[Mod] Kroontje (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/guild/guild_level.png\" alt=\"guild_level.png\"/></div>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[@cysotiso @cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1342035456627310613 \"@cysotiso @cysotiso (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[@cysotiso @cysotiso（Flyff Universe官方 Discord）](https://discord.com/channels/778915844070834186/1000058902576119878/1342035456627310613 \"@cysotiso @cysotiso (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/guild/quest_items_guild_exp.png\" alt=\"quest_items_guild_exp.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

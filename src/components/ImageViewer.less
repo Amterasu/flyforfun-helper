@@ -1,0 +1,132 @@
+// 图片查看器模态框样式
+.image-viewer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: zoom-out;
+  user-select: none;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  
+  &.image-viewer-modal-visible {
+    opacity: 1;
+  }
+}
+
+// 关闭按钮
+.image-viewer-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+  }
+  
+  &:active {
+    transform: scale(0.95);
+  }
+  
+  // 确保按钮在深色背景下清晰可见
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+// 图片容器
+.image-viewer-container {
+  max-width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+  margin: auto;
+  min-height: calc(100vh - 40px);
+  flex-shrink: 0;
+}
+
+// 放大后的图片
+.image-viewer-img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: imageViewerZoomIn 0.3s ease;
+  user-select: none;
+  pointer-events: auto;
+  display: block;
+}
+
+// 图片放大动画
+@keyframes imageViewerZoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// 确保 markdown 内容中的图片可以点击
+.markdown-content {
+  img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+    
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .image-viewer-close {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
+  
+  .image-viewer-container {
+    max-width: 100%;
+    min-height: calc(100vh - 20px);
+    padding: 0;
+  }
+  
+  .image-viewer-modal {
+    padding: 10px;
+  }
+}
+

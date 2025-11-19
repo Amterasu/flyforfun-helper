@@ -1,0 +1,139 @@
+@import '../styles/variables.less';
+
+.navigation-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-sm;
+}
+
+.accordion-item {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: @border-radius-md;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  transition: all @transition-fast;
+
+  &.active {
+    border-color: rgba(247, 200, 58, 0.4);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 12px rgba(247, 200, 58, 0.15);
+  }
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: @text-dark;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: left;
+  transition: all @transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .accordion-item.active & {
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.accordion-title {
+  flex: 1;
+}
+
+.accordion-icon {
+  font-size: 18px;
+  transition: transform @transition-fast;
+  color: rgba(0, 0, 0, 0.5);
+
+  &.expanded {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion-content {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.2);
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+.secondary-nav-list {
+  display: flex;
+  flex-direction: column;
+  padding: @spacing-sm;
+  gap: 6px;
+}
+
+.secondary-nav-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border: none;
+  border-radius: @border-radius-sm;
+  background: rgba(255, 255, 255, 0.4);
+  color: @text-dark;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: left;
+  transition: all @transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(4px);
+  }
+
+  &.active {
+    background: linear-gradient(135deg, #ffe37d, #f7c83a);
+    color: #1c190b;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(247, 200, 58, 0.3);
+    transform: translateX(4px);
+  }
+
+  span {
+    flex: 1;
+  }
+
+  .item-count {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-left: @spacing-sm;
+  }
+
+  &.active .item-count {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 640px) {
+  .accordion-header {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .secondary-nav-item {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+

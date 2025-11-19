@@ -1,0 +1,59 @@
+@import './variables.less';
+@import './shared.less';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 20%, #1d2334, #0b0f17 60%);
+  color: @text-light;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: calc(80px + @app-shell-padding) clamp(16px, 5vw, 72px) 48px;
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-xl;
+  max-width: @app-shell-max-width;
+  margin: 0 auto 80px;
+}
+
+.doc-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-lg;
+}
+
+.doc-layout {
+  display: flex;
+  gap: @spacing-xl;
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .doc-layout {
+    gap: @spacing-lg;
+  }
+}
+
+@media (max-width: 768px) {
+  .doc-layout {
+    flex-direction: column;
+    gap: @spacing-md;
+  }
+
+  .doc-wrapper {
+    gap: @spacing-md;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: calc(100px + @spacing-lg) 16px 48px;
+  }
+}
+

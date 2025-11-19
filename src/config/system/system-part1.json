@@ -1,0 +1,632 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ],
+      "content_cn": "[🔝 返回顶部](#universe-document)"
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "📢 updates": {
+      "title": "📢 updates",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "html",
+          "html": "</br>"
+        },
+        {
+          "type": "html",
+          "html": "<details><summary>2020~2021</summary>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2020-12-15 07:00 UTC ~ 2020-12-30 16:00 UTC`:Closed Beta Test server.",
+              "indent": 0,
+              "content_cn": "`2020-12-15 07:00 UTC ~ 2020-12-30 16:00 UTC`:封闭beta测试服务器。"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/cbt_announcement.png\" alt=\"cbt_announcement.png\" width=\"200\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2021-01-27 08:00 UTC ~ 2021-01-31 16:00 UTC`:Test server.",
+              "indent": 0,
+              "content_cn": "`2021-01-27 08:00 UTC ~ 2021-01-31 16:00 UTC`:测试服务器。"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details>"
+        },
+        {
+          "type": "html",
+          "html": "<details><summary>2022</summary>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-03-30 09:00 UTC`:Gala Lab is reveal new cross-platform 3D MMORPG `Flyff Universe`.",
+              "indent": 0,
+              "content_cn": "`2022-03-30 09:00 UTC`:Gala Lab公布了全新跨平台3D大型多人在线角色扮演游戏《Flyff Universe》。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-05-18 01:00 UTC`:Early Access to the South-East Asia Server, Pre-registration for Global starts.",
+              "indent": 0,
+              "content_cn": "`2022-05-18 01:00 UTC`:东南亚服务器开启抢先体验，全球预注册启动。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "[Early Access in SEA will open May 18th](https://universe.flyff.com/news/early-access-20220518 \"Early Access in SEA will open May 18th\")"
+          ],
+          "quotes_cn": [
+            "[东南亚地区抢先体验将于5月18日开启](https://universe.flyff.com/news/early-access-20220518 \"Early Access in SEA will open May 18th\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/universe_early_access.png\" alt=\"universe_early_access.png\" width=\"382\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-05-20 15:00 UTC`:New server `Glaphan` starts.",
+              "indent": 0,
+              "content_cn": "`2022-05-20 15:00 UTC`:新服务器“Glaphan”开启。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "[@lsaos @[Dev] Aishiro (discord flyff universe)](https://discord.com/channels/778915844070834186/959370780666396703/977209581627400212 \"@lsaos @[Dev] Aishiro (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "[@lsaos @[开发者] Aishiro（Flyff Universe官方 Discord）](https://discord.com/channels/778915844070834186/959370780666396703/977209581627400212 \"@lsaos @[Dev] Aishiro (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-06-14 02:00 UTC`:Flyff Universe Global Servers start.",
+              "indent": 0,
+              "content_cn": "`2022-06-14 02:00 UTC`:《Flyff Universe》全球服务器开启。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "[@camac. @[Dev] Cameron (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/983411667977269289 \"@camac. @[Dev] Cameron (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "[@camac. @[开发者] Cameron（Flyff Universe官方 Discord）](https://discord.com/channels/778915844070834186/778927702874652682/983411667977269289 \"@camac. @[Dev] Cameron (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/global_launch.png\" alt=\"global_launch.png\" width=\"200\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-11-03 06:00 UTC`:New Taiwanese server `獨眼蝙蝠` starts.",
+              "indent": 0,
+              "content_cn": "`2022-11-03 06:00 UTC`:新台湾服务器“獨眼蝙蝠”开启。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-08-22 07:00 UTC`:[Summer `2022` expansion (version `1.1.0`)](https://universe.flyff.com/news/summerupdate \"Summer 2022 expansion on August 22!\")",
+              "indent": 0,
+              "content_cn": "`2022-08-22 07:00 UTC`:[2022年夏季扩展包（1.1.0版本）](https://universe.flyff.com/news/summerupdate \"Summer 2022 expansion on August 22!\")"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/Summer_2022_v1.1.0.png\" alt=\"Summer_2022_v1.1.0.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-11-03 06:00 UTC`:[Battle Pass System](https://universe.flyff.com/news/battlepass \"Battle Pass System\")",
+              "indent": 0,
+              "content_cn": "`2022-11-03 06:00 UTC`:[战斗通行证系统](https://universe.flyff.com/news/battlepass \"Battle Pass System\")"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details>"
+        },
+        {
+          "type": "html",
+          "html": "<details><summary>2023</summary>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-03-13 07:00 UTC`:[Reborn `v1.2.0` expansion (version `1.2.0`)](https://universe.flyff.com/news/reborn120 \"v1.2.0 Reborn is coming on March 13!\")",
+              "indent": 0,
+              "content_cn": "`2023-03-13 07:00 UTC`:[重生v1.2.0扩展包（1.2.0版本）](https://universe.flyff.com/news/reborn120 \"v1.2.0 Reborn is coming on March 13!\")"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/Reborn_v1.2.0.png\" alt=\"Reborn_v1.2.0.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-05-18 07:00 UTC`:[1st Flyff World Championship (FWC) for Flyff Universe](https://universe.flyff.com/news/fwc1 \"1st Flyff World Championship (FWC) for Flyff Universe\")",
+              "indent": 0,
+              "content_cn": "`2023-05-18 07:00 UTC`:[第一届《Flyff Universe》飞空艇世界锦标赛（FWC）](https://universe.flyff.com/news/fwc1 \"1st Flyff World Championship (FWC) for Flyff Universe\")"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "[FWC Event Details](https://universe.flyff.com/news/fwc1event \"FWC Event Details\")"
+          ],
+          "quotes_cn": [
+            "[FWC赛事详情](https://universe.flyff.com/news/fwc1event \"FWC Event Details\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/FWC2023.png\" alt=\"FWC2023.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-07-13 09:00 UTC`:[Áries and Flarine Server Merge](https://universe.flyff.com/news/servermergebrltam \"Server Merge Notice: Áries and Flarine Server Merge\")",
+              "indent": 0,
+              "content_cn": "`2023-07-13 09:00 UTC`:[白羊座服务器与弗拉林服务器合并](https://universe.flyff.com/news/servermergebrltam \"Server Merge Notice: Áries and Flarine Server Merge\")"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-10-12 07:00 UTC`:End of `FWC` Server and Transfer.",
+              "indent": 0,
+              "content_cn": "`2023-10-12 07:00 UTC`：FWC服务器关闭并开启数据转移。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "[Maintenance Notice (10/12)](https://universe.flyff.com/news/maintenanceoctober12 \"Maintenance Notice (10/12)\")"
+          ],
+          "quotes_cn": [
+            "[维护公告（10月12日）](https://universe.flyff.com/news/maintenanceoctober12 \"Maintenance Notice (10/12)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-11-09 09:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 \"New Horizon Expansion (Flyff Universe Version 1.3.0)\")",
+              "indent": 0,
+              "content_cn": "`2023-11-09 09:00 UTC`:[新地平线扩展包（《Flyff Universe》1.3.0版本）](https://universe.flyff.com/news/newhorizonv1301 \"New Horizon Expansion (Flyff Universe Version 1.3.0)\")"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/New_Horizon_Expansion _v1.3.0.png\" alt=\"New_Horizon_Expansion _v1.3.0.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-12-21 10:00 UTC`:New Asia server `莱斯` starts.",
+              "indent": 0,
+              "content_cn": "`2023-12-21 10:00 UTC`：新亚洲服务器“莱斯”开启。"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details>"
+        },
+        {
+          "type": "html",
+          "html": "<details><summary>2024</summary>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2024-02-15 09:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 \"Game Version 1.3.6 Patch Notes\")",
+              "indent": 0,
+              "content_cn": "`2024-02-15 09:00 UTC`:[新地平线扩展包（《Flyff Universe》1.3.6版本）](https://universe.flyff.com/news/patchnotes136 \"Game Version 1.3.6 Patch Notes\")"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2024-05-16 08:00 UTC`:[Flyff World Championship 2024](https://universe.flyff.com/news/fwc2024 \"Flyff World Championship 2024\")",
+              "indent": 0,
+              "content_cn": "`2024-05-16 08:00 UTC`:[2024年飞空艇世界锦标赛](https://universe.flyff.com/news/fwc2024 \"Flyff World Championship 2024\")"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "[FWC 2024 Server Event](https://universe.flyff.com/news/fwc2024serverevent \"Flyff World Championship 2024\")"
+          ],
+          "quotes_cn": [
+            "[2024年FWC服务器活动](https://universe.flyff.com/news/fwc2024serverevent \"Flyff World Championship 2024\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/FWC2024.jpg\" alt=\"FWC2024.jpg\" width=\"400\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2024-08-16`: [Flyff 20 Year Anniversary Article](https://universe.flyff.com/news/flyff20anniversaryarticle \"Flyff 20 Year Anniversary Article\")",
+              "indent": 0,
+              "content_cn": "`2024-08-16`：[《Flyff》20周年纪念文章](https://universe.flyff.com/news/flyff20anniversaryarticle \"Flyff 20 Year Anniversary Article\")"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/Flyff_20th_Event.png\" alt=\"Flyff_20th_Event.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2024-10-17 09:00 UTC`:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")",
+              "indent": 0,
+              "content_cn": "`2024-10-17 09:00 UTC`:[马德里加尔之战扩展包（《Flyff Universe》1.4.0版本）](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/Battle_for_Madrigal_v1.4.0.png\" alt=\"Battle_for_Madrigal_v1.4.0.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2024-10-24 07:00 UTC`:End of `FWC 2024` Server and Transfer.",
+              "indent": 0,
+              "content_cn": "`2024-10-24 07:00 UTC`：2024年FWC服务器关闭并开启数据转移。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "[Maintenance Notice (10/24)](https://universe.flyff.com/news/maintenanceoctober24 \"Maintenance Notice (10/24)\")"
+          ],
+          "quotes_cn": [
+            "[维护公告（10月24日）](https://universe.flyff.com/news/maintenanceoctober24 \"Maintenance Notice (10/24)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2024-11-28 09:00 UTC`:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")",
+              "indent": 0,
+              "content_cn": "`2024-11-28 09:00 UTC`:[马德里加尔之战扩展包更新（《Flyff Universe》1.4.1版本）](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/Battle_for_Madrigal_v1.4.1.png\" alt=\"Battle_for_Madrigal_v1.4.1.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details>"
+        },
+        {
+          "type": "html",
+          "html": "<details><summary>2025</summary>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2025-02-27 09:00 UTC`:[Server Merge Announcement: Totemia and Genèse servers](https://universe.flyff.com/news/servermergefeb25 \"Server Merge Announcement: Totemia and Genèse servers\")",
+              "indent": 0,
+              "content_cn": "`2025-02-27 09:00 UTC`:[服务器合并公告：托特米亚服务器与创世服务器](https://universe.flyff.com/news/servermergefeb25 \"Server Merge Announcement: Totemia and Genèse servers\")"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2025-04-24 08:00 UTC`:[Flyff World Championship 2025](https://universe.flyff.com/news/fwc2025 \"Flyff World Championship 2025\")",
+              "indent": 0,
+              "content_cn": "`2025-04-24 08:00 UTC`:[2025年飞空艇世界锦标赛](https://universe.flyff.com/news/fwc2025 \"Flyff World Championship 2025\")"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "[📢 FWC 2025 Server Event Announcement](https://universe.flyff.com/news/fwc2025event \"📢 FWC 2025 Server Event Announcement\")"
+          ],
+          "quotes_cn": [
+            "[📢 2025年FWC服务器活动公告](https://universe.flyff.com/news/fwc2025event \"📢 FWC 2025 Server Event Announcement\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/updates/FWC2025.png\" alt=\"FWC2025.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2025-10-22 08:00 UTC`: [Public Test Server Manifest](https://universe.flyff.com/news/pts2025 )",
+              "indent": 0,
+              "content_cn": "`2025-10-22 08:00 UTC`：[公共测试服务器清单](https://universe.flyff.com/news/pts2025 )"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details>"
+        }
+      ],
+      "subsections": {
+        "💸 top up event": {
+          "title": "💸 top up event",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2022-05-17 ~ 2022-05-31 07:00 UTC`:[Server Group Purchase](https://universe.flyff.com/news/grouppurchase \"Server Group Purchase\")",
+                  "indent": 0,
+                  "content_cn": "`2022-05-17 ~ 2022-05-31 07:00 UTC`:[服务器团购活动](https://universe.flyff.com/news/grouppurchase \"Server Group Purchase\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2022-05-18 ~ 2022-06-28 14:00 UTC`:First Top-Up Event (2x).",
+                  "indent": 0,
+                  "content_cn": "`2022-05-18 ~ 2022-06-28 14:00 UTC`：首次充值活动（双倍奖励）。"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2022-05-31 ~ 2022-06-02`:[Early Access Customer Appreciation Event](https://m.facebook.com/uflyff/photos/a.113466831296755/132532422723529/ \"Early Access Customer Appreciation Event\")",
+                  "indent": 0,
+                  "content_cn": "`2022-05-31 ~ 2022-06-02`：[抢先体验用户答谢活动](https://m.facebook.com/uflyff/photos/a.113466831296755/132532422723529/ \"Early Access Customer Appreciation Event\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "You will receive `30%` more fCoins from topping up! The bonus can only be claimed once per Top-up option.",
+                  "indent": 1,
+                  "content_cn": "充值将额外获得30%的fCoins！每个充值选项仅可领取一次该奖励。"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`30%` Top-up Bonus Event does Not apply with \"First Top up(2x)\".",
+                  "indent": 1,
+                  "content_cn": "30%充值奖励活动不适用于“首次充值（双倍）”活动。"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2022-07-05 ~ 2022-07-12`:[fCoins Spending Event](https://universe.flyff.com/news/fcoinsspending05072022 \"fCoins Spending Event\")",
+                  "indent": 0,
+                  "content_cn": "`2022-07-05 ~ 2022-07-12`：[fCoins消费活动](https://universe.flyff.com/news/fcoinsspending05072022 \"fCoins Spending Event\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2022-07-31 00:00 UTC ~ 2022-08-02 23:59 UTC`:[Top-Up 30% Discount Event](https://universe.flyff.com/news/topup30aug \"Top-Up 30% Discount Event\")",
+                  "indent": 0,
+                  "content_cn": "`2022-07-31 00:00 UTC ~ 2022-08-02 23:59 UTC`：[充值30%折扣活动](https://universe.flyff.com/news/topup30aug \"Top-Up 30% Discount Event\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2022-09-30 00:00 UTC ~ 2022-10-02 23:59 UTC`:[Top-Up Event (Sept 30 - Oct 2)](https://universe.flyff.com/news/topupevent220930 \"Top-Up Event (Sept 30 - Oct 2)\")",
+                  "indent": 0,
+                  "content_cn": "`2022-09-30 00:00 UTC ~ 2022-10-02 23:59 UTC`：[充值活动（9月30日-10月2日）](https://universe.flyff.com/news/topupevent220930 \"Top-Up Event (Sept 30 - Oct 2)\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2022-11-11 00:00 (server time) ~ 2022-11-13 23:59 (server time)`:[Purchasing Event](https://universe.flyff.com/news/purchaseevent221110 \"Purchasing Event\")",
+                  "indent": 0,
+                  "content_cn": "`2022-11-11 00:00（服务器时间）~ 2022-11-13 23:59（服务器时间）`：[购买活动](https://universe.flyff.com/news/purchaseevent221110 \"Purchasing Event\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "**<font color=#FF0000>2 for 1</font>** `2022-11-24 ~ 2022-11-27 23:59 UTC`:[Black Friday Special Sales](https://universe.flyff.com/news/blackfridaysales \"Black Friday Special Sales\")",
+                  "indent": 0,
+                  "content_cn": "**<font color=#FF0000>买一送一</font>** `2022-11-24 ~ 2022-11-27 23:59 UTC`：[黑色星期五特别促销](https://universe.flyff.com/news/blackfridaysales \"Black Friday Special Sales\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2022-12-27 ~ 2022-01-12 23:59 UTC`:[Lucky Roulette Event](https://universe.flyff.com/news/luckyroulette \"Lucky Roulette Event\")",
+                  "indent": 0,
+                  "content_cn": "`2022-12-27 ~ 2023-01-12 23:59 UTC`：[幸运轮盘活动](https://universe.flyff.com/news/luckyroulette \"Lucky Roulette Event\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "**<font color=#FF0000>2 for 1</font>** `2023-03-02 07:00 UTC ~ 2023-03-08 07:00 UTC`:Special `1+1` Category, `20%` discount.",
+                  "indent": 0,
+                  "content_cn": "**<font color=#FF0000>买一送一</font>** `2023-03-02 07:00 UTC ~ 2023-03-08 07:00 UTC`：特别“1+1”分类，享20%折扣。"
+                }
+              ]
+            },
+            {
+              "type": "blockquote",
+              "quotes": [
+                "[🔔item-shop-news @gm_shadow [GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1080759284163412059 \"🔔item-shop-news @gm_shadow @[GM] Shadow (discord flyff universe)\")"
+              ],
+              "quotes_cn": [
+                "[🔔道具商店新闻 @gm_shadow [管理员] Shadow（Flyff Universe官方 Discord）](https://discord.com/channels/778915844070834186/1034809950356111390/1080759284163412059 \"🔔item-shop-news @gm_shadow @[GM] Shadow (discord flyff universe)\")"
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2023-03-13 ~ 2023-04-02 23:59 UTC`:[Special Stripe Payment Event](https://universe.flyff.com/news/stripepayment \"Special Stripe Payment Event\")",
+                  "indent": 0,
+                  "content_cn": "`2023-03-13 ~ 2023-04-02 23:59 UTC`：[Stripe支付特别活动](https://universe.flyff.com/news/stripepayment \"Special Stripe Payment Event\")"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "`2023-05-18 07:00 UTC ~ 2023-05-25 06:59 UTC`:Special Item Shop Discount `20%` discount.",
+                  "indent": 0,
+                  "content_cn": "`2023-05-18 07:00 UTC ~ 2023-05-25 06:59 UTC`：道具商店特别折扣，享20%优惠。"
+                }
+              ]
+            },
+            {
+              "type": "blockquote",
+              "quotes": [
+                "[🔔item-shop-news @gm_shadow [GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1108664998328287325 \"🔔item-shop-news @gm_shadow [GM] Shadow(discord flyff universe)\")"
+              ],
+              "quotes_cn": [
+                "[🔔道具商店新闻 @gm_shadow [管理员] Shadow（Flyff Universe官方 Discord）](https://discord.com/channels/778915844070834186/1034809950356111390/1108664998328287325 \"🔔item-shop-news @gm_shadow [GM] Shadow(discord flyff universe)\")"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "📅 all server contents time": {
+      "title": "📅 all server contents time",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Minor Fixes after 11/21 Maintenance](https://universe.flyff.com/news/minorfixesnov21 \"Minor Fixes after 11/21 Maintenance\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/all_server_contents_time.png\" alt=\"all_server_contents_time.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

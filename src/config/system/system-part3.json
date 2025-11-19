@@ -1,0 +1,106 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ],
+      "content_cn": "[🔝 返回顶部](#universe-document)"
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "🗺️ map": {
+      "title": "🗺️ map",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        }
+      ],
+      "subsections": {
+        "madrigal minimum level limit": {
+          "title": "madrigal minimum level limit",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "Some continents now require a minimum player level: Level `20` for Garden of 莱斯 and 达肯 3, Level `80` for 雪地 and Level `100` for Coral Island. Note that the level requirement does not apply to safe areas like 雪地 Village, Coral Village, The Wilds entrance, etc. Players not meeting level requirements will be automatically teleported to Flaris.",
+                  "indent": 0,
+                  "content_cn": "某些大陆现在需要最低玩家等级：莱斯花园和达肯 3需要`20`级，雪地需要`80`级，珊瑚岛需要`100`级。请注意，等级要求不适用于安全区域，如雪地村庄、珊瑚村庄、荒野入口等。未达到等级要求的玩家将自动传送到帕里。"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "Reduced the requirement to teleport to Sunny Pang using Town Blinkwing or Blinkwing of Madrigal from Level `120` to Level `110`.",
+                  "indent": 0,
+                  "content_cn": "降低了使用城镇传送卷轴或Madrigal传送卷轴传送到海岛胖胖的等级要求，从`120`级降至`110`级。"
+                }
+              ]
+            },
+            {
+              "type": "blockquote",
+              "quotes": [
+                "source:[Game Version 1.3.11 Patch Notes](https://universe.flyff.com/news/patchnotes1311 \"Game Version 1.3.11 Patch Notes\")"
+              ],
+              "quotes_cn": [
+                "来源:[游戏版本1.3.11更新说明](https://universe.flyff.com/news/patchnotes1311 \"Game Version 1.3.11 Patch Notes\")"
+              ]
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/map/madrigal_minimum_level.png\" alt=\"madrigal_minimum_level.png\"/></div>"
+            }
+          ]
+        },
+        "wdmadrigal": {
+          "title": "wdmadrigal",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/map/wdmadrigal.png\" alt=\"wdmadrigal.png\"/></div>"
+            }
+          ]
+        },
+        "coral island monster": {
+          "title": "coral island monster",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/map/coral_island_monster.png\" alt=\"coral_island_monster.png\"/></div>"
+            }
+          ]
+        },
+        "herneos monster": {
+          "title": "herneos monster",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/map/herneos_monster.png\" alt=\"herneos_monster.png\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "</details></td></tr></table>"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

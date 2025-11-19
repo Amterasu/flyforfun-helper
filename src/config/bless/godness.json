@@ -1,0 +1,192 @@
+{
+    "blessingOfTheGoddess": [
+      {
+        "statType": "STR",
+        "statName": "力量",
+        "stats": [
+          { "chancePercent": 3, "statValue": 1 },
+          { "chancePercent": 1.25, "statValue": 2 },
+          { "chancePercent": 0.5, "statValue": 3 },
+          { "chancePercent": 0.25, "statValue": 4 }
+        ]
+      },
+      {
+        "statType": "STA",
+        "statName": "体质",
+        "stats": [
+          { "chancePercent": 3, "statValue": 1 },
+          { "chancePercent": 1.25, "statValue": 2 },
+          { "chancePercent": 0.5, "statValue": 3 },
+          { "chancePercent": 0.25, "statValue": 4 }
+        ]
+      },
+      {
+        "statType": "DEX",
+        "statName": "敏捷",
+        "stats": [
+          { "chancePercent": 3, "statValue": 1 },
+          { "chancePercent": 1.25, "statValue": 2 },
+          { "chancePercent": 0.5, "statValue": 3 },
+          { "chancePercent": 0.25, "statValue": 4 }
+        ]
+      },
+      {
+        "statType": "INT",
+        "statName": "智力",
+        "stats": [
+          { "chancePercent": 3, "statValue": 1 },
+          { "chancePercent": 1.25, "statValue": 2 },
+          { "chancePercent": 0.5, "statValue": 3 },
+          { "chancePercent": 0.25, "statValue": 4 }
+        ]
+      },
+      {
+        "statType": "CriticalChance",
+        "statName": "暴击率(%)",
+        "stats": [
+          { "chancePercent": 3, "statValue": "0.5%" },
+          { "chancePercent": 1.25, "statValue": "1%" },
+          { "chancePercent": 0.5, "statValue": "1.5%" },
+          { "chancePercent": 0.25, "statValue": "2%" }
+        ]
+      },
+      {
+        "statType": "CriticalDamage",
+        "statName": "暴击伤害(%)",
+        "stats": [
+          { "chancePercent": 3, "statValue": "0.5%" },
+          { "chancePercent": 1.25, "statValue": "1%" },
+          { "chancePercent": 0.5, "statValue": "1.5%" },
+          { "chancePercent": 0.25, "statValue": "2%" }
+        ]
+      },
+      {
+        "statType": "Speed",
+        "statName": "速度(%)",
+        "stats": [
+          { "chancePercent": 4.5, "statValue": "1%" },
+          { "chancePercent": 0.5, "statValue": "2%" }
+        ]
+      },
+      {
+        "statType": "AttackSpeed",
+        "statName": "攻击速度(%)",
+        "stats": [
+          { "chancePercent": 4.5, "statValue": "1%" },
+          { "chancePercent": 0.5, "statValue": "2%" }
+        ]
+      },
+      {
+        "statType": "CastingSpeed",
+        "statName": "施法速度(%)",
+        "stats": [
+          { "chancePercent": 4.5, "statValue": "1%" },
+          { "chancePercent": 0.5, "statValue": "2%" }
+        ]
+      },
+      {
+        "statType": "Parry",
+        "statName": "格挡",
+        "stats": [
+          { "chancePercent": 4.5, "statValue": "1%" },
+          { "chancePercent": 0.5, "statValue": "2%" }
+        ]
+      },
+      {
+        "statType": "MeleeBlock",
+        "statName": "近战格挡(%)",
+        "stats": [
+          { "chancePercent": 4.5, "statValue": "1%" },
+          { "chancePercent": 0.5, "statValue": "2%" }
+        ]
+      },
+      {
+        "statType": "RangedBlock",
+        "statName": "远程格挡(%)",
+        "stats": [
+          { "chancePercent": 4.5, "statValue": "1%" },
+          { "chancePercent": 0.5, "statValue": "2%" }
+        ]
+      },
+      {
+        "statType": "Defense",
+        "statName": "防御力",
+        "stats": [
+          { "chancePercent": 3, "statValue": 2 },
+          { "chancePercent": 1.25, "statValue": 6 },
+          { "chancePercent": 0.5, "statValue": 10 },
+          { "chancePercent": 0.25, "statValue": 14 }
+        ]
+      },
+      {
+        "statType": "MagicDefense",
+        "statName": "魔法防御力",
+        "stats": [
+          { "chancePercent": 3, "statValue": 2 },
+          { "chancePercent": 1.25, "statValue": 6 },
+          { "chancePercent": 0.5, "statValue": 10 },
+          { "chancePercent": 0.25, "statValue": 14 }
+        ]
+      },
+      {
+        "statType": "Attack",
+        "statName": "攻击力",
+        "stats": [
+          { "chancePercent": 3, "statValue": 5 },
+          { "chancePercent": 1.25, "statValue": 9 },
+          { "chancePercent": 0.5, "statValue": 13 },
+          { "chancePercent": 0.25, "statValue": 17 }
+        ]
+      },
+      {
+        "statType": "PveDamage",
+        "statName": "PvE伤害加成",
+        "stats": [
+          { "chancePercent": 3, "statValue": 10 },
+          { "chancePercent": 1.25, "statValue": 15 },
+          { "chancePercent": 0.5, "statValue": 20 },
+          { "chancePercent": 0.25, "statValue": 25 }
+        ]
+      },
+      {
+        "statType": "PveDamageResist",
+        "statName": "PvE伤害抵抗",
+        "stats": [
+          { "chancePercent": 3, "statValue": 10 },
+          { "chancePercent": 1.25, "statValue": 15 },
+          { "chancePercent": 0.5, "statValue": 20 },
+          { "chancePercent": 0.25, "statValue": 25 }
+        ]
+      },
+      {
+        "statType": "HP",
+        "statName": "生命值",
+        "stats": [
+          { "chancePercent": 3, "statValue": 12 },
+          { "chancePercent": 1.25, "statValue": 20 },
+          { "chancePercent": 0.5, "statValue": 28 },
+          { "chancePercent": 0.25, "statValue": 37 }
+        ]
+      },
+      {
+        "statType": "MP",
+        "statName": "魔法值",
+        "stats": [
+          { "chancePercent": 3, "statValue": 12 },
+          { "chancePercent": 1.25, "statValue": 20 },
+          { "chancePercent": 0.5, "statValue": 28 },
+          { "chancePercent": 0.25, "statValue": 37 }
+        ]
+      },
+      {
+        "statType": "FP",
+        "statName": "能量值",
+        "stats": [
+          { "chancePercent": 3, "statValue": 12 },
+          { "chancePercent": 1.25, "statValue": 20 },
+          { "chancePercent": 0.5, "statValue": 28 },
+          { "chancePercent": 0.25, "statValue": 37 }
+        ]
+      }
+    ]
+  }

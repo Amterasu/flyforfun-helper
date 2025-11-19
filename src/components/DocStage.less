@@ -1,0 +1,121 @@
+@import '../styles/variables.less';
+
+.doc-stage {
+  background: linear-gradient(180deg, #fffbe9, #ffeeb9);
+  border-radius: @border-radius-3xl;
+  padding: @spacing-xl;
+  border: 2px solid #f7e7a0;
+  box-shadow: @shadow-xl;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.doc-stage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: @spacing-md;
+  color: @text-dark;
+}
+
+.doc-search {
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: @border-radius-full;
+    padding: 10px @spacing-md;
+    min-width: 220px;
+    background: #fffdf3;
+    color: @text-dark;
+  }
+}
+
+.doc-primary-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  button {
+    border: none;
+    padding: 8px 18px;
+    border-radius: @border-radius-full;
+    background: rgba(0, 0, 0, 0.05);
+    color: @text-dark;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background @transition-fast, transform @transition-fast;
+
+    &.active {
+      background: linear-gradient(135deg, #ffe37d, #f7c83a);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.doc-content {
+  padding: @spacing-lg;
+  border-radius: @border-radius-2xl;
+  background: #fffdf3;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: @text-dark;
+}
+
+.doc-content-layout {
+  display: flex;
+  gap: @spacing-lg;
+  align-items: flex-start;
+}
+
+.doc-content-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.empty-state-card {
+  padding: @spacing-lg;
+  border-radius: @border-radius-lg;
+  border: 1px dashed rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.6);
+  color: @text-dark;
+  text-align: center;
+}
+
+.doc-tree {
+  margin-top: @spacing-lg;
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-md;
+}
+
+@media (max-width: 1024px) {
+  .doc-stage-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .doc-content-layout {
+    gap: @spacing-md;
+  }
+}
+
+@media (max-width: 768px) {
+  .doc-content-layout {
+    flex-direction: column;
+    gap: @spacing-md;
+  }
+}
+
+@media (max-width: 640px) {
+  .doc-stage {
+    padding: 20px;
+  }
+
+  .doc-primary-filter {
+    flex-direction: column;
+  }
+
+  .doc-content {
+    padding: @spacing-md;
+  }
+}
+

@@ -1,0 +1,629 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "content_cn": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "💯 level reach rewards": {
+      "title": "💯 level reach rewards",
+      "content": [
+        {
+          "type": "html",
+          "html": "<img src=\"./system/level_reach_rewards.png\" alt=\"level_reach_rewards.png\" width=\"350\"/>"
+        },
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<table><tr>"
+        },
+
+        {
+          "type": "html",
+          "html": "<td>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 20 (**Quantity Limit: 2000**):",
+              "content_cn": "等级20（**数量限制：2000**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Essentials Box II](https://flyffipedia.com/items/details/2942) x1",
+              "content_cn": "[必需品盒II](https://flyffipedia.com/items/details/2942) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Sprint](https://flyffipedia.com/items/details/7364) x3",
+              "content_cn": "[冲刺卷轴](https://flyffipedia.com/items/details/7364) x3",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Fire Effect (7 days)](https://flyffipedia.com/items/details/2803) x1",
+              "content_cn": "[火焰效果（7天）](https://flyffipedia.com/items/details/2803) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 40 (**Quantity Limit: 1500**):",
+              "content_cn": "等级40（**数量限制：1500**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Essentials Box III](https://flyffipedia.com/items/details/851) x1",
+              "content_cn": "[必需品盒III](https://flyffipedia.com/items/details/851) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Extra Bag (15 days)](https://flyffipedia.com/items/details/624) x1",
+              "content_cn": "[额外背包（15天）](https://flyffipedia.com/items/details/624) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Holy](https://flyffipedia.com/items/details/3456) x2",
+              "content_cn": "[神圣卷轴](https://flyffipedia.com/items/details/3456) x2",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Blinkwing of Madrigal](https://flyffipedia.com/items/details/7684) x2",
+              "content_cn": "[麦德加传送翅膀](https://flyffipedia.com/items/details/7684) x2",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 60 (**Quantity Limit: 1000**):",
+              "content_cn": "等级60（**数量限制：1000**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Essentials Box IV](https://flyffipedia.com/items/details/5441) x1",
+              "content_cn": "[必需品盒IV](https://flyffipedia.com/items/details/5441) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Common Bank 15](https://flyffipedia.com/items/details/8007) x1",
+              "content_cn": "[公共银行15](https://flyffipedia.com/items/details/8007) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Blinkwing of Madrigal](https://flyffipedia.com/items/details/7684) x2",
+              "content_cn": "[麦德加传送翅膀](https://flyffipedia.com/items/details/7684) x2",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Blessing](https://flyffipedia.com/items/details/7594) x2",
+              "content_cn": "[祝福卷轴](https://flyffipedia.com/items/details/7594) x2",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 80 (**Quantity Limit: 500**):",
+              "content_cn": "等级80（**数量限制：500**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Essentials Box V](https://flyffipedia.com/items/details/4859) x1",
+              "content_cn": "[必需品盒V](https://flyffipedia.com/items/details/4859) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Riding Cloud (Light pink) 30 Days](https://flyffipedia.com/items/details/435) x1",
+              "content_cn": "[坐骑云（浅粉色）30天](https://flyffipedia.com/items/details/435) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of SProtect](https://flyffipedia.com/items/details/2527) x3",
+              "content_cn": "[防具保护卷轴](https://flyffipedia.com/items/details/2527) x3",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 100 (**Quantity Limit: 300**):",
+              "content_cn": "等级100（**数量限制：300**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Essentials Box V](https://flyffipedia.com/items/details/4859) x1",
+              "content_cn": "[必需品盒V](https://flyffipedia.com/items/details/4859) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Baby Robot 30 Days](https://flyffipedia.com/items/details/1612) x1",
+              "content_cn": "[婴儿机器人30天](https://flyffipedia.com/items/details/1612) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Weapon Bonus](https://flyffipedia.com/items/details/6201) x1",
+              "content_cn": "[武器强化卷轴](https://flyffipedia.com/items/details/6201) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 120 (**Quantity Limit: 100**):",
+              "content_cn": "等级120（**数量限制：100**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Essentials Box VI](https://flyffipedia.com/items/details/8744) x1",
+              "content_cn": "[必需品盒VI](https://flyffipedia.com/items/details/8744) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Spy Set (M)](https://flyffipedia.com/items/details/9920) / [Spy Set (F)](https://flyffipedia.com/items/details/5838) x1",
+              "content_cn": "[间谍套装（男）](https://flyffipedia.com/items/details/9920) / [间谍套装（女）](https://flyffipedia.com/items/details/5838) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Weapon Bonus](https://flyffipedia.com/items/details/6201) x3",
+              "content_cn": "[武器强化卷轴](https://flyffipedia.com/items/details/6201) x3",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 125:",
+              "content_cn": "等级125：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x5",
+              "content_cn": "[增幅卷轴ES](https://flyffipedia.com/items/details/6106) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Vital Drink X or Refresher Hold](https://flyffipedia.com/items/details/3237) x5",
+              "content_cn": "[生命药水X或提神饮料](https://flyffipedia.com/items/details/3237) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Upcut Stone](https://flyffipedia.com/items/details/8691) x5",
+              "content_cn": "[升级石](https://flyffipedia.com/items/details/8691) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Def-Upcut Stone](https://flyffipedia.com/items/details/2551) x5",
+              "content_cn": "[防御升级石](https://flyffipedia.com/items/details/2551) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Activition](https://flyffipedia.com/items/details/7833) x5",
+              "content_cn": "[激活药水](https://flyffipedia.com/items/details/7833) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 126 (**Quantity Limit: 1000**):",
+              "content_cn": "等级126（**数量限制：1000**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of SProtect](https://flyffipedia.com/items/details/2527) x15",
+              "content_cn": "[防具保护卷轴](https://flyffipedia.com/items/details/2527) x15",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Pet Transmute](https://flyffipedia.com/items/details/8898) x3",
+              "content_cn": "[宠物变形药水](https://flyffipedia.com/items/details/8898) x3",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 130:",
+              "content_cn": "等级130：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Clockworks +1 Ring Box](https://flyffipedia.com/items/details/7288) x1",
+              "content_cn": "[发条+1戒指盒](https://flyffipedia.com/items/details/7288) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Vital Drink X or Refresher Hold](https://flyffipedia.com/items/details/3237) x5",
+              "content_cn": "[生命药水X或提神饮料](https://flyffipedia.com/items/details/3237) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Upcut Stone](https://flyffipedia.com/items/details/8691) x5",
+              "content_cn": "[升级石](https://flyffipedia.com/items/details/8691) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x5",
+              "content_cn": "[增幅卷轴ES](https://flyffipedia.com/items/details/6106) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Bull Hamstern](https://flyffipedia.com/items/details/3393) x5",
+              "content_cn": "[公牛仓鼠](https://flyffipedia.com/items/details/3393) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 131 (**Quantity Limit: 500**):",
+              "content_cn": "等级131（**数量限制：500**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Clockworks +2 Ring Box](https://flyffipedia.com/items/details/5349) x1",
+              "content_cn": "[发条+2戒指盒](https://flyffipedia.com/items/details/5349) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Pet Transmute](https://flyffipedia.com/items/details/8898) x4",
+              "content_cn": "[宠物变形药水](https://flyffipedia.com/items/details/8898) x4",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 135:",
+              "content_cn": "等级135：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x5",
+              "content_cn": "[增幅卷轴ES](https://flyffipedia.com/items/details/6106) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Vital Drink X or Refresher Hold](https://flyffipedia.com/items/details/3237) x5",
+              "content_cn": "[生命药水X或提神饮料](https://flyffipedia.com/items/details/3237) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Upcut Stone](https://flyffipedia.com/items/details/8691) x5",
+              "content_cn": "[升级石](https://flyffipedia.com/items/details/8691) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Grilled Eel](https://flyffipedia.com/items/details/6049) x5",
+              "content_cn": "[烤鳗鱼](https://flyffipedia.com/items/details/6049) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Resurrection](https://flyffipedia.com/items/details/6525) x5",
+              "content_cn": "[复活卷轴](https://flyffipedia.com/items/details/6525) x5",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 136 (**Quantity Limit: 500**):",
+              "content_cn": "等级136（**数量限制：500**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of AProtect](https://flyffipedia.com/items/details/1683) x15",
+              "content_cn": "[武器保护卷轴](https://flyffipedia.com/items/details/1683) x15",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Weapon Bonus](https://flyffipedia.com/items/details/6201) x2",
+              "content_cn": "[武器强化卷轴](https://flyffipedia.com/items/details/6201) x2",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 139:",
+              "content_cn": "等级139：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Yetti Set (M)](https://flyffipedia.com/items/details/937) / [Yetti Set (M)](https://flyffipedia.com/items/details/3549) x1",
+              "content_cn": "[雪人套装（男）](https://flyffipedia.com/items/details/937) / [雪人套装（男）](https://flyffipedia.com/items/details/3549) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "level 140 (**Quantity Limit: 300**):",
+              "content_cn": "等级140（**数量限制：300**）：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Baby Yetti](https://flyffipedia.com/items/details/3683) x1",
+              "content_cn": "[婴儿雪人](https://flyffipedia.com/items/details/3683) x1",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Scroll of Weapon Bonus](https://flyffipedia.com/items/details/6201) x10",
+              "content_cn": "[武器强化卷轴](https://flyffipedia.com/items/details/6201) x10",
+              "indent": 1
+            }
+          ]
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

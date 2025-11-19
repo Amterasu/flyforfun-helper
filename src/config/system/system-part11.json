@@ -1,0 +1,95 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ],
+      "content_cn": "[🔝 返回顶部](#universe-document)"
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "👩🏻‍❤️‍👨🏻 couple": {
+      "title": "👩🏻‍❤️‍👨🏻 couple",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+          ],
+          "quotes_cn": [
+            "来源:[Madrigal之战扩展包（Flyff Universe版本1.4.0）](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+          ]
+        }
+      ],
+      "subsections": {
+        "couple levels": {
+          "title": "couple levels",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/couple/couple_levels.png\" alt=\"couple_levels.png\"/></div>"
+            }
+          ]
+        },
+        "couple skills": {
+          "title": "couple skills",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/couple/couple_skills.png\" alt=\"couple_skills.png\"/></div>"
+            }
+          ]
+        },
+        "couple ring": {
+          "title": "couple ring",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/couple/couple_ring.png\" alt=\"couple_ring.png\"/></div>"
+            }
+          ]
+        },
+        "couple daily quests": {
+          "title": "couple daily quests",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/couple/couple_daily_quests.png\" alt=\"couple_daily_quests.png\"/></div>"
+            }
+          ]
+        },
+        "couple anniversary rewards": {
+          "title": "couple anniversary rewards",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/couple/couple_anniversary_rewards.png\" alt=\"couple_anniversary_rewards.png\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "</details></td></tr></table>"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

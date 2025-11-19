@@ -1,0 +1,391 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "content_cn": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "👗 costume collection": {
+      "title": "👗 costume collection",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=costume+collection).**",
+          "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=costume+collection)。**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=costume+collection"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        }
+      ],
+      "subsections": {
+        "👗 costume collection details": {
+          "title": "👗 costume collection details",
+          "content": [
+            {
+              "type": "gallery",
+              "gallery": {
+                "folder": "/costume_collection/",
+                "images": [
+                  {
+                    "src": "2nd_Anniversary_Costume_Box.png"
+                  },
+                  {
+                    "src": "03.Elf.jpg"
+                  },
+                  {
+                    "src": "04.Music Beat.jpg"
+                  },
+                  {
+                    "src": "05.Alien Octopus.jpg"
+                  },
+                  {
+                    "src": "06.Rider.jpg"
+                  },
+                  {
+                    "src": "07.Baby Shark.jpg"
+                  },
+                  {
+                    "src": "08.Shade Child.jpg"
+                  },
+                  {
+                    "src": "09.Menhera Kei.jpg"
+                  },
+                  {
+                    "src": "10.Gummy Bear.jpg"
+                  },
+                  {
+                    "src": "11.Autumn.jpg"
+                  },
+                  {
+                    "src": "12.Halloween Bat.jpg"
+                  },
+                  {
+                    "src": "13.Sport Pop.jpg"
+                  },
+                  {
+                    "src": "14.Disco.jpg"
+                  },
+                  {
+                    "src": "15.jpg"
+                  },
+                  {
+                    "src": "16.Winter Wizard.jpg"
+                  },
+                  {
+                    "src": "17.Winter Casual.jpg"
+                  },
+                  {
+                    "src": "18.Foxy.jpg"
+                  },
+                  {
+                    "src": "19.Valentine’s Rabbit.jpg"
+                  },
+                  {
+                    "src": "20.Cacti.jpg"
+                  },
+                  {
+                    "src": "21.Modern Sportswear.jpg"
+                  },
+                  {
+                    "src": "22.Future Runner.jpg"
+                  },
+                  {
+                    "src": "23.Easter Gambler.jpg"
+                  },
+                  {
+                    "src": "24.Easter Magic.jpg"
+                  },
+                  {
+                    "src": "25.White Stripes.jpg"
+                  },
+                  {
+                    "src": "26.Japanese Uniform.jpg"
+                  },
+                  {
+                    "src": "27.Madrigal Guardians.jpg"
+                  },
+                  {
+                    "src": "28.Neo.jpg"
+                  },
+                  {
+                    "src": "29.Idol.jpg"
+                  },
+                  {
+                    "src": "30.AI Frog.jpg"
+                  },
+                  {
+                    "src": "31.Cake Kingdom.jpg"
+                  },
+                  {
+                    "src": "32.AI Casual.jpg"
+                  },
+                  {
+                    "src": "33.AI Yukata.jpg"
+                  },
+                  {
+                    "src": "34.Police.jpg"
+                  },
+                  {
+                    "src": "35.2023 Summer.jpg"
+                  },
+                  {
+                    "src": "36.Star.jpg"
+                  },
+                  {
+                    "src": "37.Oni.jpg"
+                  },
+                  {
+                    "src": "38.Exorcist.jpg"
+                  },
+                  {
+                    "src": "39.Modern Halloween.jpg"
+                  },
+                  {
+                    "src": "40.Military 2023.jpg"
+                  },
+                  {
+                    "src": "41.Thanks_Giving_Costume.jpg"
+                  },
+                  {
+                    "src": "42.Carnival_Traveler.jpg"
+                  },
+                  {
+                    "src": "43.Candy_Cane.jpg"
+                  },
+                  {
+                    "src": "44.Artificial.jpg"
+                  },
+                  {
+                    "src": "45.Emerald_Explorer.jpg"
+                  },
+                  {
+                    "src": "46.Snowy.jpg"
+                  },
+                  {
+                    "src": "47.Valentine_2024.jpg"
+                  },
+                  {
+                    "src": "48.Teddy_Bear_2024.jpg"
+                  },
+                  {
+                    "src": "49.Glitch_Pop.jpg"
+                  },
+                  {
+                    "src": "50.Tiger_Stripes.jpg"
+                  },
+                  {
+                    "src": "51.Tuxedo_Luxury.jpg"
+                  },
+                  {
+                    "src": "52.Future_Easter.jpg"
+                  },
+                  {
+                    "src": "53.Shadow_Hunter.jpg"
+                  },
+                  {
+                    "src": "54.Safari_Explorer.jpg"
+                  },
+                  {
+                    "src": "55.Spring_Bunny_2024.jpg"
+                  },
+                  {
+                    "src": "56.Anniversary_2024.jpg"
+                  },
+                  {
+                    "src": "57.2024_School_Uniform.jpg"
+                  },
+                  {
+                    "src": "58.Spring_Qipao.jpg"
+                  },
+                  {
+                    "src": "59.Magical_Kid.jpg"
+                  },
+                  {
+                    "src": "60.Big_Wave_Surfing.jpg"
+                  },
+                  {
+                    "src": "61.Space_Engineer.jpg"
+                  },
+                  {
+                    "src": "62.Steampunk_Wizard.jpg"
+                  },
+                  {
+                    "src": "63.Little_Butterflies.jpg"
+                  },
+                  {
+                    "src": "64.Eastern_Warrior.jpg"
+                  },
+                  {
+                    "src": "65.Overalls.jpg"
+                  },
+                  {
+                    "src": "66.Banana_Hero.jpg"
+                  },
+                  {
+                    "src": "67.Navy_2024.jpg"
+                  },
+                  {
+                    "src": "68.Persian_Warrior.jpg"
+                  },
+                  {
+                    "src": "69.Necromancer.jpg"
+                  },
+                  {
+                    "src": "70.Wickedstein.jpg"
+                  },
+                  {
+                    "src": "71.Medieval_Knight.jpg"
+                  },
+                  {
+                    "src": "72.Turkeylicious.jpg"
+                  },
+                  {
+                    "src": "73.Xmas_2024_White_Edition.jpg"
+                  },
+                  {
+                    "src": "74.Christmas_Star.jpg"
+                  },
+                  {
+                    "src": "75.Northern_Warrior.jpg"
+                  },
+                  {
+                    "src": "76.Snake_Samurai.jpg"
+                  },
+                  {
+                    "src": "77.Luxury_Winter.jpg"
+                  },
+                  {
+                    "src": "78.Neon_Valentine.jpg"
+                  },
+                  {
+                    "src": "79.Hanbok_2025.jpg"
+                  },
+                  {
+                    "src": "80.Cyberpunk_2025.jpg"
+                  },
+                  {
+                    "src": "81.Spring_Picnic.jpg"
+                  },
+                  {
+                    "src": "82.Easter_Rabbit_2025.jpg"
+                  },
+                  {
+                    "src": "83.Easter_Bunny_2025.jpg"
+                  },
+                  {
+                    "src": "84.Pastel.jpg"
+                  },
+                  {
+                    "src": "85.3rd_Anniversary_Mecha.jpg"
+                  },
+                  {
+                    "src": "86.Ruby_Yukata.jpg"
+                  },
+                  {
+                    "src": "87.Modern_Alien.jpg"
+                  },
+                  {
+                    "src": "88.Forest_Spirit.jpg"
+                  },
+                  {
+                    "src": "89.2025_Swimsuit.jpg"
+                  },
+                  {
+                    "src": "90.Fantasy_Guardian.jpg"
+                  },
+                  {
+                    "src": "91.Botanist_Musician.jpg"
+                  },
+                  {
+                    "src": "92.Nobility.jpg"
+                  },
+                  {
+                    "src": "93.Obsidian_Flame.jpg"
+                  },
+                  {
+                    "src": "94.FireFighter.jpg"
+                  },
+                  {
+                    "src": "95.Aero_Streetwear.jpg"
+                  },
+                  {
+                    "src": "96.Knotty_Scarecrow.jpg"
+                  },
+                  {
+                    "src": "97.Sewn_Demon.jpg"
+                  },
+                  {
+                    "src": "Casual_Costume_Box.png"
+                  },
+                  {
+                    "src": "Cute_Costume_Box.png"
+                  },
+                  {
+                    "src": "Fantasy_Costume_Box.png"
+                  },
+                  {
+                    "src": "Memorial_Summer_F.png"
+                  },
+                  {
+                    "src": "Memorial_Summer_M.png"
+                  },
+                  {
+                    "src": "School_Life_Costume_Box.png"
+                  },
+                  {
+                    "src": "Summer_Costume_Box.png"
+                  },
+                  {
+                    "src": "black_friday_special_sales_2023.png"
+                  },
+                  {
+                    "src": "black_friday_special_sales_2024.png"
+                  },
+                  {
+                    "src": "fashionsale_20240321.png"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "html",
+              "html": "</details></td></tr></table>"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

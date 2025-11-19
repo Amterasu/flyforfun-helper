@@ -1,0 +1,1103 @@
+{
+  "title": "🐉 副本",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "translatedContent": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 dungeons details</summary>",
+      "translatedHtml": "<summary>📁 副本详情</summary>"
+    },
+    {
+      "type": "html",
+      "html": "<div align=\"center\">"
+    },
+    {
+      "type": "text",
+      "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=dungeons).**",
+      "translatedContent": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=dungeons)。**",
+      "links": [
+        {
+          "text": "Gothante",
+          "url": "https://gothante.wiki/?search=dungeons"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "</div>"
+    },
+    {
+      "type": "blockquote",
+      "content": [
+        "source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 \"v1.2.0 Reborn is coming on March 13!\")"
+      ],
+      "content_cn": [
+        "来源：[v1.2.0 重生版本将于3月13日上线！](https://universe.flyff.com/news/reborn120 \"v1.2.0 Reborn is coming on March 13!\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "content": [
+        "source:[Reborn Expansion Flyff Universe Version 1.2.0](https://wcdn-universe.flyff.com/site/patch1_2_0.pdf \"Reborn Expansion Flyff Universe Version 1.2.0\")"
+      ],
+      "content_cn": [
+        "来源：[重生扩展包 Flyff Universe 版本 1.2.0](https://wcdn-universe.flyff.com/site/patch1_2_0.pdf \"Reborn Expansion Flyff Universe Version 1.2.0\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "content": [
+        "source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 \"New Horizon Expansion (Flyff Universe Version 1.3.0)\")"
+      ],
+      "content_cn": [
+        "来源：[新地平线扩展包（Flyff Universe 版本 1.3.0）](https://universe.flyff.com/news/newhorizonv1301 \"New Horizon Expansion (Flyff Universe Version 1.3.0)\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "content": [
+        "source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+      ],
+      "content_cn": [
+        "来源：[麦迪加尔之战扩展包（Flyff Universe 版本 1.4.0）](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "content": [
+        "source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+      ],
+      "content_cn": [
+        "来源：[麦迪加尔之战扩展包更新（Flyff Universe 版本 1.4.1）](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+      ]
+    }
+  ],
+  "subsections": {
+    "📌 dungeons location": {
+      "title": "📌 dungeons location",
+      "translatedTitle": "📌 副本位置",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/dungeons_location.png\" alt=\"dungeons_location.png\"/>"
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                "Continent",
+                "Dungeons",
+                "Instance Dungeons"
+              ]
+            ]
+          },
+          "translatedTable": {
+            "headers": [],
+            "rows": [
+              [
+                "大陆",
+                "普通副本",
+                "高级副本"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                ":---:",
+                ":---:",
+                ":---:"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                "帕里",
+                "Mars Dungeon",
+                "Leren Chasm"
+              ]
+            ]
+          },
+          "translatedTable": {
+            "headers": [],
+            "rows": [
+              [
+                "帕里",
+                "蛇妖副本",
+                "帕里洞"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                "Saint Morning",
+                "Iblis Temple"
+              ]
+            ]
+          },
+          "translatedTable": {
+            "headers": [],
+            "rows": [
+              [
+                "晨光",
+                "伊普利斯神殿",
+                "无"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                "Garden of 莱斯",
+                "莱斯 Catacombs"
+              ]
+            ]
+          },
+          "translatedTable": {
+            "headers": [],
+            "rows": [
+              [
+                "莱斯花园",
+                "无",
+                "莱斯地下墓穴"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                "Darken1&2",
+                "Dekane Mine",
+                "Envy Depths"
+              ]
+            ]
+          },
+          "translatedTable": {
+            "headers": [],
+            "rows": [
+              [
+                "达肯1&2区",
+                "矿洞",
+                "嫉妒深渊"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                "达肯3",
+                "Volkane",
+                "Guardiane Sanctuary"
+              ]
+            ]
+          },
+          "translatedTable": {
+            "headers": [],
+            "rows": [
+              [
+                "达肯3区",
+                "火龙洞",
+                "圣堂"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                "雪地",
+                "Storm Peak"
+              ]
+            ]
+          },
+          "translatedTable": {
+            "headers": [],
+            "rows": [
+              [
+                "阿兹利亚",
+                "无",
+                "风暴之巅"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "headers": [],
+            "rows": [
+              [
+                "Coral Island",
+                "Herneos",
+                "The Wilds"
+              ]
+            ]
+          },
+          "translatedTable": {
+            "headers": [],
+            "rows": [
+              [
+                "珊瑚岛",
+                "海洞",
+                "荒野之地"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🚩 dungeons difficulties": {
+      "title": "🚩 dungeons difficulties",
+      "translatedTitle": "🚩 副本难度",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/dungeons_difficulties.png\" alt=\"dungeons_difficulties.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "📚 story dungeons": {
+      "title": "📚 story dungeons",
+      "translatedTitle": "📚 剧情副本",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[Game Version 1.2.7 Patch Notes](https://universe.flyff.com/news/patchnotes127 \"Game Version 1.2.7 Patch Notes\")"
+          ],
+          "content_cn": [
+            "来源：[游戏版本 1.2.7 补丁说明](https://universe.flyff.com/news/patchnotes127 \"Game Version 1.2.7 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Story Dungeons allow players to experience a dungeon and its mechanics, while making it easier to complete the story quests associated with a dungeon alone or in a smaller group.",
+              "indent": 0,
+              "translatedContent": "故事模式让玩家能够体验副本及其机制，同时更轻松地独自或在较小的队伍中完成与副本相关的剧情任务。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Story mode dungeons do not drop items.",
+              "indent": 1,
+              "translatedContent": "剧情模式副本不会掉落物品。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Story mode dungeons may not have curses applied.",
+              "indent": 1,
+              "translatedContent": "剧情模式副本可能不会施加诅咒。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Story mode dungeons do not have Pet Cages or chests.",
+              "indent": 1,
+              "translatedContent": "剧情模式副本没有宠物笼或宝箱。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Story mode dungeons grant less experience than other dungeon difficulties (90% less).",
+              "indent": 1,
+              "translatedContent": "剧情模式副本提供的经验比其他难度的副本少（少90%）。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Common buffs are not removed when entering a Story mode dungeon.",
+              "indent": 1,
+              "translatedContent": "进入剧情模式副本时，普通增益效果不会被移除。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Final bosses in Story mode dungeons do not grant Soul Fragments.",
+              "indent": 1,
+              "translatedContent": "剧情模式副本的最终 bosses 不会给予灵魂碎片。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Story mode dungeons do not grant credit towards achievements, but do count towards the daily Clear Dungeon(s) battle pass mission.",
+              "indent": 1,
+              "translatedContent": "剧情模式副本不会计入成就，但会计入每日的“通关副本”战斗通行证任务。"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "📍 dungeon checkpoints": {
+      "title": "📍 dungeon checkpoints",
+      "translatedTitle": "📍 副本 checkpoint",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[Game Version 1.2.7 Patch Notes](https://universe.flyff.com/news/patchnotes127 \"Game Version 1.2.7 Patch Notes\")"
+          ],
+          "content_cn": [
+            "来源：[游戏版本 1.2.7 补丁说明](https://universe.flyff.com/news/patchnotes127 \"Game Version 1.2.7 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Dungeons now have checkpoints that appear after players have cleared certain objectives. These checkpoints can be used to teleport back to the entrance and vice versa. Each dungeon has 2 checkpoints, except for Storm Peak which has 4.",
+              "indent": 0,
+              "translatedContent": "现在，副本在玩家完成某些目标后会出现checkpoint。这些checkpoint可用于传送回入口，反之亦然。每个副本有2个checkpoint，除了风暴之巅有4个。"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "⏳ cooldown": {
+      "title": "⏳ cooldown",
+      "translatedTitle": "⏳ 冷却时间",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/dungeons_cooldown.png\" alt=\"dungeons_cooldown.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🥅 pet cages": {
+      "title": "🥅 pet cages",
+      "translatedTitle": "🥅 宠物笼",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172264259665809510 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ],
+          "content_cn": [
+            "来源：[@bluechromed @[Dev] Blukie（discord flyff universe）](https://discord.com/channels/778915844070834186/1000058902576119878/1172264259665809510 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+          ],
+          "content_cn": [
+            "来源：[麦迪加尔之战扩展包更新（Flyff Universe 版本 1.4.1）](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/pet_cages.png\" alt=\"pet_cages.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "💥 dungeons curses": {
+      "title": "💥 dungeons curses",
+      "translatedTitle": "💥 副本诅咒",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        }
+      ],
+      "subsections": {
+        "the wilds": {
+          "title": "the wilds",
+          "translatedTitle": "荒野之地",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./dungeons/the_wilds_curses.png\" alt=\"the_wilds_curses.png\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "</details></td></tr></table>"
+            }
+          ]
+        }
+      }
+    },
+    "💎 dungeons drops": {
+      "title": "💎 dungeons drops",
+      "translatedTitle": "💎 副本掉落",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[Game Version 1.2.2 Patch Notes](https://universe.flyff.com/news/patchnotes122 \"Game Version 1.2.2 Patch Notes\")"
+          ],
+          "content_cn": [
+            "来源：[游戏版本 1.2.2 补丁说明](https://universe.flyff.com/news/patchnotes122 \"Game Version 1.2.2 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[Game Version 1.2.3 Patch Notes](https://universe.flyff.com/news/patchnotes123 \"Game Version 1.2.3 Patch Notes\")"
+          ],
+          "content_cn": [
+            "来源：[游戏版本 1.2.3 补丁说明](https://universe.flyff.com/news/patchnotes123 \"Game Version 1.2.3 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[Game Version 1.2.4 Patch Notes](https://universe.flyff.com/news/patchnotes124 \"Game Version 1.2.4 Patch Notes\")"
+          ],
+          "content_cn": [
+            "来源：[游戏版本 1.2.4 补丁说明](https://universe.flyff.com/news/patchnotes124 \"Game Version 1.2.4 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Added new repeatable quests that reward weapon piercing card select boxes for a certain number of final dungeon boss kills. **[version 1.2.2](https://universe.flyff.com/news/patchnotes122 \"Game Version 1.2.3 Patch Notes\")**",
+              "indent": 0,
+              "translatedContent": "新增了可重复完成的任务，当击杀一定数量的副本最终boss后，会奖励武器穿洞卡片选择盒。**[版本 1.2.2](https://universe.flyff.com/news/patchnotes122 \"Game Version 1.2.3 Patch Notes\")**"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "新增了可重复完成的任务，完成击杀一定数量的副本最终boss后，会获得武器穿洞卡片选择盒。"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "[Weapon Piercing Box Quests](https://flyffipedia.com/quests?repeatable=True&sort=minLevel-2&search=Weapon+Piercing+Box \"Weapon Piercing Box Quests\")"
+          ],
+          "content_cn": [
+            "[武器穿洞盒任务](https://flyffipedia.com/quests?repeatable=True&sort=minLevel-2&search=Weapon+Piercing+Box \"Weapon Piercing Box Quests\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Added treasure chests to all instanced dungeons, which can contain Essential boxes, Element Attack boxes, Pill boxes, and Rainbow Cotton candies. **[version 1.2.3](https://universe.flyff.com/news/patchnotes123 \"Game Version 1.2.3 Patch Notes\")**",
+              "indent": 0,
+              "translatedContent": "为所有副本副本添加了宝箱，其中可能包含必需品盒、元素攻击盒、药丸盒和彩虹棉花糖。**[版本 1.2.3](https://universe.flyff.com/news/patchnotes123 \"Game Version 1.2.3 Patch Notes\")**"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "为所有副本(副本)添加了宝箱，其中可以包含必需品盒、元素攻击盒、药丸盒和彩虹棉花糖。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Golden Aibatts are now permanent, with a lower chance to spawn than during their event. **[version 1.2.4](https://universe.flyff.com/news/patchnotes124 \"Game Version 1.2.4 Patch Notes\")**",
+              "indent": 0,
+              "translatedContent": "金色蝙蝠现在成为永久性的，其生成概率比活动期间低。**[版本 1.2.4](https://universe.flyff.com/news/patchnotes124 \"Game Version 1.2.4 Patch Notes\")**"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "金色蝙蝠现在是永久性的，生成的几率比活动期间要低。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "If you kill [Golden Aibatt](https://flyffipedia.com/monsters/details/2630) in dungeons, last super monster will [Feeling Generous](https://flyffipedia.com/skills/details/110).",
+              "indent": 1,
+              "translatedContent": "如果在副本中击杀[金色蝙蝠](https://flyffipedia.com/monsters/details/2630)，最后的超级怪物将获得[慷慨馈赠](https://flyffipedia.com/skills/details/110)效果。"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/feeling_generous.png\" alt=\"feeling_generous.png\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "The buff that increases the drop rate is applied to all drops.",
+              "indent": 1,
+              "translatedContent": "提高掉落率的增益效果适用于所有掉落物。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "It always roll lower chances items first, which means since the **rarest** items are rolled first and they have a slightly higher drop chance.",
+              "indent": 1,
+              "translatedContent": "它总是先滚动概率较低的物品，这意味着**最稀有**的物品会先被滚动，并且它们的掉落概率会略高一些。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[@nanoaa @[Dev] NaNo (discord flyff universe)](https://discord.com/channels/778915844070834186/1221684853901365288/1227538842744000592 \"@nanoaa @[Dev] NaNo (discord flyff universe)\")"
+          ],
+          "content_cn": [
+            "来源：[@nanoaa @[Dev] NaNo（discord flyff universe）](https://discord.com/channels/778915844070834186/1221684853901365288/1227538842744000592 \"@nanoaa @[Dev] NaNo (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/feeling_generous_bonus.png\" alt=\"feeling_generous_bonus.png\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Player level does not affect the drop rate of monster cosmetics, players may farm cosmetics effectively at any level.",
+              "indent": 0,
+              "translatedContent": "玩家等级不会影响怪物幻化外观的掉落率，玩家在任何等级都能有效地刷取幻化外观。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "玩家等級不會影響怪物幻化外觀的掉落率，玩家在任何等級都可以有效刷出幻化外觀。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Instanced dungeon (specifically Reborn dungeons) monsters do not have a drop penalty based on level due to the scaled nature of the monsters.",
+              "indent": 0,
+              "translatedContent": "由于怪物的等级缩放特性，副本副本（特别是重生副本）中的怪物没有基于等级的掉落惩罚。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "由於怪物的縮放性質，實例副本（特別是重生副本）怪物沒有基於等級的掉落懲罰。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "For instance, a level `126` and `140` would have the same drop rate when defeating monsters in Storm Peak.",
+              "indent": 1,
+              "translatedContent": "例如，126级和140级的玩家在风暴之巅击败怪物时，掉落率是相同的。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "例如，`126` 級和 `140` 級在風暴峰擊敗怪物時掉落率相同。"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1113468851213058170 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ],
+          "content_cn": [
+            "来源：[@bluechromed @[Dev] Blukie（discord flyff universe）](https://discord.com/channels/778915844070834186/1000058902576119878/1113468851213058170 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1113470252257382550 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ],
+          "content_cn": [
+            "来源：[@bluechromed @[Dev] Blukie（discord flyff universe）](https://discord.com/channels/778915844070834186/1000058902576119878/1113470252257382550 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Under the hood dungeon monsters have a level as seen in the API, but all penalties are removed from dungeon monsters. So there should be no effect to drops, etc. based on level.",
+              "indent": 0,
+              "translatedContent": "实际上，正如API中所显示的，副本怪物有等级，但所有惩罚都从副本怪物中移除了。因此，基于等级的因素不会对掉落等产生影响。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "真正的原因是副本怪物有一個等級，如 API 中所示，但所有懲罰都從副本怪物中刪除，所以基於等級的掉落率應該沒有影響。"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1152141645257641985/1158031426202124399 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ],
+          "content_cn": [
+            "来源：[@bluechromed @[Dev] Blukie（discord flyff universe）](https://discord.com/channels/778915844070834186/1152141645257641985/1158031426202124399 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/dungeons_drops.png\" alt=\"dungeons_drops.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/cursed_jewelry_fragment_drop_in_dungeons.png\" alt=\"cursed_jewelry_fragment_drop_in_dungeons.png\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "cursed jewelry fragment drop in dungeons:",
+              "indent": 0,
+              "translatedContent": "副本中的诅咒首饰碎片掉落："
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1172134100539281499 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ],
+          "content_cn": [
+            "来源：[@bluechromed @[Dev] Blukie（discord flyff universe）](https://discord.com/channels/778915844070834186/1076577555546656850/1172134100539281499 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Fragments you earn in Cursed dungeons are not soul-linked, they are untradeable however. Everyone in the party can receive them, and if they do the fragments will go directly to their inventory.",
+              "indent": 0,
+              "translatedContent": "在诅咒副本中获得的碎片没有灵魂绑定，但它们是不可交易的。队伍中的每个人都可以获得这些碎片，一旦获得，碎片会直接进入他们的背包。"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172752197742768189 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ],
+          "content_cn": [
+            "来源：[@bluechromed @[Dev] Blukie（discord flyff universe）](https://discord.com/channels/778915844070834186/1000058902576119878/1172752197742768189 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🗼 forsaken tower": {
+      "title": "🗼 forsaken tower",
+      "translatedTitle": "🗼 被遗弃的塔楼",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "text",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=forsaken+tower).**",
+          "translatedContent": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=forsaken+tower)。**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=forsaken+tower"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "**Only the experience necessary for a single level up is calculated, without accounting for cumulative experience.**",
+          "translatedContent": "**仅计算升一级所需的经验，不考虑累积经验。**"
+        },
+        {
+          "type": "text",
+          "content": "**The actual number of days required to level up will be fewer than those indicated in the chart.**",
+          "translatedContent": "**实际升级所需的天数将比图表中显示的少。**"
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "[Forsaken Tower Daily Quests](https://flyffipedia.com/quests/details/16118 \"Forsaken Tower Daily Quests\")"
+          ],
+          "content_cn": [
+            "[每日任务](https://flyffipedia.com/quests/details/16118 \"Forsaken Tower Daily Quests\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/forsaken_tower/forsaken_tower_daily_quests.png\" alt=\"forsaken_tower_daily_quests.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/forsaken_tower/forsaken_tower_daily_quests_1f.png\" alt=\"forsaken_tower_daily_quests_1f.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/forsaken_tower/forsaken_tower_daily_quests_2f.png\" alt=\"forsaken_tower_daily_quests_2f.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/forsaken_tower/forsaken_tower_daily_quests_3f.png\" alt=\"forsaken_tower_daily_quests_3f.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/forsaken_tower/forsaken_tower_daily_quests_4f.png\" alt=\"forsaken_tower_daily_quests_4f.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/forsaken_tower/forsaken_tower_daily_quests_5f.png\" alt=\"forsaken_tower_daily_quests_5f.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/forsaken_tower/forsaken_tower_daily_quests_6f.png\" alt=\"forsaken_tower_daily_quests_6f.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/forsaken_tower/forsaken_tower_daily_quests_7f.png\" alt=\"forsaken_tower_daily_quests_7f.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🏆 guild siege": {
+      "title": "🏆 guild siege",
+      "translatedTitle": "🏆 公会 siege",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        }
+      ],
+      "subsections": {
+        "red chip": {
+          "title": "red chip",
+          "translatedTitle": "红色筹码",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "[Red Chip Distribution Calculator](https://docs.google.com/spreadsheets/d/1zX1pZ_bB7aPqpZ4rPB9pAFJmAgL4e7y8F6F9qDRc9gw/edit#gid=1531356297)",
+                  "indent": 0,
+                  "translatedContent": "[红色筹码分配计算器](https://docs.google.com/spreadsheets/d/1zX1pZ_bB7aPqpZ4rPB9pAFJmAgL4e7y8F6F9qDRc9gw/edit#gid=1531356297)"
+                }
+              ]
+            },
+            {
+              "type": "blockquote",
+              "content": [
+                "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1109658569466454099 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+              ],
+              "content_cn": [
+                "来源：[@bluechromed @[Dev] Blukie（discord flyff universe）](https://discord.com/channels/778915844070834186/867043266162458654/1109658569466454099 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+              ]
+            }
+          ]
+        },
+        "maps": {
+          "title": "maps",
+          "translatedTitle": "地图",
+          "content": [
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./dungeons/guild_siege_maps.png\" alt=\"guild_siege_maps.png\" width=\"600\"/></div>"
+            },
+            {
+              "type": "blockquote",
+              "content": [
+                "source:[flyffipedia](https://flyffipedia.com/worlds)"
+              ],
+              "content_cn": [
+                "来源：[flyffipedia](https://flyffipedia.com/worlds)"
+              ]
+            },
+            {
+              "type": "html",
+              "html": "</details></td></tr></table>"
+            }
+          ]
+        }
+      }
+    },
+    "🏆 kalgas assault": {
+      "title": "🏆 kalgas assault",
+      "translatedTitle": "🏆 卡尔加斯突袭",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "translatedHtml": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "text",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=kalgas+assault).**",
+          "translatedContent": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=kalgas+assault)。**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=kalgas+assault"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 \"Game Version 1.3.6 Patch Notes\")"
+          ],
+          "content_cn": [
+            "来源：[新地平线扩展包（Flyff Universe 版本 1.3.6）](https://universe.flyff.com/news/patchnotes136 \"Game Version 1.3.6 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+          ],
+          "content_cn": [
+            "来源：[麦迪加尔之战扩展包更新（Flyff Universe 版本 1.4.1）](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/kalgas_assault/wdrealm.png\" alt=\"wdrealm.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/kalgas_assault/tradekalgaschips.jpg\" alt=\"tradekalgaschips.jpg\" width=\"400\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/kalgas_assault/kalgas_wrath_wing.jpg\" alt=\"kalgas_wrath_wing.jpg\" width=\"600\"/></div>"
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "[Kalgas' wrath Wing](https://flyffipedia.com/items/details/16975 \"Kalgas' wrath Wing\")"
+          ],
+          "content_cn": [
+            "[卡尔加斯的愤怒之翼](https://flyffipedia.com/items/details/16975 \"Kalgas' wrath Wing\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "[Kalgas' wrath Set](https://flyffipedia.com/items/details/19999 \"Kalgas' wrath Set\")"
+          ],
+          "content_cn": [
+            "[卡尔加斯的愤怒套装](https://flyffipedia.com/items/details/19999 \"Kalgas' wrath Set\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./dungeons/kalgas_assault/kalgas_fury.png\" alt=\"kalgas_fury.png\" width=\"400\"/></div>"
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "[Kalgas' Fury Wing (30 days)](https://flyffipedia.com/items/details/20834 \"Kalgas' Fury Wing (30 days)\")"
+          ],
+          "content_cn": [
+            "[卡尔加斯的暴怒之翼（30天）](https://flyffipedia.com/items/details/20834 \"Kalgas' Fury Wing (30 days)\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "[Kalgas' Fury Set](https://flyffipedia.com/items/details/29875 \"Kalgas' Fury Set\")"
+          ],
+          "content_cn": [
+            "[卡尔加斯的暴怒套装](https://flyffipedia.com/items/details/29875 \"Kalgas' Fury Set\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": [
+            "[Kalgas' Fury Weapon Set](https://flyffipedia.com/items/details/24829 \"Kalgas' Fury Weapon Set\")"
+          ],
+          "content_cn": [
+            "[卡尔加斯的暴怒武器套装](https://flyffipedia.com/items/details/24829 \"Kalgas' Fury Weapon Set\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        },
+        {
+          "type": "html",
+          "html": "</details>"
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

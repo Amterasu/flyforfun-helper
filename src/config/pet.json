@@ -1,0 +1,581 @@
+{
+  "title": "🐶 pet",
+  "title_cn": "🐶 宠物",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "content_cn": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "text_cn": "🔝 返回顶部",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 pet details</summary>",
+      "html_cn": "<summary>📁 宠物详情</summary>"
+    },
+    {
+      "type": "html",
+      "html": "<div align=\"center\">"
+    },
+    {
+      "type": "text",
+      "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=raised+pet).**",
+      "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=raised+pet)。**",
+      "links": [
+        {
+          "text": "Gothante",
+          "url": "https://gothante.wiki/?search=raised+pet"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "</div>"
+    },
+    {
+      "type": "blockquote",
+      "quotes": [
+        "source:[Summer 2022 expansion on August 22!](https://universe.flyff.com/news/summerupdate \"Summer 2022 expansion on August 22!\")"
+      ],
+      "quotes_cn": [
+        "来源：[2022年8月22日夏季扩展更新！](https://universe.flyff.com/news/summerupdate \"Summer 2022 expansion on August 22!\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "quotes": [
+        "source:[Summer 2022 Expansion Flyff Universe Version 1.1.0](https://wcdn-universe.flyff.com/site/patch1_1_0.pdf \"Summer 2022 Expansion Flyff Universe Version 1.1.0\")"
+      ],
+      "quotes_cn": [
+        "来源：[2022年夏季扩展Flyff Universe 1.1.0版本](https://wcdn-universe.flyff.com/site/patch1_1_0.pdf \"Summer 2022 Expansion Flyff Universe Version 1.1.0\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "quotes": [
+        "source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+      ],
+      "quotes_cn": [
+        "来源：[Madrigal之战扩展（Flyff Universe 1.4.0版本）](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+      ]
+    }
+  ],
+  "subsections": {
+    "🦮 raised pet": {
+      "title": "🦮 raised pet",
+      "title_cn": "🦮 养成宠物",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/raised_pet.png\" alt=\"raised_pet.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🕊️ grace effect": {
+      "title": "🕊️ grace effect",
+      "title_cn": "🕊️ 恩典效果",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/raised_pet_grace_effect.png\" alt=\"raised_pet_grace_skill.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🍭 pet candy recipes": {
+      "title": "🍭 pet candy recipes",
+      "title_cn": "🍭 宠物糖果配方",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/pet_candy_recipes.png\" alt=\"pet_candy_recipes.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🐾 pet defect recycling": {
+      "title": "🐾 pet defect recycling",
+      "title_cn": "🐾 宠物献祭",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Developers Q&A October-November 2022](https://universe.flyff.com/news/qna-11-2022 \"Developers Q&A October-November 2022\")"
+          ],
+          "quotes_cn": [
+            "来源：[2022年10-11月开发者问答](https://universe.flyff.com/news/qna-11-2022 \"Developers Q&A October-November 2022\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Flyff Universe Developer Q&A October - November 2022 Questions](https://wcdn-universe.flyff.com/site/qna_11_2022.pdf \"Flyff Universe Developer Q&A October - November 2022 Questions\")"
+          ],
+          "quotes_cn": [
+            "来源：[Flyff Universe 2022年10-11月开发者问答问题](https://wcdn-universe.flyff.com/site/qna_11_2022.pdf \"Flyff Universe Developer Q&A October - November 2022 Questions\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Game Version 1.2.5 Patch Notes](https://universe.flyff.com/news/patchnotes125 \"Game Version 1.2.5 Patch Notes\")"
+          ],
+          "quotes_cn": [
+            "来源：[游戏1.2.5版本更新说明](https://universe.flyff.com/news/patchnotes125 \"Game Version 1.2.5 Patch Notes\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/pet_defect_recycling.png\" alt=\"pet_defect_recycling.png\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "If you success(green text): Your pet has got a new, higher level!",
+              "content_cn": "如果成功（绿色文字）：你的宠物获得了新的、更高的等级！",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "If you failure(red text): You rolled the same or a lower level, so nothing changed.",
+              "content_cn": "如果失败（红色文字）：你摇到了相同或更低的等级，所以没有任何变化。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🐾 pet rerolling": {
+      "title": "🐾 pet rerolling",
+      "title_cn": "🐾 宠物重洗",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+          ],
+          "quotes_cn": [
+            "来源：[Madrigal之战扩展更新（Flyff Universe 1.4.1版本）](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "By using the [Pet Reroll Scroll](https://flyffipedia.com/items/details/21526 \"Pet Reroll Scroll\"), you can place a raised pet into the pet slot to choose a tier for rerolling, without the need for a sacrificial pet. This feature does not affect regular rerolling with a sacrificial pet at the Pet Tamer.",
+              "content_cn": "通过使用[宠物重洗卷轴](https://flyffipedia.com/items/details/21526 \"Pet Reroll Scroll\")，你可以将养成的宠物放入宠物槽中选择一个等级进行重洗，无需献祭宠物。此功能不影响在宠物训练师处使用献祭宠物进行的常规重洗。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Note that once you select a tier to reroll, that is the only tier you will be able to reroll using this feature going forward on this pet. The probabilities for rerolling will be the same as if you were sacrificing a pet of the same tier.",
+              "content_cn": "请注意，一旦你选择了一个等级进行重洗，这将是你今后使用此功能对该宠物进行重洗的唯一等级。重洗的概率与献祭同等级宠物进行重洗的概率相同。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "The number of scrolls required to reroll a tier depends on the tier you select.",
+              "content_cn": "重洗一个等级所需的卷轴数量取决于你选择的等级。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "When you press the Reroll button, it will display (N is the new level after rerolling): The selected tier has been rerolled to **N**.",
+              "content_cn": "当你按下重洗按钮时，会显示（N为重洗后的新等级）：所选等级已重洗至**N**。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/pet_rerolling.png\" alt=\"pet_rerolling.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🌿 berry map": {
+      "title": "🌿 berry map",
+      "title_cn": "🌿 浆果地图",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/berryfarming_map_v4.jpg\" alt=\"berryfarming_map_v4.jpg\" width=\"800\"/></div>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[@cysotiso @[Zanarkand] Cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1374779011661693099 \"@cysotiso @[Zanarkand] Cysotiso (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源：[@cysotiso @[Zanarkand] Cysotiso（discord flyff universe）](https://discord.com/channels/778915844070834186/1000058902576119878/1374779011661693099 \"@cysotiso @[Zanarkand] Cysotiso (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "💫 pet transmutation": {
+      "title": "💫 pet transmutation",
+      "title_cn": "💫 宠物幻化",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "paragraph",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=pet+transmutation).**",
+          "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=pet+transmutation)。**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=pet+transmutation"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Crystal Iphrine Shell](https://flyffipedia.com/items/details/9040 \"Crystal Iphrine Shell\")",
+              "content_cn": "[蒜头王八](https://flyffipedia.com/items/details/9040 \"Crystal Iphrine Shell\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-08-22 ~ 2022-09-21`",
+              "content_cn": "`2022-08-22 ~ 2022-09-21`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/crystal_iphrine_shell.jpg\" alt=\"crystal_iphrine_shell.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Primgon](https://flyffipedia.com/items/details/1127 \"Primgon Cage\")",
+              "content_cn": "[小恐龙](https://flyffipedia.com/items/details/1127 \"Primgon Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-09-22 ~ 2022-11-24`",
+              "content_cn": "`2022-09-22 ~ 2022-11-24`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/primgon.jpg\" alt=\"primgon.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Nine Tails](https://flyffipedia.com/items/details/14640 \"Nine Tails Cage\")",
+              "content_cn": "[小狐狸](https://flyffipedia.com/items/details/14640 \"Nine Tails Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2022-11-25 ~ 2023-02-01`",
+              "content_cn": "`2022-11-25 ~ 2023-02-01`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/nine_tails.jpg\" alt=\"nine_tails.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Tonge](https://flyffipedia.com/items/details/11407 \"Tonge Cage\")",
+              "content_cn": "[ tonge](https://flyffipedia.com/items/details/11407 \"Tonge Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-02-02 ~ 2023-04-12`",
+              "content_cn": "`2023-02-02 ~ 2023-04-12`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/tonge.jpg\" alt=\"tonge.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Hantiger](https://flyffipedia.com/items/details/15854 \"Hantiger Cage\")",
+              "content_cn": "[小老虎](https://flyffipedia.com/items/details/15854 \"Hantiger Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-04-13 ~ 2023-06-07`",
+              "content_cn": "`2023-04-13 ~ 2023-06-07`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/hantiger.jpg\" alt=\"hantiger.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Skating Cat](https://flyffipedia.com/items/details/17941 \"Skating Cat Cage\")",
+              "content_cn": "[滑冰猫](https://flyffipedia.com/items/details/17941 \"Skating Cat Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-06-08 ~ 2023-07-19`",
+              "content_cn": "`2023-06-08 ~ 2023-07-19`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/skating_cat.jpg\" alt=\"skating_cat.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Draco](https://flyffipedia.com/items/details/2923 \"Draco Cage\")",
+              "content_cn": "[走地鸡](https://flyffipedia.com/items/details/2923 \"Draco Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2023-07-20 ~ 2024-05-08`",
+              "content_cn": "`2023-07-20 ~ 2024-05-08`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2025-06-12 ~`",
+              "content_cn": "`2025-06-12 ~`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/draco.jpg\" alt=\"draco.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Fox Spirit](https://flyffipedia.com/items/details/11025 \"Fox Spirit Cage\")",
+              "content_cn": "[狐灵](https://flyffipedia.com/items/details/11025 \"Fox Spirit Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2024-05-09 ~ 2024-11-20`",
+              "content_cn": "`2024-05-09 ~ 2024-11-20`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/fox_spirit.jpg\" alt=\"fox_spirit.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[White Lion](https://flyffipedia.com/items/details/10710 \"White Lion Cage\")",
+              "content_cn": "[白狮](https://flyffipedia.com/items/details/10710 \"White Lion Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2024-11-21 ~ 2025-05-14`",
+              "content_cn": "`2024-11-21 ~ 2025-05-14`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/white_lion.jpg\" alt=\"white_lion.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "[Steambot](https://flyffipedia.com/items/details/15601 \"Steambot Cage\")",
+              "content_cn": "[尿壶](https://flyffipedia.com/items/details/15601 \"Steambot Cage\")",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "`2025-05-15 ~ 2025-06-11`",
+              "content_cn": "`2025-05-15 ~ 2025-06-11`",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./pet/transmutes/steambot.jpg\" alt=\"steambot.jpg\" width=\"400\"></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        },
+        {
+          "type": "html",
+          "html": "</details>"
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

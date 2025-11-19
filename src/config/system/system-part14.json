@@ -1,0 +1,71 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "content_cn": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "🥇 level gap": {
+      "title": "🥇 level gap",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/level_gap.png\" alt=\"level_gap.png\"/></div>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffdamagecalculator.js#L379 \"Flyffulator/src/flyff/flyffdamagecalculator.js\")"
+          ],
+          "quotes_cn": [
+            "来源:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffdamagecalculator.js#L379 \"Flyffulator/src/flyff/flyffdamagecalculator.js\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Flyffulator/src/assets/LevelDifferencePenalties.json](https://github.com/Frostiae/Flyffulator/blob/main/src/assets/LevelDifferencePenalties.json \"Flyffulator/src/assets/LevelDifferencePenalties.json\")"
+          ],
+          "quotes_cn": [
+            "来源:[Flyffulator/src/assets/LevelDifferencePenalties.json](https://github.com/Frostiae/Flyffulator/blob/main/src/assets/LevelDifferencePenalties.json \"Flyffulator/src/assets/LevelDifferencePenalties.json\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1333187382941585468/1333187382941585468 \"@navi2765 @Navi (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1333187382941585468/1333187382941585468 \"@navi2765 @Navi (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

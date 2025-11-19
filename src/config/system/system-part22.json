@@ -1,0 +1,99 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "content_cn": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "⏳ monster focus timer": {
+      "title": "⏳ monster focus timer",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Game Version 1.0.6 Patch Notes](https://universe.flyff.com/news/patchnotes106 \"Game Version 1.0.6 Patch Notes\")"
+          ],
+          "quotes_cn": [
+            "来源:[游戏版本1.0.6更新说明](https://universe.flyff.com/news/patchnotes106 \"游戏版本1.0.6更新说明\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Monster focus timer (the time they chase you without landing a hit) is now based on the number of monsters focusing the same player:",
+              "content_cn": "怪物仇恨计时器（它们在未命中的情况下追逐你的时间）现在基于同时关注同一玩家的怪物数量：",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "3 minutes for < 4 monsters",
+              "content_cn": "少于4只怪物时为3分钟",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "80 seconds for >= 4 and < 7 monsters",
+              "content_cn": "4-6只怪物时为80秒",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "50 seconds for >= 8 and < 13 monsters",
+              "content_cn": "8-12只怪物时为50秒",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "28 seconds for >= 14 monsters",
+              "content_cn": "14只及以上怪物时为28秒",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    }
+  }
+}

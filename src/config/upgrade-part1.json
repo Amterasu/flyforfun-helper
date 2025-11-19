@@ -1,0 +1,794 @@
+{
+  "title": "🚀 upgrade",
+  "title_cn": "🚀 升级",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "content_cn": "[🔝 返回顶部](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "text_cn": "🔝 返回顶部",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 upgrade details</summary>",
+      "html_cn": "<summary>📁 升级详情</summary>"
+    },
+    {
+      "type": "html",
+      "html": "<div align=\"center\">"
+    },
+    {
+      "type": "text",
+      "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=upgrade).**",
+      "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=upgrade)。**",
+      "links": [
+        {
+          "text": "Gothante",
+          "url": "https://gothante.wiki/?search=upgrade"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "</div>"
+    },
+    {
+      "type": "blockquote",
+      "quotes": [
+        "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/778936929902395392/975078940425207928 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+      ],
+      "quotes_cn": [
+        "来源:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/778936929902395392/975078940425207928 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "quotes": [
+        "source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 \"v1.2.0 Reborn is coming on March 13!\")"
+      ],
+      "quotes_cn": [
+        "来源:[v1.2.0 重生版本将于3月13日上线！](https://universe.flyff.com/news/reborn120 \"v1.2.0 Reborn is coming on March 13!\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "quotes": [
+        "source:[Reborn Expansion Flyff Universe Version 1.2.0](https://wcdn-universe.flyff.com/site/patch1_2_0.pdf \"Reborn Expansion Flyff Universe Version 1.2.0\")"
+      ],
+      "quotes_cn": [
+        "来源:[重生扩展包 Flyff Universe 1.2.0版本](https://wcdn-universe.flyff.com/site/patch1_2_0.pdf \"Reborn Expansion Flyff Universe Version 1.2.0\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "quotes": [
+        "source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 \"New Horizon Expansion (Flyff Universe Version 1.3.0)\")"
+      ],
+      "quotes_cn": [
+        "来源:[新地平线扩展包（Flyff Universe 1.3.0版本）](https://universe.flyff.com/news/newhorizonv1301 \"New Horizon Expansion (Flyff Universe Version 1.3.0)\")"
+      ]
+    },
+    {
+      "type": "blockquote",
+      "quotes": [
+        "source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+      ],
+      "quotes_cn": [
+        "来源:[麦迪加尔之战扩展包（Flyff Universe 1.4.0版本）](https://universe.flyff.com/news/battleformadrigal1400 \"Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)\")"
+      ]
+    }
+  ],
+  "subsections": {
+    "🎲 power dice": {
+      "title": "🎲 power dice",
+      "title_cn": "🎲 力量骰子",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=what+power+dice+and+upgrading+materials+do+i+need+for+which+upgrade).**",
+          "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=what+power+dice+and+upgrading+materials+do+i+need+for+which+upgrade)。**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=what+power+dice+and+upgrading+materials+do+i+need+for+which+upgrade"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./upgrade/power_dices.png\" alt=\"power_dices.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./upgrade/power_dice.jpg\" alt=\"power_dice.jpg\" width=\"500\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🧤 catcher": {
+      "title": "🧤 catcher",
+      "title_cn": "🧤 捕捉器",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "text",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=the+catchers).**",
+          "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=the+catchers)。**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=the+catchers"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./upgrade/catcher.jpg\" alt=\"catcher.jpg\" width=\"500\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "All catcher spawn:`达肯 3`, `雪地`.",
+              "content_cn": "所有捕捉器刷新点：`达肯 3`、`雪地`。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "No catcher spawn:`Coral Island`",
+              "content_cn": "无捕捉器刷新点：`Coral Island`（珊瑚岛）",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Collecting materials will be directly taken from your inventory, and don’t have to be placed in the upgrading window.",
+              "content_cn": "收集材料时会直接从你的背包中获取，无需放置到升级窗口中。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🥺 pity system": {
+      "title": "🥺 pity system",
+      "title_cn": "🥺 怜悯系统",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[@Insanive @Insanive (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1150940230736674857 \"@Insanive @Insanive (discord flyff universe)\")"
+          ],
+          "quotes_cn": [
+            "来源:[@Insanive @Insanive (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1150940230736674857 \"@Insanive @Insanive (discord flyff universe)\")"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "In reality, the upgrade rates are theoretically the same, but your chances of being very unlucky and failing way past the theoretical average number of attempts is much lower now.",
+              "content_cn": "实际上，理论上的升级概率是相同的，但现在你非常不幸且失败次数远超理论平均尝试次数的概率要低得多。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "理論上的升級率是相同的，但是你非常不幸並且失敗超過理論平均嘗試次數的機會，現在要低得多。"
+          ],
+          "quotes_cn": [
+            "理论上的升级率是相同的，但是你非常不幸并且失败超过理论平均尝试次数的机会，现在要低得多。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "The upgrade rate is still mathematically the same.",
+              "content_cn": "升级概率在数学层面上仍然是相同的。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "升級率在數學上仍然是相同的。"
+          ],
+          "quotes_cn": [
+            "升级率在数学上仍然是相同的。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "It is based on a simple `MarkovChain`, dramatically lowering the standard deviation.",
+              "content_cn": "它基于简单的`MarkovChain`（马尔可夫链），大幅降低了标准差。",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "它基於簡單的馬可夫鏈，大大降低了標準差。"
+          ],
+          "quotes_cn": [
+            "它基于简单的马尔可夫链，大大降低了标准差。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "With this system the standard deviation for a success is `+/- 17` upgrade attempts, instead of `+/- 49` upgrade attempts with the old system.",
+              "content_cn": "有了这个系统，成功的标准差为`+/- 17`次升级尝试，而旧系统为`+/- 49`次升级尝试。",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "對於憐憫系統，成功的標準差是 `+/- 17` 次升級嘗試次數，而不是舊系統的 `+/- 49` 次升級嘗試次數。"
+          ],
+          "quotes_cn": [
+            "对于怜悯系统，成功的标准差是 `+/- 17` 次升级尝试次数，而不是旧系统的 `+/- 49` 次升级尝试次数。"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</details></td></tr></table>"
+        }
+      ],
+      "subsections": {}
+    },
+    "🏹 weapon&armor upgrade": {
+      "title": "🏹 weapon&armor upgrade",
+      "title_cn": "🏹 武器和防具升级",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "text",
+          "content": "**The average number of attempts just shows whether you were lucky or not.**",
+          "content_cn": "**平均尝试次数仅能说明你是否幸运。**"
+        },
+        {
+          "type": "html",
+          "html": "<img src=\"./upgrade/weapon&armor_upgrade.png\" alt=\"weapon&armor_upgrade.png\"/></div>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./upgrade/chart/1,000,000%20Simulations%20Of%20Regular%20Weapon%20%2B10.png\" alt=\"1,000,000 Simulations Of Regular Weapon +10.png\" width=\"600\"/></div>"
+        }
+      ],
+      "subsections": {
+        "event": {
+          "title": "event",
+          "title_cn": "活动",
+          "content": [
+            {
+              "type": "blockquote",
+              "quotes": [
+                "source[@piccolo0002 @[GM] Piccolo (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/1076113591536717834 \"@piccolo0002 @[GM] Piccolo (discord flyff universe)\")"
+              ],
+              "quotes_cn": [
+                "来源[@piccolo0002 @[GM] Piccolo (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/1076113591536717834 \"@piccolo0002 @[GM] Piccolo (discord flyff universe)\")"
+              ]
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/weapon&armor_upgrade_event.png\" alt=\"weapon&armor_upgrade_event.png\"/></div>"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "**Enhanced Upgrade (Gear)** event is for upgrade with **Scroll of SProtect**, including weapons, armor and element upgrade (not Ultimates, Piercing, Jewelry, Cards).",
+                  "content_cn": "**强化升级（装备）** 活动适用于使用**SProtect卷轴**的升级，包括武器、防具和元素升级（不适用于终极装备、穿刺、首饰、卡片）。",
+                  "indent": 0
+                }
+              ]
+            }
+          ]
+        },
+        "upgrade level bonus": {
+          "title": "upgrade level bonus",
+          "title_cn": "升级等级加成",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>",
+              "html_cn": "<details><summary>详情</summary>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/upgrade_level_bonus.png\" alt=\"upgrade_level_bonus.png\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/weapon_attack_upgrade_bonuses.png\" alt=\"weapon_attack_upgrade_bonuses.png\"/></div>"
+            },
+            {
+              "type": "blockquote",
+              "quotes": [
+                "source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1218321541029167194 \"@frostiae @[Dev] Frostiae (discord flyff universe)\")"
+              ],
+              "quotes_cn": [
+                "来源:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1218321541029167194 \"@frostiae @[Dev] Frostiae (discord flyff universe)\")"
+              ]
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            },
+            {
+              "type": "html",
+              "html": "</details></td></tr></table>"
+            }
+          ]
+        }
+      }
+    },
+    "🆄🅻🆃🅸🅼🅰🆃🅴 ultimate": {
+      "title": "🆄🅻🆃🅸🅼🅰🆃🅴 ultimate",
+      "title_cn": "🆄🅻🆃🅸🅼🅰🆃🅴 终极装备",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>",
+          "html_cn": "<table><tr><td><details><summary>详情</summary>"
+        }
+      ],
+      "subsections": {
+        "ultimate weapon": {
+          "title": "ultimate weapon",
+          "title_cn": "终极武器",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>",
+              "html_cn": "<details><summary>详情</summary>"
+            },
+            {
+              "type": "blockquote",
+              "quotes": [
+                "source:[@tassel#0672 @[Mod CN] tassel (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1178910002065457202 \"@tassel#0672 @[Mod CN] tassel (discord flyff universe)\")"
+              ],
+              "quotes_cn": [
+                "来源:[@tassel#0672 @[Mod CN] tassel (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1178910002065457202 \"@tassel#0672 @[Mod CN] tassel (discord flyff universe)\")"
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "When upgrading Ultimate Weapons, it works conditionally, which means it will check success/failure first then decide whether it will be great or not.",
+                  "content_cn": "升级终极武器时，其机制是有条件的，即先判断成功或失败，然后再决定是否为完美升级。",
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/ultimate_weapon_upgrade.png\" alt=\"ultimate_weapon_upgrade.png\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Weapon%20%2B0%20to%20%2B5.png\" alt=\"1,000,000 Simulations Of Ultimate Weapon +0 to +5.png\" width=\"600\"/></div>"
+            },
+            {
+              "type": "blockquote",
+              "quotes": [
+                "source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1174954477112021042 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+              ],
+              "quotes_cn": [
+                "来源:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1174954477112021042 \"@bluechromed @[Dev] Blukie (discord flyff universe)\")"
+              ]
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            }
+          ]
+        },
+        "ultimate weapon event": {
+          "title": "ultimate weapon event",
+          "title_cn": "终极武器活动",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>",
+              "html_cn": "<details><summary>详情</summary>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/ultimate_weapon_upgrade_event.png\" alt=\"ultimate_weapon_upgrade_event.png\"/></div>"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "**Enhance Upgrade Event (Ultimate)** applies only for **Ultimate Weapons & Accessories**.",
+                  "content_cn": "**终极强化升级活动**仅适用于**终极武器和饰品**。",
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            }
+          ]
+        },
+        "regular weapon": {
+          "title": "regular weapon",
+          "title_cn": "常规武器",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>",
+              "html_cn": "<details><summary>详情</summary>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/ultimate_weapons.png\" alt=\"ultimate_weapons.png\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            }
+          ]
+        },
+        "⚜️ fwc 2025 golden weapon": {
+          "title": "⚜️ fwc 2025 golden weapon",
+          "title_cn": "⚜️ 2025年FWG黄金武器",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>",
+              "html_cn": "<details><summary>详情</summary>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/fwc2025_golden_ultimate_weapons.png\" alt=\"fwc2025_golden_ultimate_weapons.png\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            }
+          ]
+        },
+        "reroll weapons": {
+          "title": "reroll weapons",
+          "title_cn": "重铸武器",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>",
+              "html_cn": "<details><summary>详情</summary>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\">"
+            },
+            {
+              "type": "text",
+              "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=how+to+reroll).**",
+              "content_cn": "**更多信息请参考 [Gothante](https://gothante.wiki/?search=how+to+reroll)。**",
+              "links": [
+                {
+                  "text": "Gothante",
+                  "url": "https://gothante.wiki/?search=how+to+reroll"
+                }
+              ]
+            },
+            {
+              "type": "html",
+              "html": "</div>"
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            }
+          ]
+        },
+        "ultimate jewelry": {
+          "title": "ultimate jewelry",
+          "title_cn": "终极首饰",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>",
+              "html_cn": "<details><summary>详情</summary>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/ultimate_jewelry.png\" alt=\"ultimate_jewelry.png\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/ultimate_jewelry_upgrade.png\" alt=\"ultimate_jewelry_upgrade.png\"/></div>"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "Ultimate Jewelry provides the following set effects:",
+                  "content_cn": "终极首饰提供以下套装效果：",
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "<img src=\"https://api.flyff.com/image/item/genjewrinchampion.png\" alt=\"Champion's Rings\"/> Champion's Set :",
+                  "content_cn": "<img src=\"https://api.flyff.com/image/item/genjewrinchampion.png\" alt=\"Champion's Rings\"/> 嗜血者套装：",
+                  "indent": 1
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "(4/5) Set Effect : Critical Chance +10%",
+                  "content_cn": "(4/5) 套装效果：暴击率 +10%",
+                  "indent": 2
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "(5/5) Set Effect : Attack +5%, Block Penetration +10%",
+                  "content_cn": "(5/5) 套装效果：攻击 +5%，破甲 +10%",
+                  "indent": 2
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "<img src=\"https://api.flyff.com/image/item/genjewrinmarksman.png\" alt=\"Marksman's Rings\"/> Marksman's Set :",
+                  "content_cn": "<img src=\"https://api.flyff.com/image/item/genjewrinmarksman.png\" alt=\"Marksman's Rings\"/> 神射手套装：",
+                  "indent": 1
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "(4/5) Set Effect : HP Recovery After Kill +750",
+                  "content_cn": "(4/5) 套装效果：击杀后生命值恢复 +750",
+                  "indent": 2
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "(5/5) Set Effect : Attack +5%, Block Penetration +10%",
+                  "content_cn": "(5/5) 套装效果：攻击 +5%，破甲 +10%",
+                  "indent": 2
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "<img src=\"https://api.flyff.com/image/item/genjewrindefender.png\" alt=\"Defender's Rings\"/> Defender's Set :",
+                  "content_cn": "<img src=\"https://api.flyff.com/image/item/genjewrindefender.png\" alt=\"Defender's Rings\"/> 圣骑士套装：",
+                  "indent": 1
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "(4/5) Set Effect : Block +10%",
+                  "content_cn": "(4/5) 套装效果：格挡 +10%",
+                  "indent": 2
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "(5/5) Set Effect : Magic Defense +5%, Critical Resist +10%",
+                  "content_cn": "(5/5) 套装效果：魔法防御 +5%，暴击抵抗 +10%",
+                  "indent": 2
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "<img src=\"https://api.flyff.com/image/item/genjewrinadept.png\" alt=\"Adept's Rings\"/> Adept's Set :",
+                  "content_cn": "<img src=\"https://api.flyff.com/image/item/genjewrinadept.png\" alt=\"Adept's Rings\"/> 天侍神套装：",
+                  "indent": 1
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "(4/5) Set Effect : MP Recovery After Kill +500",
+                  "content_cn": "(4/5) 套装效果：击杀后魔法值恢复 +500",
+                  "indent": 2
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "(5/5) Set Effect : Magic Attack +5%, Decreased Casting Time +10%",
+                  "content_cn": "(5/5) 套装效果：魔法攻击 +5%，施法时间减少 +10%",
+                  "indent": 2
+                }
+              ]
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Jewelry%20%2B5.png\" alt=\"1,000,000 Simulations Of Ultimate Jewelry +5.png\" width=\"600\"/></div>"
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            }
+          ]
+        },
+        "ultimate jewelry event": {
+          "title": "ultimate jewelry event",
+          "title_cn": "终极首饰活动",
+          "content": [
+            {
+              "type": "html",
+              "html": "<details><summary>details</summary>"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./upgrade/ultimate/ultimate_jewelry_upgrade_event.png\" alt=\"ultimate_jewelry_upgrade_event.png\"/></div>"
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "**Enhance Upgrade Event (Ultimate)** applies only for **Ultimate Weapons & Accessories**.",
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            },
+            {
+              "type": "html",
+              "html": "</details></td></tr></table>"
+            }
+          ]
+        }
+      }
+    },
+"🦾 new horizon equipment sets": {
+    "title": "new horizon equipment sets",
+    "content": [
+      {
+        "type": "html",
+        "html": "<table><tr><td><details><summary>详情</summary>"
+      },
+      {
+        "type": "html",
+        "html": "<div align=\"center\"><img src=\"./upgrade/new_horizon_equipment_sets.png\" alt=\"new_horizon_equipment_sets.png\"/></div>"
+      },
+      {
+        "type": "html",
+        "html": "</details></td></tr></table>"
+      }
+    ],
+    "subsections": {}
+  },
+  "💎 battle for madrigal ultimate jewels": {
+    "title": "battle for madrigal ultimate jewels",
+    "content": [
+      {
+        "type": "html",
+        "html": "<table><tr><td><details><summary>详情</summary>"
+      },
+      {
+        "type": "html",
+        "html": "<div align=\"center\"><img src=\"./upgrade/ultimate_jewels.png\" alt=\"ultimate_jewels.png\"/></div>"
+      },
+      {
+        "type": "html",
+        "html": "<div align=\"center\"><img src=\"./upgrade/ultimate_jewels_fusion.png\" alt=\"ultimate_jewels_fusion.png\"/></div>"
+      },
+      {
+        "type": "html",
+        "html": "</details></td></tr></table>"
+      }
+    ],
+    "subsections": {}
+  }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "title": "⚙️ system",
+  "content": [
+    {
+      "type": "text",
+      "content": "[🔝 Back to top](#universe-document)",
+      "links": [
+        {
+          "text": "🔝 Back to top",
+          "url": "#universe-document"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<details open>"
+    },
+    {
+      "type": "html",
+      "html": "<summary>📁 system details</summary>"
+    }
+  ],
+  "subsections": {
+    "👑 master&hero quests": {
+      "title": "👑 master&hero quests",
+      "content": [
+        {
+          "type": "html",
+          "html": "<table><tr><td><details><summary>details</summary>"
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "**For more information please refer to [Gothante](https://gothante.wiki/?search=optional+master%2Fhero+quests).**",
+          "links": [
+            {
+              "text": "Gothante",
+              "url": "https://gothante.wiki/?search=optional+master%2Fhero+quests"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "html": "</div>"
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 \"v1.2.0 Reborn is coming on March 13!\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Reborn Expansion Flyff Universe Version 1.2.0](https://wcdn-universe.flyff.com/site/patch1_2_0.pdf \"Reborn Expansion Flyff Universe Version 1.2.0\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 \"New Horizon Expansion (Flyff Universe Version 1.3.0)\")"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 \"Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)\")"
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div align=\"center\"><img src=\"./system/quest/master_hero_quests.png\" alt=\"master_hero_quests.png\"/></div>"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "Once you complete all of the Optional Master quest, you can try the new New Optional Hero quest at  [Master Quests] Leila. This quest will ask you to level up from `120` to `125` and gather `100` Symbols of Shade.",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "While on a master and hero quest, there are some changes to your character:",
+              "indent": 0
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "You have a 50% experience modifier.",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "從怪物身上獲取的經驗減半 (`-50%`)。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "You have a 50% drop rate penalty.",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "掉落率減半 (`-50%`)。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "You can only efficiently share experience with other players on the same master quest.",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "只能與同一主線任務的其他玩家分享經驗。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "You cannot enter dungeons.",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "不能進入副本(副本)。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "You cannot enter level 60 or level 80 guild siege.",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "不能進入 `60`、`80` 級公會戰。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "You can still use your skills and equipment from your original level.",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "可以使用原本等級的裝備和技能。"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "content": "**<font color=#FF0000>The experience sharing level gap for master characters is 9.</font>**",
+              "indent": 1
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "quotes": [
+            "在大師任務中，經驗分享等級差距為 `9` 級。"
+          ]
+        }
+      ],
+      "subsections": {
+        "master cloak": {
+          "title": "master cloak",
+          "content": [
+            {
+              "type": "blockquote",
+              "quotes": [
+                "source:[@gm_shadow [GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/1095975334270226492 \"@gm_shadow [GM] Shadow (discord flyff universe)\")"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": "You will be able to get the Cloak that can be seen on the left of the image attached after completing the quest.",
+              "content_cn": "完成任务后，奖励大师披风（左图）。"
+            },
+            {
+              "type": "paragraph",
+              "content": "Those who have completed the Optional Master Quest during the event period will get a special version of the Cloak seen on the right.",
+              "content_cn": "在活动期间完成可选大师任务的玩家将获得特殊的披风（右图）。"
+            },
+            {
+              "type": "html",
+              "html": "<div align=\"center\"><img src=\"./system/quest/master_quest_cloak.png\" alt=\"master_quest_cloak.png\"/></div>"
+            }
+          ]
+        },
+        "hero reward": {
+          "title": "hero reward",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "Becoming a **Hero 120 - 125** will give you a unique badge and a permanent free stat page (`3` stat pages in total if a Battle Pass is active).",
+                  "content_cn": "成为**英雄120 - 125**将获得独特的徽章和永久免费的属性页面（如果有战斗通行证，则总共`3`个属性页面）。",
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "Completing the **Quest Hero 125 - 140** will give you a unique badge and a Card and Dice Bag that allows you to store up to 10 slots.",
+                  "content_cn": "完成**英雄125 - 140**任务将获得独特的徽章和卡牌和骰子袋，允许你存储最多`10`个槽位。",
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                {
+                  "content": "Completing the **Quest Hero 140 - 160** will give you a unique badge, Extended Motions (contains 9 motions for your character) and Dark Dragon Set.",
+                  "content_cn": "完成**英雄140 - 160**任务将获得独特的徽章、扩展动作（包含`9`个动作）和黑暗龙套装。",
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "type": "html",
+              "html": "</details></td></tr></table>"
+            },
+            {
+              "type": "html",
+              "html": "</details>"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
