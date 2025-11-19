@@ -1,6 +1,5 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { DocNode } from '../types/doc'
-import { SecondarySidebar } from './SecondarySidebar'
 import { DocNodeItem } from './DocNodeItem'
 import { Outlet } from 'react-router-dom'
 import './DocStage.less'
@@ -16,15 +15,9 @@ type DocStageProps = {
 }
 
 export const DocStage = ({
-  activeSection,
   currentSection,
-  activeChildId,
-  searchTerm: _searchTerm,
-  onSectionChange: _onSectionChange,
-  onChildChange: _onChildChange,
-  onSearchChange
+  activeChildId
 }: DocStageProps) => {
-  const [searchTerm, setSearchTerm] = useState('')
   const currentChild = useMemo(
     () => currentSection?.children?.find((child) => child.id === activeChildId),
     [activeChildId, currentSection]
@@ -33,37 +26,13 @@ export const DocStage = ({
   const hasSecondaryNav = !!currentSection?.children?.length
   const filteredNodes = useMemo(() => {
     if (!hasSecondaryNav || !currentChild?.children) return currentChild?.children
-    if (!searchTerm.trim()) return currentChild.children
-    const q = searchTerm.toLowerCase()
-    return currentChild.children.filter((node) => node.title.toLowerCase().includes(q))
-  }, [currentChild, hasSecondaryNav, searchTerm])
+    return currentChild.children
+  }, [currentChild, hasSecondaryNav])
 
   return (
     <section className="doc-stage">
-      <div className="doc-stage-header">
-        <div>
-          <p className="eyebrow">飞飞百科</p>
-        </div>
-        <div className="doc-search">
-          <input
-            type="text"
-            placeholder="搜索关键词"
-            value={searchTerm}
-            onChange={(e) => {
-              const value = e.target.value
-              setSearchTerm(value)
-              onSearchChange(value)
-            }}
-          />
-        </div>
-      </div>
-
       <section className="doc-content">
         <div className="doc-content-layout">
-          <SecondarySidebar
-            section={currentSection}
-            activeChildId={activeChildId}
-          />
           <div className="doc-content-main">
             <header>
               <p className="eyebrow">{currentSection?.title ?? '子导航'}</p>

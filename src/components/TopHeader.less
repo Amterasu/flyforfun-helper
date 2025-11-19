@@ -1,50 +1,29 @@
 @import '../styles/variables.less';
 
 .top-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 40;
+  // 不再固定悬浮，改为正常定位
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: @spacing-lg;
-  padding: 12px clamp(20px, 5vw, 72px);
-  height: 80px;
-  max-height: 80px;
+  gap: @spacing-md;
+  padding: @spacing-md clamp(20px, 5vw, 72px);
+  min-height: 60px;
   box-sizing: border-box;
-  border-radius: 0;
-  border-bottom: 1px solid rgba(244, 221, 138, 0.35);
-  backdrop-filter: blur(14px);
-  background: linear-gradient(130deg, rgba(19, 23, 35, 0.95), rgba(9, 11, 20, 0.9));
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  transition: border-color @transition-fast, box-shadow @transition-fast;
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: auto 24px 0;
-    height: 2px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, transparent, rgba(244, 221, 138, 0.8), transparent);
-    opacity: 0.7;
-    pointer-events: none;
-  }
-
-  &:hover {
-    border-bottom-color: rgba(244, 221, 138, 0.6);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
-  }
+  // 纯色背景，完全不透明
+  background: rgb(19, 23, 35);
+  margin-bottom: @spacing-md;
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: @text-light;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.2;
+  position: relative;
+  z-index: 1;
 
   .brand-link {
     display: flex;
@@ -52,11 +31,17 @@
     gap: 12px;
     text-decoration: none;
     color: inherit;
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   strong {
     font-size: 0.95rem;
     letter-spacing: 0.04em;
+    font-weight: 600;
   }
 
   span {
@@ -68,21 +53,25 @@
 .brand-logo {
   width: 75px;
   height: 50px;
-  border-radius: 12px;
-  padding: 4px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 5px;
+  // 纯色背景，完全不透明
+  background: rgb(26, 30, 46);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: transform 0.2s ease;
 
   img {
     width: 70px;
     height: 45px;
     object-fit: contain;
-    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.45));
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
   }
 }
 
@@ -95,10 +84,15 @@
   display: inline-flex;
   border-radius: @border-radius-full;
   padding: 6px;
-  background: rgba(255, 255, 255, 0.08);
+  // 纯色背景，完全不透明
+  background: rgb(26, 30, 46);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(12px);
-  gap: 6px;
+  gap: 4px;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
 
   a {
     display: inline-flex;
@@ -106,25 +100,34 @@
     justify-content: center;
     border: none;
     background: transparent;
-    color: #c0c5df;
+    color: rgba(255, 255, 255, 0.7);
     padding: 10px 22px;
     border-radius: @border-radius-full;
     cursor: pointer;
     font-weight: 600;
+    font-size: 0.9rem;
     letter-spacing: 0.02em;
-    transition: background @transition-fast, color @transition-fast;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
     position: relative;
+    white-space: nowrap;
 
     &.active {
-      background: linear-gradient(120deg, @accent-strong, @accent-strong-dark);
-      color: @text-dark;
-      box-shadow: 0 12px 24px rgba(255, 217, 77, 0.35);
+      // 选中效果更明显，完全不透明
+      background: rgb(255, 217, 77);
+      color: rgb(26, 26, 46);
+      font-weight: 700;
+      box-shadow: 
+        0 4px 16px rgba(255, 217, 77, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      transform: translateY(-1px);
     }
 
     &:hover:not(.active) {
-      background: rgba(255, 255, 255, 0.12);
-      color: @text-light;
+      // 悬停效果，完全不透明
+      background: rgb(40, 44, 60);
+      color: rgb(255, 255, 255);
+      transform: translateY(-1px);
     }
   }
 }
@@ -133,10 +136,8 @@
   .top-header {
     flex-direction: column;
     gap: @spacing-sm;
-    padding: 10px 16px;
-    height: auto;
-    max-height: none;
-    min-height: 80px;
+    padding: 12px 16px;
+    min-height: auto;
   }
 
   .brand {
@@ -158,10 +159,11 @@
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 6px;
     
     a {
       padding: 8px 16px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
   }
 }

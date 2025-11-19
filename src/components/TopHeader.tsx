@@ -29,6 +29,8 @@ export const TopHeader = ({ activeTab }: TopHeaderProps) => {
         return '/assistant/fashion-awakening'
       case '新闻':
         return '/news'
+      case '代练':
+        return '/coaching'
       default:
         return '/'
     }

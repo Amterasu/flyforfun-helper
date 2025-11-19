@@ -1,62 +1,118 @@
-import React from 'react'
-import { BaikeImage } from '../../../../components/BaikeImage'
+import React, { useMemo } from "react";
+import ReactECharts from "echarts-for-react";
+import type { EChartsOption } from "echarts";
+import { OrderedList } from "../../../../components/OrderedList";
+import "./index.less";
 
 export const OneV1Bonus = () => {
+  const listItems = [
+    "等级 30 及以上的低阶怪物、普通怪物和队长怪物，被单一目标的攻击或技能造成至少 80% 的击杀伤害后，其经验值与掉落率将获得提升。",
+    "目前 30 级怪物的经验与掉落率提升幅度为 20%，并随怪物等级递增，在怪物等级 120~140 区间时提升至 35%。",
+    "新增 单点 模式下的经验值与掉落奖励等级机制。此前该奖励固定为 35%，现调整为从 141 级时的 90.4423% 逐步提升至 160 级时的 102.5%（161 级及以上时保持 102.5%）。",
+    "单点 模式的经验与掉落奖励基于怪物等级。这意味着，只要您的实力足以挑战 141 级及以上的怪物，即可享受该经验加成。",
+  ];
+
+  const option: EChartsOption = useMemo(
+    () => ({
+      title: {
+        text: "1v1 经验值与掉落率加成",
+        left: "center",
+        textStyle: { fontSize: 18, fontWeight: "bold" },
+      },
+      tooltip: {
+        trigger: "axis",
+        formatter: (params) => {
+          const param = Array.isArray(params) ? params[0] : params;
+          if (param && typeof param === 'object' && 'name' in param && 'value' in param) {
+            return `等级: ${param.name}<br/>倍率: ${param.value}`;
+          }
+          return '';
+        },
+      },
+      grid: {
+        left: "10%",
+        right: "8%",
+        bottom: "10%",
+        top: "15%",
+        containLabel: true,
+      },
+      xAxis: {
+        type: "category",
+        data: ["lv30", "40", "60", "80", "100", "120", "141", "160", "165"],
+        axisLabel: { interval: 0, fontSize: 12 },
+        axisLine: { show: true, lineStyle: { color: "#4a90e2" } },
+        name: "怪物等级",
+        nameLocation: "middle",
+        nameGap: 30,
+      },
+      yAxis: {
+        type: "value",
+        min: 1.2,
+        max: 2.1,
+        interval: 0.2,
+        axisLabel: { formatter: "{value}" },
+        name: "倍率",
+        nameLocation: "middle",
+        nameGap: 50,
+        axisLine: { show: true, lineStyle: { color: "#4a90e2" } },
+      },
+      series: [
+        {
+          name: "倍率",
+          type: "line",
+          data: [1.2, 1.23, 1.26, 1.29, 1.32, 1.35, 1.904423, 2.025, 2.025],
+          symbol: "circle",
+          symbolSize: 8,
+          lineStyle: { width: 3, color: "#4a90e2" },
+          itemStyle: { color: "#4a90e2", borderColor: "#fff", borderWidth: 2 },
+          areaStyle: {
+            color: {
+              type: "linear",
+              x: 0,
+              y: 0,
+              x2: 0,
+              y2: 1,
+              colorStops: [
+                { offset: 0, color: "rgba(74, 144, 226, 0.3)" },
+                { offset: 1, color: "rgba(74, 144, 226, 0.05)" },
+              ],
+            },
+          },
+          markPoint: {
+            data: [
+              { name: "1.2", value: "1.2", xAxis: 0, yAxis: 1.2 },
+              { name: "1.35", value: "1.35", xAxis: 5, yAxis: 1.35 },
+              { name: "1.904", value: "1.904", xAxis: 6, yAxis: 1.904423 },
+              { name: "2.025", value: "2.025", xAxis: 7, yAxis: 2.025 },
+            ],
+            label: { show: true, position: "top", fontSize: 11 },
+            itemStyle: { color: "#4a90e2" },
+          },
+          markLine: {
+            data: [
+              { xAxis: 0, lineStyle: { type: "dashed", color: "#ff7875", width: 1 } },
+              { xAxis: 5, lineStyle: { type: "dashed", color: "#ffa940", width: 1 } },
+              { xAxis: 6, lineStyle: { type: "dashed", color: "#ffa940", width: 1 } },
+              { xAxis: 7, lineStyle: { type: "dashed", color: "#52c41a", width: 1 } },
+              { xAxis: 8, lineStyle: { type: "dashed", color: "#faad14", width: 1 } },
+            ],
+          },
+        },
+      ],
+    }),
+    []
+  );
+
   return (
     <div className="baike-content">
-    
-    <blockquote key={1} className="baike-blockquote">
-      <p key={0}>来源:<a href="https://universe.flyff.com/news/patchnotes113 Game Version 1.1.3 Patch Notes" target="_blank" rel="noopener noreferrer">Game Version 1.1.3 Patch Notes</a></p>
-    </blockquote>
-    <blockquote key={2} className="baike-blockquote">
-      <p key={0}>来源:[📣patch-notes @gm_shadow @[GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/959370780666396703/1030383740632965120 📣patch-notes @gm_shadow @[GM] Shadow (discord flyff universe))</p>
-    </blockquote>
-    <blockquote key={3} className="baike-blockquote">
-      <p key={0}>来源:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1177176494221566062 @bluechromed @[Dev] Blukie (discord flyff universe))</p>
-    </blockquote>
-    <blockquote key={4} className="baike-blockquote">
-      <p key={0}>来源:<a href="https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffexperiencecalculator.js#L98 getSingleTargetFactor(" target="_blank" rel="noopener noreferrer">getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js</a> Flyffulator/src/flyff/flyffexperiencecalculator.js")</p>
-    </blockquote>
-    <div className="baike-image-container" key={5}>
-      <BaikeImage key={0} src="/system/experience_bonus_1v1.png" alt="experience_bonus_1v1.png" width={800} maxWidth="100%" />
+      <div className="baike-chart-container">
+        <ReactECharts
+          option={option}
+          style={{ height: "500px", width: "100%" }}
+          opts={{ renderer: "canvas" }}
+        />
+      </div>
+      <OrderedList items={listItems} variant="spacious" />
     </div>
-    <ul key={6} className="baike-list">
-        <li key={0}>游戏新机制：低阶怪物、普通怪物和队长怪物等级 <code>30+</code> 被单一目标攻击和技能造成的伤害至少 <code>80%</code> 击杀后，经验值和掉落率都会增加。</li>
-    </ul>
-    <blockquote key={7} className="baike-blockquote">
-      <p key={0}>怪物等级：小型、普通、队长。</p>
-    </blockquote>
-    <blockquote key={8} className="baike-blockquote">
-      <p key={0}>遊戲新機制：<code>30</code> 級以上的低階怪物、普通怪物、隊長怪物被單一目標攻擊和技能造成的傷害至少 <code>80%</code> 擊殺後，經驗值和掉落率都會增加。</p>
-    </blockquote>
-    <ul key={9} className="baike-list">
-        <li key={0}>目前 <code>30</code> 级怪物的经验和掉落率增加为 <code>20%</code>，并逐渐增加，对于怪物等级 <code>120 ~ 140</code> 达到 <code>35%</code>。</li>
-    </ul>
-    <blockquote key={10} className="baike-blockquote">
-      <p key={0}>目前 <code>30</code> 級怪物的經驗和掉落率增加為 <code>20%</code>，並逐漸增加，對於怪物等級 <code>120 ~ 140</code> 達到 <code>35%</code>。</p>
-    </blockquote>
-    <blockquote key={11} className="baike-blockquote">
-      <p key={0}>来源:<a href="https://universe.flyff.com/news/patchnotes131 Game Version 1.3.1 Patch Notes" target="_blank" rel="noopener noreferrer">Game Version 1.3.1 Patch Notes</a></p>
-    </blockquote>
-    <blockquote key={12} className="baike-blockquote">
-      <p key={0}>来源:[📣patch-notes @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/959370780666396703/1177171087008727120 📣patch-notes @wemadeconnect @[GM] Pang (discord flyff universe))</p>
-    </blockquote>
-    <ul key={13} className="baike-list">
-        <li key={0}>增加了新等级的 <code>1v1</code> 经验值和掉落奖励。之前是 <code>35%</code>，现在从等级 <code>141</code> 时的 <code>90.4423%</code> 到 <code>160</code> 时的 <code>102.5%</code>。(在 <code>161</code> 以上，仍为 <code>102.5%</code>。)</li>
-    </ul>
-    <blockquote key={14} className="baike-blockquote">
-      <p key={0}>增加了新等級的 <code>1v1</code> 經驗值和掉落獎勵。之前是 <code>35%</code>，現在從等級 <code>141</code> 時的 <code>90.4423%</code> 到 <code>160</code> 時的 <code>102.5%</code>。(在 <code>161</code> 以上，仍為 <code>102.5%</code>。)</p>
-    </blockquote>
-    <blockquote key={15} className="baike-blockquote">
-      <p key={0}>来源:<a href="https://discord.com/channels/778915844070834186/1000058902576119878/1177233268349870182 @navi2765 @Navi (discord flyff universe" target="_blank" rel="noopener noreferrer">@navi2765 @Navi (discord flyff universe)</a>")</p>
-    </blockquote>
-    <ul key={16} className="baike-list">
-        <li key={0}><code>1v1</code> 经验值和掉落奖励基于怪物等级。这意味着，只要您足够强大，可以对抗 <code>141</code> 级及以上的怪物，您就可以利用此经验值增加。</li>
-    </ul>
-    <blockquote key={17} className="baike-blockquote">
-      <p key={0}><code>1v1</code> 經驗值和掉落獎勵基於怪物等級。這意味著，只要您足夠強大，可以對抗 <code>141</code> 級及以上的怪物，您就可以利用此經驗值增加。</p>
-    </blockquote>
-    
-    </div>
-  )
-}
+  );
+};

@@ -9,37 +9,6 @@ import configData from '../config/config.json'
 import indexData from '../config/index.json'
 import rootContentData from '../config/root-content.json'
 import communityData from '../config/community.json'
-// 导入 system 的所有部分（拆分后的文件）
-import systemPart1Data from '../config/system/system-part1.json'
-import systemPart2Data from '../config/system/system-part2.json'
-import systemPart3Data from '../config/system/system-part3.json'
-import systemPart4Data from '../config/system/system-part4.json'
-import systemPart5Data from '../config/system/system-part5.json'
-import systemPart6Data from '../config/system/system-part6.json'
-import systemPart7Data from '../config/system/system-part7.json'
-import systemPart8Data from '../config/system/system-part8.json'
-import systemPart9Data from '../config/system/system-part9.json'
-import systemPart10Data from '../config/system/system-part10.json'
-import systemPart11Data from '../config/system/system-part11.json'
-import systemPart12Data from '../config/system/system-part12.json'
-import systemPart13Data from '../config/system/system-part13.json'
-import systemPart14Data from '../config/system/system-part14.json'
-import systemPart15Data from '../config/system/system-part15.json'
-import systemPart16Data from '../config/system/system-part16.json'
-import systemPart17Data from '../config/system/system-part17.json'
-import systemPart18Data from '../config/system/system-part18.json'
-import systemPart19Data from '../config/system/system-part19.json'
-import systemPart20Data from '../config/system/system-part20.json'
-import systemPart21Data from '../config/system/system-part21.json'
-import systemPart22Data from '../config/system/system-part22.json'
-import systemPart23Data from '../config/system/system-part23.json'
-import systemPart24Data from '../config/system/system-part24.json'
-import systemPart25Data from '../config/system/system-part25.json'
-import systemPart26Data from '../config/system/system-part26.json'
-import systemPart27Data from '../config/system/system-part27.json'
-import systemPart28Data from '../config/system/system-part28.json'
-import systemPart29Data from '../config/system/system-part29.json'
-import systemPart30Data from '../config/system/system-part30.json'
 import formulaData from '../config/formula.json'
 import upgradePart1Data from '../config/upgrade-part1.json'
 import upgradePart2Data from '../config/upgrade-part2.json'
@@ -53,80 +22,11 @@ const index = indexData as ConfigIndex
 const rootContent = rootContentData as ContentItem[]
 const community = communityData as unknown as Section
 
-// 合并 system 的所有部分
-const systemParts = [
-  systemPart1Data as Section,
-  systemPart2Data as Section,
-  systemPart3Data as Section,
-  systemPart4Data as Section,
-  systemPart5Data as Section,
-  systemPart6Data as Section,
-  systemPart7Data as Section,
-  systemPart8Data as Section,
-  systemPart9Data as Section,
-  systemPart10Data as Section,
-  systemPart11Data as Section,
-  systemPart12Data as Section,
-  systemPart13Data as Section,
-  systemPart14Data as Section,
-  systemPart15Data as Section,
-  systemPart16Data as Section,
-  systemPart17Data as Section,
-  systemPart18Data as Section,
-  systemPart19Data as Section,
-  systemPart20Data as Section,
-  systemPart21Data as Section,
-  systemPart22Data as Section,
-  systemPart23Data as Section,
-  systemPart24Data as Section,
-  systemPart25Data as Section,
-  systemPart26Data as Section,
-  systemPart27Data as Section,
-  systemPart28Data as Section,
-  systemPart29Data as Section,
-  systemPart30Data as Section
-]
-
-// 合并所有子章节
-const allSubsections: Record<string, Section> = {}
-const largeSectionKey = '💯 level reach rewards'
-let mergedLargeSection: Section | null = null
-
-systemParts.forEach((part) => {
-  if (!part.subsections) return
-  
-  Object.entries(part.subsections).forEach(([key, subsection]) => {
-    // 如果是拆分的大章节，合并其内容
-    if (key === largeSectionKey) {
-      if (!mergedLargeSection) {
-        mergedLargeSection = {
-          title: subsection.title,
-          content: [],
-          subsections: subsection.subsections || {}
-        }
-      }
-      // 合并内容
-      if (subsection.content && Array.isArray(subsection.content)) {
-        mergedLargeSection.content.push(...subsection.content)
-      }
-    } else {
-      // 普通子章节，直接添加（避免重复）
-      if (!allSubsections[key]) {
-        allSubsections[key] = subsection
-      }
-    }
-  })
-})
-
-// 如果合并了大章节，添加到所有子章节中
-if (mergedLargeSection) {
-  allSubsections[largeSectionKey] = mergedLargeSection
-}
-
+// 创建一个空的 system section（内容已转换为 HTML 组件）
 const system: Section = {
-  title: systemParts[0].title,
-  content: systemParts[0].content,
-  subsections: allSubsections
+  title: '⚙️ system',
+  content: [],
+  subsections: {}
 }
 
 const formula = formulaData as Section

@@ -1,0 +1,31 @@
+.baike-content {
+  .baike-chart-container {
+    margin: 32px 0;
+    padding: 24px;
+    // 现代化玻璃态效果
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    // 响应式设计
+    @media (max-width: 768px) {
+      padding: 16px;
+      margin: 24px 0;
+    }
+
+    @media (max-width: 480px) {
+      padding: 12px;
+      margin: 20px 0;
+    }
+  }
+}

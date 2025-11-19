@@ -9,6 +9,7 @@ import { BaikePage } from './pages/BaikePage'
 import { MarkdownContent } from './components/MarkdownContent'
 import { AssistantStage } from './components/assistant/AssistantStage'
 import { PlaceholderBoard } from './components/PlaceholderBoard'
+import { CoachingPage } from './pages/CoachingPage'
 import { docTree } from './constants'
 import type { MainNav } from './types/doc'
 
@@ -36,6 +37,7 @@ function App() {
     if (path.startsWith('/community')) return '社区'
     if (path.startsWith('/assistant')) return '助手'
     if (path.startsWith('/news')) return '新闻'
+    if (path.startsWith('/coaching')) return '代练'
     if (path.startsWith('/baike') || path === '/') return '飞飞百科'
     return '飞飞百科'
   }, [location.pathname])
@@ -123,6 +125,16 @@ function App() {
             element={
               <div className="doc-wrapper">
                 <PlaceholderBoard title="新闻" />
+              </div>
+            }
+          />
+
+          {/* 代练路由 */}
+          <Route
+            path="/coaching"
+            element={
+              <div className="doc-wrapper">
+                <CoachingPage />
               </div>
             }
           />

@@ -23,8 +23,8 @@ export const SecondarySidebar = ({ section, activeChildId }: SecondarySidebarPro
   }
 
   return (
-    <aside className="secondary-sidebar">
-      <nav className="secondary-nav-list">
+    <nav className="secondary-nav-bar">
+      <div className="secondary-nav-scroll">
         {section.children.map((child) => {
           const isActive = child.id === activeChildId
           const path = getChildPath(child.id)
@@ -36,13 +36,13 @@ export const SecondarySidebar = ({ section, activeChildId }: SecondarySidebarPro
             >
               <span className="nav-item-text">{child.title}</span>
               {child.children && (
-                <small className="nav-item-count">{child.children.length}</small>
+                <span className="nav-item-badge">{child.children.length}</span>
               )}
             </Link>
           )
         })}
-      </nav>
-    </aside>
+      </div>
+    </nav>
   )
 }
 

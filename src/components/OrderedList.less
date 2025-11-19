@@ -1,0 +1,62 @@
+// 有序列表组件样式 - 现代化玻璃态效果
+.baike-ordered-list {
+  margin: 24px 0;
+  padding-left: 36px;
+  list-style: none;
+  counter-reset: baike-counter;
+
+  li {
+    counter-increment: baike-counter;
+    margin: 16px 0;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    padding-left: 32px;
+    font-size: 1.05rem;
+    
+    // 自定义序号样式 - 现代化玻璃态效果
+    &::before {
+      content: counter(baike-counter) '.';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: rgba(255, 217, 77, 0.9);
+      font-weight: 700;
+      font-size: 1.15em;
+      line-height: 1.85;
+      min-width: 28px;
+      text-align: right;
+    }
+    
+    // 列表项内的段落
+    p {
+      margin: 8px 0;
+    }
+  }
+
+  // 宽松间距变体
+  &--spacious {
+    li {
+      margin: 20px 0;
+      padding-left: 36px;
+      
+      &::before {
+        min-width: 32px;
+      }
+    }
+  }
+}
+
+// 在 baike-content 容器中的样式优化
+.baike-content {
+  .baike-ordered-list {
+    // 与其他元素之间的间距
+    & + * {
+      margin-top: 24px;
+    }
+    
+    * + & {
+      margin-top: 24px;
+    }
+  }
+}

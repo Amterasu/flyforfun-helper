@@ -1,0 +1,221 @@
+# Flyff Universe Helper - Cursor Rules
+
+## 项目概述
+这是一个 Flyff Universe 游戏指南和工具集合的项目，使用 React + TypeScript + Vite 构建。
+
+## 导航系统架构
+
+### 三级导航结构
+
+项目采用三级导航结构，用于组织飞飞百科内容：
+
+#### 1. 一级导航 - TopHeader
+- **组件位置**: `src/components/TopHeader.tsx`
+- **功能**: 顶级主导航，包含应用的主要分类
+- **导航项**:
+  - 飞飞百科 (主要入口)
+  - 社区
+  - 助手
+  - 新闻
+- **样式类**: `.top-header`
+- **使用场景**: 在整个应用中始终显示在顶部
+- **路由映射**: 
+  - 飞飞百科 → `/baike/*`
+  - 社区 → `/community`
+  - 助手 → `/assistant/*`
+  - 新闻 → `/news`
+
+#### 2. 二级导航 - PrimaryNavBar
+- **组件位置**: `src/components/PrimaryNavBar.tsx`
+- **功能**: 飞飞百科下的章节导航（二级分类）
+- **显示内容**: 显示 `docTree` 中的各个章节（section）
+- **章节包括**: 
+  - 系统 (system)
+  - 公式 (formula)
+  - 升级 (upgrade)
+  - 宠物 (pet)
+  - 副本 (dungeons)
+  - 房屋 (housing)
+  - 社区 (community)
+- **样式类**: `.primary-nav-bar`
+- **使用场景**: 仅在飞飞百科页面（`/baike/*`）显示
+- **激活状态**: 根据 `activeSection` prop 高亮当前章节
+- **路由格式**: `/baike/:sectionId` 或 `/baike/:sectionId/:childId`
+
+#### 3. 三级导航 - SecondarySidebar
+- **组件位置**: `src/components/SecondarySidebar.tsx`
+- **功能**: 飞飞百科下某个章节的子节点导航（三级分类）
+- **显示内容**: 显示当前章节（section）的子节点（children）
+- **样式类**: `.secondary-sidebar`
+- **使用场景**: 在 DocStage 组件内，当章节有子节点时显示
+- **激活状态**: 根据 `activeChildId` prop 高亮当前子节点
+- **路由格式**: `/baike/:sectionId/:childId` 或 `/baike/:sectionId/:childId/:leafId`
+- **显示条件**: 只有当 `section.children.length > 0` 时才显示
+
+### 导航数据源
+- **常量文件**: `src/constants/index.ts`
+- **数据结构**: `docTree` - DocNode[] 类型
+- **类型定义**: `src/types/doc.ts`
+
+### 路由结构
+```
+/                          → 重定向到飞飞百科默认路径
+/baike                     → 飞飞百科根路径（重定向）
+/baike/:sectionId          → 显示章节内容
+/baike/:sectionId/:childId → 显示子节点内容
+/baike/:sectionId/:childId/:leafId → 显示叶子节点内容
+/community                 → 社区页面
+/assistant/:navId?         → 助手页面
+/news                      → 新闻页面
+```
+
+## 组件使用规范
+
+### TopHeader 组件
+```tsx
+<TopHeader activeTab={activeTab} />
+```
+- `activeTab`: MainNav 类型，当前激活的主导航标签
+- 自动根据 URL 路径确定激活状态
+
+### PrimaryNavBar 组件
+```tsx
+<PrimaryNavBar activeSection={sectionId} />
+```
+- `activeSection`: string 类型，当前激活的章节 ID
+- 从 URL 路径中提取：`/baike/:sectionId` 中的 sectionId
+
+### SecondarySidebar 组件
+```tsx
+<SecondarySidebar 
+  section={currentSection} 
+  activeChildId={activeChildId} 
+/>
+```
+- `section`: DocNode 类型，当前章节数据
+- `activeChildId`: string 可选，当前激活的子节点 ID
+- 从 URL 路径中提取：`/baike/:sectionId/:childId` 中的 childId
+
+## 页面组件规范
+
+### BaikePage 组件
+- **位置**: `src/pages/BaikePage.tsx`
+- **功能**: 飞飞百科内容页面
+- **组件映射**: `src/pages/baike/index.tsx` - 将 anchorId 映射到 TSX 组件
+- **内容格式**: 
+  - 使用 `.baike-content` 样式类
+  - 使用 `OrderedList` 组件显示有序列表
+  - 使用 `BaikeImage` 组件显示图片
+  - 使用 `ReactECharts` 显示图表
+
+### 页面组件结构示例
+```tsx
+export const ComponentName = () => {
+  return (
+    <div className="baike-content">
+      {/* 图表容器 */}
+      <div className="baike-chart-container">
+        <ReactECharts option={option} />
+      </div>
+      
+      {/* 有序列表 */}
+      <OrderedList items={listItems} variant="spacious" />
+      
+      {/* 图片容器 */}
+      <div className="baike-image-container">
+        <BaikeImage src="..." alt="..." />
+      </div>
+    </div>
+  );
+};
+```
+
+## 样式规范
+
+### 主样式文件
+- `src/components/MarkdownContent.less` - Markdown 内容样式
+- `src/styles/global.less` - 全局样式
+
+### 常用样式类
+- `.baike-content` - 百科内容容器
+- `.baike-image-container` - 图片容器
+- `.baike-chart-container` - 图表容器
+- `.baike-ordered-list` - 有序列表
+- `.baike-blockquote` - 引用块
+
+### 导航样式类
+- `.top-header` - 一级导航容器
+- `.primary-nav-bar` - 二级导航容器
+- `.secondary-sidebar` - 三级导航容器
+
+## 导航布局优化
+
+### Sticky 定位实现
+为了提升用户体验，导航采用 sticky 定位，确保用户滚动内容时导航始终可见：
+
+1. **PrimaryNavBar (二级导航)**:
+   - 使用 `position: sticky` 和 `top: 80px`（TopHeader 高度）
+   - 固定在页面顶部，始终可见
+   - 支持背景模糊效果，提升可读性
+   - z-index: 99（低于 TopHeader，高于内容）
+
+2. **SecondarySidebar (三级导航)**:
+   - 使用 `position: sticky` 固定在左侧
+   - top 值：`calc(80px + 60px + @spacing-md)`（TopHeader + PrimaryNavBar + 间距）
+   - 最大高度：`calc(100vh - 160px)`，超出部分可滚动
+   - 自定义滚动条样式
+
+3. **响应式设计**:
+   - 桌面端：二级和三级导航均使用 sticky 定位
+   - 平板端（≤768px）：二级导航保持 sticky，三级导航改为相对定位并水平滚动
+   - 移动端（≤640px）：优化模糊效果以提升性能
+
+### 布局优势
+- ✅ 用户滚动内容时，导航始终可见
+- ✅ 内容区域保持足够大的显示空间
+- ✅ 导航切换便捷，无需滚动到顶部
+- ✅ 移动端自适应，提供良好的触控体验
+
+## 开发注意事项
+
+1. **导航层级关系**:
+   - TopHeader 始终显示（fixed 定位，z-index: 40）
+   - PrimaryNavBar 仅在 `/baike/*` 路由显示（sticky 定位，z-index: 99）
+   - SecondarySidebar 仅在章节有子节点时显示（sticky 定位，左侧固定）
+
+2. **路径提取**:
+   - 使用 `useLocation()` 和 `useParams()` 从 URL 提取导航参数
+   - sectionId 从路径第二个部分提取：`/baike/:sectionId`
+   - childId 从路径第三个部分提取：`/baike/:sectionId/:childId`
+
+3. **组件导入**:
+   - 导航组件从 `src/components/` 导入
+   - 工具组件（如 OrderedList）从 `src/components/` 导入
+   - 类型从 `src/types/` 导入
+   - 常量从 `src/constants/` 导入
+
+4. **样式文件**:
+   - 组件样式文件使用 `.less` 扩展名
+   - 与组件文件同名：`ComponentName.less`
+   - 使用 CSS Modules 或全局类名
+
+5. **响应式设计**:
+   - 使用媒体查询适配移动端
+   - 图表容器使用响应式样式
+
+## 常用命令
+
+```bash
+# 开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
+
+# 类型检查
+npm run typecheck
+
+# 代码检查
+npm run lint
+```
+

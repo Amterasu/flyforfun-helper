@@ -8,16 +8,19 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at 20% 20%, #1d2334, #0b0f17 60%);
-  color: @text-light;
+  // 现代化玻璃态效果：深色背景
+  background: radial-gradient(circle at 20% 30%, rgba(30, 35, 50, 1), rgba(20, 25, 40, 1) 70%);
+  color: rgba(255, 255, 255, 0.85);
+  min-height: 100vh;
 }
 
 .app-shell {
   min-height: 100vh;
-  padding: calc(80px + @app-shell-padding) clamp(16px, 5vw, 72px) 48px;
+  // TopHeader 不再是 fixed，所以不需要预留顶部空间
+  padding: @spacing-md clamp(16px, 5vw, 72px) 32px;
   display: flex;
   flex-direction: column;
-  gap: @spacing-xl;
+  gap: @spacing-md;
   max-width: @app-shell-max-width;
   margin: 0 auto 80px;
 }
@@ -25,7 +28,7 @@ body {
 .doc-wrapper {
   display: flex;
   flex-direction: column;
-  gap: @spacing-lg;
+  gap: @spacing-md;
 }
 
 .doc-layout {

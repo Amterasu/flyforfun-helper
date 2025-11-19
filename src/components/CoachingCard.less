@@ -1,0 +1,130 @@
+@import '../styles/variables.less';
+
+.coaching-card {
+  display: flex;
+  flex-direction: column;
+  background: rgb(26, 30, 46);
+  border-radius: @border-radius-lg;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+      0 12px 48px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.coaching-card-cover {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: rgb(35, 39, 55);
+  position: relative;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .coaching-card:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.coaching-card-content {
+  padding: @spacing-md;
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-sm;
+}
+
+.coaching-card-name {
+  margin: 0 0 @spacing-xs 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.4;
+}
+
+.coaching-card-contact {
+  display: flex;
+  align-items: center;
+  gap: @spacing-xs;
+  margin-bottom: @spacing-sm;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  
+  .contact-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+  }
+  
+  .contact-value {
+    color: rgba(255, 217, 77, 0.95);
+    font-weight: 500;
+  }
+}
+
+.coaching-card-description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  font-size: 0.9rem;
+  
+  // Markdown 样式
+  p {
+    margin: 0 0 @spacing-sm 0;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  strong {
+    color: rgba(255, 217, 77, 0.9);
+    font-weight: 600;
+  }
+  
+  em {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+  }
+  
+  ul, ol {
+    margin: @spacing-sm 0;
+    padding-left: @spacing-md;
+    
+    li {
+      margin: @spacing-xs 0;
+    }
+  }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .coaching-card-cover {
+    height: 160px;
+  }
+  
+  .coaching-card-content {
+    padding: @spacing-sm;
+  }
+  
+  .coaching-card-name {
+    font-size: 1.1rem;
+  }
+  
+  .coaching-card-description {
+    font-size: 0.85rem;
+  }
+}
+

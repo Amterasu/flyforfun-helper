@@ -1,0 +1,19 @@
+@import '../styles/variables.less';
+
+.coaching-page {
+  .coaching-list {
+    margin-top: @spacing-lg;
+  }
+  
+  .coaching-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: @spacing-lg;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: @spacing-md;
+    }
+  }
+}
+
