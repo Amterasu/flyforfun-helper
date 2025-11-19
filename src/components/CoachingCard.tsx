@@ -5,9 +5,11 @@ import './CoachingCard.less'
 export type CoachingItem = {
   id: string
   name: string
+  subName?: string
   cover: string
   contact: string
   description: string
+  hot?: boolean
 }
 
 type CoachingCardProps = {
@@ -33,9 +35,20 @@ export const CoachingCard = ({ item }: CoachingCardProps) => {
     <div className="coaching-card">
       <div className="coaching-card-cover">
         <img src={item.cover} alt={item.name} loading="lazy" />
+        {item.hot && (
+          <div className="coaching-card-hot">
+            <span className="hot-icon">🔥</span>
+            <span className="hot-text">HOT</span>
+          </div>
+        )}
       </div>
       <div className="coaching-card-content">
-        <h3 className="coaching-card-name">{item.name}</h3>
+        <div className="coaching-card-header">
+          <h3 className="coaching-card-name">{item.name}</h3>
+          {item.subName && (
+            <span className="coaching-card-subname">{item.subName}</span>
+          )}
+        </div>
         <div className="coaching-card-contact">
           <span className="contact-label">联系方式：</span>
           <span className="contact-value">{item.contact}</span>

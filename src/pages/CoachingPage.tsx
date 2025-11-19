@@ -6,6 +6,8 @@ const coachingList: CoachingItem[] = [
   {
     id: '1',
     name: '蘑菇王',
+    subName: '华北吴彦祖',
+    hot: true,
     cover: '/leech/moguwang.png', // 使用默认封面，后续可以替换
     contact: 'QQ: 919937231',
     description: `我从事飞飞国际服代练已多年，深知"信誉"是立身之本。所有服务均支持**全程进度查询，信誉记录可随时查验**。凭借扎实的技术和真诚的服务，在老板间积累了**绝佳的口碑**。您的账号安全与游戏体验，始终是我的首要考量。
