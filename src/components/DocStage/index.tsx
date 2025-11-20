@@ -34,15 +34,6 @@ export const DocStage = ({
       <section className="doc-content">
         <div className="doc-content-layout">
           <div className="doc-content-main">
-            <header>
-              <p className="eyebrow">{currentSection?.title ?? '子导航'}</p>
-              <h2>{currentChild?.title ?? currentSection?.title ?? '请选择一个分类'}</h2>
-              {currentChild?.description ? (
-                <p className="lede">{currentChild.description}</p>
-              ) : currentSection?.description ? (
-                <p className="lede">{currentSection.description}</p>
-              ) : null}
-            </header>
             <div className="doc-tree">
               {hasSecondaryNav ? (
                 currentChild ? (

@@ -31,6 +31,14 @@ body {
   gap: @spacing-md;
 }
 
+.section-description {
+  margin: 0;
+  padding: @spacing-xs @spacing-sm;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+}
+
 .doc-layout {
   display: flex;
   gap: @spacing-xl;
@@ -57,6 +65,32 @@ body {
 @media (max-width: 640px) {
   .app-shell {
     padding: calc(100px + @spacing-lg) 16px 48px;
+  }
+}
+
+// BaikeImage 组件样式覆盖
+.ant-image {
+  cursor: pointer;
+  
+  // 移除 hover 时的遮罩层变暗效果
+  .ant-image-mask {
+    display: none !important;
+  }
+  
+  // 移除 hover 时的遮罩层
+  &:hover .ant-image-mask {
+    display: none !important;
+    opacity: 0 !important;
+  }
+  
+  // 确保图片本身不变化
+  .ant-image-img {
+    transition: none;
+    
+    &:hover {
+      opacity: 1 !important;
+      filter: none !important;
+    }
   }
 }
 

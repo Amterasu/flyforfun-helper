@@ -45,7 +45,7 @@ export const BaikeImage: React.FC<BaikeImageProps> = ({
       width={imageWidth}
       style={imageStyle}
       preview={{
-        mask: '预览',
+        mask: false,
       }}
       {...restProps}
     />

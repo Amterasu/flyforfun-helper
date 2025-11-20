@@ -6,7 +6,6 @@
 import React, { lazy } from 'react'
 
 // 动态导入组件（按需加载）
-const Updates = lazy(() => import('./system/updates').then(m => ({ default: m.Updates })))
 const TopUpEvent = lazy(() => import('./system/updates/top-up-event').then(m => ({ default: m.TopUpEvent })))
 const AllServerContentsTime = lazy(() => import('./system/all-server-contents-time').then(m => ({ default: m.AllServerContentsTime })))
 const Time = lazy(() => import('./system/time').then(m => ({ default: m.Time })))
@@ -104,7 +103,6 @@ const GuildHouseNpc = lazy(() => import('./housing/npc/guild-house-npc').then(m 
 
 // 组件映射表
 const componentMap: Record<string, React.LazyExoticComponent<React.ComponentType>> = {
-  'updates': Updates,
   'top-up-event': TopUpEvent,
   'all-server-contents-time': AllServerContentsTime,
   'time': Time,

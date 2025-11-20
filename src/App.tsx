@@ -68,6 +68,9 @@ function App() {
             element={
               <div className="doc-wrapper">
                 <PrimaryNavBar activeSection={sectionId} />
+                {currentSection?.description && (
+                  <p className="section-description">{currentSection.description}</p>
+                )}
                 <DocStage
                   activeSection={sectionId}
                   currentSection={currentSection}

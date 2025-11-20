@@ -8,7 +8,6 @@ export const docTree: DocNode[] = [
     title: '⚙️ 系统',
     description: '系统玩法、地图、工会与各类活动资讯',
     children: [
-      { id: 'updates', title: '📢 更新' },
       { id: 'all-server-contents-time', title: '📅 全服内容时间' },
       { id: 'time', title: '🕙 时间' },
       { id: 'map', title: '🗺️ 地图' },
