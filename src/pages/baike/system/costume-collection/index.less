@@ -1,0 +1,91 @@
+@import '../../../../styles/variables.less';
+
+.baike-info-card {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.8), rgba(7, 9, 15, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-lg;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  margin-bottom: @spacing-lg;
+
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+
+    a {
+      color: rgba(255, 217, 77, 0.8);
+      text-decoration: none;
+
+      &:hover {
+        color: #ffe37d;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.baike-section {
+  margin-bottom: @spacing-xl;
+}
+
+.baike-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255, 217, 77, 0.9);
+  margin: 0 0 @spacing-lg 0;
+  padding-bottom: @spacing-xs;
+  border-bottom: 2px solid rgba(255, 217, 77, 0.2);
+}
+
+.costume-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: @spacing-md;
+}
+
+.costume-gallery-item {
+  .baike-image-thumbnail {
+    display: flex;
+    justify-content: center;
+    padding: @spacing-xs;
+    background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: @border-radius-md;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: rgba(255, 217, 77, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    :global(.ant-image) {
+      max-width: 100%;
+      border-radius: @border-radius-sm;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .costume-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: @spacing-sm;
+  }
+}
+
+@media (max-width: 768px) {
+  .costume-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: @spacing-xs;
+  }
+
+  .baike-info-card {
+    padding: @spacing-sm;
+  }
+}
+

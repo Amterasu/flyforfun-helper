@@ -1,0 +1,134 @@
+@import '../../../../styles/variables.less';
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-md;
+}
+
+.event-card {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.8), rgba(7, 9, 15, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-lg;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(255, 217, 77, 0.3);
+    box-shadow:
+      0 12px 32px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: @spacing-sm;
+  gap: @spacing-sm;
+}
+
+.event-date {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+
+  .highlight {
+    color: #ffe37d;
+    font-weight: 700;
+    background: rgba(255, 217, 77, 0.15);
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 2px;
+  }
+}
+
+.event-badge {
+  padding: 4px 12px;
+  background: linear-gradient(135deg, #ffe37d, #f7c83a);
+  color: rgb(26, 26, 46);
+  border-radius: @border-radius-full;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+
+  .highlight {
+    color: rgb(26, 26, 46);
+    font-weight: 700;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.event-content {
+  .event-title {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    margin-bottom: @spacing-xs;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: #ffe37d;
+    }
+  }
+}
+
+.event-children {
+  margin-top: @spacing-xs;
+  padding-left: @spacing-md;
+  border-left: 2px solid rgba(255, 217, 77, 0.2);
+}
+
+.event-child {
+  padding: @spacing-xs 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+
+  .highlight {
+    color: #ffe37d;
+    font-weight: 700;
+    background: rgba(255, 217, 77, 0.15);
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 2px;
+  }
+}
+
+.event-source {
+  margin-top: @spacing-xs;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+
+  a {
+    color: rgba(255, 217, 77, 0.8);
+    text-decoration: none;
+
+    &:hover {
+      color: #ffe37d;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    padding: @spacing-sm;
+  }
+
+  .event-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

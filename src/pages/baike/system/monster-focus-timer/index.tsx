@@ -1,28 +1,74 @@
 import React from 'react'
+import './index.less'
+
+// 高亮文本组件
+const HighlightText: React.FC<{ text: string; highlights: string[] }> = ({ text, highlights }) => {
+  if (highlights.length === 0) {
+    return <>{text}</>
+  }
+
+  const pattern = highlights.map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')
+  const regex = new RegExp(`(${pattern})`, 'g')
+  const parts = text.split(regex)
+
+  return (
+    <>
+      {parts.map((part, idx) => {
+        const isHighlight = highlights.includes(part)
+        return isHighlight ? (
+          <span key={idx} className="highlight">
+            {part}
+          </span>
+        ) : (
+          <React.Fragment key={idx}>{part}</React.Fragment>
+        )
+      })}
+    </>
+  )
+}
+
+const timerData = [
+  { condition: '少于4只怪物', time: '3分钟', highlights: ['3分钟', '4'] },
+  { condition: '4-6只怪物', time: '80秒', highlights: ['80秒', '4-6'] },
+  { condition: '8-12只怪物', time: '50秒', highlights: ['50秒', '8-12'] },
+  { condition: '14只及以上怪物', time: '28秒', highlights: ['28秒', '14'] },
+]
 
 export const MonsterFocusTimer = () => {
   return (
     <div className="baike-content">
-    
-    <blockquote key={1} className="baike-blockquote">
-      <p key={0}>来源:<a href="https://universe.flyff.com/news/patchnotes106 游戏版本1.0.6更新说明" target="_blank" rel="noopener noreferrer">游戏版本1.0.6更新说明</a></p>
-    </blockquote>
-    <ul key={2} className="baike-list">
-        <li key={0}>怪物仇恨计时器（它们在未命中的情况下追逐你的时间）现在基于同时关注同一玩家的怪物数量：</li>
-    </ul>
-    <ul key={3} className="baike-list">
-        <li className="baike-nested-item" key={0}>少于4只怪物时为3分钟</li>
-    </ul>
-    <ul key={4} className="baike-list">
-        <li className="baike-nested-item" key={0}>4-6只怪物时为80秒</li>
-    </ul>
-    <ul key={5} className="baike-list">
-        <li className="baike-nested-item" key={0}>8-12只怪物时为50秒</li>
-    </ul>
-    <ul key={6} className="baike-list">
-        <li className="baike-nested-item" key={0}>14只及以上怪物时为28秒</li>
-    </ul>
-    
+      <div className="baike-section">
+        <div className="baike-source">
+          <p>
+            来源:
+            <a
+              href="https://universe.flyff.com/news/patchnotes106"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              游戏版本1.0.6更新说明
+            </a>
+          </p>
+        </div>
+        <div className="baike-info-item">
+          <p>
+            怪物仇恨计时器（它们在未命中的情况下追逐你的时间）现在基于同时关注同一玩家的怪物数量：
+          </p>
+        </div>
+
+        <div className="timer-grid">
+          {timerData.map((item, idx) => (
+            <div key={idx} className="timer-card">
+              <div className="timer-condition">
+                <HighlightText text={item.condition} highlights={item.highlights} />
+              </div>
+              <div className="timer-value">
+                <HighlightText text={item.time} highlights={[item.time]} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
