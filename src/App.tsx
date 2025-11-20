@@ -5,9 +5,9 @@ import { TopHeader } from './components/TopHeader'
 import { Hero } from './components/Hero'
 import { PrimaryNavBar } from './components/PrimaryNavBar'
 import { DocStage } from './components/DocStage'
-import { BaikePage } from './pages/BaikePage'
-import { MarkdownContent } from './components/MarkdownContent'
-import { AssistantStage } from './components/assistant/AssistantStage'
+import { BaikePage } from './pages/baike'
+import FlyffCommunityLinks from './pages/community'
+import { ToolsPage } from './pages/tools'
 import { PlaceholderBoard } from './components/PlaceholderBoard'
 import { CoachingPage } from './pages/CoachingPage'
 import { docTree } from './constants'
@@ -35,7 +35,7 @@ function App() {
   const activeTab: MainNav = useMemo(() => {
     const path = location.pathname
     if (path.startsWith('/community')) return '社区'
-    if (path.startsWith('/assistant')) return '助手'
+    if (path.startsWith('/tool')) return '助手'
     if (path.startsWith('/news')) return '新闻'
     if (path.startsWith('/coaching')) return '代练'
     if (path.startsWith('/baike') || path === '/') return '飞飞百科'
@@ -100,7 +100,9 @@ function App() {
                         <p className="lede">官方与社区资源集合</p>
                       </header>
                       <div className="doc-tree community-content">
-                        <MarkdownContent anchorId="community" />
+                        <div className="community-links-container">
+                          <FlyffCommunityLinks />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -109,12 +111,12 @@ function App() {
             }
           />
 
-          {/* 助手路由 */}
+          {/* 工具路由 */}
           <Route
-            path="/assistant/:navId?"
+            path="/tool/:navId?"
             element={
               <div className="doc-wrapper">
-                <AssistantStage />
+                <ToolsPage />
               </div>
             }
           />

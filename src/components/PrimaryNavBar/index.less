@@ -1,0 +1,380 @@
+@import '../../styles/variables.less';
+
+.primary-nav-bar {
+  margin-bottom: @spacing-md;
+  padding: 0;
+  // 纯色背景，完全不透明
+  background: rgb(26, 30, 46);
+  border-radius: @border-radius-lg;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  
+  // 使用 sticky 定位，固定在顶部
+  // TopHeader 不再是 fixed，所以从 0 开始
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.primary-nav-scroll {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding: @spacing-sm;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 180, 100, 0.3) transparent;
+  position: relative;
+  z-index: 1;
+
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 180, 100, 0.3);
+    border-radius: 2px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(255, 160, 100, 0.4);
+    }
+  }
+}
+
+.primary-nav-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: @border-radius-md;
+  // 未选中状态，完全不透明
+  background: rgb(35, 39, 55);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    // 悬停效果，完全不透明
+    background: rgb(45, 49, 65);
+    color: rgb(255, 255, 255);
+    transform: translateY(-2px) scale(1.02);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 
+      0 4px 16px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  &.active {
+    // 选中效果更明显，完全不透明
+    background: rgb(255, 217, 77);
+    color: rgb(26, 26, 46);
+    font-weight: 700;
+    border-color: rgba(255, 217, 77, 0.6);
+    box-shadow: 
+      0 4px 20px rgba(255, 217, 77, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px) scale(1.02);
+  }
+}
+
+// Popover 触发元素样式（确保 Link 可以作为触发器）
+:global(.ant-popover-trigger) {
+  display: inline-block;
+}
+
+// 三级导航 Popover 样式
+.secondary-nav-popover {
+  .ant-popover-inner {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .ant-popover-inner-content {
+    padding: 0;
+  }
+
+  .ant-popover-arrow {
+    display: none;
+  }
+}
+
+.secondary-nav-popover-content {
+  min-width: 260px;
+  max-width: 380px;
+  max-height: 450px;
+  overflow-y: auto;
+  padding: @spacing-sm;
+  background: radial-gradient(circle at 20% 0%, rgba(46, 59, 101, 0.45), transparent 55%),
+              linear-gradient(145deg, rgba(6, 9, 16, 0.98), rgba(14, 18, 30, 0.92));
+  border-radius: @border-radius-lg;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.65),
+    0 10px 25px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &.multi-column {
+    min-width: 600px;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    column-gap: 10px;
+
+    .secondary-nav-popover-item {
+      margin-bottom: 0;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+    }
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 180, 100, 0.4) transparent;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 180, 100, 0.4);
+    border-radius: 3px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(255, 160, 100, 0.5);
+    }
+  }
+}
+
+.secondary-nav-popover-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: @border-radius-sm;
+  background: linear-gradient(145deg, rgba(16, 20, 32, 0.96), rgba(7, 9, 14, 0.96));
+  color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 0;
+    background: linear-gradient(180deg, rgba(255, 217, 77, 0.8), rgba(255, 217, 77, 0.6));
+    border-radius: 0 2px 2px 0;
+    transition: height 0.3s ease;
+  }
+
+  .nav-item-text {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease;
+  }
+
+  .nav-item-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9px;
+    background: rgba(255, 217, 77, 0.18);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.65rem;
+    font-weight: 600;
+    line-height: 1;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 6px rgba(255, 217, 77, 0.25);
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    background: linear-gradient(145deg, rgba(28, 33, 52, 0.98), rgba(12, 15, 24, 0.98));
+    color: rgb(255, 255, 255);
+    transform: translateX(3px);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow:
+      0 12px 26px rgba(0, 0, 0, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    &::after {
+      height: 60%;
+    }
+
+    .nav-item-badge {
+      background: rgba(255, 217, 77, 0.28);
+      transform: scale(1.1);
+      box-shadow: 0 2px 8px rgba(255, 217, 77, 0.35);
+    }
+  }
+
+  &.active {
+    background: linear-gradient(145deg, #ffe37d, #f7c83a);
+    color: rgb(26, 26, 46);
+    font-weight: 700;
+    border-color: rgba(255, 217, 77, 0.65);
+    box-shadow:
+      0 4px 20px rgba(255, 217, 77, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    transform: translateX(3px);
+
+    &::after {
+      height: 70%;
+      background: linear-gradient(180deg, rgba(255, 217, 77, 0.8), rgba(255, 217, 77, 0.6));
+    }
+
+    .nav-item-badge {
+      background: rgba(26, 26, 46, 0.25);
+      color: rgba(26, 26, 46, 0.95);
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(255, 217, 77, 0.4);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .primary-nav-bar {
+    top: 0;
+    margin-bottom: @spacing-md;
+  }
+  
+  .primary-nav-item {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primary-nav-bar {
+    margin-bottom: @spacing-md;
+    top: 0;
+  }
+
+  .primary-nav-scroll {
+    padding: 6px;
+    gap: 4px;
+  }
+
+  .primary-nav-item {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .secondary-nav-popover-content.multi-column {
+    min-width: 500px;
+    max-width: 600px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .secondary-nav-popover-content {
+    min-width: 240px;
+    max-width: 320px;
+    max-height: 400px;
+    padding: 10px;
+
+    &.multi-column {
+      min-width: 480px;
+      max-width: 560px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .secondary-nav-popover-item {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+
+  .nav-item-badge {
+    min-width: 18px;
+    height: 18px;
+    font-size: 0.65rem;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .secondary-nav-popover-content {
+    min-width: 200px;
+    max-width: 280px;
+    max-height: 350px;
+    padding: 8px;
+
+    &.multi-column {
+      min-width: 90vw;
+      max-width: 95vw;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .secondary-nav-popover-item {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+
+  .nav-item-badge {
+    min-width: 16px;
+    height: 16px;
+    font-size: 0.6rem;
+    padding: 0 4px;
+  }
+}
+

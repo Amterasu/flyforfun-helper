@@ -1,0 +1,229 @@
+@import '../../styles/variables.less';
+
+.coaching-card {
+  display: flex;
+  flex-direction: column;
+  background: rgb(26, 30, 46);
+  border-radius: @border-radius-lg;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+      0 12px 48px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.coaching-card-cover {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: rgb(35, 39, 55);
+  position: relative;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .coaching-card:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.coaching-card-hot {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+  border-radius: 20px;
+  box-shadow: 
+    0 4px 12px rgba(255, 107, 107, 0.4),
+    0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  animation: hotPulse 2s ease-in-out infinite;
+  
+  .hot-icon {
+    font-size: 1rem;
+    line-height: 1;
+    animation: hotFlicker 1.5s ease-in-out infinite;
+  }
+  
+  .hot-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes hotPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 
+      0 4px 12px rgba(255, 107, 107, 0.4),
+      0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 
+      0 6px 16px rgba(255, 107, 107, 0.5),
+      0 3px 8px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes hotFlicker {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  75% {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+}
+
+.coaching-card-content {
+  padding: @spacing-md;
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-sm;
+}
+
+.coaching-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: @spacing-xs;
+  flex-wrap: wrap;
+  margin-bottom: @spacing-xs;
+}
+
+.coaching-card-name {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.4;
+}
+
+.coaching-card-subname {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(255, 217, 77, 0.8);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.coaching-card-contact {
+  display: flex;
+  align-items: center;
+  gap: @spacing-xs;
+  margin-bottom: @spacing-sm;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  
+  .contact-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+  }
+  
+  .contact-value {
+    color: rgba(255, 217, 77, 0.95);
+    font-weight: 500;
+  }
+}
+
+.coaching-card-description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  font-size: 0.9rem;
+  
+  // Markdown 样式
+  p {
+    margin: 0 0 @spacing-sm 0;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  strong {
+    color: rgba(255, 217, 77, 0.9);
+    font-weight: 600;
+  }
+  
+  em {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+  }
+  
+  ul, ol {
+    margin: @spacing-sm 0;
+    padding-left: @spacing-md;
+    
+    li {
+      margin: @spacing-xs 0;
+    }
+  }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .coaching-card-cover {
+    height: 160px;
+  }
+  
+  .coaching-card-content {
+    padding: @spacing-sm;
+  }
+  
+  .coaching-card-name {
+    font-size: 1.1rem;
+  }
+  
+  .coaching-card-subname {
+    font-size: 0.85rem;
+  }
+  
+  .coaching-card-hot {
+    top: 8px;
+    right: 8px;
+    padding: 4px 10px;
+    
+    .hot-icon {
+      font-size: 0.9rem;
+    }
+    
+    .hot-text {
+      font-size: 0.7rem;
+    }
+  }
+  
+  .coaching-card-description {
+    font-size: 0.85rem;
+  }
+}
+

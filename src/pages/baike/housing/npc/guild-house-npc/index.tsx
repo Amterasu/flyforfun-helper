@@ -7,7 +7,7 @@ export const GuildHouseNpc = () => {
     <ul key={0} className="baike-list">
         <li key={0}>💲700万金币</li>
     </ul>
-    <span key={1}>Not released yet [Guild House NPC] Duron: Guild Artifact Max HP +10%* --></span>
+    <span key={1}>Not released yet [Guild House NPC] Duron: Guild Artifact Max HP +10%*</span>
     <ul key={2} className="baike-list">
         <li className="baike-nested-item" key={0}>[公会房屋NPC] 福巴：公会神器生命值恢复+10%</li>
     </ul>
