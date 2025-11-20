@@ -1,0 +1,70 @@
+@import '../../../../styles/variables.less';
+
+.office-quest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: @spacing-lg;
+}
+
+.office-quest-card {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.8), rgba(7, 9, 15, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-lg;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(255, 217, 77, 0.3);
+    box-shadow:
+      0 12px 32px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.office-quest-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgba(255, 217, 77, 0.9);
+  margin: 0 0 @spacing-md 0;
+  padding-bottom: @spacing-xs;
+  border-bottom: 2px solid rgba(255, 217, 77, 0.2);
+  text-align: center;
+}
+
+.baike-image-thumbnail {
+  display: flex;
+  justify-content: center;
+  margin: @spacing-md 0;
+  padding: @spacing-sm;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-lg;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  :global(.ant-image) {
+    max-width: 100%;
+    border-radius: @border-radius-md;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  .office-quest-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .office-quest-card {
+    padding: @spacing-sm;
+  }
+
+  .office-quest-title {
+    font-size: 1.1rem;
+  }
+}
+

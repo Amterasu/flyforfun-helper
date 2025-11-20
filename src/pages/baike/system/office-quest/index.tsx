@@ -1,26 +1,43 @@
 import React from 'react'
 import { BaikeImage } from '../../../../components/BaikeImage'
+import './index.less'
+
+const officeQuestImages = [
+  {
+    location: '帕里',
+    image: '/system/quest/office_quest_flaris.png',
+  },
+  {
+    location: '晨光',
+    image: '/system/quest/office_quest_saint_morning.png',
+  },
+  {
+    location: '达肯',
+    image: '/system/quest/office_quest_darkon.png',
+  },
+  {
+    location: '阿兹利亚',
+    image: '/system/quest/office_quest_azria.png',
+  },
+  {
+    location: '珊瑚岛',
+    image: '/system/quest/office_quest_coral_island.png',
+  },
+]
 
 export const OfficeQuest = () => {
   return (
     <div className="baike-content">
-    
-    <div className="baike-image-container" key={1}>
-      <BaikeImage key={0} src="/system/quest/office_quest_flaris.png" alt="office_quest_flaris.png" maxWidth="100%" />
-    </div>
-    <div className="baike-image-container" key={2}>
-      <BaikeImage key={0} src="/system/quest/office_quest_saint_morning.png" alt="office_quest_saint_morning.png" maxWidth="100%" />
-    </div>
-    <div className="baike-image-container" key={3}>
-      <BaikeImage key={0} src="/system/quest/office_quest_darkon.png" alt="office_quest_darkon.png" maxWidth="100%" />
-    </div>
-    <div className="baike-image-container" key={4}>
-      <BaikeImage key={0} src="/system/quest/office_quest_azria.png" alt="office_quest_azria.png" maxWidth="100%" />
-    </div>
-    <div className="baike-image-container" key={5}>
-      <BaikeImage key={0} src="/system/quest/office_quest_coral_island.png" alt="office_quest_coral_island.png" maxWidth="100%" />
-    </div>
-    
+      <div className="office-quest-grid">
+        {officeQuestImages.map((item, idx) => (
+          <div key={idx} className="office-quest-card">
+            <h3 className="office-quest-title">{item.location}</h3>
+            <div className="baike-image-thumbnail">
+              <BaikeImage src={item.image} alt={`${item.location}办公室任务`} maxWidth="100%" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
