@@ -5,7 +5,6 @@ export const PetTransmutation = () => {
   return (
     <div className="baike-content">
     
-    <p key={1}><strong>更多信息请参考 <a href="https://gothante.wiki/?search=pet+transmutation" target="_blank" rel="noopener noreferrer">Gothante</a>。</strong></p>
     <ul key={2} className="baike-list">
         <li key={0}><a href="https://flyffipedia.com/items/details/9040 Crystal Iphrine Shell" target="_blank" rel="noopener noreferrer">蒜头王八</a></li>
     </ul>

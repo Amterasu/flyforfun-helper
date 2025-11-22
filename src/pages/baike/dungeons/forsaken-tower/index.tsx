@@ -4,19 +4,6 @@ import { BaikeImage } from '../../../../components/BaikeImage';
 export const ForsakenTower = () => {
   return (
     <div className="baike-content">
-      <p key={2}>
-        <strong>
-          更多信息请参考{" "}
-          <a
-            href="https://gothante.wiki/?search=forsaken+tower"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gothante
-          </a>
-          。
-        </strong>
-      </p>
       <p key={3}>
         <strong>仅计算升一级所需的经验，不考虑累积经验。</strong>
       </p>

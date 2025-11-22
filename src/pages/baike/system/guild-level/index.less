@@ -71,9 +71,242 @@
   }
 }
 
+.baike-chart-container {
+  margin: 32px 0;
+  padding: 24px;
+  // 现代化玻璃态效果
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: @border-radius-2xl;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    margin: 24px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px;
+    margin: 20px 0;
+  }
+}
+
 @media (max-width: 768px) {
   .baike-info-card {
     padding: @spacing-sm;
+  }
+}
+
+.donation-exp-table-wrapper {
+  margin: @spacing-lg 0;
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-lg;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: @spacing-md;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.donation-exp-table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.baike-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: @spacing-md 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  min-width: 800px;
+
+  th,
+  td {
+    padding: @spacing-sm @spacing-md;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  tr {
+    &:nth-child(even) {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  .item-name-cell,
+  .monster-name-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .item-name-en,
+    .monster-name-en {
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .item-name-cn,
+    .monster-name-cn {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  .monster-cell {
+    display: flex;
+    align-items: center;
+    gap: @spacing-sm;
+  }
+
+  .monster-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .monster-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  .monster-icon-placeholder {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.7rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  .guild-contribution-cell {
+    font-weight: 600;
+    color: rgba(255, 217, 77, 0.9);
+    text-align: center;
+  }
+
+  .icon-column {
+    width: 50px;
+    text-align: center;
+    padding: @spacing-xs @spacing-sm;
+  }
+
+  .item-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .item-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  .item-icon-placeholder {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.7rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+
+    &.loading {
+      color: rgba(255, 217, 77, 0.6);
+      font-size: 0.7rem;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .donation-exp-table-wrapper {
+    padding: @spacing-sm;
+  }
+
+  .baike-table {
+    font-size: 0.85rem;
+    min-width: 700px;
+
+    th,
+    td {
+      padding: @spacing-xs @spacing-sm;
+    }
   }
 }
 

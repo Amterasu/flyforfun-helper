@@ -6,18 +6,6 @@ export const PixelPerfectCursorPrecision = () => {
   return (
     <div className="baike-content">
       <div className="baike-section">
-        <div className="baike-source">
-          <p>
-            来源:
-            <a
-              href="https://universe.flyff.com/news/patchnotes1212minor"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              游戏版本1.2.12小型更新说明
-            </a>
-          </p>
-        </div>
         <div className="precision-images-grid">
           <div className="baike-image-thumbnail">
             <BaikeImage
@@ -35,7 +23,7 @@ export const PixelPerfectCursorPrecision = () => {
           </div>
         </div>
         <div className="baike-info-item">
-          <p>像素完美光标选择功能允许精确的像素级选择，并确保在UI元素的边界和角落进行准确选择，适合那些希望更精确地瞄准对象的玩家。</p>
+          <p>“像素完美光标” 功能支持像素级精准选择，能确保在 UI 元素的边界与角落实现精准定位，特别适合追求对象瞄准精度的玩家。</p>
         </div>
       </div>
     </div>

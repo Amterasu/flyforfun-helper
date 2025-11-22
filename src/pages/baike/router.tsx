@@ -48,15 +48,16 @@ const PowerDice = lazy(() => import('./upgrade/power-dice').then(m => ({ default
 const Catcher = lazy(() => import('./upgrade/catcher').then(m => ({ default: m.Catcher })))
 const PitySystem = lazy(() => import('./upgrade/pity-system').then(m => ({ default: m.PitySystem })))
 const WeaponarmorUpgrade = lazy(() => import('./upgrade/weaponarmor-upgrade').then(m => ({ default: m.WeaponarmorUpgrade })))
-const Event = lazy(() => import('./upgrade/weaponarmor-upgrade/event').then(m => ({ default: m.Event })))
-const UpgradeLevelBonus = lazy(() => import('./upgrade/weaponarmor-upgrade/upgrade-level-bonus').then(m => ({ default: m.UpgradeLevelBonus })))
+const WeaponarmorUpgradeData = lazy(() => import('./upgrade/weaponarmor-upgrade/data').then(m => ({ default: m.WeaponarmorUpgradeData })))
+const WeaponarmorUpgradeEvent = lazy(() => import('./upgrade/weaponarmor-upgrade/event').then(m => ({ default: m.WeaponarmorUpgradeEvent })))
+const UpgradeLevelBonus = lazy(() => import('./upgrade/weaponarmor-upgrade/level-bonus').then(m => ({ default: m.UpgradeLevelBonus })))
+const WeaponAttackBonus = lazy(() => import('./upgrade/weaponarmor-upgrade/attack-bonus').then(m => ({ default: m.WeaponAttackBonus })))
 const Ultimate = lazy(() => import('./upgrade/ultimate').then(m => ({ default: m.Ultimate })))
-const UltimateWeapon = lazy(() => import('./upgrade/ultimate/ultimate-weapon').then(m => ({ default: m.UltimateWeapon })))
+const UltimateWeaponUpgrade = lazy(() => import('./upgrade/ultimate/ultimate-weapon-upgrade').then(m => ({ default: m.UltimateWeaponUpgrade })))
 const UltimateWeaponEvent = lazy(() => import('./upgrade/ultimate/ultimate-weapon-event').then(m => ({ default: m.UltimateWeaponEvent })))
-const RegularWeapon = lazy(() => import('./upgrade/ultimate/regular-weapon').then(m => ({ default: m.RegularWeapon })))
-const Fwc2025GoldenWeapon = lazy(() => import('./upgrade/ultimate/fwc-2025-golden-weapon').then(m => ({ default: m.Fwc2025GoldenWeapon })))
-const RerollWeapons = lazy(() => import('./upgrade/ultimate/reroll-weapons').then(m => ({ default: m.RerollWeapons })))
-const UltimateJewelry = lazy(() => import('./upgrade/ultimate/ultimate-jewelry').then(m => ({ default: m.UltimateJewelry })))
+const RegularUltimateWeapon = lazy(() => import('./upgrade/ultimate/regular-ultimate-weapon').then(m => ({ default: m.RegularUltimateWeapon })))
+const Fwc2025GoldenWeapon = lazy(() => import('./upgrade/ultimate/fwc2025-golden-weapon').then(m => ({ default: m.Fwc2025GoldenWeapon })))
+const UltimateJewelryUpgrade = lazy(() => import('./upgrade/ultimate/ultimate-jewelry-upgrade').then(m => ({ default: m.UltimateJewelryUpgrade })))
 const UltimateJewelryEvent = lazy(() => import('./upgrade/ultimate/ultimate-jewelry-event').then(m => ({ default: m.UltimateJewelryEvent })))
 const NewHorizonEquipmentSets = lazy(() => import('./upgrade/new-horizon-equipment-sets').then(m => ({ default: m.NewHorizonEquipmentSets })))
 const BattleForMadrigalUltimateJewels = lazy(() => import('./upgrade/battle-for-madrigal-ultimate-jewels').then(m => ({ default: m.BattleForMadrigalUltimateJewels })))
@@ -145,15 +146,16 @@ const componentMap: Record<string, React.LazyExoticComponent<React.ComponentType
   'catcher': Catcher,
   'pity-system': PitySystem,
   'weaponarmor-upgrade': WeaponarmorUpgrade,
-  'event': Event,
+  'weaponarmor-upgrade-data': WeaponarmorUpgradeData,
+  'weaponarmor-upgrade-event': WeaponarmorUpgradeEvent,
   'upgrade-level-bonus': UpgradeLevelBonus,
+  'weapon-attack-bonus': WeaponAttackBonus,
   'ultimate': Ultimate,
-  'ultimate-weapon': UltimateWeapon,
+  'ultimate-weapon-upgrade': UltimateWeaponUpgrade,
   'ultimate-weapon-event': UltimateWeaponEvent,
-  'regular-weapon': RegularWeapon,
-  'fwc-2025-golden-weapon': Fwc2025GoldenWeapon,
-  'reroll-weapons': RerollWeapons,
-  'ultimate-jewelry': UltimateJewelry,
+  'regular-ultimate-weapon': RegularUltimateWeapon,
+  'fwc2025-golden-weapon': Fwc2025GoldenWeapon,
+  'ultimate-jewelry-upgrade': UltimateJewelryUpgrade,
   'ultimate-jewelry-event': UltimateJewelryEvent,
   'new-horizon-equipment-sets': NewHorizonEquipmentSets,
   'battle-for-madrigal-ultimate-jewels': BattleForMadrigalUltimateJewels,

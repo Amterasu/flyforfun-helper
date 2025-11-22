@@ -1,40 +1,111 @@
 @import '../../../../styles/variables.less';
 
-.baike-source {
-  margin-bottom: @spacing-lg;
-  padding: @spacing-sm @spacing-md;
-  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: @border-radius-md;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
+// baike-table 基础样式
+.baike-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: @spacing-md 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
 
-  a {
-    color: rgba(255, 217, 77, 0.8);
-    text-decoration: none;
-    margin-left: 4px;
+  th,
+  td {
+    padding: @spacing-sm @spacing-md;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-    &:hover {
-      color: #ffe37d;
-      text-decoration: underline;
+  th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+  }
+}
+
+.buff-scale-table-container {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 70vh;
+  margin: @spacing-md 0;
+}
+
+.buff-scale-table {
+  min-width: 1000px;
+  width: 100%;
+
+  thead {
+    tr:first-child {
+      th {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        text-align: center;
+        font-weight: 700;
+        background: rgba(15, 18, 28, 0.98);
+        backdrop-filter: blur(8px);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .sub-header {
+      th {
+        position: sticky;
+        top: 48px; // 第一个表头的实际高度（padding + 字体高度 + border）
+        z-index: 9;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 500;
+        background: rgba(15, 18, 28, 0.98);
+        backdrop-filter: blur(8px);
+        color: rgba(255, 255, 255, 0.7);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .int-value {
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      // 已达到最大值的buff单元格
+      .buff-max {
+        background: rgba(255, 217, 77, 0.15);
+        color: rgba(255, 217, 77, 0.95);
+        font-weight: 600;
+        border: 1px solid rgba(255, 217, 77, 0.3);
+      }
+
+      // 未达到最大值的buff单元格
+      .buff-not-max {
+        background: rgba(255, 255, 255, 0.02);
+        color: rgba(255, 255, 255, 0.5);
+        opacity: 0.8;
+      }
     }
   }
 }
 
-.baike-image-thumbnail {
-  display: flex;
-  justify-content: center;
-  margin: @spacing-md 0;
-  padding: @spacing-sm;
-  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: @border-radius-lg;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+@media (max-width: 768px) {
+  .buff-scale-table {
+    min-width: 800px;
+    font-size: 0.85rem;
 
-  :global(.ant-image) {
-    max-width: 100%;
-    border-radius: @border-radius-md;
-    overflow: hidden;
+    th,
+    td {
+      padding: @spacing-xs @spacing-sm;
+    }
   }
 }
 

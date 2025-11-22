@@ -1,0 +1,983 @@
+[
+  {
+    "questItem_en": "Twinkle Stone",
+    "questItem_cn": "闪烁之石",
+    "droppedByMonster_en": "Aibatt",
+    "droppedByMonster_cn": "独眼蝙蝠",
+    "monsterLevel": "1 - 2",
+    "npcSellingPrice": 40,
+    "guildContribution": 1
+  },
+  {
+    "questItem_en": "Forform",
+    "questItem_cn": "佛佛",
+    "droppedByMonster_en": "Mushpang",
+    "droppedByMonster_cn": "蘑菇",
+    "monsterLevel": "3 - 4",
+    "npcSellingPrice": 57,
+    "guildContribution": 2
+  },
+  {
+    "questItem_en": "Palin",
+    "questItem_cn": "帕里恩",
+    "droppedByMonster_en": "Burudeng",
+    "droppedByMonster_cn": "象牙甲虫",
+    "monsterLevel": "5 - 6",
+    "npcSellingPrice": 70,
+    "guildContribution": 3
+  },
+  {
+    "questItem_en": "Chupim",
+    "questItem_cn": "丘平",
+    "droppedByMonster_en": "Pukepuke",
+    "droppedByMonster_cn": "普克普克",
+    "monsterLevel": "7 - 8",
+    "npcSellingPrice": 87,
+    "guildContribution": 4
+  },
+  {
+    "questItem_en": "Peakyrind",
+    "questItem_cn": "皮奇林",
+    "droppedByMonster_en": "Peakyturtle",
+    "droppedByMonster_cn": "皮奇",
+    "monsterLevel": "8 - 9",
+    "npcSellingPrice": 97,
+    "guildContribution": 4
+  },
+  {
+    "questItem_en": "Mop",
+    "questItem_cn": "莫普",
+    "droppedByMonster_en": "Demian",
+    "droppedByMonster_cn": "德米安",
+    "monsterLevel": "9 - 10",
+    "npcSellingPrice": 107,
+    "guildContribution": 5
+  },
+  {
+    "questItem_en": "Poporam",
+    "questItem_cn": "波波拉",
+    "droppedByMonster_en": "Doridoma",
+    "droppedByMonster_cn": "蓝纹海马",
+    "monsterLevel": "11 - 12",
+    "npcSellingPrice": 127,
+    "guildContribution": 6
+  },
+  {
+    "questItem_en": "Slain",
+    "questItem_cn": "施莱恩",
+    "droppedByMonster_en": "Lawolf",
+    "droppedByMonster_cn": "小拉拉",
+    "monsterLevel": "13 - 14",
+    "npcSellingPrice": 147,
+    "guildContribution": 7
+  },
+  {
+    "questItem_en": "Tarin Root",
+    "questItem_cn": "塔林根",
+    "droppedByMonster_en": "Fefern",
+    "droppedByMonster_cn": "飞飞",
+    "monsterLevel": "15 - 16",
+    "npcSellingPrice": 170,
+    "guildContribution": 8
+  },
+  {
+    "questItem_en": "Star Stone",
+    "questItem_cn": "星之石",
+    "droppedByMonster_en": "Nyangnyang",
+    "droppedByMonster_cn": "喵喵",
+    "monsterLevel": "17 - 18",
+    "npcSellingPrice": 190,
+    "guildContribution": 9
+  },
+  {
+    "questItem_en": "Golden Wing",
+    "questItem_cn": "金翅膀",
+    "droppedByMonster_en": "Bang",
+    "droppedByMonster_cn": "帮",
+    "monsterLevel": "19 - 20",
+    "npcSellingPrice": 210,
+    "guildContribution": 10
+  },
+  {
+    "questItem_en": "Blue Honey",
+    "questItem_cn": "蓝蜂蜜",
+    "droppedByMonster_en": "Wagsac",
+    "droppedByMonster_cn": "彩冠翎猫",
+    "monsterLevel": "21 - 22",
+    "npcSellingPrice": 232,
+    "guildContribution": 11
+  },
+  {
+    "questItem_en": "Flyclaw",
+    "questItem_cn": "飞爪",
+    "droppedByMonster_en": "Flybat",
+    "droppedByMonster_cn": "飞蝙蝠",
+    "monsterLevel": "21 - 22",
+    "npcSellingPrice": 242,
+    "guildContribution": 11
+  },
+  {
+    "questItem_en": "Dungeon Tarin Root",
+    "questItem_cn": "地牢塔林根",
+    "droppedByMonster_en": "Dungeon Fefern",
+    "droppedByMonster_cn": "地牢飞飞",
+    "monsterLevel": "21 - 22",
+    "npcSellingPrice": 175,
+    "guildContribution": 11
+  },
+  {
+    "questItem_en": "Mia Doll",
+    "questItem_cn": "米雅娃娃",
+    "droppedByMonster_en": "Mia",
+    "droppedByMonster_cn": "米雅",
+    "monsterLevel": "23 - 24",
+    "npcSellingPrice": 252,
+    "guildContribution": 12
+  },
+  {
+    "questItem_en": "Dungeon Star Stone",
+    "questItem_cn": "地牢星之石",
+    "droppedByMonster_en": "Mutant Nyangnyang",
+    "droppedByMonster_cn": "变种喵喵",
+    "monsterLevel": "23 - 24",
+    "npcSellingPrice": 300,
+    "guildContribution": 12
+  },
+  {
+    "questItem_en": "Furious Match",
+    "questItem_cn": "愤怒的火柴",
+    "droppedByMonster_en": "Mr. Pumpkin",
+    "droppedByMonster_cn": "南瓜先生",
+    "monsterLevel": "25 - 26",
+    "npcSellingPrice": 270,
+    "guildContribution": 13
+  },
+  {
+    "questItem_en": "Dungeon Golden Wing",
+    "questItem_cn": "地牢金翅膀",
+    "droppedByMonster_en": "Mutant Bang",
+    "droppedByMonster_cn": "变种帮",
+    "monsterLevel": "25 - 26",
+    "npcSellingPrice": 325,
+    "guildContribution": 13
+  },
+  {
+    "questItem_en": "Cardrin",
+    "questItem_cn": "卡德琳",
+    "droppedByMonster_en": "Red Mantis",
+    "droppedByMonster_cn": "红螳螂",
+    "monsterLevel": "27 - 28",
+    "npcSellingPrice": 292,
+    "guildContribution": 14
+  },
+  {
+    "questItem_en": "Hammarble",
+    "questItem_cn": "铁锤大理石",
+    "droppedByMonster_en": "Jack The Hammer",
+    "droppedByMonster_cn": "铁锤杰克",
+    "monsterLevel": "29 - 30",
+    "npcSellingPrice": 320,
+    "guildContribution": 15
+  },
+  {
+    "questItem_en": "Gigglebox",
+    "questItem_cn": "咯咯盒",
+    "droppedByMonster_en": "Giggle Box",
+    "droppedByMonster_cn": "怪笑箱",
+    "monsterLevel": "31 - 32",
+    "npcSellingPrice": 350,
+    "guildContribution": 16
+  },
+  {
+    "questItem_en": "Crescent Stone",
+    "questItem_cn": "月牙石",
+    "droppedByMonster_en": "Rock Muscle",
+    "droppedByMonster_cn": "岩石怪",
+    "monsterLevel": "33 - 34",
+    "npcSellingPrice": 377,
+    "guildContribution": 17
+  },
+  {
+    "questItem_en": "Bucrow",
+    "questItem_cn": "巴克鲁",
+    "droppedByMonster_en": "Bucrow",
+    "droppedByMonster_cn": "巴克鲁",
+    "monsterLevel": "33 - 34",
+    "npcSellingPrice": 395,
+    "guildContribution": 17
+  },
+  {
+    "questItem_en": "Dubend",
+    "questItem_cn": "杜班德",
+    "droppedByMonster_en": "Hobo",
+    "droppedByMonster_cn": "霍波",
+    "monsterLevel": "35 - 36",
+    "npcSellingPrice": 412,
+    "guildContribution": 18
+  },
+  {
+    "questItem_en": "Dumbling",
+    "questItem_cn": "邓布林",
+    "droppedByMonster_en": "Dumb Bull",
+    "droppedByMonster_cn": "笨笨牛",
+    "monsterLevel": "37 - 38",
+    "npcSellingPrice": 452,
+    "guildContribution": 19
+  },
+  {
+    "questItem_en": "Kulin",
+    "questItem_cn": "库林",
+    "droppedByMonster_en": "Totemia",
+    "droppedByMonster_cn": "图腾",
+    "monsterLevel": "39 - 40",
+    "npcSellingPrice": 490,
+    "guildContribution": 20
+  },
+  {
+    "questItem_en": "Clack Heart",
+    "questItem_cn": "克拉克之心",
+    "droppedByMonster_en": "Cardpuppet",
+    "droppedByMonster_cn": "发条魔偶",
+    "monsterLevel": "41 - 42",
+    "npcSellingPrice": 527,
+    "guildContribution": 21
+  },
+  {
+    "questItem_en": "Tomb Marble",
+    "questItem_cn": "墓碑大理石",
+    "droppedByMonster_en": "Tombstone Bearer",
+    "droppedByMonster_cn": "墓碑怪",
+    "monsterLevel": "43 - 44",
+    "npcSellingPrice": 567,
+    "guildContribution": 22
+  },
+  {
+    "questItem_en": "Scuptoolh",
+    "questItem_cn": "蝎子尾",
+    "droppedByMonster_en": "Scorpion",
+    "droppedByMonster_cn": "蝎子",
+    "monsterLevel": "43 - 44",
+    "npcSellingPrice": 595,
+    "guildContribution": 22
+  },
+  {
+    "questItem_en": "Golden Fist",
+    "questItem_cn": "金拳头",
+    "droppedByMonster_en": "Basque",
+    "droppedByMonster_cn": "巴斯克",
+    "monsterLevel": "45 - 46",
+    "npcSellingPrice": 607,
+    "guildContribution": 23
+  },
+  {
+    "questItem_en": "Orbrin",
+    "questItem_cn": "奥布林",
+    "droppedByMonster_en": "Prankster",
+    "droppedByMonster_cn": "小丑术士",
+    "monsterLevel": "47 - 48",
+    "npcSellingPrice": 655,
+    "guildContribution": 24
+  },
+  {
+    "questItem_en": "Golden Cup",
+    "questItem_cn": "金杯",
+    "droppedByMonster_en": "Wheelem",
+    "droppedByMonster_cn": "威廉",
+    "monsterLevel": "49 - 50",
+    "npcSellingPrice": 700,
+    "guildContribution": 25
+  },
+  {
+    "questItem_en": "Turne",
+    "questItem_cn": "特恩",
+    "droppedByMonster_en": "Leyena",
+    "droppedByMonster_cn": "莱伊娜",
+    "monsterLevel": "51 - 52",
+    "npcSellingPrice": 710,
+    "guildContribution": 26
+  },
+  {
+    "questItem_en": "Trangoggle",
+    "questItem_cn": "特兰护目镜",
+    "droppedByMonster_en": "Trangfoma",
+    "droppedByMonster_cn": "淘金者",
+    "monsterLevel": "51 - 52",
+    "npcSellingPrice": 765,
+    "guildContribution": 26
+  },
+  {
+    "questItem_en": "Steam Tear",
+    "questItem_cn": "蒸汽之泪",
+    "droppedByMonster_en": "Steam Walker",
+    "droppedByMonster_cn": "蒸汽机甲",
+    "monsterLevel": "53 - 54",
+    "npcSellingPrice": 777,
+    "guildContribution": 27
+  },
+  {
+    "questItem_en": "Knightler",
+    "questItem_cn": "奈特勒",
+    "droppedByMonster_en": "Steel Knight",
+    "droppedByMonster_cn": "钢铁骑士",
+    "monsterLevel": "55 - 56",
+    "npcSellingPrice": 817,
+    "guildContribution": 28
+  },
+  {
+    "questItem_en": "Zombyhoe",
+    "questItem_cn": "僵尸锄",
+    "droppedByMonster_en": "Zombiger",
+    "droppedByMonster_cn": "僵尸格格",
+    "monsterLevel": "55 - 56",
+    "npcSellingPrice": 857,
+    "guildContribution": 28
+  },
+  {
+    "questItem_en": "Wheeshoe",
+    "questItem_cn": "惠鞋",
+    "droppedByMonster_en": "Nutty Wheel",
+    "droppedByMonster_cn": "独轮蒸汽机",
+    "monsterLevel": "57 - 58",
+    "npcSellingPrice": 865,
+    "guildContribution": 29
+  },
+  {
+    "questItem_en": "Nuctu-wheel",
+    "questItem_cn": "努图轮",
+    "droppedByMonster_en": "Nuctuvehicle",
+    "droppedByMonster_cn": "努图车",
+    "monsterLevel": "57 - 58",
+    "npcSellingPrice": 908,
+    "guildContribution": 29
+  },
+  {
+    "questItem_en": "Zem Mark",
+    "questItem_cn": "泽姆印记",
+    "droppedByMonster_en": "Risem",
+    "droppedByMonster_cn": "怒眼铁皮男",
+    "monsterLevel": "59 - 60",
+    "npcSellingPrice": 960,
+    "guildContribution": 30
+  },
+  {
+    "questItem_en": "Grrr Bandage",
+    "questItem_cn": "格尔绷带",
+    "droppedByMonster_en": "Grrr",
+    "droppedByMonster_cn": "格尔",
+    "monsterLevel": "60 - 62",
+    "npcSellingPrice": 1445,
+    "guildContribution": 30
+  },
+  {
+    "questItem_en": "Ampere",
+    "questItem_cn": "安培",
+    "droppedByMonster_en": "Volt",
+    "droppedByMonster_cn": "伏特",
+    "monsterLevel": "61 - 62",
+    "npcSellingPrice": 962,
+    "guildContribution": 31
+  },
+  {
+    "questItem_en": "Guardeye",
+    "questItem_cn": "守卫之眼",
+    "droppedByMonster_en": "Eldergard",
+    "droppedByMonster_cn": "长老守卫",
+    "monsterLevel": "63 - 64",
+    "npcSellingPrice": 1017,
+    "guildContribution": 32
+  },
+  {
+    "questItem_en": "Dumptire",
+    "questItem_cn": "垃圾轮胎",
+    "droppedByMonster_en": "Dump",
+    "droppedByMonster_cn": "垃圾怪",
+    "monsterLevel": "64 - 66",
+    "npcSellingPrice": 1567,
+    "guildContribution": 32
+  },
+  {
+    "questItem_en": "Garbageton",
+    "questItem_cn": "垃圾顿",
+    "droppedByMonster_en": "Garbagespider",
+    "droppedByMonster_cn": "垃圾蜘蛛",
+    "monsterLevel": "65 - 66",
+    "npcSellingPrice": 1075,
+    "guildContribution": 33
+  },
+  {
+    "questItem_en": "Eronior",
+    "questItem_cn": "埃罗尼奥",
+    "droppedByMonster_en": "Crane Machinery",
+    "droppedByMonster_cn": "起重机",
+    "monsterLevel": "67 - 68",
+    "npcSellingPrice": 1132,
+    "guildContribution": 34
+  },
+  {
+    "questItem_en": "Repygle",
+    "questItem_cn": "雷皮格",
+    "droppedByMonster_en": "Nautrepy",
+    "droppedByMonster_cn": "纳特皮",
+    "monsterLevel": "68 - 70",
+    "npcSellingPrice": 1660,
+    "guildContribution": 34
+  },
+  {
+    "questItem_en": "Sycale",
+    "questItem_cn": "赛克勒",
+    "droppedByMonster_en": "Sycale",
+    "droppedByMonster_cn": "赛克勒",
+    "monsterLevel": "69 - 70",
+    "npcSellingPrice": 1190,
+    "guildContribution": 35
+  },
+  {
+    "questItem_en": "Mong Tear",
+    "questItem_cn": "蒙之泪",
+    "droppedByMonster_en": "Greemong",
+    "droppedByMonster_cn": "格里蒙",
+    "monsterLevel": "71 - 72",
+    "npcSellingPrice": 1247,
+    "guildContribution": 36
+  },
+  {
+    "questItem_en": "Boopoison",
+    "questItem_cn": "布毒药",
+    "droppedByMonster_en": "Boo",
+    "droppedByMonster_cn": "布",
+    "monsterLevel": "72 - 74",
+    "npcSellingPrice": 1755,
+    "guildContribution": 36
+  },
+  {
+    "questItem_en": "Bomb Timer",
+    "questItem_cn": "炸弹计时器",
+    "droppedByMonster_en": "Carrierbomb",
+    "droppedByMonster_cn": "运载炸弹",
+    "monsterLevel": "73 - 74",
+    "npcSellingPrice": 1305,
+    "guildContribution": 37
+  },
+  {
+    "questItem_en": "Prewing",
+    "questItem_cn": "普威",
+    "droppedByMonster_en": "Hoppre",
+    "droppedByMonster_cn": "霍普",
+    "monsterLevel": "75 - 77",
+    "npcSellingPrice": 1857,
+    "guildContribution": 38
+  },
+  {
+    "questItem_en": "Poiespore",
+    "questItem_cn": "波伊孢子",
+    "droppedByMonster_en": "Mushpoie",
+    "droppedByMonster_cn": "蘑菇波伊",
+    "monsterLevel": "78 - 80",
+    "npcSellingPrice": 1962,
+    "guildContribution": 39
+  },
+  {
+    "questItem_en": "Renyken",
+    "questItem_cn": "伦尼肯",
+    "droppedByMonster_en": "Iren",
+    "droppedByMonster_cn": "艾伦",
+    "monsterLevel": "81 - 83",
+    "npcSellingPrice": 2077,
+    "guildContribution": 41
+  },
+  {
+    "questItem_en": "Tangkask",
+    "questItem_cn": "唐卡斯克",
+    "droppedByMonster_en": "Watangka",
+    "droppedByMonster_cn": "瓦汤卡",
+    "monsterLevel": "84 - 86",
+    "npcSellingPrice": 2195,
+    "guildContribution": 42
+  },
+  {
+    "questItem_en": "Keakoon Worker Pike",
+    "questItem_cn": "基昆工人长矛",
+    "droppedByMonster_en": "Keakoon Worker",
+    "droppedByMonster_cn": "基昆工人",
+    "monsterLevel": "85 - 87",
+    "npcSellingPrice": 2162,
+    "guildContribution": 43
+  },
+  {
+    "questItem_en": "Keakoon Guard Sword",
+    "questItem_cn": "基昆守卫之剑",
+    "droppedByMonster_en": "Keakoon Guard",
+    "droppedByMonster_cn": "基昆守卫",
+    "monsterLevel": "85 - 87",
+    "npcSellingPrice": 2180,
+    "guildContribution": 43
+  },
+  {
+    "questItem_en": "Elite Keakoon Worker Peak",
+    "questItem_cn": "精英基昆工人长矛",
+    "droppedByMonster_en": "Elite Keakoon Worker",
+    "droppedByMonster_cn": "精英基昆工人",
+    "monsterLevel": "86 - 88",
+    "npcSellingPrice": 2192,
+    "guildContribution": 43
+  },
+  {
+    "questItem_en": "Elite Keakoon Guard Sword",
+    "questItem_cn": "精英基昆守卫之剑",
+    "droppedByMonster_en": "Elite Keakoon Guard",
+    "droppedByMonster_cn": "精英基昆守卫",
+    "monsterLevel": "86 - 89",
+    "npcSellingPrice": 2205,
+    "guildContribution": 43
+  },
+  {
+    "questItem_en": "Blue Roach Leg",
+    "questItem_cn": "蓝蟑螂腿",
+    "droppedByMonster_en": "Blue Roach",
+    "droppedByMonster_cn": "蓝蟑螂",
+    "monsterLevel": "85 - 89",
+    "npcSellingPrice": 2217,
+    "guildContribution": 43
+  },
+  {
+    "questItem_en": "Pink Roach Leg",
+    "questItem_cn": "粉红蟑螂腿",
+    "droppedByMonster_en": "Pink Roach",
+    "droppedByMonster_cn": "粉红蟑螂",
+    "monsterLevel": "85 - 89",
+    "npcSellingPrice": 2230,
+    "guildContribution": 32
+  },
+  {
+    "questItem_en": "Green Trillipy Shell",
+    "questItem_cn": "绿三叶虫壳",
+    "droppedByMonster_en": "Green Trillipy",
+    "droppedByMonster_cn": "绿三叶虫",
+    "monsterLevel": "88 - 90",
+    "npcSellingPrice": 2242,
+    "guildContribution": 44
+  },
+  {
+    "questItem_en": "Rootioe",
+    "questItem_cn": "鲁提欧",
+    "droppedByMonster_en": "Antiquery",
+    "droppedByMonster_cn": "古董怪",
+    "monsterLevel": "87 - 89",
+    "npcSellingPrice": 2322,
+    "guildContribution": 44
+  },
+  {
+    "questItem_en": "Violet Trillipy Shell",
+    "questItem_cn": "紫三叶虫壳",
+    "droppedByMonster_en": "Violet Trillipy",
+    "droppedByMonster_cn": "紫三叶虫",
+    "monsterLevel": "89 - 91",
+    "npcSellingPrice": 2255,
+    "guildContribution": 45
+  },
+  {
+    "questItem_en": "Blood Trillipy Shell",
+    "questItem_cn": "血三叶虫壳",
+    "droppedByMonster_en": "Blood Trillipy",
+    "droppedByMonster_cn": "血三叶虫",
+    "monsterLevel": "90 - 92",
+    "npcSellingPrice": 2267,
+    "guildContribution": 45
+  },
+  {
+    "questItem_en": "Luchest",
+    "questItem_cn": "鲁切斯特",
+    "droppedByMonster_en": "Luia",
+    "droppedByMonster_cn": "鲁亚",
+    "monsterLevel": "90 - 92",
+    "npcSellingPrice": 2407,
+    "guildContribution": 45
+  },
+  {
+    "questItem_en": "Cat Bell",
+    "questItem_cn": "猫铃铛",
+    "droppedByMonster_en": "Catsy",
+    "droppedByMonster_cn": "凯西猫",
+    "monsterLevel": "89 - 93",
+    "npcSellingPrice": 955,
+    "guildContribution": 46
+  },
+  {
+    "questItem_en": "Mutant Keakoon Worker Peak",
+    "questItem_cn": "变种基昆工人长矛",
+    "droppedByMonster_en": "Mutant Keakoon Worker",
+    "droppedByMonster_cn": "变种基昆工人",
+    "monsterLevel": "91 - 93",
+    "npcSellingPrice": 2280,
+    "guildContribution": 46
+  },
+  {
+    "questItem_en": "Mutant Keakoon Guard Sword",
+    "questItem_cn": "变种基昆守卫之剑",
+    "droppedByMonster_en": "Mutant Keakoon Guard",
+    "droppedByMonster_cn": "变种基昆守卫",
+    "monsterLevel": "91 - 95",
+    "npcSellingPrice": 2292,
+    "guildContribution": 46
+  },
+  {
+    "questItem_en": "Chimeradon Horn",
+    "questItem_cn": "奇美拉之角",
+    "droppedByMonster_en": "Boss Monsters",
+    "droppedByMonster_cn": "Boss怪物",
+    "monsterLevel": "Different Levels",
+    "npcSellingPrice": 2305,
+    "guildContribution": 46
+  },
+  {
+    "questItem_en": "Eonsinmit",
+    "questItem_cn": "恩辛米特",
+    "droppedByMonster_en": "Gongury",
+    "droppedByMonster_cn": "贡古里",
+    "monsterLevel": "93 - 95",
+    "npcSellingPrice": 955,
+    "guildContribution": 47
+  },
+  {
+    "questItem_en": "Hammanter",
+    "questItem_cn": "哈曼特",
+    "droppedByMonster_en": "Shuhamma",
+    "droppedByMonster_cn": "舒哈玛",
+    "monsterLevel": "96 - 98",
+    "npcSellingPrice": 1065,
+    "guildContribution": 48
+  },
+  {
+    "questItem_en": "Harpy Feather",
+    "questItem_cn": "哈比羽毛",
+    "droppedByMonster_en": "Harpy",
+    "droppedByMonster_cn": "哈比",
+    "monsterLevel": "93 - 97",
+    "npcSellingPrice": 1065,
+    "guildContribution": 48
+  },
+  {
+    "questItem_en": "Rnamond",
+    "questItem_cn": "纳蒙德",
+    "droppedByMonster_en": "Kern",
+    "droppedByMonster_cn": "克恩",
+    "monsterLevel": "99 - 101",
+    "npcSellingPrice": 1190,
+    "guildContribution": 50
+  },
+  {
+    "questItem_en": "Gullah Mud",
+    "questItem_cn": "古拉泥",
+    "droppedByMonster_en": "Gullah",
+    "droppedByMonster_cn": "古拉",
+    "monsterLevel": "97 - 101",
+    "npcSellingPrice": 1190,
+    "guildContribution": 50
+  },
+  {
+    "questItem_en": "Snake Tongue",
+    "questItem_cn": "蛇舌",
+    "droppedByMonster_en": "Abraxas",
+    "droppedByMonster_cn": "阿布拉卡斯",
+    "monsterLevel": "99 - 105",
+    "npcSellingPrice": 1327,
+    "guildContribution": 51
+  },
+  {
+    "questItem_en": "Phanbubble",
+    "questItem_cn": "梵泡泡",
+    "droppedByMonster_en": "Glaphan",
+    "droppedByMonster_cn": "格拉汉",
+    "monsterLevel": "102 - 104",
+    "npcSellingPrice": 1327,
+    "guildContribution": 51
+  },
+  {
+    "questItem_en": "Hague Nail",
+    "questItem_cn": "海格钉",
+    "droppedByMonster_en": "Hague",
+    "droppedByMonster_cn": "海格",
+    "monsterLevel": "103 - 109",
+    "npcSellingPrice": 1465,
+    "guildContribution": 53
+  },
+  {
+    "questItem_en": "Merahook",
+    "questItem_cn": "梅拉钩",
+    "droppedByMonster_en": "Chimeradon",
+    "droppedByMonster_cn": "奇美拉",
+    "monsterLevel": "105 - 107",
+    "npcSellingPrice": 1465,
+    "guildContribution": 53
+  },
+  {
+    "questItem_en": "Neikyname",
+    "questItem_cn": "奈基名牌",
+    "droppedByMonster_en": "Bearnerky",
+    "droppedByMonster_cn": "贝尔纳基",
+    "monsterLevel": "108 - 110",
+    "npcSellingPrice": 1602,
+    "guildContribution": 54
+  },
+  {
+    "questItem_en": "Tengu Bell",
+    "questItem_cn": "天狗铃铛",
+    "droppedByMonster_en": "Tengu",
+    "droppedByMonster_cn": "天狗",
+    "monsterLevel": "108 - 115",
+    "npcSellingPrice": 1740,
+    "guildContribution": 56
+  },
+  {
+    "questItem_en": "Rincruel",
+    "questItem_cn": "林克鲁尔",
+    "droppedByMonster_en": "Muffrin",
+    "droppedByMonster_cn": "穆夫林",
+    "monsterLevel": "111 - 113",
+    "npcSellingPrice": 1740,
+    "guildContribution": 56
+  },
+  {
+    "questItem_en": "Popshift",
+    "questItem_cn": "波普换挡",
+    "droppedByMonster_en": "Popcrank",
+    "droppedByMonster_cn": "波普克兰克",
+    "monsterLevel": "114 - 116",
+    "npcSellingPrice": 1877,
+    "guildContribution": 57
+  },
+  {
+    "questItem_en": "Gray Crystal",
+    "questItem_cn": "灰水晶",
+    "droppedByMonster_en": "Medumet",
+    "droppedByMonster_cn": "梅杜梅特",
+    "monsterLevel": "117 - 119",
+    "npcSellingPrice": 1962,
+    "guildContribution": 59
+  },
+  {
+    "questItem_en": "Horn of Asterius",
+    "questItem_cn": "阿斯特里乌斯之角",
+    "droppedByMonster_en": "Asterius",
+    "droppedByMonster_cn": "阿斯特里乌斯",
+    "monsterLevel": "116 - 120",
+    "npcSellingPrice": 1962,
+    "guildContribution": 59
+  },
+  {
+    "questItem_en": "Red Crystal",
+    "questItem_cn": "红水晶",
+    "droppedByMonster_en": "Yeti",
+    "droppedByMonster_cn": "雪人",
+    "monsterLevel": "120 - 122",
+    "npcSellingPrice": 2107,
+    "guildContribution": 60
+  },
+  {
+    "questItem_en": "Dragon Tooth",
+    "questItem_cn": "龙牙",
+    "droppedByMonster_en": "(Red) Meteonyker",
+    "droppedByMonster_cn": "流星怪",
+    "monsterLevel": "100 / 121",
+    "npcSellingPrice": 2500,
+    "guildContribution": 60
+  },
+  {
+    "questItem_en": "Magic Bead",
+    "questItem_cn": "魔法珠",
+    "droppedByMonster_en": "Dantalian",
+    "droppedByMonster_cn": "丹塔利安",
+    "monsterLevel": "122 - 126",
+    "npcSellingPrice": 2332,
+    "guildContribution": 62
+  },
+  {
+    "questItem_en": "Yellow Crystal",
+    "questItem_cn": "黄水晶",
+    "droppedByMonster_en": "Augu",
+    "droppedByMonster_cn": "奥古",
+    "monsterLevel": "125 - 127",
+    "npcSellingPrice": 2332,
+    "guildContribution": 63
+  },
+  {
+    "questItem_en": "Strange Ivory",
+    "questItem_cn": "奇异象牙",
+    "droppedByMonster_en": "Ganessa",
+    "droppedByMonster_cn": "伽内萨",
+    "monsterLevel": "127 - 132",
+    "npcSellingPrice": 2579,
+    "guildContribution": 65
+  },
+  {
+    "questItem_en": "Green Crystal",
+    "questItem_cn": "绿水晶",
+    "droppedByMonster_en": "Ghost of the Forgotten King",
+    "droppedByMonster_cn": "被遗忘的国王幽灵",
+    "monsterLevel": "129 - 131",
+    "npcSellingPrice": 2579,
+    "guildContribution": 65
+  },
+  {
+    "questItem_en": "Blue Crystal",
+    "questItem_cn": "蓝水晶",
+    "droppedByMonster_en": "Mammoth",
+    "droppedByMonster_cn": "猛犸象",
+    "monsterLevel": "135 - 139",
+    "npcSellingPrice": 2750,
+    "guildContribution": 68
+  },
+  {
+    "questItem_en": "Metal Heart",
+    "questItem_cn": "金属之心",
+    "droppedByMonster_en": "Asuras",
+    "droppedByMonster_cn": "阿修罗",
+    "monsterLevel": "133 - 137",
+    "npcSellingPrice": 2750,
+    "guildContribution": 68
+  },
+  {
+    "questItem_en": "Broken Wings",
+    "questItem_cn": "破碎的翅膀",
+    "droppedByMonster_en": "Atrox",
+    "droppedByMonster_cn": "阿特罗克斯",
+    "monsterLevel": "140 - 142",
+    "npcSellingPrice": 2558,
+    "guildContribution": 70
+  },
+  {
+    "questItem_en": "Shady eye",
+    "questItem_cn": "阴暗之眼",
+    "droppedByMonster_en": "Shadowir",
+    "droppedByMonster_cn": "影魔",
+    "monsterLevel": "138 - 142",
+    "npcSellingPrice": 2947,
+    "guildContribution": 71
+  },
+  {
+    "questItem_en": "Sharp Canine",
+    "questItem_cn": "锋利犬齿",
+    "droppedByMonster_en": "Tigar",
+    "droppedByMonster_cn": "泰格",
+    "monsterLevel": "142 - 144",
+    "npcSellingPrice": 2767,
+    "guildContribution": 71
+  },
+  {
+    "questItem_en": "Cursed Wing",
+    "questItem_cn": "诅咒之翼",
+    "droppedByMonster_en": "Skelmaw",
+    "droppedByMonster_cn": "斯克尔莫",
+    "monsterLevel": "143 - 147",
+    "npcSellingPrice": 3096,
+    "guildContribution": 73
+  },
+  {
+    "questItem_en": "Gogloo",
+    "questItem_cn": "咕噜",
+    "droppedByMonster_en": "Meral",
+    "droppedByMonster_cn": "梅拉尔",
+    "monsterLevel": "145 - 147",
+    "npcSellingPrice": 3029,
+    "guildContribution": 73
+  },
+  {
+    "questItem_en": "Crab Shell",
+    "questItem_cn": "蟹壳",
+    "droppedByMonster_en": "Creper",
+    "droppedByMonster_cn": "爬行者",
+    "monsterLevel": "148 - 150",
+    "npcSellingPrice": 3225,
+    "guildContribution": 74
+  },
+  {
+    "questItem_en": "Big Nippers",
+    "questItem_cn": "大钳子",
+    "droppedByMonster_en": "Kingster",
+    "droppedByMonster_cn": "金斯特",
+    "monsterLevel": "148 - 150",
+    "npcSellingPrice": 3225,
+    "guildContribution": 74
+  },
+  {
+    "questItem_en": "Wand of Maleficar",
+    "questItem_cn": "玛蕾菲卡魔杖",
+    "droppedByMonster_en": "Maleficar",
+    "droppedByMonster_cn": "玛蕾菲卡",
+    "monsterLevel": "148 - 152",
+    "npcSellingPrice": 3245,
+    "guildContribution": 76
+  },
+  {
+    "questItem_en": "Crumbly Hair",
+    "questItem_cn": "易碎的头发",
+    "droppedByMonster_en": "Naga",
+    "droppedByMonster_cn": "娜迦",
+    "monsterLevel": "151 - 153",
+    "npcSellingPrice": 3352,
+    "guildContribution": 76
+  },
+  {
+    "questItem_en": "Great Crown",
+    "questItem_cn": "伟大的王冠",
+    "droppedByMonster_en": "Okean",
+    "droppedByMonster_cn": "奥肯",
+    "monsterLevel": "154 - 156",
+    "npcSellingPrice": 3437,
+    "guildContribution": 77
+  },
+  {
+    "questItem_en": "Keen Tooth",
+    "questItem_cn": "敏锐之牙",
+    "droppedByMonster_en": "Dorian",
+    "droppedByMonster_cn": "多里安",
+    "monsterLevel": "154 - 156",
+    "npcSellingPrice": 3437,
+    "guildContribution": 77
+  },
+  {
+    "questItem_en": "Cursed Warden Gem",
+    "questItem_cn": "诅咒守望者宝石",
+    "droppedByMonster_en": "Cursed Warden",
+    "droppedByMonster_cn": "诅咒守望者",
+    "monsterLevel": "153 - 157",
+    "npcSellingPrice": 3394,
+    "guildContribution": 78
+  },
+  {
+    "questItem_en": "Ink Pouch",
+    "questItem_cn": "墨水袋",
+    "droppedByMonster_en": "Kraken",
+    "droppedByMonster_cn": "克拉肯",
+    "monsterLevel": "157 - 159",
+    "npcSellingPrice": 3532,
+    "guildContribution": 79
+  },
+  {
+    "questItem_en": "Dreadfin Tooth",
+    "questItem_cn": "恐惧鳍牙",
+    "droppedByMonster_en": "Dreadfin",
+    "droppedByMonster_cn": "恐惧鳍",
+    "monsterLevel": "160 - 161",
+    "npcSellingPrice": 3029,
+    "guildContribution": 73
+  },
+  {
+    "questItem_en": "Dreadscale Medallion",
+    "questItem_cn": "恐惧鳞片勋章",
+    "droppedByMonster_en": "Dreadscale",
+    "droppedByMonster_cn": "恐惧鳞片",
+    "monsterLevel": "162 - 163",
+    "npcSellingPrice": 3734,
+    "guildContribution": 82
+  },
+  {
+    "questItem_en": "Scale of Luminfin",
+    "questItem_cn": "鲁米芬之鳞",
+    "droppedByMonster_en": "Luminfin",
+    "droppedByMonster_cn": "鲁米芬",
+    "monsterLevel": "164 - 165",
+    "npcSellingPrice": 3839,
+    "guildContribution": 83
+  }
+]

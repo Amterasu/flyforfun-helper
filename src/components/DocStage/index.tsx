@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { DocNode } from '../../types/doc'
 import { DocNodeItem } from '../DocNodeItem'
+import { TertiaryNavTabs } from '../TertiaryNavTabs'
 import { Outlet } from 'react-router-dom'
 import './index.less'
 
@@ -8,6 +9,7 @@ type DocStageProps = {
   activeSection: string
   currentSection?: DocNode
   activeChildId?: string
+  activeLeafId?: string
   searchTerm: string
   onSectionChange: (id: string) => void
   onChildChange: (id: string) => void
@@ -16,7 +18,8 @@ type DocStageProps = {
 
 export const DocStage = ({
   currentSection,
-  activeChildId
+  activeChildId,
+  activeLeafId
 }: DocStageProps) => {
   const currentChild = useMemo(
     () => currentSection?.children?.find((child) => child.id === activeChildId),
@@ -24,6 +27,7 @@ export const DocStage = ({
   )
 
   const hasSecondaryNav = !!currentSection?.children?.length
+  const hasTertiaryNav = !!currentChild?.children?.length
   const filteredNodes = useMemo(() => {
     if (!hasSecondaryNav || !currentChild?.children) return currentChild?.children
     return currentChild.children
@@ -38,10 +42,17 @@ export const DocStage = ({
               {hasSecondaryNav ? (
                 currentChild ? (
                   <>
+                    {/* 如果有四级导航，显示 Tabs */}
+                    {hasTertiaryNav && (
+                      <TertiaryNavTabs 
+                        currentChild={currentChild} 
+                        activeLeafId={activeLeafId}
+                      />
+                    )}
                     {/* 显示当前二级导航项的内容 */}
                     <Outlet />
-                    {/* 如果有子节点，显示子节点列表 */}
-                    {currentChild.children && (
+                    {/* 如果没有四级导航且有子节点，显示子节点列表 */}
+                    {!hasTertiaryNav && currentChild.children && (
                       <>
                         {filteredNodes && filteredNodes.length > 0 ? (
                           filteredNodes.map((node) => (

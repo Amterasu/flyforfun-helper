@@ -1,97 +1,97 @@
-import React from 'react'
-import { BaikeImage } from '../../../../components/BaikeImage'
-import './index.less'
+import React, { useState } from "react";
+import { CopyOutlined, CheckOutlined } from "@ant-design/icons";
+import "./index.less";
 
-// 高亮文本组件
-const HighlightText: React.FC<{ text: string; highlights: string[] }> = ({ text, highlights }) => {
-  if (highlights.length === 0) {
-    return <>{text}</>
-  }
-
-  const pattern = highlights.map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')
-  const regex = new RegExp(`(${pattern})`, 'g')
-  const parts = text.split(regex)
-
-  return (
-    <>
-      {parts.map((part, idx) => {
-        const isHighlight = highlights.includes(part)
-        return isHighlight ? (
-          <span key={idx} className="highlight">
-            {part}
-          </span>
-        ) : (
-          <React.Fragment key={idx}>{part}</React.Fragment>
-        )
-      })}
-    </>
-  )
-}
-
+const commandsData = [
+  {
+    name: "/lockedslots",
+    shortName: "",
+    des: "显示提供背包位置的未完成任务和成就列表",
+  },
+  { name: "/say", shortName: "", des: "向其他玩家发送私人消息" },
+  { name: "/spectate", shortName: "", des: "观战另一名玩家" },
+  { name: "/addfriend", shortName: "/af", des: "邀请玩家加入你的好友列表" },
+  { name: "/commands", shortName: "/h", des: "显示指令列表" },
+  { name: "/connectagree", shortName: "/cag", des: "启用好友登录通知" },
+  { name: "/connectrefuse", shortName: "/cre", des: "禁用好友登录通知" },
+  { name: "/guildchat", shortName: "/g", des: "向公会成员发送消息" },
+  { name: "/guildinvite", shortName: "/gi", des: "邀请玩家加入你的公会" },
+  { name: "/ignore", shortName: "/ig", des: "忽略一名玩家" },
+  { name: "/ignorelist", shortName: "/igl", des: "显示被忽略的玩家列表" },
+  { name: "/messengeragree", shortName: "/mag", des: "启用好友邀请" },
+  { name: "/messengerrefuse", shortName: "/mre", des: "禁用好友邀请" },
+  { name: "/partychat", shortName: "/p", des: "向队伍成员发送消息" },
+  { name: "/partyinvite", shortName: "/pi", des: "邀请玩家加入你的队伍" },
+  { name: "/position", shortName: "/pos", des: "显示你的当前位置" },
+  { name: "/shout", shortName: "/s", des: "向你周围大喊消息" },
+  { name: "/shoutagree", shortName: "/ha", des: "启用大喊消息" },
+  { name: "/shoutrefuse", shortName: "/hr", des: "禁用大喊消息" },
+  { name: "/stageagree", shortName: "/gag", des: "启用队伍邀请" },
+  { name: "/stagerefuse", shortName: "/gre", des: "禁用队伍邀请" },
+  { name: "/teamchat", shortName: "/t", des: "向团队成员发送消息" },
+  { name: "/time", shortName: "/ti", des: "显示本地和服务器时间" },
+  { name: "/trade", shortName: "/tr", des: "请求玩家进行交易" },
+  { name: "/tradeagree", shortName: "/tag", des: "启用交易" },
+  { name: "/traderefuse", shortName: "/tre", des: "禁用交易" },
+  { name: "/unignore", shortName: "/uig", des: "取消忽略一名玩家" },
+  { name: "/whisper", shortName: "/w", des: "向其他玩家发送悄悄话消息" },
+  { name: "/whisperagree", shortName: "/wag", des: "启用私人消息" },
+  { name: "/whisperrefuse", shortName: "/wre", des: "禁用私人消息" },
+];
 export const Commands = () => {
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+
+  const handleCopy = async (command: string, index: number) => {
+    try {
+      await navigator.clipboard.writeText(command);
+      setCopiedIndex(index);
+      setTimeout(() => {
+        setCopiedIndex(null);
+      }, 2000);
+    } catch (err) {
+      console.error("复制失败:", err);
+    }
+  };
+
   return (
     <div className="baike-content">
-      <div className="baike-info-card">
-        <p>
-          <strong>
-            更多信息请参考{' '}
-            <a href="https://gothante.wiki/?search=commands" target="_blank" rel="noopener noreferrer">
-              Gothante
-            </a>
-            。
-          </strong>
-        </p>
-      </div>
-
-      <div className="baike-section">
-        <div className="baike-source">
-          <p>
-            来源:
-            <a
-              href="https://universe.flyff.com/news/patchnotes132"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              游戏版本1.3.2更新说明
-            </a>
-          </p>
-        </div>
-        <div className="baike-info-item">
-          <p>
-            <HighlightText
-              text="添加了聊天命令 /lockedslots 来显示所有解锁库存槽位的未完成任务和成就。"
-              highlights={['/lockedslots']}
-            />
-          </p>
-        </div>
-      </div>
-
-      <div className="baike-section">
-        <div className="baike-source">
-          <p>
-            来源:
-            <a
-              href="https://universe.flyff.com/news/patchnotemarch6"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              游戏版本1.4.3更新说明（3月6日）
-            </a>
-          </p>
-        </div>
-        <div className="baike-info-item">
-          <p>
-            <HighlightText
-              text="现在你可以使用 /spectate 在公会战地图内观战玩家，但有一些限制。"
-              highlights={['/spectate']}
-            />
-          </p>
-        </div>
-      </div>
-
-      <div className="baike-image-thumbnail">
-        <BaikeImage src="/system/commands.png" alt="commands.png" maxWidth="600px" />
+      <div className="commands-table-wrapper">
+        <table className="baike-table commands-table">
+          <thead>
+            <tr>
+              <th>指令</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            {commandsData.map((command, index) => {
+              const displayCommand = command.shortName || command.name;
+              return (
+                <tr key={index}>
+                  <td 
+                    className="command-name clickable"
+                    onClick={() => handleCopy(displayCommand, index)}
+                    title={`点击复制 ${displayCommand}`}
+                  >
+                    <span className="command-full">{command.name}</span>
+                    {command.shortName && (
+                      <span className="command-short"> ({command.shortName})</span>
+                    )}
+                    <span className="copy-icon-wrapper">
+                      {copiedIndex === index ? (
+                        <CheckOutlined className="copy-icon copied" />
+                      ) : (
+                        <CopyOutlined className="copy-icon" />
+                      )}
+                    </span>
+                  </td>
+                  <td>{command.des}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
       </div>
     </div>
-  )
-}
+  );
+};

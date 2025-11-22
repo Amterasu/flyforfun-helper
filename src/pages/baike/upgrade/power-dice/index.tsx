@@ -6,7 +6,6 @@ export const PowerDice = () => {
     <div className="baike-content">
     
     
-    <p key={2}><strong>更多信息请参考 <a href="https://gothante.wiki/?search=what+power+dice+and+upgrading+materials+do+i+need+for+which+upgrade" target="_blank" rel="noopener noreferrer">Gothante</a>。</strong></p>
     <div className="baike-image-container" key={4}>
       <BaikeImage key={0} src="/upgrade/power_dices.png" alt="power_dices.png" maxWidth="100%" />
     </div>

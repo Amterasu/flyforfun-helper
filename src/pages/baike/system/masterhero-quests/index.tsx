@@ -32,7 +32,7 @@ const changes = [
   { text: '从怪物身上获取的经验减半 (-50%)。', highlights: ['-50%', '50%'] },
   { text: '掉落率减半 (-50%)。', highlights: ['-50%', '50%'] },
   { text: '只能与同一主线任务的其他玩家分享经验。', highlights: [] },
-  { text: '不能进入副本(副本)。', highlights: [] },
+  { text: '不能进入副本。', highlights: [] },
   { text: '不能进入 60、80 级公会战。', highlights: ['60', '80'] },
   { text: '可以使用原本等级的装备和技能。', highlights: [] },
   { text: '在大师任务中，经验分享等级差距为 9 级。', highlights: ['9'] },
@@ -41,72 +41,6 @@ const changes = [
 export const MasterheroQuests = () => {
   return (
     <div className="baike-content">
-      <div className="baike-info-card">
-        <p>
-          <strong>
-            更多信息请参考{' '}
-            <a
-              href="https://gothante.wiki/?search=optional+master%2Fhero+quests"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Gothante
-            </a>
-            。
-          </strong>
-        </p>
-      </div>
-
-      <div className="baike-sources">
-        <div className="baike-source">
-          <p>
-            来源:
-            <a
-              href="https://universe.flyff.com/news/reborn120"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              v1.2.0 Reborn is coming on March 13!
-            </a>
-          </p>
-        </div>
-        <div className="baike-source">
-          <p>
-            来源:
-            <a
-              href="https://wcdn-universe.flyff.com/site/patch1_2_0.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Reborn Expansion Flyff Universe Version 1.2.0
-            </a>
-          </p>
-        </div>
-        <div className="baike-source">
-          <p>
-            来源:
-            <a
-              href="https://universe.flyff.com/news/newhorizonv1301"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              New Horizon Expansion (Flyff Universe Version 1.3.0)
-            </a>
-          </p>
-        </div>
-        <div className="baike-source">
-          <p>
-            来源:
-            <a
-              href="https://universe.flyff.com/news/ver141"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)
-            </a>
-          </p>
-        </div>
-      </div>
 
       <div className="baike-image-thumbnail">
         <BaikeImage
@@ -118,42 +52,19 @@ export const MasterheroQuests = () => {
 
       <div className="baike-section">
         <div className="baike-info-item">
-          <p>
-            Once you complete all of the Optional Master quest, you can try the new New Optional Hero
-            quest at [Master Quests] Leila. This quest will ask you to level up from{' '}
-            <HighlightText text="120" highlights={['120']} /> to{' '}
-            <HighlightText text="125" highlights={['125']} /> and gather{' '}
-            <HighlightText text="100" highlights={['100']} /> Symbols of Shade.
-          </p>
+          <p>在执行大师任务与英雄任务期间，你的角色将迎来以下变更：</p>
         </div>
-        <div className="baike-info-item">
-          <p>While on a master and hero quest, there are some changes to your character:</p>
-        </div>
-        <div className="changes-list">
+        <ol className="baike-ordered-list baike-ordered-list--spacious">
           {changes.map((change, idx) => (
-            <div key={idx} className="change-item">
-              <p>
-                <HighlightText text={change.text} highlights={change.highlights} />
-              </p>
-            </div>
+            <li key={idx}>
+              <HighlightText text={change.text} highlights={change.highlights} />
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
 
       <div className="baike-section">
         <h2 className="baike-section-title">大师披风</h2>
-        <div className="baike-source">
-          <p>
-            source:
-            <a
-              href="https://discord.com/channels/778915844070834186/778927702874652682/1095975334270226492"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @gm_shadow [GM] Shadow (discord flyff universe)
-            </a>
-          </p>
-        </div>
         <div className="baike-info-item">
           <p>完成任务后，奖励大师披风（左图）。</p>
         </div>

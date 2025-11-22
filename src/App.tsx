@@ -10,6 +10,7 @@ import FlyffCommunityLinks from './pages/community'
 import { ToolsPage } from './pages/tools'
 import { PlaceholderBoard } from './components/PlaceholderBoard'
 import { CoachingPage } from './pages/CoachingPage'
+import { HomePage } from './pages/HomePage'
 import { docTree } from './constants'
 import type { MainNav } from './types/doc'
 
@@ -34,6 +35,7 @@ function App() {
   // 根据路径确定当前标签
   const activeTab: MainNav = useMemo(() => {
     const path = location.pathname
+    if (path === '/index' || path.startsWith('/index')) return '首页'
     if (path.startsWith('/community')) return '社区'
     if (path.startsWith('/tool')) return '助手'
     if (path.startsWith('/news')) return '新闻'
@@ -42,10 +44,11 @@ function App() {
     return '飞飞百科'
   }, [location.pathname])
 
-  // 从路径提取 sectionId 和 childId
+  // 从路径提取 sectionId、childId 和 leafId
   const pathParts = location.pathname.split('/').filter(Boolean)
   const sectionId = pathParts[1] || ''
   const childId = pathParts[2] || ''
+  const leafId = pathParts[3] || ''
 
   const currentSection = useMemo(
     () => docTree.find((section) => section.id === sectionId),
@@ -56,11 +59,21 @@ function App() {
     <>
       <TopHeader activeTab={activeTab} />
       <div className="app-shell">
-        <Hero />
+        {activeTab === '飞飞百科' && <Hero />}
 
         <Routes>
           {/* 根路由重定向 */}
           <Route path="/" element={<Navigate to={getDefaultBaikePath()} replace />} />
+          
+          {/* 首页路由 */}
+          <Route
+            path="/index"
+            element={
+              <div className="doc-wrapper">
+                <HomePage />
+              </div>
+            }
+          />
 
           {/* 飞飞百科路由 */}
           <Route
@@ -75,6 +88,7 @@ function App() {
                   activeSection={sectionId}
                   currentSection={currentSection}
                   activeChildId={childId || undefined}
+                  activeLeafId={leafId || undefined}
                   searchTerm=""
                   onSectionChange={() => {}}
                   onChildChange={() => {}}

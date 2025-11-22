@@ -39,17 +39,17 @@ export const Bless = () => {
   const [leftResult, setLeftResult] = useState<RollResult | null>(null);
   const [rightResult, setRightResult] = useState<RollResult | null>(null);
   const [history, setHistory] = useState<HistoryRecord[]>([]); // 洗练历史不刷新一直保留
-  const [leftTarget, setLeftTarget] = useState<{
+  const [target1, setTarget1] = useState<{
     statType: string;
     statValue: number | string;
   } | null>(null);
-  const [rightTarget, setRightTarget] = useState<{
+  const [target2, setTarget2] = useState<{
     statType: string;
     statValue: number | string;
   } | null>(null);
   const [rollCount, setRollCount] = useState(0);
   const [showTargetSelector, setShowTargetSelector] = useState<
-    "left" | "right" | null
+    "target1" | "target2" | null
   >(null);
   const [rollFrequency, setRollFrequency] = useState<number>(DEFAULT_ROLL_FREQUENCY); // 洗练频率（每秒次数）
   const [targetRelation, setTargetRelation] = useState<"and" | "or">("and"); // 目标关系：and=同时满足，or=满足一个即可
@@ -404,7 +404,7 @@ export const Bless = () => {
     const checkTargets = () => {
       // 如果两个都为空，不限制，继续洗练（但不会自动停止）
       // 只有在有至少一个目标时才检查
-      if (!leftTarget && !rightTarget) {
+      if (!target1 && !target2) {
         // 没有目标时，只执行一次洗练
         performRoll();
         return;
@@ -420,44 +420,43 @@ export const Bless = () => {
       tempLeftResultRef.current = left;
       tempRightResultRef.current = right;
 
-      // 检查是否达到目标
-      // 如果一侧为空，则不限制该侧（总是匹配）
-      const leftMatch =
-        !leftTarget ||
-        (left.statType === leftTarget.statType &&
-          left.statValue === leftTarget.statValue);
-      const rightMatch =
-        !rightTarget ||
-        (right.statType === rightTarget.statType &&
-          right.statValue === rightTarget.statValue);
+      // 检查结果中是否包含目标属性（不区分左右）
+      const checkMatch = (result: RollResult, target: { statType: string; statValue: number | string }): boolean => {
+        return result.statType === target.statType && result.statValue === target.statValue;
+      };
+
+      const leftMatchesTarget1 = target1 ? checkMatch(left, target1) : false;
+      const leftMatchesTarget2 = target2 ? checkMatch(left, target2) : false;
+      const rightMatchesTarget1 = target1 ? checkMatch(right, target1) : false;
+      const rightMatchesTarget2 = target2 ? checkMatch(right, target2) : false;
 
       // 根据目标关系判断是否达成
-      // 注意：如果一侧为空，则不限制该侧（总是匹配）
       let targetAchieved = false;
       if (targetRelation === "and") {
-        // 同时满足：两个都有目标时都要满足，如果只有一个目标则只需满足那一个
-        if (leftTarget && rightTarget) {
-          targetAchieved = leftMatch && rightMatch;
-        } else if (leftTarget) {
-          // 只有左侧目标，只需满足左侧
-          targetAchieved = leftMatch;
-        } else if (rightTarget) {
-          // 只有右侧目标，只需满足右侧
-          targetAchieved = rightMatch;
+        // 同时满足：结果中必须同时包含属性1和属性2（不管左右顺序）
+        if (target1 && target2) {
+          // 左1右2 或 左2右1
+          targetAchieved = (leftMatchesTarget1 && rightMatchesTarget2) || 
+                          (leftMatchesTarget2 && rightMatchesTarget1);
+        } else if (target1) {
+          // 只有属性1，只需满足属性1（在左边或右边都可以）
+          targetAchieved = leftMatchesTarget1 || rightMatchesTarget1;
+        } else if (target2) {
+          // 只有属性2，只需满足属性2（在左边或右边都可以）
+          targetAchieved = leftMatchesTarget2 || rightMatchesTarget2;
         }
-        // 两个都为空的情况已经在 checkTargets 开头处理了
       } else {
-        // 满足一个即可：至少有一个目标且满足其中一个
-        if (leftTarget && rightTarget) {
-          targetAchieved = leftMatch || rightMatch;
-        } else if (leftTarget) {
-          // 只有左侧目标，只需满足左侧
-          targetAchieved = leftMatch;
-        } else if (rightTarget) {
-          // 只有右侧目标，只需满足右侧
-          targetAchieved = rightMatch;
+        // 满足一个即可：结果中出现属性1或属性2中的任意一个即可（不管左右）
+        if (target1 && target2) {
+          targetAchieved = leftMatchesTarget1 || leftMatchesTarget2 || 
+                          rightMatchesTarget1 || rightMatchesTarget2;
+        } else if (target1) {
+          // 只有属性1，只需满足属性1（在左边或右边都可以）
+          targetAchieved = leftMatchesTarget1 || rightMatchesTarget1;
+        } else if (target2) {
+          // 只有属性2，只需满足属性2（在左边或右边都可以）
+          targetAchieved = leftMatchesTarget2 || rightMatchesTarget2;
         }
-        // 两个都为空的情况已经在 checkTargets 开头处理了
       }
 
       if (targetAchieved) {
@@ -519,24 +518,24 @@ export const Bless = () => {
         clearInterval(autoRollIntervalRef.current);
       }
     };
-  }, [isAutoRolling, leftTarget, rightTarget, targetRelation, rollFrequency, performRoll, generateRollList, rollCount]);
+  }, [isAutoRolling, target1, target2, targetRelation, rollFrequency, performRoll, generateRollList, rollCount]);
 
   // 设置目标
   const handleSetTarget = (
-    side: "left" | "right",
+    side: "target1" | "target2",
     statType: string,
     statValue: number | string
   ) => {
-    if (side === "left") {
-      setLeftTarget(
-        leftTarget?.statType === statType && leftTarget?.statValue === statValue
+    if (side === "target1") {
+      setTarget1(
+        target1?.statType === statType && target1?.statValue === statValue
           ? null
           : { statType, statValue }
       );
     } else {
-      setRightTarget(
-        rightTarget?.statType === statType &&
-          rightTarget?.statValue === statValue
+      setTarget2(
+        target2?.statType === statType &&
+          target2?.statValue === statValue
           ? null
           : { statType, statValue }
       );
@@ -547,7 +546,7 @@ export const Bless = () => {
   // 开始自动洗练（如果有预设属性则一直洗练直到达到目标）
   const handleStartAutoRoll = () => {
     if (isAutoRolling) return;
-    if (!leftTarget && !rightTarget) {
+    if (!target1 && !target2) {
       alert("请至少选择一个目标属性");
       return;
     }
@@ -561,7 +560,7 @@ export const Bless = () => {
     if (isAutoRolling) return;
     
     // 如果有预设属性，直接开始自动洗练
-    if (leftTarget || rightTarget) {
+    if (target1 || target2) {
       handleStartAutoRoll();
     } else {
       // 没有预设属性时，只执行单次洗练（频率默认为1次）
@@ -700,8 +699,8 @@ export const Bless = () => {
           onClick={() => {
             if (blessingType !== "goddess") {
               // 切换时清空预设属性
-              setLeftTarget(null);
-              setRightTarget(null);
+              setTarget1(null);
+              setTarget2(null);
               setLeftResult(null);
               setRightResult(null);
               setSuccessMessage({ show: false, count: 0 });
@@ -718,8 +717,8 @@ export const Bless = () => {
           onClick={() => {
             if (blessingType !== "demon") {
               // 切换时清空预设属性
-              setLeftTarget(null);
-              setRightTarget(null);
+              setTarget1(null);
+              setTarget2(null);
               setLeftResult(null);
               setRightResult(null);
               setSuccessMessage({ show: false, count: 0 });
@@ -852,9 +851,9 @@ export const Bless = () => {
                 onClick={handleStartRollWithPreset}
                 disabled={isAutoRolling}
             >
-                {leftTarget || rightTarget ? "开始洗练" : "开始"}
+                {target1 || target2 ? "开始洗练" : "开始"}
             </button>
-              {isAutoRolling && (leftTarget || rightTarget) && (
+              {isAutoRolling && (target1 || target2) && (
               <button
                   className="bless__stop-btn"
                   onClick={handleStopAutoRoll}
@@ -886,23 +885,23 @@ export const Bless = () => {
           )}
           <div className="preset-options">
             <div className="preset-option">
-              <div className="preset-label">左侧属性</div>
+              <div className="preset-label">属性1</div>
               <button
                 className="preset-btn"
-                onClick={() => setShowTargetSelector("left")}
+                onClick={() => setShowTargetSelector("target1")}
                 disabled={isAutoRolling}
               >
-                {leftTarget
+                {target1
                   ? formatStatDisplay(
-                      blessingData.find((st) => st.statType === leftTarget.statType)?.statName || "",
-                      leftTarget.statValue
+                      blessingData.find((st) => st.statType === target1.statType)?.statName || "",
+                      target1.statValue
                     )
                   : "点击选择"}
               </button>
-              {leftTarget && (
+              {target1 && (
                 <button
                   className="preset-clear-btn"
-                  onClick={() => setLeftTarget(null)}
+                  onClick={() => setTarget1(null)}
                   disabled={isAutoRolling}
                 >
                   ×
@@ -910,23 +909,23 @@ export const Bless = () => {
               )}
             </div>
             <div className="preset-option">
-              <div className="preset-label">右侧属性</div>
+              <div className="preset-label">属性2</div>
               <button
                 className="preset-btn"
-                onClick={() => setShowTargetSelector("right")}
+                onClick={() => setShowTargetSelector("target2")}
                 disabled={isAutoRolling}
               >
-                {rightTarget
+                {target2
                   ? formatStatDisplay(
-                      blessingData.find((st) => st.statType === rightTarget.statType)?.statName || "",
-                      rightTarget.statValue
+                      blessingData.find((st) => st.statType === target2.statType)?.statName || "",
+                      target2.statValue
                     )
                   : "点击选择"}
               </button>
-              {rightTarget && (
+              {target2 && (
                 <button
                   className="preset-clear-btn"
-                  onClick={() => setRightTarget(null)}
+                  onClick={() => setTarget2(null)}
                   disabled={isAutoRolling}
                 >
                   ×
@@ -934,7 +933,7 @@ export const Bless = () => {
               )}
             </div>
             {/* 目标关系选择 */}
-            {(leftTarget || rightTarget) && (
+            {(target1 || target2) && (
               <div className="preset-option">
                 <div className="preset-label">目标关系</div>
                 <div className="preset-relation">
@@ -956,7 +955,7 @@ export const Bless = () => {
               </div>
             )}
             {/* 洗练频率选择 - 只有在有预设属性时才显示 */}
-            {(leftTarget || rightTarget) && (
+            {(target1 || target2) && (
               <div className="preset-option">
                 <div className="preset-label">洗练频率</div>
                 <div className="preset-frequency">
@@ -1065,11 +1064,11 @@ export const Bless = () => {
                   <div className="target-selector__options">
                     {statType.stats.map((stat, idx) => {
                       const isSelected =
-                        showTargetSelector === "left"
-                          ? leftTarget?.statType === statType.statType &&
-                            leftTarget?.statValue === stat.statValue
-                          : rightTarget?.statType === statType.statType &&
-                            rightTarget?.statValue === stat.statValue;
+                        showTargetSelector === "target1"
+                          ? target1?.statType === statType.statType &&
+                            target1?.statValue === stat.statValue
+                          : target2?.statType === statType.statType &&
+                            target2?.statValue === stat.statValue;
                       return (
                         <button
                           key={idx}

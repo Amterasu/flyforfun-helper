@@ -1,0 +1,1286 @@
+{
+    "weapon&shield_piercing_upgrade": [
+      {
+        "hand_type": "单手",
+        "level": 1,
+        "dice8": {
+          "average_chance": "50%",
+          "initial_chance": "30.21030253%",
+          "average_tries": 2.0002,
+          "reach_average_chance_tries": 1.6551,
+          "reach_100_percent_tries": 3.3101
+        },
+        "dice10": {
+          "average_chance": "55%",
+          "initial_chance": "36.03978509%",
+          "average_tries": 1.8201,
+          "reach_average_chance_tries": 1.5261,
+          "reach_100_percent_tries": 2.7747
+        },
+        "cost": {
+          "penya": "1,120,000",
+          "average_penya": "2,240,179"
+        }
+      },
+      {
+        "hand_type": "单手",
+        "level": 2,
+        "dice8": {
+          "average_chance": "25%",
+          "initial_chance": "8.47440919%",
+          "average_tries": 4.0031,
+          "reach_average_chance_tries": 2.9501,
+          "reach_100_percent_tries": 11.8002
+        },
+        "dice10": {
+          "average_chance": "27.5%",
+          "initial_chance": "10.12233924%",
+          "average_tries": 3.6375,
+          "reach_average_chance_tries": 2.7168,
+          "reach_100_percent_tries": 9.8791
+        },
+        "cost": {
+          "penya": "1,400,000",
+          "average_penya": "5,604,298"
+        }
+      },
+      {
+        "hand_type": "单手",
+        "level": 3,
+        "dice8": {
+          "average_chance": "12.5%",
+          "initial_chance": "2.27015537%",
+          "average_tries": 8.0111,
+          "reach_average_chance_tries": 5.5062,
+          "reach_100_percent_tries": 44.0498
+        },
+        "dice10": {
+          "average_chance": "15%",
+          "initial_chance": "3.22209144%",
+          "average_tries": 6.6555,
+          "reach_average_chance_tries": 4.6554,
+          "reach_100_percent_tries": 31.0357
+        },
+        "cost": {
+          "penya": "1,680,000",
+          "average_penya": "13,458,698"
+        }
+      },
+      {
+        "hand_type": "单手",
+        "level": 4,
+        "dice8": {
+          "average_chance": "6.25%",
+          "initial_chance": "0.58936935%",
+          "average_tries": 16.1044,
+          "reach_average_chance_tries": 10.6046,
+          "reach_100_percent_tries": 169.6729
+        },
+        "dice10": {
+          "average_chance": "7.5%",
+          "initial_chance": "0.84214794%",
+          "average_tries": 13.3296,
+          "reach_average_chance_tries": 8.9058,
+          "reach_100_percent_tries": 118.7440
+        },
+        "cost": {
+          "penya": "1,960,000",
+          "average_penya": "31,564,624"
+        }
+      },
+      {
+        "hand_type": "单手",
+        "level": 5,
+        "dice8": {
+          "average_chance": "3.13%",
+          "initial_chance": "0.15076521%",
+          "average_tries": 31.9608,
+          "reach_average_chance_tries": 20.7608,
+          "reach_100_percent_tries": 663.2830
+        },
+        "dice10": {
+          "average_chance": "3.8%",
+          "initial_chance": "0.22126466%",
+          "average_tries": 26.3150,
+          "reach_average_chance_tries": 17.1740,
+          "reach_100_percent_tries": 451.9474
+        },
+        "cost": {
+          "penya": "2,240,000",
+          "average_penya": "71,592,259"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 1,
+        "dice8": {
+          "average_chance": "50%",
+          "initial_chance": "30.21030253%",
+          "average_tries": 1.9938,
+          "reach_average_chance_tries": 1.6551,
+          "reach_100_percent_tries": 3.3101
+        },
+        "dice10": {
+          "average_chance": "55%",
+          "initial_chance": "36.03978509%",
+          "average_tries": 1.8174,
+          "reach_average_chance_tries": 1.5261,
+          "reach_100_percent_tries": 2.7747
+        },
+        "cost": {
+          "penya": "1,120,000",
+          "average_penya": "2,233,056"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 2,
+        "dice8": {
+          "average_chance": "50%",
+          "initial_chance": "30.21030253%",
+          "average_tries": 1.9925,
+          "reach_average_chance_tries": 1.6551,
+          "reach_100_percent_tries": 3.3101
+        },
+        "dice10": {
+          "average_chance": "55%",
+          "initial_chance": "36.03978509%",
+          "average_tries": 1.8174,
+          "reach_average_chance_tries": 1.5261,
+          "reach_100_percent_tries": 2.7747
+        },
+        "cost": {
+          "penya": "1,400,000",
+          "average_penya": "2,789,500"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 3,
+        "dice8": {
+          "average_chance": "25%",
+          "initial_chance": "8.47440919%",
+          "average_tries": 4.0053,
+          "reach_average_chance_tries": 2.9501,
+          "reach_100_percent_tries": 11.8002
+        },
+        "dice10": {
+          "average_chance": "27.5%",
+          "initial_chance": "10.12233924%",
+          "average_tries": 3.6357,
+          "reach_average_chance_tries": 2.7168,
+          "reach_100_percent_tries": 9.8791
+        },
+        "cost": {
+          "penya": "1,680,000",
+          "average_penya": "6,728,854"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 4,
+        "dice8": {
+          "average_chance": "25%",
+          "initial_chance": "8.47440919%",
+          "average_tries": 4.0091,
+          "reach_average_chance_tries": 2.9501,
+          "reach_100_percent_tries": 11.8002
+        },
+        "dice10": {
+          "average_chance": "27.5%",
+          "initial_chance": "10.12233924%",
+          "average_tries": 3.6357,
+          "reach_average_chance_tries": 2.7168,
+          "reach_100_percent_tries": 9.8791
+        },
+        "cost": {
+          "penya": "1,960,000",
+          "average_penya": "7,857,777"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 5,
+        "dice8": {
+          "average_chance": "12.5%",
+          "initial_chance": "2.27015537%",
+          "average_tries": 8.0050,
+          "reach_average_chance_tries": 5.5062,
+          "reach_100_percent_tries": 44.0498
+        },
+        "dice10": {
+          "average_chance": "15%",
+          "initial_chance": "3.22209144%",
+          "average_tries": 6.6583,
+          "reach_average_chance_tries": 4.6554,
+          "reach_100_percent_tries": 31.0357
+        },
+        "cost": {
+          "penya": "2,240,000",
+          "average_penya": "17,931,290"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 6,
+        "dice8": {
+          "average_chance": "12.5%",
+          "initial_chance": "2.27015537%",
+          "average_tries": 8.0705,
+          "reach_average_chance_tries": 5.5062,
+          "reach_100_percent_tries": 44.0498
+        },
+        "dice10": {
+          "average_chance": "15%",
+          "initial_chance": "3.22209144%",
+          "average_tries": 6.6583,
+          "reach_average_chance_tries": 4.6554,
+          "reach_100_percent_tries": 31.0357
+        },
+        "cost": {
+          "penya": "2,520,000",
+          "average_penya": "20,337,660"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 7,
+        "dice8": {
+          "average_chance": "6.25%",
+          "initial_chance": "0.58936935%",
+          "average_tries": 16.0133,
+          "reach_average_chance_tries": 10.6046,
+          "reach_100_percent_tries": 169.6729
+        },
+        "dice10": {
+          "average_chance": "7.5%",
+          "initial_chance": "0.84214794%",
+          "average_tries": 13.3342,
+          "reach_average_chance_tries": 8.9058,
+          "reach_100_percent_tries": 118.7440
+        },
+        "cost": {
+          "penya": "2,800,000",
+          "average_penya": "44,837,268"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 8,
+        "dice8": {
+          "average_chance": "6.25%",
+          "initial_chance": "0.58936935%",
+          "average_tries": 16.0233,
+          "reach_average_chance_tries": 10.6046,
+          "reach_100_percent_tries": 169.6729
+        },
+        "dice10": {
+          "average_chance": "7.5%",
+          "initial_chance": "0.84214794%",
+          "average_tries": 13.3342,
+          "reach_average_chance_tries": 8.9058,
+          "reach_100_percent_tries": 118.7440
+        },
+        "cost": {
+          "penya": "3,080,000",
+          "average_penya": "49,351,826"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 9,
+        "dice8": {
+          "average_chance": "3.13%",
+          "initial_chance": "0.15076521%",
+          "average_tries": 32.3080,
+          "reach_average_chance_tries": 20.7608,
+          "reach_100_percent_tries": 663.2830
+        },
+        "dice10": {
+          "average_chance": "3.8%",
+          "initial_chance": "0.22126466%",
+          "average_tries": 26.3227,
+          "reach_average_chance_tries": 17.1740,
+          "reach_100_percent_tries": 451.9474
+        },
+        "cost": {
+          "penya": "3,360,000",
+          "average_penya": "108,554,880"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 10,
+        "dice8": {
+          "average_chance": "3.13%",
+          "initial_chance": "0.15076521%",
+          "average_tries": 32.0353,
+          "reach_average_chance_tries": 20.7608,
+          "reach_100_percent_tries": 663.2830
+        },
+        "dice10": {
+          "average_chance": "3.8%",
+          "initial_chance": "0.22126466%",
+          "average_tries": 26.3227,
+          "reach_average_chance_tries": 17.1740,
+          "reach_100_percent_tries": 451.9474
+        },
+        "cost": {
+          "penya": "3,640,000",
+          "average_penya": "116,608,601"
+        }
+      }
+    ],
+    "weapon_attack_upgrade_bonuses": {
+      "formula": "攻击力公式：武器攻击力 = 基础攻击力 × (1 + 强化等级加成) + 强化等级^1.5",
+      "note": "※ 基础攻击力使用的是 路查卡的水晶斧 (Lusaka's Crystal Axe)",
+      "data": [
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+1",
+          "bonus_percent": "2%",
+          "additional_attack": "1.0000",
+          "weapon_attack": "555.88 ~ 557.92",
+          "increase_percent": "2.18% ~ 2.18%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+2",
+          "bonus_percent": "4%",
+          "additional_attack": "2.8284",
+          "weapon_attack": "568.58 ~ 570.66",
+          "increase_percent": "4.52% ~ 4.52%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+3",
+          "bonus_percent": "6%",
+          "additional_attack": "5.1962",
+          "weapon_attack": "581.83 ~ 583.95",
+          "increase_percent": "6.96% ~ 6.95%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+4",
+          "bonus_percent": "8%",
+          "additional_attack": "8.0000",
+          "weapon_attack": "595.52 ~ 597.68",
+          "increase_percent": "9.47% ~ 9.47%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+5",
+          "bonus_percent": "10%",
+          "additional_attack": "11.1803",
+          "weapon_attack": "609.58 ~ 611.78",
+          "increase_percent": "12.06% ~ 12.05%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+6",
+          "bonus_percent": "13%",
+          "additional_attack": "14.6969",
+          "weapon_attack": "629.41 ~ 631.67",
+          "increase_percent": "15.7% ~ 15.69%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+7",
+          "bonus_percent": "16%",
+          "additional_attack": "18.5203",
+          "weapon_attack": "649.56 ~ 651.88",
+          "increase_percent": "19.4% ~ 19.39%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+8",
+          "bonus_percent": "19%",
+          "additional_attack": "22.6274",
+          "weapon_attack": "669.98 ~ 672.36",
+          "increase_percent": "23.16% ~ 23.14%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+9",
+          "bonus_percent": "21%",
+          "additional_attack": "27.0000",
+          "weapon_attack": "685.24 ~ 687.66",
+          "increase_percent": "25.96% ~ 25.95%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+10",
+          "bonus_percent": "24%",
+          "additional_attack": "31.6228",
+          "weapon_attack": "706.18 ~ 708.66",
+          "increase_percent": "29.81% ~ 29.79%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+11 (终极武器 +1)",
+          "bonus_percent": "27%",
+          "additional_attack": "36.4829",
+          "weapon_attack": "727.36 ~ 729.90",
+          "increase_percent": "33.71% ~ 33.68%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+12 (终极武器 +2)",
+          "bonus_percent": "30%",
+          "additional_attack": "41.5692",
+          "weapon_attack": "748.76 ~ 751.36",
+          "increase_percent": "37.64% ~ 37.61%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+13 (终极武器 +3)",
+          "bonus_percent": "33%",
+          "additional_attack": "46.8722",
+          "weapon_attack": "770.39 ~ 773.05",
+          "increase_percent": "41.62% ~ 41.58%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+14 (终极武器 +4)",
+          "bonus_percent": "36%",
+          "additional_attack": "52.3832",
+          "weapon_attack": "792.22 ~ 794.94",
+          "increase_percent": "45.63% ~ 45.59%"
+        },
+        {
+          "base_attack": "544 ~ 546",
+          "upgrade_level": "+15 (终极武器 +5)",
+          "bonus_percent": "39%",
+          "additional_attack": "58.0948",
+          "weapon_attack": "814.25 ~ 817.03",
+          "increase_percent": "49.68% ~ 49.64%"
+        }
+      ]
+    },
+    "weapon&armor_upgrade": [
+      {
+        "level": 1,
+        "dice4_and_6": {
+          "average_chance": "90%",
+          "initial_chance": "88.888889%",
+          "average_tries": 1.1098,
+          "reach_average_chance_tries": 1.0125,
+          "reach_100_percent_tries": 1.1250
+        },
+        "dice12": {
+          "average_chance": "100%",
+          "initial_chance": "100%",
+          "average_tries": 1,
+          "reach_average_chance_tries": 1,
+          "reach_100_percent_tries": 1
+        },
+        "cost": {
+          "mineral": 10,
+          "average_mineral": 11.10,
+          "penya": "2,000",
+          "average_penya": "2,220"
+        }
+      },
+      {
+        "level": 2,
+        "dice4_and_6": {
+          "average_chance": "85%",
+          "initial_chance": "82.352941%",
+          "average_tries": 1.1773,
+          "reach_average_chance_tries": 1.0321,
+          "reach_100_percent_tries": 1.2143
+        },
+        "dice12": {
+          "average_chance": "100%",
+          "initial_chance": "100%",
+          "average_tries": 1,
+          "reach_average_chance_tries": 1,
+          "reach_100_percent_tries": 1
+        },
+        "cost": {
+          "mineral": 14,
+          "average_mineral": 16.48,
+          "penya": "4,000",
+          "average_penya": "4,709"
+        }
+      },
+      {
+        "level": 3,
+        "dice4_and_6": {
+          "average_chance": "80%",
+          "initial_chance": "75%",
+          "average_tries": 1.2509,
+          "reach_average_chance_tries": 1.0667,
+          "reach_100_percent_tries": 1.3333
+        },
+        "dice12": {
+          "average_chance": "88%",
+          "initial_chance": "86.363636%",
+          "average_tries": 1.1407,
+          "reach_average_chance_tries": 1.0189,
+          "reach_100_percent_tries": 1.1579
+        },
+        "cost": {
+          "mineral": 20,
+          "average_mineral": 25.02,
+          "penya": "8,000",
+          "average_penya": "10,007"
+        }
+      },
+      {
+        "level": 4,
+        "dice4_and_6": {
+          "average_chance": "54%",
+          "initial_chance": "34.736999%",
+          "average_tries": 1.8539,
+          "reach_average_chance_tries": 1.5545,
+          "reach_100_percent_tries": 2.8788
+        },
+        "dice12": {
+          "average_chance": "60%",
+          "initial_chance": "42.264973%",
+          "average_tries": 1.6571,
+          "reach_average_chance_tries": 1.4196,
+          "reach_100_percent_tries": 2.3660
+        },
+        "cost": {
+          "mineral": 27,
+          "average_mineral": 50.06,
+          "penya": "15,000",
+          "average_penya": "27,809"
+        }
+      },
+      {
+        "level": 5,
+        "dice4_and_6": {
+          "average_chance": "40.5%",
+          "initial_chance": "20.622583%",
+          "average_tries": 2.4645,
+          "reach_average_chance_tries": 1.9639,
+          "reach_100_percent_tries": 4.8491
+        },
+        "dice12": {
+          "average_chance": "44.5%",
+          "initial_chance": "24.440677%",
+          "average_tries": 2.2420,
+          "reach_average_chance_tries": 1.8207,
+          "reach_100_percent_tries": 4.0915
+        },
+        "cost": {
+          "mineral": 38,
+          "average_mineral": 93.65,
+          "penya": "30,000",
+          "average_penya": "73,934"
+        }
+      },
+      {
+        "level": 6,
+        "dice4_and_6": {
+          "average_chance": "27%",
+          "initial_chance": "9.782638%",
+          "average_tries": 3.7127,
+          "reach_average_chance_tries": 2.7600,
+          "reach_100_percent_tries": 10.2222
+        },
+        "dice12": {
+          "average_chance": "30%",
+          "initial_chance": "11.894919%",
+          "average_tries": 3.3153,
+          "reach_average_chance_tries": 2.5221,
+          "reach_100_percent_tries": 8.4070
+        },
+        "cost": {
+          "mineral": 54,
+          "average_mineral": 200.48,
+          "penya": "60,000",
+          "average_penya": "222,759"
+        }
+      },
+      {
+        "level": 7,
+        "dice4_and_6": {
+          "average_chance": "18%",
+          "initial_chance": "4.562014%",
+          "average_tries": 5.5540,
+          "reach_average_chance_tries": 3.9456,
+          "reach_100_percent_tries": 21.9201
+        },
+        "dice12": {
+          "average_chance": "21.5%",
+          "initial_chance": "6.385147%",
+          "average_tries": 4.6474,
+          "reach_average_chance_tries": 3.3672,
+          "reach_100_percent_tries": 15.6613
+        },
+        "cost": {
+          "mineral": 75,
+          "average_mineral": 416.55,
+          "penya": "75,000",
+          "average_penya": "416,553"
+        }
+      },
+      {
+        "level": 8,
+        "dice4_and_6": {
+          "average_chance": "9%",
+          "initial_chance": "1.201637%",
+          "average_tries": 11.1011,
+          "reach_average_chance_tries": 7.4898,
+          "reach_100_percent_tries": 83.2198
+        },
+        "dice12": {
+          "average_chance": "11%",
+          "initial_chance": "1.773627%",
+          "average_tries": 9.1188,
+          "reach_average_chance_tries": 6.2020,
+          "reach_100_percent_tries": 56.3816
+        },
+        "cost": {
+          "mineral": 105,
+          "average_mineral": 1165.62,
+          "penya": "125,000",
+          "average_penya": "1,387,641"
+        }
+      },
+      {
+        "level": 9,
+        "dice4_and_6": {
+          "average_chance": "4.5%",
+          "initial_chance": "0.308911%",
+          "average_tries": 22.2307,
+          "reach_average_chance_tries": 14.5673,
+          "reach_100_percent_tries": 323.7182
+        },
+        "dice12": {
+          "average_chance": "5.4%",
+          "initial_chance": "0.442309%",
+          "average_tries": 18.5708,
+          "reach_average_chance_tries": 12.2087,
+          "reach_100_percent_tries": 226.0862
+        },
+        "cost": {
+          "mineral": 148,
+          "average_mineral": 3290.15,
+          "penya": "250,000",
+          "average_penya": "5,557,685"
+        }
+      },
+      {
+        "level": 10,
+        "dice4_and_6": {
+          "average_chance": "1.8%",
+          "initial_chance": "0.050293%",
+          "average_tries": 55.6619,
+          "reach_average_chance_tries": 35.7905,
+          "reach_100_percent_tries": 1988.3595
+        },
+        "dice12": {
+          "average_chance": "2.09%",
+          "initial_chance": "0.067675%",
+          "average_tries": 47.5814,
+          "reach_average_chance_tries": 30.8827,
+          "reach_100_percent_tries": 1477.6416
+        },
+        "cost": {
+          "mineral": 207,
+          "average_mineral": 11522.01,
+          "penya": "300,000",
+          "average_penya": "16,698,558"
+        }
+      }
+    ],
+    "weapon&shield_piercing_upgrade_event": [
+      {
+        "hand_type": "单手",
+        "level": 1,
+        "dice8": {
+          "average_chance": "50%",
+          "event_average_chance": "52.5%",
+          "initial_chance": "30.21030253%",
+          "event_initial_chance": "32.86183034%",
+          "increase_percent": "5%"
+        },
+        "dice10": {
+          "average_chance": "55%",
+          "event_average_chance": "57.8%",
+          "initial_chance": "36.03978509%",
+          "event_initial_chance": "39.58047475%",
+          "increase_percent": "5.09%"
+        }
+      },
+      {
+        "hand_type": "单手",
+        "level": 2,
+        "dice8": {
+          "average_chance": "25%",
+          "event_average_chance": "26.3%",
+          "initial_chance": "8.47440919%",
+          "event_initial_chance": "9.31551522%",
+          "increase_percent": "5.2%"
+        },
+        "dice10": {
+          "average_chance": "27.5%",
+          "event_average_chance": "28.9%",
+          "initial_chance": "10.12233924%",
+          "event_initial_chance": "11.09985252%",
+          "increase_percent": "5.09%"
+        }
+      },
+      {
+        "hand_type": "单手",
+        "level": 3,
+        "dice8": {
+          "average_chance": "12.5%",
+          "event_average_chance": "13.8%",
+          "initial_chance": "2.27015537%",
+          "event_initial_chance": "2.74605547%",
+          "increase_percent": "10.4%"
+        },
+        "dice10": {
+          "average_chance": "15%",
+          "event_average_chance": "16.5%",
+          "initial_chance": "3.22209144%",
+          "event_initial_chance": "3.86567896%",
+          "increase_percent": "10%"
+        }
+      },
+      {
+        "hand_type": "单手",
+        "level": 4,
+        "dice8": {
+          "average_chance": "6.25%",
+          "event_average_chance": "6.9%",
+          "initial_chance": "0.58936935%",
+          "event_initial_chance": "0.71543838%",
+          "increase_percent": "10.4%"
+        },
+        "dice10": {
+          "average_chance": "7.5%",
+          "event_average_chance": "8.3%",
+          "initial_chance": "0.84214794%",
+          "event_initial_chance": "1.02634436%",
+          "increase_percent": "10.6667%"
+        }
+      },
+      {
+        "hand_type": "单手",
+        "level": 5,
+        "dice8": {
+          "average_chance": "3.13%",
+          "event_average_chance": "3.4%",
+          "initial_chance": "0.15076521%",
+          "event_initial_chance": "0.17758901%",
+          "increase_percent": "8.6262%"
+        },
+        "dice10": {
+          "average_chance": "3.8%",
+          "event_average_chance": "4.1%",
+          "initial_chance": "0.22126466%",
+          "event_initial_chance": "0.25708733%",
+          "increase_percent": "7.8947%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 1,
+        "dice8": {
+          "average_chance": "50%",
+          "event_average_chance": "52.5%",
+          "initial_chance": "30.21030253%",
+          "event_initial_chance": "32.86183034%",
+          "increase_percent": "5%"
+        },
+        "dice10": {
+          "average_chance": "55%",
+          "event_average_chance": "57.8%",
+          "initial_chance": "36.03978509%",
+          "event_initial_chance": "39.58047475%",
+          "increase_percent": "5.09%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 2,
+        "dice8": {
+          "average_chance": "50%",
+          "event_average_chance": "52.5%",
+          "initial_chance": "30.21030253%",
+          "event_initial_chance": "32.86183034%",
+          "increase_percent": "5%"
+        },
+        "dice10": {
+          "average_chance": "55%",
+          "event_average_chance": "57.8%",
+          "initial_chance": "36.03978509%",
+          "event_initial_chance": "39.58047475%",
+          "increase_percent": "5.09%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 3,
+        "dice8": {
+          "average_chance": "25%",
+          "event_average_chance": "26.3%",
+          "initial_chance": "8.47440919%",
+          "event_initial_chance": "9.31551522%",
+          "increase_percent": "5.2%"
+        },
+        "dice10": {
+          "average_chance": "27.5%",
+          "event_average_chance": "28.9%",
+          "initial_chance": "10.12233924%",
+          "event_initial_chance": "11.09985252%",
+          "increase_percent": "5.09%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 4,
+        "dice8": {
+          "average_chance": "25%",
+          "event_average_chance": "26.3%",
+          "initial_chance": "8.47440919%",
+          "event_initial_chance": "9.31551522%",
+          "increase_percent": "5.2%"
+        },
+        "dice10": {
+          "average_chance": "27.5%",
+          "event_average_chance": "28.9%",
+          "initial_chance": "10.12233924%",
+          "event_initial_chance": "11.09985252%",
+          "increase_percent": "5.09%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 5,
+        "dice8": {
+          "average_chance": "12.5%",
+          "event_average_chance": "13.8%",
+          "initial_chance": "2.27015537%",
+          "event_initial_chance": "2.74605547%",
+          "increase_percent": "10.4%"
+        },
+        "dice10": {
+          "average_chance": "15%",
+          "event_average_chance": "16.5%",
+          "initial_chance": "3.22209144%",
+          "event_initial_chance": "3.86567896%",
+          "increase_percent": "10%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 6,
+        "dice8": {
+          "average_chance": "12.5%",
+          "event_average_chance": "13.8%",
+          "initial_chance": "2.27015537%",
+          "event_initial_chance": "2.74605547%",
+          "increase_percent": "10.4%"
+        },
+        "dice10": {
+          "average_chance": "15%",
+          "event_average_chance": "16.5%",
+          "initial_chance": "3.22209144%",
+          "event_initial_chance": "3.86567896%",
+          "increase_percent": "10%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 7,
+        "dice8": {
+          "average_chance": "6.25%",
+          "event_average_chance": "6.9%",
+          "initial_chance": "0.58936935%",
+          "event_initial_chance": "0.71543838%",
+          "increase_percent": "10.4%"
+        },
+        "dice10": {
+          "average_chance": "7.5%",
+          "event_average_chance": "8.3%",
+          "initial_chance": "0.84214794%",
+          "event_initial_chance": "1.02634436%",
+          "increase_percent": "10.6667%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 8,
+        "dice8": {
+          "average_chance": "6.25%",
+          "event_average_chance": "6.9%",
+          "initial_chance": "0.58936935%",
+          "event_initial_chance": "0.71543838%",
+          "increase_percent": "10.4%"
+        },
+        "dice10": {
+          "average_chance": "7.5%",
+          "event_average_chance": "8.3%",
+          "initial_chance": "0.84214794%",
+          "event_initial_chance": "1.02634436%",
+          "increase_percent": "10.6667%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 9,
+        "dice8": {
+          "average_chance": "3.13%",
+          "event_average_chance": "3.4%",
+          "initial_chance": "0.15076521%",
+          "event_initial_chance": "0.17758901%",
+          "increase_percent": "8.6262%"
+        },
+        "dice10": {
+          "average_chance": "3.8%",
+          "event_average_chance": "4.1%",
+          "initial_chance": "0.22126466%",
+          "event_initial_chance": "0.25708733%",
+          "increase_percent": "7.8947%"
+        }
+      },
+      {
+        "hand_type": "双手",
+        "level": 10,
+        "dice8": {
+          "average_chance": "3.13%",
+          "event_average_chance": "3.4%",
+          "initial_chance": "0.15076521%",
+          "event_initial_chance": "0.17758901%",
+          "increase_percent": "8.6262%"
+        },
+        "dice10": {
+          "average_chance": "3.8%",
+          "event_average_chance": "4.1%",
+          "initial_chance": "0.22126466%",
+          "event_initial_chance": "0.25708733%",
+          "increase_percent": "7.8947%"
+        }
+      }
+    ],
+    "upgrade_level_bonus": [
+      {
+        "level": 1,
+        "weapon_attack_bonus": "2%",
+        "defense_bonus": "2%",
+        "effects": "--"
+      },
+      {
+        "level": 2,
+        "weapon_attack_bonus": "4%",
+        "defense_bonus": "4%",
+        "effects": "--"
+      },
+      {
+        "level": 3,
+        "weapon_attack_bonus": "6%",
+        "defense_bonus": "6%",
+        "effects": "命中率 +5%\n格挡率 +3%\n全属性 +1"
+      },
+      {
+        "level": 4,
+        "weapon_attack_bonus": "8%",
+        "defense_bonus": "8%",
+        "effects": "命中率 +10%\n格挡率 +3%\n全属性 +2"
+      },
+      {
+        "level": 5,
+        "weapon_attack_bonus": "10%",
+        "defense_bonus": "10%",
+        "effects": "命中率 +15%\n格挡率 +3%\n最大生命值 +5%\n全属性 +3"
+      },
+      {
+        "level": 6,
+        "weapon_attack_bonus": "13%",
+        "defense_bonus": "12%",
+        "effects": "命中率 +20%\n格挡率 +6%\n最大生命值 +5%\n全属性 +4\n攻击力 +1%"
+      },
+      {
+        "level": 7,
+        "weapon_attack_bonus": "16%",
+        "defense_bonus": "14%",
+        "effects": "命中率 +25%\n格挡率 +6%\n最大生命值 +5%\n全属性 +5\n攻击力 +2%"
+      },
+      {
+        "level": 8,
+        "weapon_attack_bonus": "19%",
+        "defense_bonus": "16%",
+        "effects": "命中率 +30%\n格挡率 +10%\n最大生命值 +10%\n全属性 +6\n攻击力 +3%"
+      },
+      {
+        "level": 9,
+        "weapon_attack_bonus": "21%",
+        "defense_bonus": "18%",
+        "effects": "命中率 +35%\n格挡率 +10%\n最大生命值 +15%\n全属性 +7\n攻击力 +4%"
+      },
+      {
+        "level": 10,
+        "weapon_attack_bonus": "24%",
+        "defense_bonus": "20%",
+        "effects": "命中率 +45%\n格挡率 +15%\n最大生命值 +20%\n全属性 +8\n攻击力 +5%"
+      },
+      {
+        "level": "终极武器 +1",
+        "weapon_attack_bonus": "27%",
+        "defense_bonus": "--",
+        "effects": "--"
+      },
+      {
+        "level": "终极武器 +2",
+        "weapon_attack_bonus": "30%",
+        "defense_bonus": "--",
+        "effects": "--"
+      },
+      {
+        "level": "终极武器 +3",
+        "weapon_attack_bonus": "33%",
+        "defense_bonus": "--",
+        "effects": "--"
+      },
+      {
+        "level": "终极武器 +4",
+        "weapon_attack_bonus": "36%",
+        "defense_bonus": "--",
+        "effects": "--"
+      },
+      {
+        "level": "终极武器 +5",
+        "weapon_attack_bonus": "39%",
+        "defense_bonus": "--",
+        "effects": "--"
+      }
+    ],
+    "weapon&shield_piercing_card": [
+      {
+        "tier": "A",
+        "required_target_level": 105,
+        "elements": {
+          "fire": "力量 +6",
+          "electric": "敏捷 +6",
+          "water": "智力 +6",
+          "land": "体质 +6",
+          "wind": "暴击率 +1.5%\n攻击速度 +1.5%",
+          "thorn": "暴击伤害 +3%",
+          "lava": "无视格挡 +3%",
+          "volt": "技能伤害 +1%\nMP和FP消耗减少 +3%"
+        }
+      },
+      {
+        "tier": "B",
+        "required_target_level": 90,
+        "elements": {
+          "fire": "力量 +4",
+          "electric": "敏捷 +4",
+          "water": "智力 +4",
+          "land": "体质 +4",
+          "wind": "暴击率 +1%\n攻击速度 +1%",
+          "thorn": "暴击伤害 +2%",
+          "lava": "无视格挡 +2%",
+          "volt": "技能伤害 +0.8%\nMP和FP消耗减少 +2%"
+        }
+      },
+      {
+        "tier": "C",
+        "required_target_level": 60,
+        "elements": {
+          "fire": "力量 +3",
+          "electric": "敏捷 +3",
+          "water": "智力 +3",
+          "land": "体质 +3",
+          "wind": "暴击率 +0.5%\n攻击速度 +0.5%",
+          "thorn": "暴击伤害 +1%",
+          "lava": "无视格挡 +1%",
+          "volt": "技能伤害 +0.6%\nMP和FP消耗减少 +1%"
+        }
+      },
+      {
+        "tier": "D",
+        "required_target_level": 1,
+        "elements": {
+          "fire": "力量 +2",
+          "electric": "敏捷 +2",
+          "water": "智力 +2",
+          "land": "体质 +2",
+          "wind": "暴击率 +0.2%\n攻击速度 +0.25%",
+          "thorn": "暴击伤害 +0.5%",
+          "lava": "无视格挡 +0.5%",
+          "volt": "技能伤害 +0.4%"
+        }
+      }
+    ],
+    "weapon&armor_upgrade_event": [
+      {
+        "level": 1,
+        "dice4_and_6": {
+          "average_chance": "90%",
+          "event_average_chance": "95%",
+          "initial_chance": "88.888889%",
+          "event_initial_chance": "94.736842%",
+          "increase_percent": "5.56%"
+        },
+        "dice12": {
+          "average_chance": "100%",
+          "event_average_chance": "100%",
+          "initial_chance": "100%",
+          "event_initial_chance": "100%",
+          "increase_percent": "0%"
+        }
+      },
+      {
+        "level": 2,
+        "dice4_and_6": {
+          "average_chance": "85%",
+          "event_average_chance": "90%",
+          "initial_chance": "82.352941%",
+          "event_initial_chance": "88.888889%",
+          "increase_percent": "5.88%"
+        },
+        "dice12": {
+          "average_chance": "100%",
+          "event_average_chance": "100%",
+          "initial_chance": "100%",
+          "event_initial_chance": "100%",
+          "increase_percent": "0%"
+        }
+      },
+      {
+        "level": 3,
+        "dice4_and_6": {
+          "average_chance": "80%",
+          "event_average_chance": "84%",
+          "initial_chance": "75%",
+          "event_initial_chance": "80.952381%",
+          "increase_percent": "5.00%"
+        },
+        "dice12": {
+          "average_chance": "88%",
+          "event_average_chance": "92.5%",
+          "initial_chance": "86.363636%",
+          "event_initial_chance": "91.891892%",
+          "increase_percent": "5.11%"
+        }
+      },
+      {
+        "level": 4,
+        "dice4_and_6": {
+          "average_chance": "54%",
+          "event_average_chance": "57%",
+          "initial_chance": "34.736999%",
+          "event_initial_chance": "38.583961%",
+          "increase_percent": "5.56%"
+        },
+        "dice12": {
+          "average_chance": "60%",
+          "event_average_chance": "63%",
+          "initial_chance": "42.264973%",
+          "event_initial_chance": "45.810444%",
+          "increase_percent": "5.00%"
+        }
+      },
+      {
+        "level": 5,
+        "dice4_and_6": {
+          "average_chance": "40.5%",
+          "event_average_chance": "42.5%",
+          "initial_chance": "20.622583%",
+          "event_initial_chance": "22.511932%",
+          "increase_percent": "4.94%"
+        },
+        "dice12": {
+          "average_chance": "44.5%",
+          "event_average_chance": "46.5%",
+          "initial_chance": "24.440677%",
+          "event_initial_chance": "26.516686%",
+          "increase_percent": "4.49%"
+        }
+      },
+      {
+        "level": 6,
+        "dice4_and_6": {
+          "average_chance": "27%",
+          "event_average_chance": "29%",
+          "initial_chance": "9.782638%",
+          "event_initial_chance": "11.171176%",
+          "increase_percent": "7.41%"
+        },
+        "dice12": {
+          "average_chance": "30%",
+          "event_average_chance": "32%",
+          "initial_chance": "11.894919%",
+          "event_initial_chance": "13.400086%",
+          "increase_percent": "6.67%"
+        }
+      },
+      {
+        "level": 7,
+        "dice4_and_6": {
+          "average_chance": "18%",
+          "event_average_chance": "20%",
+          "initial_chance": "4.562014%",
+          "event_initial_chance": "5.570404%",
+          "increase_percent": "11.11%"
+        },
+        "dice12": {
+          "average_chance": "21.5%",
+          "event_average_chance": "24%",
+          "initial_chance": "6.385147%",
+          "event_initial_chance": "7.851112%",
+          "increase_percent": "11.63%"
+        }
+      },
+      {
+        "level": 8,
+        "dice4_and_6": {
+          "average_chance": "9%",
+          "event_average_chance": "10%",
+          "initial_chance": "1.201637%",
+          "event_initial_chance": "1.474584%",
+          "increase_percent": "11.11%"
+        },
+        "dice12": {
+          "average_chance": "11%",
+          "event_average_chance": "12%",
+          "initial_chance": "1.773627%",
+          "event_initial_chance": "2.098323%",
+          "increase_percent": "9.09%"
+        }
+      },
+      {
+        "level": 9,
+        "dice4_and_6": {
+          "average_chance": "4.5%",
+          "event_average_chance": "5%",
+          "initial_chance": "0.308911%",
+          "event_initial_chance": "0.380166%",
+          "increase_percent": "11.11%"
+        },
+        "dice12": {
+          "average_chance": "5.4%",
+          "event_average_chance": "6%",
+          "initial_chance": "0.442309%",
+          "event_initial_chance": "0.544011%",
+          "increase_percent": "11.11%"
+        }
+      },
+      {
+        "level": 10,
+        "dice4_and_6": {
+          "average_chance": "1.8%",
+          "event_average_chance": "2%",
+          "initial_chance": "0.050293%",
+          "event_initial_chance": "0.062009%",
+          "increase_percent": "11.11%"
+        },
+        "dice12": {
+          "average_chance": "2.09%",
+          "event_average_chance": "2.3%",
+          "initial_chance": "0.067675%",
+          "event_initial_chance": "0.081847%",
+          "increase_percent": "10.05%"
+        }
+      }
+    ]
+  }

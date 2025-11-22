@@ -91,7 +91,6 @@ const events = [
     title: '特别"1+1"分类，享20%折扣。',
     nested: true,
     highlight: '买一送一',
-    source: 'https://discord.com/channels/778915844070834186/1034809950356111390/1080759284163412059',
   },
   {
     date: '2023-03-13 ~ 2023-04-02 23:59 UTC',
@@ -103,7 +102,6 @@ const events = [
     date: '2023-05-18 07:00 UTC ~ 2023-05-25 06:59 UTC',
     title: '道具商店特别折扣，享20%优惠。',
     nested: false,
-    source: 'https://discord.com/channels/778915844070834186/1034809950356111390/1108664998328287325',
   },
 ]
 
@@ -138,13 +136,6 @@ export const TopUpEvent = () => {
                       <HighlightText text={child} highlights={['30%', '双倍']} />
                     </div>
                   ))}
-                </div>
-              )}
-              {event.source && (
-                <div className="event-source">
-                  <a href={event.source} target="_blank" rel="noopener noreferrer">
-                    来源
-                  </a>
                 </div>
               )}
             </div>

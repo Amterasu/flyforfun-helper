@@ -12,6 +12,8 @@ export const TopHeader = ({ activeTab }: TopHeaderProps) => {
 
   const getTabPath = (tab: MainNav): string => {
     switch (tab) {
+      case '首页':
+        return '/index'
       case '飞飞百科': {
         const firstSection = docTree[0]
         if (firstSection) {

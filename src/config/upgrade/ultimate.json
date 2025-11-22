@@ -1,0 +1,886 @@
+{
+    "fwc2025_golden_ultimate_weapons": [
+      {
+        "name": "2025 FWC Golden Lusaka's Heavy Crystal Sword (2025 FWC 黄金鲁萨卡重型水晶剑)",
+        "abilities": [
+          "攻击力 705~714",
+          "暴击伤害 +62~81.2%",
+          "暴击率 +26~35%",
+          "攻击速度 +14~18.6%",
+          "出血概率 +4~11%"
+        ],
+        "possible_random_stats": [
+          "暴击伤害 +3~11%",
+          "无视格挡 +3~11%",
+          "暴击率 +3~11%",
+          "攻击力 +3~8%",
+          "窃取生命(吸血) +0.6~1.6%",
+          "最大生命值 +3~8%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Heavy Crystal Axe (2025 FWC 黄金鲁萨卡重型水晶斧)",
+        "abilities": [
+          "攻击力 705~714",
+          "暴击伤害 +55~73.5%",
+          "暴击率 +32~41.6%",
+          "攻击速度 +9~13.1%",
+          "眩晕概率(PVE) +1~5%",
+          "眩晕概率(PVP) +1~5%"
+        ],
+        "possible_random_stats": [
+          "力量(STR) +2~11",
+          "体质(STA) +2~11",
+          "敏捷(DEX) +2~11",
+          "格挡率 +3~8%",
+          "PvP伤害 +3~8%",
+          "PvE伤害 +3~8%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Crystal Sword (2025 FWC 黄金鲁萨卡水晶单手剑)",
+        "abilities": [
+          "攻击力 522~524",
+          "暴击伤害 +53~72.3%",
+          "暴击率 +23~29.2%",
+          "攻击速度 +15~19.05%",
+          "中毒概率 +4~11%"
+        ],
+        "possible_random_stats": [
+          "暴击率 +2~5.5%",
+          "暴击伤害 +1.5~5.5%",
+          "无视格挡 +1.5~5.5%",
+          "攻击力 +2~4%",
+          "窃取生命(吸血) +0.4~0.8%",
+          "最大生命值 +2~4%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Crystal Axe (2025 FWC 黄金鲁萨卡水晶单手斧)",
+        "abilities": [
+          "攻击力 544~546",
+          "暴击伤害 +55~73.5%",
+          "暴击率 +18~26.2%",
+          "攻击速度 +11~15.3%",
+          "出血概率 +4~11%"
+        ],
+        "possible_random_stats": [
+          "力量(STR) +2~5",
+          "体质(STA) +2~5",
+          "敏捷(DEX) +2~5",
+          "格挡率 +2~4%",
+          "PvP伤害 +2~4%",
+          "PvE伤害 +2~4%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Crystal Stick (2025 FWC 黄金鲁萨卡水晶棒)",
+        "abilities": [
+          "攻击力 547~549",
+          "攻击力 +12~20%",
+          "治疗量 +12~20%",
+          "减少施法时间 +28~38%",
+          "智力(INT) +25~35"
+        ],
+        "possible_random_stats": [
+          "攻击力 +3~8%",
+          "窃取生命(吸血) +0.6~1.6%",
+          "最大生命值 +3~8%",
+          "体质(STA) +2~11",
+          "智力(INT) +2~11",
+          "格挡率 +3~8%",
+          "PvP伤害 +3~8%",
+          "PvE伤害 +3~8%",
+          "减少施法时间 +3~11%",
+          "治疗量 +3~11%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Crystal Fist (2025 FWC 黄金鲁萨卡水晶拳套)",
+        "abilities": [
+          "攻击力 563~565",
+          "暴击伤害 +55~73.5%",
+          "暴击率 +29~40.5%",
+          "攻击速度 +10~14.75%",
+          "眩晕概率(PVE) +1~5%",
+          "眩晕概率(PVP) +1~5%"
+        ],
+        "possible_random_stats": [
+          "暴击伤害 +3~11%",
+          "无视格挡 +3~11%",
+          "暴击率 +3~11%",
+          "攻击力 +3~8%",
+          "窃取生命(吸血) +0.6~1.6%",
+          "最大生命值 +3~8%",
+          "力量(STR) +2~11",
+          "体质(STA) +2~11",
+          "敏捷(DEX) +2~11",
+          "智力(INT) +2~11",
+          "格挡率 +3~8%",
+          "PvP伤害 +3~8%",
+          "PvE伤害 +3~8%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Crystal Bow (2025 FWC 黄金鲁萨卡水晶弓)",
+        "abilities": [
+          "攻击力 531~532",
+          "暴击伤害 +58~78%",
+          "攻击力 +12~20%",
+          "暴击率 +1.8~2.6%",
+          "中毒概率 +5~11%"
+        ],
+        "possible_random_stats": [
+          "暴击伤害 +3~11%",
+          "无视格挡 +3~11%",
+          "攻击力 +3~8%",
+          "窃取生命(吸血) +0.6~1.6%",
+          "最大生命值 +3~8%",
+          "体质(STA) +2~11",
+          "敏捷(DEX) +2~11",
+          "格挡率 +3~8%",
+          "PvP伤害 +3~8%",
+          "PvE伤害 +3~8%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Crystal Yo-Yo (2025 FWC 黄金鲁萨卡水晶溜溜球)",
+        "abilities": [
+          "攻击力 476~478",
+          "暴击伤害 +57~75.7%",
+          "力量(STR) +25~35",
+          "暴击率 +18~29.5%",
+          "出血概率 +4~11%"
+        ],
+        "possible_random_stats": [
+          "暴击伤害 +3~11%",
+          "无视格挡 +3~11%",
+          "暴击率 +3~11%",
+          "攻击力 +3~8%",
+          "窃取生命(吸血) +0.6~1.6%",
+          "最大生命值 +3~8%",
+          "力量(STR) +2~11",
+          "体质(STA) +2~11",
+          "敏捷(DEX) +2~11",
+          "格挡率 +3~8%",
+          "PvP伤害 +3~8%",
+          "PvE伤害 +3~8%",
+          "移动速度 +2~11%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Crystal Staff (2025 FWC 黄金鲁萨卡水晶法杖)",
+        "abilities": [
+          "攻击力 587~590",
+          "全属性精通 +20~29%",
+          "减少施法时间 +28~38%",
+          "智力(INT) +25~35",
+          "攻击减速概率 +4~11%"
+        ],
+        "possible_random_stats": [
+          "攻击力 +3~8%",
+          "窃取生命(吸血) +0.6~1.6%",
+          "最大生命值 +3~8%",
+          "体质(STA) +2~11",
+          "智力(INT) +2~11",
+          "格挡率 +3~8%",
+          "PvP伤害 +3~8%",
+          "PvE伤害 +3~8%",
+          "减少施法时间 +3~11%",
+          "全属性精通 +3~8%",
+          "移动速度 +2~11%"
+        ]
+      },
+      {
+        "name": "2025 FWC Golden Lusaka's Crystal Wand (2025 FWC 黄金鲁萨卡水晶魔杖)",
+        "abilities": [
+          "攻击力 595~597",
+          "攻击力 +17~26%",
+          "减少施法时间 +25~35%",
+          "智力(INT) +25~35",
+          "攻击减速概率 +4~11%"
+        ],
+        "possible_random_stats": [
+          "攻击力 +3~8%",
+          "窃取生命(吸血) +0.6~1.6%",
+          "最大生命值 +3~8%",
+          "体质(STA) +2~11",
+          "智力(INT) +2~11",
+          "格挡率 +3~8%",
+          "PvP伤害 +3~8%",
+          "PvE伤害 +3~8%",
+          "减少施法时间 +3~11%",
+          "反射伤害 +10~22%",
+          "移动速度 +2~11%"
+        ]
+      }
+    ],
+    "ultimate_weapons": [
+      {
+        "name": "Lusaka's Heavy Crystal Sword (鲁萨卡的重型水晶剑)",
+        "abilities": [
+          "攻击力 705~714",
+          "暴击伤害 +62~72%",
+          "暴击率 +26~30%",
+          "攻击速度 +14~16%",
+          "出血概率 +4~8%"
+        ],
+        "possible_random_stats": "暴击伤害 +3~10%\n无视格挡 +3~10%\n暴击率 +3~10%\n攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%"
+      },
+      {
+        "name": "Lusaka's Heavy Sword (鲁萨卡的重型剑)",
+        "abilities": [
+          "攻击力 705~714",
+          "最大生命值 +22~30%",
+          "体质(STA) +31~36",
+          "格挡率 +8~12%",
+          "眩晕概率(PVE) +1~4%",
+          "眩晕概率(PVP) +1~4%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Leviathan (利维坦)",
+        "abilities": [
+          "攻击力 661~664",
+          "暴击伤害 +49~69%",
+          "暴击率 +20~30%",
+          "攻击速度 +12~15%",
+          "水球术概率 +4~7%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Heavy Crystal Axe (鲁萨卡的重型水晶斧)",
+        "abilities": [
+          "攻击力 705~714",
+          "暴击伤害 +55~65%",
+          "暴击率 +32~36%",
+          "攻击速度 +9~11%",
+          "眩晕概率(PVE) +1~3%",
+          "眩晕概率(PVP) +1~3%"
+        ],
+        "possible_random_stats": "力量 +2~4\n体质 +2~4\n敏捷 +2~4\n格挡率 +2~6%\nPvP伤害 +2~6%\nPvE伤害 +2~6%"
+      },
+      {
+        "name": "Lusaka's Heavy Axe (鲁萨卡的重型斧)",
+        "abilities": [
+          "攻击力 705~714",
+          "最大生命值 +22~30%",
+          "体质(STA) +31~36",
+          "受到的伤害 -5~10%",
+          "眩晕概率(PVE) +1~4%",
+          "眩晕概率(PVP) +1~4%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Abyss (深渊)",
+        "abilities": [
+          "攻击力 661~664",
+          "暴击伤害 +43~63%",
+          "暴击率 +26~36%",
+          "攻击速度 +7~10%",
+          "水球术概率 +4~9%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Crystal Sword (鲁萨卡的水晶单手剑)",
+        "abilities": [
+          "攻击力 522~524",
+          "暴击伤害 +53~63%",
+          "暴击率 +23~26%",
+          "攻击速度 +15~16.5%",
+          "中毒概率 +4~8%"
+        ],
+        "possible_random_stats": "暴击率 +2~5%\n暴击伤害 +1.5~5%\n无视格挡 +1.5~5%\n攻击力 +2~4%\n窃取生命 +0.4~0.8%\n最大生命值 +2~4%"
+      },
+      {
+        "name": "Lusaka's Sword (鲁萨卡的单手剑)",
+        "abilities": [
+          "攻击力 522~524",
+          "最大生命值 +20~28%",
+          "技能伤害 +5~8%",
+          "体质(STA) +31~36",
+          "中毒概率 +4~8%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Coral Cutlass (珊瑚弯刀)",
+        "abilities": [
+          "攻击力 501~506",
+          "暴击伤害 +40~60%",
+          "暴击率 +20~30%",
+          "攻击速度 +14~15.5%",
+          "水球术概率 +4~6%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Crystal Axe (鲁萨卡的水晶单手斧)",
+        "abilities": [
+          "攻击力 544~546",
+          "暴击伤害 +55~65%",
+          "暴击率 +18~22%",
+          "攻击速度 +11~13%",
+          "出血概率 +4~8%"
+        ],
+        "possible_random_stats": "力量 +2~4\n体质 +2~4\n敏捷 +2~4\n格挡率 +2~4%\nPvP伤害 +2~4%\nPvE伤害 +2~4%"
+      },
+      {
+        "name": "Lusaka's Axe (鲁萨卡的单手斧)",
+        "abilities": [
+          "攻击力 544~546",
+          "最大生命值 +20~28%",
+          "技能伤害 +5~8%",
+          "受到的伤害 -5~7%",
+          "出血概率 +4~8%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Aquifer (含水层/水神斧)",
+        "abilities": [
+          "攻击力 504~506",
+          "暴击伤害 +40~60%",
+          "暴击率 +15~25%",
+          "攻击速度 +10~11.5%",
+          "水球术概率 +4~9%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Crystal Stick (鲁萨卡的水晶棒)",
+        "abilities": [
+          "攻击力 547~549",
+          "攻击力 +12~17%",
+          "治疗量 +12~17%",
+          "减少施法时间 +28~33%",
+          "智力(INT) +25~35"
+        ],
+        "possible_random_stats": "攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n体质 +2~4\n智力 +2~4\n格挡率 +2~6%\nPvP伤害 +2~6%\nPvE伤害 +2~6%\n减少施法时间 +3~10%\n治疗量 +3~8%"
+      },
+      {
+        "name": "Lusaka's Stick (鲁萨卡的棒)",
+        "abilities": [
+          "攻击力 547~549",
+          "最大生命值 +22~30%",
+          "体质(STA) +31~36",
+          "受到的伤害 -5~10%",
+          "眩晕概率(PVE) +1~4%",
+          "眩晕概率(PVP) +1~3%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Fang of Siren (海妖之牙)",
+        "abilities": [
+          "攻击力 521~523",
+          "攻击力 +10~15%",
+          "治疗量 +10~15%",
+          "减少施法时间 +25~29%",
+          "水球术概率 +4~6%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Crystal Fist (鲁萨卡的水晶拳套)",
+        "abilities": [
+          "攻击力 563~565",
+          "暴击伤害 +55~65%",
+          "暴击率 +29~35%",
+          "攻击速度 +10~12.5%",
+          "眩晕概率(PVE) +1~3%",
+          "眩晕概率(PVP) +1~3%"
+        ],
+        "possible_random_stats": "暴击伤害 +3~10%\n无视格挡 +3~10%\n暴击率 +3~10%\n攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n力量 +2~4\n体质 +2~4\n敏捷 +2~4\n智力 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%"
+      },
+      {
+        "name": "Lusaka's Fist (鲁萨卡的拳套)",
+        "abilities": [
+          "攻击力 563~565",
+          "最大生命值 +20~28%",
+          "体质(STA) +31~36",
+          "受到的伤害 -5~10%",
+          "中毒概率 +4~8%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Fist of Tides (潮汐之拳)",
+        "abilities": [
+          "攻击力 541~543",
+          "暴击伤害 +40~60%",
+          "暴击率 +26~36%",
+          "攻击速度 +9~11.5%",
+          "水球术概率 +4~9%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Crystal Bow (鲁萨卡的水晶弓)",
+        "abilities": [
+          "攻击力 531~532",
+          "暴击伤害 +58~68%",
+          "攻击力 +12~17%",
+          "暴击率 +1.8~2.2%",
+          "中毒概率 +5~8%"
+        ],
+        "possible_random_stats": "暴击伤害 +3~10%\n无视格挡 +3~10%\n攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n体质 +2~4\n敏捷 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%"
+      },
+      {
+        "name": "Lusaka's Bow (鲁萨卡的弓)",
+        "abilities": [
+          "攻击力 531~532",
+          "最大生命值 +20~28%",
+          "技能伤害 +12~16%",
+          "体质(STA) +31~36",
+          "中毒概率 +4~8%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Rain's Fury (雨之怒/暴雨弓)",
+        "abilities": [
+          "攻击力 508~510",
+          "暴击伤害 +45~65%",
+          "攻击力 +7~15%",
+          "暴击率 +1.5~2%",
+          "水球术概率 +4~9%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Crystal Yo-Yo (鲁萨卡的水晶溜溜球)",
+        "abilities": [
+          "攻击力 476~478",
+          "暴击伤害 +57~67%",
+          "力量(STR) +25~35",
+          "暴击率 +18~25%",
+          "出血概率 +4~8%"
+        ],
+        "possible_random_stats": "暴击伤害 +3~10%\n无视格挡 +3~10%\n暴击率 +3~10%\n攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n力量 +2~4\n体质 +2~4\n敏捷 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%\n移动速度 +2~10%"
+      },
+      {
+        "name": "Lusaka's Yo-Yo (鲁萨卡的溜溜球)",
+        "abilities": [
+          "攻击力 476~478",
+          "最大生命值 +21~30%",
+          "体质(STA) +31~36",
+          "受到的伤害 -5~10%",
+          "攻击减速概率 +4~8%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Typhoon (台风)",
+        "abilities": [
+          "攻击力 454~456",
+          "暴击伤害 +40~60%",
+          "力量(STR) +21~30",
+          "暴击率 +10~20%",
+          "水球术概率 +4~9%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Crystal Staff (鲁萨卡的水晶法杖)",
+        "abilities": [
+          "攻击力 587~590",
+          "全属性精通 +20~25%",
+          "减少施法时间 +28~33%",
+          "智力(INT) +25~35",
+          "攻击减速概率 +4~8%"
+        ],
+        "possible_random_stats": "攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n体质 +2~4\n智力 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%\n减少施法时间 +3~10%\n全属性精通 +3~6%\n移动速度 +2~10%"
+      },
+      {
+        "name": "Lusaka's Staff (鲁萨卡的法杖)",
+        "abilities": [
+          "攻击力 587~590",
+          "最大生命值 +21~30%",
+          "体质(STA) +31~36",
+          "受到的伤害 -5~10%",
+          "攻击减速概率 +4~8%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Conch Staff (海螺法杖)",
+        "abilities": [
+          "攻击力 564~570",
+          "全属性精通 +12~23%",
+          "减少施法时间 +23~30%",
+          "智力(INT) +21~30",
+          "水球术概率 +4~9%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lusaka's Crystal Wand (鲁萨卡的水晶魔杖)",
+        "abilities": [
+          "攻击力 595~597",
+          "攻击力 +17~22%",
+          "减少施法时间 +25~33%",
+          "智力(INT) +25~35",
+          "攻击减速概率 +4~8%"
+        ],
+        "possible_random_stats": "攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n体质 +2~4\n智力 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%\n减少施法时间 +3~10%\n反射伤害 +10~20%\n移动速度 +2~10%"
+      },
+      {
+        "name": "Lusaka's Wand (鲁萨卡的魔杖)",
+        "abilities": [
+          "攻击力 595~597",
+          "最大生命值 +20~28%",
+          "体质(STA) +31~36",
+          "受到的伤害 -5~10%",
+          "攻击减速概率 +4~8%"
+        ],
+        "possible_random_stats": "同上"
+      },
+      {
+        "name": "Lamprey's Wand (七鳃鳗魔杖)",
+        "abilities": [
+          "攻击力 571~577",
+          "攻击力 +14~18%",
+          "减少施法时间 +22~32%",
+          "智力(INT) +21~30",
+          "水球术概率 +4~9%"
+        ],
+        "possible_random_stats": "同上"
+      }
+    ],
+    "ultimate_jewelry_upgrade": [
+      {
+        "level": 0,
+        "required_level": 120,
+        "ring_stat": "力量/智力/敏捷/体质 +45 / 暴击伤害 +5%",
+        "earring_stat": "力量/智力/敏捷/体质 +45 / 生命值 +3%",
+        "necklace_stat_1": "力量/智力/敏捷/体质 +45 / 魔法攻击力 +5%",
+        "necklace_stat_hp": "最大生命值 +1180 / 生命恢复 +32%",
+        "necklace_stat_mp": "MP消耗减少 +540 / 击杀恢复MP +32% / +140",
+        "necklace_stat_fp": "最大FP +580 / 普通攻击恢复FP +45",
+        "damage": 460,
+        "def_magic_def": "440 / 440",
+        "average_chance": "--",
+        "initial_chance": "--",
+        "average_tries": "--",
+        "penya": "--",
+        "average_penya": "--"
+      },
+      {
+        "level": 1,
+        "required_level": 125,
+        "ring_stat": "力量/智力/敏捷/体质 +47 / 暴击伤害 +5%",
+        "earring_stat": "力量/智力/敏捷/体质 +47 / 生命值 +3%",
+        "necklace_stat_1": "力量/智力/敏捷/体质 +47 / 魔法攻击力 +5%",
+        "necklace_stat_hp": "最大生命值 +1245 / 生命恢复 +34%",
+        "necklace_stat_mp": "MP消耗减少 +560 / 击杀恢复MP +33% / +145",
+        "necklace_stat_fp": "最大FP +620 / 普通攻击恢复FP +50",
+        "damage": 470,
+        "def_magic_def": "450 / 450",
+        "average_chance": "7%",
+        "initial_chance": "0.73587053%",
+        "average_tries": 14.2709,
+        "penya": "20,000",
+        "average_penya": "285,418"
+      },
+      {
+        "level": 2,
+        "required_level": 130,
+        "ring_stat": "力量/智力/敏捷/体质 +49 / 暴击伤害 +5%",
+        "earring_stat": "力量/智力/敏捷/体质 +49 / 生命值 +3%",
+        "necklace_stat_1": "力量/智力/敏捷/体质 +49 / 魔法攻击力 +5%",
+        "necklace_stat_hp": "最大生命值 +1310 / 生命恢复 +36%",
+        "necklace_stat_mp": "MP消耗减少 +580 / 击杀恢复MP +34% / +150",
+        "necklace_stat_fp": "最大FP +660 / 普通攻击恢复FP +55",
+        "damage": 480,
+        "def_magic_def": "460 / 460",
+        "average_chance": "5%",
+        "initial_chance": "0.38016583%",
+        "average_tries": 19.9648,
+        "penya": "40,000",
+        "average_penya": "798,592"
+      },
+      {
+        "level": 3,
+        "required_level": 135,
+        "ring_stat": "力量/智力/敏捷/体质 +51 / 暴击伤害 +6%",
+        "earring_stat": "力量/智力/敏捷/体质 +51 / 生命值 +4%",
+        "necklace_stat_1": "力量/智力/敏捷/体质 +51 / 魔法攻击力 +6%",
+        "necklace_stat_hp": "最大生命值 +1385 / 生命恢复 +38%",
+        "necklace_stat_mp": "MP消耗减少 +600 / 击杀恢复MP +35% / +155",
+        "necklace_stat_fp": "最大FP +700 / 普通攻击恢复FP +60",
+        "damage": 490,
+        "def_magic_def": "470 / 470",
+        "average_chance": "3%",
+        "initial_chance": "0.13861777%",
+        "average_tries": 33.3847,
+        "penya": "80,000",
+        "average_penya": "2,670,776"
+      },
+      {
+        "level": 4,
+        "required_level": 140,
+        "ring_stat": "力量/智力/敏捷/体质 +55 / 暴击伤害 +6%",
+        "earring_stat": "力量/智力/敏捷/体质 +55 / 生命值 +4%",
+        "necklace_stat_1": "力量/智力/敏捷/体质 +55 / 魔法攻击力 +6%",
+        "necklace_stat_hp": "最大生命值 +1450 / 生命恢复 +40%",
+        "necklace_stat_mp": "MP消耗减少 +620 / 击杀恢复MP +36% / +160",
+        "necklace_stat_fp": "最大FP +740 / 普通攻击恢复FP +65",
+        "damage": 500,
+        "def_magic_def": "480 / 480",
+        "average_chance": "1.5%",
+        "initial_chance": "0.03499415%",
+        "average_tries": 66.7057,
+        "penya": "150,000",
+        "average_penya": "10,005,855"
+      },
+      {
+        "level": 5,
+        "required_level": 145,
+        "ring_stat": "力量/智力/敏捷/体质 +60 / 暴击伤害 +7%",
+        "earring_stat": "力量/智力/敏捷/体质 +60 / 生命值 +5%",
+        "necklace_stat_1": "力量/智力/敏捷/体质 +60 / 魔法攻击力 +7%",
+        "necklace_stat_hp": "最大生命值 +1550 / 生命恢复 +45%",
+        "necklace_stat_mp": "MP消耗减少 +650 / 击杀恢复MP +40% / +170",
+        "necklace_stat_fp": "最大FP +800 / 普通攻击恢复FP +70",
+        "damage": 540,
+        "def_magic_def": "525 / 525",
+        "average_chance": "1%",
+        "initial_chance": "0.01560417%",
+        "average_tries": 100.1615,
+        "penya": "300,000",
+        "average_penya": "30,048,450"
+      }
+    ],
+    "ultimate_weapon_upgrade_event": [
+      {
+        "level": 1,
+        "regular_success": "29.97%",
+        "event_regular_success": "31.5%",
+        "great_success": "3.33%",
+        "event_great_success": "3.5%",
+        "regular_failure": "66.7%",
+        "event_regular_failure": "65%",
+        "great_failure": "--",
+        "event_great_failure": "--",
+        "increase": "5.1%"
+      },
+      {
+        "level": 2,
+        "regular_success": "22.5%",
+        "event_regular_success": "23.85%",
+        "great_success": "2.5%",
+        "event_great_success": "2.65%",
+        "regular_failure": "74.0625%",
+        "event_regular_failure": "72.58125%",
+        "great_failure": "0.9375%",
+        "event_great_failure": "0.91875%",
+        "increase": "6%"
+      },
+      {
+        "level": 3,
+        "regular_success": "19.98%",
+        "event_regular_success": "21.15%",
+        "great_success": "2.22%",
+        "event_great_success": "2.35%",
+        "regular_failure": "76.8275%",
+        "event_regular_failure": "75.54375%",
+        "great_failure": "0.9725%",
+        "event_great_failure": "0.95625%",
+        "increase": "5.855%"
+      },
+      {
+        "level": 4,
+        "regular_success": "18%",
+        "event_regular_success": "18.9%",
+        "great_success": "2%",
+        "event_great_success": "2.1%",
+        "regular_failure": "79%",
+        "event_regular_failure": "78.0125%",
+        "great_failure": "1%",
+        "event_great_failure": "0.9875%",
+        "increase": "5%"
+      },
+      {
+        "level": 5,
+        "regular_success": "18.2%",
+        "event_regular_success": "19%",
+        "great_success": "--",
+        "event_great_success": "--",
+        "regular_failure": "80.7775%",
+        "event_regular_failure": "79.9875%",
+        "great_failure": "1.0225%",
+        "event_great_failure": "1.0125%",
+        "increase": "4.395%"
+      }
+    ],
+    "ultimate_jewelry_upgrade_event": [
+      {
+        "level": 1,
+        "average_chance": "7%",
+        "event_average_chance": "7.7%",
+        "initial_chance": "0.73587053%",
+        "event_initial_chance": "0.88657085%",
+        "increase": "10%"
+      },
+      {
+        "level": 2,
+        "average_chance": "5%",
+        "event_average_chance": "5.5%",
+        "initial_chance": "0.38016583%",
+        "event_initial_chance": "0.45855441%",
+        "increase": "10%"
+      },
+      {
+        "level": 3,
+        "average_chance": "3%",
+        "event_average_chance": "3.3%",
+        "initial_chance": "0.13861777%",
+        "event_initial_chance": "0.16740376%",
+        "increase": "10%"
+      },
+      {
+        "level": 4,
+        "average_chance": "1.5%",
+        "event_average_chance": "1.65%",
+        "initial_chance": "0.03499415%",
+        "event_initial_chance": "0.04230133%",
+        "increase": "10%"
+      },
+      {
+        "level": 5,
+        "average_chance": "1%",
+        "event_average_chance": "1.1%",
+        "initial_chance": "0.01560417%",
+        "event_initial_chance": "0.01886861%",
+        "increase": "10%"
+      }
+    ],
+    "ultimate_jewelry": {
+      "dismantling": [
+        { "level": 8, "jewelry_dust": 4, "cursed_jewelry_fragment": "--" },
+        { "level": 9, "jewelry_dust": 5, "cursed_jewelry_fragment": "--" },
+        { "level": 10, "jewelry_dust": 7, "cursed_jewelry_fragment": "--" },
+        { "level": 11, "jewelry_dust": 9, "cursed_jewelry_fragment": "--" },
+        { "level": 12, "jewelry_dust": 22, "cursed_jewelry_fragment": "--" },
+        { "level": 13, "jewelry_dust": 28, "cursed_jewelry_fragment": "--" },
+        { "level": 14, "jewelry_dust": 35, "cursed_jewelry_fragment": "--" },
+        { "level": 15, "jewelry_dust": 88, "cursed_jewelry_fragment": "--" },
+        { "level": 16, "jewelry_dust": 113, "cursed_jewelry_fragment": 24 },
+        { "level": 17, "jewelry_dust": 149, "cursed_jewelry_fragment": 60 },
+        { "level": 18, "jewelry_dust": 222, "cursed_jewelry_fragment": 134 },
+        { "level": 19, "jewelry_dust": 326, "cursed_jewelry_fragment": 178 },
+        { "level": 20, "jewelry_dust": 1000, "cursed_jewelry_fragment": 912 }
+      ],
+      "exchange": {
+        "dust_exchange_by_level": [
+          { "level": 0, "jewelry_dust": 88 },
+          { "level": 1, "jewelry_dust": 149 },
+          { "level": 2, "jewelry_dust": 326 },
+          { "level": 3, "jewelry_dust": 652 },
+          { "level": 4, "jewelry_dust": 1000 }
+        ],
+        "fragment_exchange_by_type": [
+          { "type": "Rings (戒指)", "cursed_jewelry_fragment": 480 },
+          { "type": "Earrings (耳环)", "cursed_jewelry_fragment": 360 },
+          { "type": "Necklace (项链)", "cursed_jewelry_fragment": 540 }
+        ]
+      },
+      "ultimate_dismantling": {
+        "dust_by_level": [
+          { "level": 0, "jewelry_dust": 79 },
+          { "level": 1, "jewelry_dust": 134 },
+          { "level": 2, "jewelry_dust": 293 },
+          { "level": 3, "jewelry_dust": 586 },
+          { "level": 4, "jewelry_dust": 900 },
+          { "level": 5, "jewelry_dust": 1134 }
+        ],
+        "fragment_by_type": [
+          { "type": "Rings (戒指)", "cursed_jewelry_fragment": 432 },
+          { "type": "Earrings (耳环)", "cursed_jewelry_fragment": 324 },
+          { "type": "Necklace (项链)", "cursed_jewelry_fragment": 486 }
+        ]
+      },
+      "note": "究极饰品拆解会返还90%的原始材料（珠宝粉末和诅咒珠宝碎片）。"
+    },
+    "ultimate_weapon_upgrade": {
+      "upgrade_data": [
+        {
+          "target_level": 1,
+          "average_tries_from_0": 3.00,
+          "weapon_attack": "27%",
+          "regular_success": "29.97%",
+          "great_success": "3.33%",
+          "regular_failure": "66.7%",
+          "great_failure": "--",
+          "mineral": 50,
+          "penya": "20,000"
+        },
+        {
+          "target_level": 2,
+          "average_tries_from_0": 12.01,
+          "average_tries_from_1": 10.01,
+          "weapon_attack": "30%",
+          "regular_success": "22.5%",
+          "great_success": "2.5%",
+          "regular_failure": "74.0625%",
+          "great_failure": "0.9375%",
+          "mineral": 100,
+          "penya": "40,000"
+        },
+        {
+          "target_level": 3,
+          "average_tries_from_0": 41.09,
+          "average_tries_from_1": 38.85,
+          "average_tries_from_2": 31.25,
+          "weapon_attack": "33%",
+          "regular_success": "19.98%",
+          "great_success": "2.22%",
+          "regular_failure": "76.8275%",
+          "great_failure": "0.9725%",
+          "mineral": 150,
+          "penya": "80,000"
+        },
+        {
+          "target_level": 4,
+          "average_tries_from_0": 132.98,
+          "average_tries_from_1": 130.80,
+          "average_tries_from_2": 122.59,
+          "average_tries_from_3": 99.15,
+          "weapon_attack": "36%",
+          "regular_success": "18%",
+          "great_success": "2%",
+          "regular_failure": "79%",
+          "great_failure": "1%",
+          "mineral": 200,
+          "penya": "150,000"
+        },
+        {
+          "target_level": 5,
+          "average_tries_from_0": 446.49,
+          "average_tries_from_1": 444.29,
+          "average_tries_from_2": 436.24,
+          "average_tries_from_3": 410.79,
+          "average_tries_from_4": 337.28,
+          "weapon_attack": "39%",
+          "regular_success": "18.2%",
+          "great_success": "--",
+          "regular_failure": "80.7775%",
+          "great_failure": "1.0225%",
+          "mineral": 250,
+          "penya": "300,000"
+        }
+      ],
+      "notes": [
+        "与普通装备不同，所有究极装备在升级过程中使用 太阳石 (Sunstone)、矿石 (Minerals) 和 X保护卷轴 (Scroll of XProtect)。",
+        "一旦武器转换为究极武器，它将获得额外的两个不同的随机属性（包括属性类型和数值）。",
+        "由于失败时会降低强化等级（类似于低级S保护卷轴），究极武器升级没有保底机制。",
+        "失败会使强化等级降低 1。",
+        "大失败或大成功将分别使强化等级降低或增加 2。"
+      ]
+    }
+  }

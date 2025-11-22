@@ -6,7 +6,6 @@ export const StatScroll = () => {
     <div className="baike-content">
     
     
-    <p key={2}><strong>For more information please refer to <a href="https://gothante.wiki/?search=random+stats+%28stats+bonus%29" target="_blank" rel="noopener noreferrer">Gothante</a>.</strong></p>
     <ul key={4} className="baike-list">
         <li key={0}>Add a random <code>STR</code>/<code>STA</code>/<code>DEX</code>/<code>INT</code> stat to your weapon or armor.</li>
     </ul>

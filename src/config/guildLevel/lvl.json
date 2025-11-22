@@ -1,0 +1,1002 @@
+[
+  {
+    "level": 1,
+    "exp": 0,
+    "penya": 0,
+    "totalExp": 0,
+    "totalPenya": 0,
+    "memberCapacity": 30,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 2,
+    "exp": 24,
+    "penya": 5200,
+    "totalExp": 24,
+    "totalPenya": 5200,
+    "memberCapacity": 30,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 3,
+    "exp": 205,
+    "penya": 14625,
+    "totalExp": 229,
+    "totalPenya": 19825,
+    "memberCapacity": 32,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 4,
+    "exp": 485,
+    "penya": 34666,
+    "totalExp": 714,
+    "totalPenya": 54491,
+    "memberCapacity": 32,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 5,
+    "exp": 1353,
+    "penya": 58035,
+    "totalExp": 2067,
+    "totalPenya": 112526,
+    "memberCapacity": 34,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 6,
+    "exp": 2338,
+    "penya": 100285,
+    "totalExp": 4405,
+    "totalPenya": 212811,
+    "memberCapacity": 34,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 7,
+    "exp": 4547,
+    "penya": 139343,
+    "totalExp": 8952,
+    "totalPenya": 352154,
+    "memberCapacity": 36,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 8,
+    "exp": 6788,
+    "penya": 208000,
+    "totalExp": 15740,
+    "totalPenya": 560154,
+    "memberCapacity": 36,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 9,
+    "exp": 11045,
+    "penya": 263250,
+    "totalExp": 26785,
+    "totalPenya": 823404,
+    "memberCapacity": 38,
+    "color": "#FFFFFF",
+    "colorName": "白色"
+  },
+  {
+    "level": 10,
+    "exp": 15151,
+    "penya": 361110,
+    "totalExp": 41936,
+    "totalPenya": 1184514,
+    "memberCapacity": 38,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 11,
+    "exp": 22183,
+    "penya": 432575,
+    "totalExp": 64119,
+    "totalPenya": 1617089,
+    "memberCapacity": 40,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 12,
+    "exp": 28800,
+    "penya": 561600,
+    "totalExp": 92919,
+    "totalPenya": 2178689,
+    "memberCapacity": 40,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 13,
+    "exp": 39340,
+    "penya": 649113,
+    "totalExp": 132259,
+    "totalPenya": 2827802,
+    "memberCapacity": 42,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 14,
+    "exp": 49135,
+    "penya": 810727,
+    "totalExp": 181394,
+    "totalPenya": 3638529,
+    "memberCapacity": 42,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 15,
+    "exp": 63920,
+    "penya": 914063,
+    "totalExp": 245314,
+    "totalPenya": 4552592,
+    "memberCapacity": 44,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 16,
+    "exp": 71608,
+    "penya": 1024000,
+    "totalExp": 316922,
+    "totalPenya": 5576592,
+    "memberCapacity": 44,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 17,
+    "exp": 84365,
+    "penya": 1064483,
+    "totalExp": 401287,
+    "totalPenya": 6641075,
+    "memberCapacity": 46,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 18,
+    "exp": 91041,
+    "penya": 1148727,
+    "totalExp": 492328,
+    "totalPenya": 7789802,
+    "memberCapacity": 46,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 19,
+    "exp": 109698,
+    "penya": 1238429,
+    "totalExp": 602026,
+    "totalPenya": 9028231,
+    "memberCapacity": 48,
+    "color": "#FFCC33",
+    "colorName": "淡黄色"
+  },
+  {
+    "level": 20,
+    "exp": 115152,
+    "penya": 1300000,
+    "totalExp": 717178,
+    "totalPenya": 10328231,
+    "memberCapacity": 48,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 21,
+    "exp": 134545,
+    "penya": 1443000,
+    "totalExp": 851723,
+    "totalPenya": 11771231,
+    "memberCapacity": 49,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 22,
+    "exp": 156813,
+    "penya": 1601730,
+    "totalExp": 1008536,
+    "totalPenya": 13372961,
+    "memberCapacity": 50,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 23,
+    "exp": 182351,
+    "penya": 1777920,
+    "totalExp": 1190887,
+    "totalPenya": 15150881,
+    "memberCapacity": 51,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 24,
+    "exp": 211610,
+    "penya": 1973491,
+    "totalExp": 1402497,
+    "totalPenya": 17124372,
+    "memberCapacity": 52,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 25,
+    "exp": 245099,
+    "penya": 2190574,
+    "totalExp": 1647596,
+    "totalPenya": 19314946,
+    "memberCapacity": 53,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 26,
+    "exp": 283396,
+    "penya": 2431537,
+    "totalExp": 1930992,
+    "totalPenya": 21746483,
+    "memberCapacity": 54,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 27,
+    "exp": 327152,
+    "penya": 2699005,
+    "totalExp": 2258144,
+    "totalPenya": 24445488,
+    "memberCapacity": 55,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 28,
+    "exp": 377106,
+    "penya": 2995896,
+    "totalExp": 2635250,
+    "totalPenya": 27441384,
+    "memberCapacity": 56,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 29,
+    "exp": 434090,
+    "penya": 3325443,
+    "totalExp": 3069340,
+    "totalPenya": 30766827,
+    "memberCapacity": 57,
+    "color": "#AB27A4",
+    "colorName": "Purple"
+  },
+  {
+    "level": 30,
+    "exp": 499049,
+    "penya": 3691241,
+    "totalExp": 3568389,
+    "totalPenya": 34458068,
+    "memberCapacity": 58,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 31,
+    "exp": 573046,
+    "penya": 4097276,
+    "totalExp": 4141435,
+    "totalPenya": 38555344,
+    "memberCapacity": 59,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 32,
+    "exp": 657283,
+    "penya": 4547976,
+    "totalExp": 4798718,
+    "totalPenya": 43103320,
+    "memberCapacity": 60,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 33,
+    "exp": 753119,
+    "penya": 5048252,
+    "totalExp": 5551837,
+    "totalPenya": 48151572,
+    "memberCapacity": 61,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 34,
+    "exp": 862086,
+    "penya": 5603559,
+    "totalExp": 6413923,
+    "totalPenya": 53755131,
+    "memberCapacity": 62,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 35,
+    "exp": 985913,
+    "penya": 6219950,
+    "totalExp": 7399836,
+    "totalPenya": 59975081,
+    "memberCapacity": 63,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 36,
+    "exp": 1126550,
+    "penya": 6904144,
+    "totalExp": 8526386,
+    "totalPenya": 66879225,
+    "memberCapacity": 64,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 37,
+    "exp": 1286198,
+    "penya": 7663599,
+    "totalExp": 9812584,
+    "totalPenya": 74542824,
+    "memberCapacity": 65,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 38,
+    "exp": 1467338,
+    "penya": 8506594,
+    "totalExp": 11279922,
+    "totalPenya": 83049418,
+    "memberCapacity": 66,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 39,
+    "exp": 1672765,
+    "penya": 9442319,
+    "totalExp": 12952687,
+    "totalPenya": 92491737,
+    "memberCapacity": 67,
+    "color": "#339933",
+    "colorName": "Green"
+  },
+  {
+    "level": 40,
+    "exp": 1905631,
+    "penya": 10480973,
+    "totalExp": 14858318,
+    "totalPenya": 102972710,
+    "memberCapacity": 68,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 41,
+    "exp": 2169488,
+    "penya": 11633879,
+    "totalExp": 17027806,
+    "totalPenya": 114606589,
+    "memberCapacity": 69,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 42,
+    "exp": 2468335,
+    "penya": 12913606,
+    "totalExp": 19496141,
+    "totalPenya": 127520195,
+    "memberCapacity": 70,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 43,
+    "exp": 2806677,
+    "penya": 14334102,
+    "totalExp": 22302818,
+    "totalPenya": 141854297,
+    "memberCapacity": 71,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 44,
+    "exp": 3189588,
+    "penya": 15910852,
+    "totalExp": 25492406,
+    "totalPenya": 157765149,
+    "memberCapacity": 72,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 45,
+    "exp": 3622778,
+    "penya": 17661045,
+    "totalExp": 29115184,
+    "totalPenya": 175426194,
+    "memberCapacity": 73,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 46,
+    "exp": 4112677,
+    "penya": 19603760,
+    "totalExp": 33227861,
+    "totalPenya": 195029954,
+    "memberCapacity": 74,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 47,
+    "exp": 4666517,
+    "penya": 21760172,
+    "totalExp": 37894378,
+    "totalPenya": 216790126,
+    "memberCapacity": 75,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 48,
+    "exp": 5292439,
+    "penya": 24153791,
+    "totalExp": 43186817,
+    "totalPenya": 240943917,
+    "memberCapacity": 76,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 49,
+    "exp": 5999599,
+    "penya": 26810707,
+    "totalExp": 49186416,
+    "totalPenya": 267754624,
+    "memberCapacity": 77,
+    "color": "#3366FD",
+    "colorName": "Blue"
+  },
+  {
+    "level": 50,
+    "exp": 7075777,
+    "penya": 29759885,
+    "totalExp": 56262193,
+    "totalPenya": 297514509,
+    "memberCapacity": 80,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 51,
+    "exp": 8032616,
+    "penya": 33033471,
+    "totalExp": 64294809,
+    "totalPenya": 330547980,
+    "memberCapacity": 81,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 52,
+    "exp": 9118846,
+    "penya": 36667153,
+    "totalExp": 73413655,
+    "totalPenya": 367215133,
+    "memberCapacity": 82,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 53,
+    "exp": 10351964,
+    "penya": 40700538,
+    "totalExp": 83765619,
+    "totalPenya": 407915671,
+    "memberCapacity": 83,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 54,
+    "exp": 11751833,
+    "penya": 45177597,
+    "totalExp": 95517452,
+    "totalPenya": 453093268,
+    "memberCapacity": 84,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 55,
+    "exp": 13341003,
+    "penya": 50147130,
+    "totalExp": 108858455,
+    "totalPenya": 503240398,
+    "memberCapacity": 85,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 56,
+    "exp": 15145072,
+    "penya": 55663314,
+    "totalExp": 124003527,
+    "totalPenya": 558903712,
+    "memberCapacity": 86,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 57,
+    "exp": 17193101,
+    "penya": 61786276,
+    "totalExp": 141196628,
+    "totalPenya": 620689988,
+    "memberCapacity": 87,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 58,
+    "exp": 19518080,
+    "penya": 68582766,
+    "totalExp": 160714708,
+    "totalPenya": 689272754,
+    "memberCapacity": 88,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 59,
+    "exp": 22157460,
+    "penya": 76126867,
+    "totalExp": 182872168,
+    "totalPenya": 765399621,
+    "memberCapacity": 89,
+    "color": "#FF3333",
+    "colorName": "红色"
+  },
+  {
+    "level": 60,
+    "exp": 25153756,
+    "penya": 84500823,
+    "totalExp": 208025924,
+    "totalPenya": 849900444,
+    "memberCapacity": 91,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 61,
+    "exp": 28555234,
+    "penya": 93795909,
+    "totalExp": 236581158,
+    "totalPenya": 943696353,
+    "memberCapacity": 92,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 62,
+    "exp": 32416685,
+    "penya": 104113459,
+    "totalExp": 268997843,
+    "totalPenya": 1047809812,
+    "memberCapacity": 93,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 63,
+    "exp": 36800310,
+    "penya": 115565935,
+    "totalExp": 305798153,
+    "totalPenya": 1163375747,
+    "memberCapacity": 94,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 64,
+    "exp": 41776721,
+    "penya": 128278188,
+    "totalExp": 347574874,
+    "totalPenya": 1291653935,
+    "memberCapacity": 95,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 65,
+    "exp": 47426080,
+    "penya": 142388783,
+    "totalExp": 395000954,
+    "totalPenya": 1434042718,
+    "memberCapacity": 96,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 66,
+    "exp": 53839387,
+    "penya": 158051550,
+    "totalExp": 448840341,
+    "totalPenya": 1592094268,
+    "memberCapacity": 97,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 67,
+    "exp": 61119949,
+    "penya": 175437213,
+    "totalExp": 509960290,
+    "totalPenya": 1767531481,
+    "memberCapacity": 98,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 68,
+    "exp": 69385043,
+    "penya": 194735308,
+    "totalExp": 579345333,
+    "totalPenya": 1962266789,
+    "memberCapacity": 99,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 69,
+    "exp": 78767804,
+    "penya": 216156183,
+    "totalExp": 658113137,
+    "totalPenya": 2178422972,
+    "memberCapacity": 100,
+    "color": "#3BA4B3",
+    "colorName": "浅蓝绿"
+  },
+  {
+    "level": 70,
+    "exp": 89419372,
+    "penya": 239933365,
+    "totalExp": 747532509,
+    "totalPenya": 2418356337,
+    "memberCapacity": 102,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 71,
+    "exp": 101511324,
+    "penya": 266326025,
+    "totalExp": 849043833,
+    "totalPenya": 2684682362,
+    "memberCapacity": 103,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 72,
+    "exp": 115238440,
+    "penya": 295621890,
+    "totalExp": 964282273,
+    "totalPenya": 2980304252,
+    "memberCapacity": 104,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 73,
+    "exp": 130821839,
+    "penya": 328140285,
+    "totalExp": 1095104112,
+    "totalPenya": 3308444537,
+    "memberCapacity": 105,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 74,
+    "exp": 148512541,
+    "penya": 364235719,
+    "totalExp": 1243616653,
+    "totalPenya": 3672680256,
+    "memberCapacity": 106,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 75,
+    "exp": 168595511,
+    "penya": 404301632,
+    "totalExp": 1412212164,
+    "totalPenya": 4076981888,
+    "memberCapacity": 107,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 76,
+    "exp": 191394250,
+    "penya": 448774815,
+    "totalExp": 1603606414,
+    "totalPenya": 4525756703,
+    "memberCapacity": 108,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 77,
+    "exp": 217276004,
+    "penya": 498140025,
+    "totalExp": 1820882418,
+    "totalPenya": 5023896728,
+    "memberCapacity": 109,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 78,
+    "exp": 246657682,
+    "penya": 552935432,
+    "totalExp": 2067540100,
+    "totalPenya": 5576832160,
+    "memberCapacity": 110,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 79,
+    "exp": 280012569,
+    "penya": 613758306,
+    "totalExp": 2347552669,
+    "totalPenya": 6190590466,
+    "memberCapacity": 111,
+    "color": "#BA3BBC",
+    "colorName": "深紫色"
+  },
+  {
+    "level": 80,
+    "exp": 317877952,
+    "penya": 681271725,
+    "totalExp": 2665430621,
+    "totalPenya": 6871862191,
+    "memberCapacity": 113,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 81,
+    "exp": 360863773,
+    "penya": 756211586,
+    "totalExp": 3026294394,
+    "totalPenya": 7628073777,
+    "memberCapacity": 114,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 82,
+    "exp": 409662457,
+    "penya": 839394867,
+    "totalExp": 3435956851,
+    "totalPenya": 8467468644,
+    "memberCapacity": 115,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 83,
+    "exp": 465060062,
+    "penya": 931728267,
+    "totalExp": 3901016913,
+    "totalPenya": 9399196911,
+    "memberCapacity": 116,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 84,
+    "exp": 527948944,
+    "penya": 1034218384,
+    "totalExp": 4428965857,
+    "totalPenya": 10433415295,
+    "memberCapacity": 117,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 85,
+    "exp": 599342128,
+    "penya": 1147982362,
+    "totalExp": 5028307985,
+    "totalPenya": 11581397657,
+    "memberCapacity": 118,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 86,
+    "exp": 680389630,
+    "penya": 1274260432,
+    "totalExp": 5708697615,
+    "totalPenya": 12855658089,
+    "memberCapacity": 119,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 87,
+    "exp": 772396978,
+    "penya": 1414429026,
+    "totalExp": 6481094593,
+    "totalPenya": 14270087115,
+    "memberCapacity": 120,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 88,
+    "exp": 876846244,
+    "penya": 1570016231,
+    "totalExp": 7357940837,
+    "totalPenya": 15840103346,
+    "memberCapacity": 121,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 89,
+    "exp": 995419917,
+    "penya": 1742717950,
+    "totalExp": 8353360754,
+    "totalPenya": 17582821296,
+    "memberCapacity": 122,
+    "color": "#FFAFCC",
+    "colorName": "粉色"
+  },
+  {
+    "level": 90,
+    "exp": 1130028005,
+    "penya": 1934416940,
+    "totalExp": 9483388759,
+    "totalPenya": 19517238236,
+    "memberCapacity": 124,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 91,
+    "exp": 1282838800,
+    "penya": 2147202722,
+    "totalExp": 10766227559,
+    "totalPenya": 21664440958,
+    "memberCapacity": 125,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 92,
+    "exp": 1456313808,
+    "penya": 2383395040,
+    "totalExp": 12222541367,
+    "totalPenya": 24047835998,
+    "memberCapacity": 126,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 93,
+    "exp": 1653247397,
+    "penya": 2645568394,
+    "totalExp": 13875788764,
+    "totalPenya": 26693404392,
+    "memberCapacity": 127,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 94,
+    "exp": 1876811811,
+    "penya": 2936580941,
+    "totalExp": 15752600575,
+    "totalPenya": 29629985333,
+    "memberCapacity": 128,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 95,
+    "exp": 2130608269,
+    "penya": 3259604721,
+    "totalExp": 17883208844,
+    "totalPenya": 32889590054,
+    "memberCapacity": 129,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 96,
+    "exp": 2418724972,
+    "penya": 3618161269,
+    "totalExp": 20301933816,
+    "totalPenya": 36507751323,
+    "memberCapacity": 130,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 97,
+    "exp": 2745802960,
+    "penya": 4016158856,
+    "totalExp": 23047736776,
+    "totalPenya": 40523910179,
+    "memberCapacity": 131,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 98,
+    "exp": 3117110867,
+    "penya": 4457936366,
+    "totalExp": 26164847643,
+    "totalPenya": 44981846545,
+    "memberCapacity": 132,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 99,
+    "exp": 3538629792,
+    "penya": 4948309179,
+    "totalExp": 29703477435,
+    "totalPenya": 49930155724,
+    "memberCapacity": 133,
+    "color": "#FA824C",
+    "colorName": "珊瑚橙"
+  },
+  {
+    "level": 100,
+    "exp": 4017149643,
+    "penya": 5492623233,
+    "totalExp": 33720627078,
+    "totalPenya": 55422778957,
+    "memberCapacity": 136,
+    "color": "#0DF7F6",
+    "colorName": "霓虹蓝"
+  }
+]

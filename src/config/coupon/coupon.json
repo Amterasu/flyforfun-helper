@@ -1,0 +1,635 @@
+{
+    "coupleLevels": [
+      {
+        "level": 2,
+        "maxSkillPoints": 100,
+        "skillPointsReward": 0,
+        "bankSlotsReward": 0,
+        "baseCheers": 0
+      },
+      {
+        "level": 3,
+        "maxSkillPoints": 200,
+        "skillPointsReward": 10,
+        "bankSlotsReward": 4,
+        "baseCheers": 0
+      },
+      {
+        "level": 4,
+        "maxSkillPoints": 300,
+        "skillPointsReward": 10,
+        "bankSlotsReward": 0,
+        "baseCheers": 0
+      },
+      {
+        "level": 5,
+        "maxSkillPoints": 400,
+        "skillPointsReward": 20,
+        "bankSlotsReward": 0,
+        "baseCheers": 1
+      },
+      {
+        "level": 6,
+        "maxSkillPoints": 500,
+        "skillPointsReward": 20,
+        "bankSlotsReward": 0,
+        "baseCheers": 1
+      },
+      {
+        "level": 7,
+        "maxSkillPoints": 600,
+        "skillPointsReward": 30,
+        "bankSlotsReward": 0,
+        "baseCheers": 1
+      },
+      {
+        "level": 8,
+        "maxSkillPoints": 700,
+        "skillPointsReward": 30,
+        "bankSlotsReward": 2,
+        "baseCheers": 1
+      },
+      {
+        "level": 9,
+        "maxSkillPoints": 800,
+        "skillPointsReward": 40,
+        "bankSlotsReward": 0,
+        "baseCheers": 2
+      },
+      {
+        "level": 10,
+        "maxSkillPoints": 900,
+        "skillPointsReward": 40,
+        "bankSlotsReward": 0,
+        "baseCheers": 2
+      },
+      {
+        "level": 11,
+        "maxSkillPoints": 1000,
+        "skillPointsReward": 50,
+        "bankSlotsReward": 0,
+        "baseCheers": 2
+      },
+      {
+        "level": 12,
+        "maxSkillPoints": 1100,
+        "skillPointsReward": 50,
+        "bankSlotsReward": 0,
+        "baseCheers": 2
+      },
+      {
+        "level": 13,
+        "maxSkillPoints": 1200,
+        "skillPointsReward": 50,
+        "bankSlotsReward": 2,
+        "baseCheers": 2
+      },
+      {
+        "level": 14,
+        "maxSkillPoints": 1300,
+        "skillPointsReward": 60,
+        "bankSlotsReward": 0,
+        "baseCheers": 2
+      },
+      {
+        "level": 15,
+        "maxSkillPoints": 1400,
+        "skillPointsReward": 60,
+        "bankSlotsReward": 0,
+        "baseCheers": 2
+      }
+    ],
+    "coupleRings": [
+      {
+        "name_en": "Cubic Ring",
+        "name_cn": "立方体戒指",
+        "rarity_en": "Common",
+        "icon": "cubic",
+        "rarity_cn": "普通",
+        "teleports": 1,
+        "cheers": 0,
+        "bankSlots": 0,
+        "price": "10,000,000 Penya"
+      },
+      {
+        "name_en": "Fancy Cubic Ring",
+        "name_cn": "精致立方体戒指",
+        "rarity_en": "Common",
+        "icon": "fancycubic",
+        "rarity_cn": "普通",
+        "teleports": 2,
+        "cheers": 0,
+        "bankSlots": 6,
+        "price": "100 fCoins"
+      },
+      {
+        "name_en": "Silver Ring",
+        "name_cn": "银戒指",
+        "rarity_en": "Common",
+        "icon": "silver",
+        "rarity_cn": "普通",
+        "teleports": 2,
+        "cheers": 0,
+        "bankSlots": 12,
+        "price": "250 fCoins"
+      },
+      {
+        "name_en": "Gold Ring",
+        "name_cn": "金戒指",
+        "rarity_en": "Common",
+        "icon": "gold",
+        "rarity_cn": "普通",
+        "teleports": 2,
+        "cheers": 0,
+        "bankSlots": 18,
+        "price": "500 fCoins"
+      },
+      {
+        "name_en": "Platinum Ring",
+        "name_cn": "白金戒指",
+        "rarity_en": "Common",
+        "icon": "plat",
+        "rarity_cn": "普通",
+        "teleports": 2,
+        "cheers": 0,
+        "bankSlots": 24,
+        "price": "850 fCoins"
+      },
+      {
+        "name_en": "Diamond Ring",
+        "name_cn": "钻石戒指",
+        "rarity_en": "Common",
+        "icon": "diamond",
+        "rarity_cn": "普通",
+        "teleports": 2,
+        "cheers": 0,
+        "bankSlots": 30,
+        "price": "1,400 fCoins"
+      },
+      {
+        "name_en": "Handmade Silver Ring",
+        "name_cn": "手工银戒指",
+        "rarity_en": "Common",
+        "icon": "silver",
+        "rarity_cn": "普通",
+        "teleports": 3,
+        "cheers": 3,
+        "bankSlots": 12,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Gold Ring",
+        "name_cn": "手工金戒指",
+        "rarity_en": "Common",
+        "icon": "gold",
+        "rarity_cn": "普通",
+        "teleports": 3,
+        "cheers": 4,
+        "bankSlots": 18,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Platinum Ring",
+        "name_cn": "手工白金戒指",
+        "rarity_en": "Common",
+        "rarity_cn": "普通",
+        "icon": "plat",
+        "teleports": 3,
+        "cheers": 5,
+        "bankSlots": 24,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Diamond Ring",
+        "name_cn": "手工钻石戒指",
+        "rarity_en": "Common",
+        "rarity_cn": "普通",
+        "icon": "diamond",
+        "teleports": 3,
+        "cheers": 6,
+        "bankSlots": 30,
+        "price": null
+      },
+      {
+        "name_en": "Artisan's Silver Ring",
+        "name_cn": "工匠的银戒指",
+        "rarity_en": "Common",
+        "rarity_cn": "普通",
+        "icon": "silver",
+        "teleports": 4,
+        "cheers": 4,
+        "bankSlots": 18,
+        "price": null
+      },
+      {
+        "name_en": "Artisan's Gold Ring",
+        "name_cn": "工匠的金戒指",
+        "rarity_en": "Common",
+        "rarity_cn": "普通",
+        "icon": "gold",
+        "teleports": 4,
+        "cheers": 5,
+        "bankSlots": 24,
+        "price": null
+      },
+      {
+        "name_en": "Artisan's Platinum Ring",
+        "name_cn": "工匠的白金戒指",
+        "rarity_en": "Common",
+        "rarity_cn": "普通",
+        "icon": "plat",
+        "teleports": 4,
+        "cheers": 6,
+        "bankSlots": 30,
+        "price": null
+      },
+      {
+        "name_en": "Artisan's Diamond Ring",
+        "name_cn": "工匠的钻石戒指",
+        "rarity_en": "Common",
+        "rarity_cn": "普通",
+        "icon": "diamond",
+        "teleports": 4,
+        "cheers": 7,
+        "bankSlots": 36,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Silver Ring (C)",
+        "name_cn": "手工银戒指 (C)",
+        "rarity_en": "Uncommon",
+        "rarity_cn": "优秀",
+        "icon": "silver",
+        "teleports": 3,
+        "cheers": 3,
+        "bankSlots": 13,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Silver Ring (B)",
+        "name_cn": "手工银戒指 (B)",
+        "rarity_en": "Rare",
+        "rarity_cn": "稀有",
+        "icon": "silver",
+        "teleports": 3,
+        "cheers": 3,
+        "bankSlots": 15,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Silver Ring (A)",
+        "name_cn": "手工银戒指 (A)",
+        "rarity_en": "Very Rare",
+        "rarity_cn": "史诗",
+        "icon": "silver",
+        "teleports": 3,
+        "cheers": 3,
+        "bankSlots": 16,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Gold Ring (C)",
+        "name_cn": "手工金戒指 (C)",
+        "rarity_en": "Uncommon",
+        "rarity_cn": "优秀",
+        "icon": "gold",
+        "teleports": 3,
+        "cheers": 4,
+        "bankSlots": 19,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Gold Ring (B)",
+        "name_cn": "手工金戒指 (B)",
+        "rarity_en": "Rare",
+        "rarity_cn": "稀有",
+        "icon": "gold",
+        "teleports": 3,
+        "cheers": 4,
+        "bankSlots": 20,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Gold Ring (A)",
+        "name_cn": "手工金戒指 (A)",
+        "rarity_en": "Very Rare",
+        "rarity_cn": "史诗",
+        "icon": "gold",
+        "teleports": 3,
+        "cheers": 4,
+        "bankSlots": 22,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Platinum Ring (C)",
+        "name_cn": "手工白金戒指 (C)",
+        "rarity_en": "Uncommon",
+        "rarity_cn": "优秀",
+        "icon": "plat",
+        "teleports": 3,
+        "cheers": 5,
+        "bankSlots": 25,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Platinum Ring (B)",
+        "name_cn": "手工白金戒指 (B)",
+        "rarity_en": "Rare",
+        "rarity_cn": "稀有",
+        "icon": "plat",
+        "teleports": 3,
+        "cheers": 5,
+        "bankSlots": 26,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Platinum Ring (A)",
+        "name_cn": "手工白金戒指 (A)",
+        "rarity_en": "Very Rare",
+        "rarity_cn": "史诗",
+        "icon": "plat",
+        "teleports": 3,
+        "cheers": 5,
+        "bankSlots": 28,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Diamond Ring (C)",
+        "name_cn": "手工钻石戒指 (C)",
+        "rarity_en": "Uncommon",
+        "rarity_cn": "优秀",
+        "icon": "diamond",
+        "teleports": 3,
+        "cheers": 6,
+        "bankSlots": 31,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Diamond Ring (B)",
+        "name_cn": "手工钻石戒指 (B)",
+        "rarity_en": "Rare",
+        "rarity_cn": "稀有",
+        "icon": "diamond",
+        "teleports": 3,
+        "cheers": 6,
+        "bankSlots": 32,
+        "price": null
+      },
+      {
+        "name_en": "Handmade Diamond Ring (A)",
+        "name_cn": "手工钻石戒指 (A)",
+        "rarity_en": "Very Rare",
+        "rarity_cn": "史诗",
+        "icon": "diamond",
+        "teleports": 3,
+        "cheers": 6,
+        "bankSlots": 34,
+        "price": null
+      }
+    ],
+    "coupleSkills": [
+      {
+        "name_en": "Field Outing",
+        "name_cn": "野外郊游",
+        "requiredLevel": 1,
+        "consumedPoints": 1,
+        "duration_en": "--",
+        "duration_cn": "--",
+        "description_en": "Reload the Experience Lock Gauge by 5% of the maximum.",
+        "description_cn": "恢复 5% 的最大经验锁定槽。"
+      },
+      {
+        "name_en": "Party Together",
+        "name_cn": "派对时光",
+        "requiredLevel": 3,
+        "consumedPoints": 2,
+        "duration_en": "30 Minutes",
+        "duration_cn": "30 分钟",
+        "description_en": "Party experience increased by 10% for 30 minutes. Can only be used and is only effective if both members are in the same party.",
+        "description_cn": "30分钟内组队经验增加10%。仅当双方在同一队伍时才可使用并生效。"
+      },
+      {
+        "name_en": "Golden Luck",
+        "name_cn": "黄金好运",
+        "requiredLevel": 5,
+        "consumedPoints": 3,
+        "duration_en": "10 Minutes",
+        "duration_cn": "10 分钟",
+        "description_en": "Drop and Penya quantity increased by 5% for 10 minutes.",
+        "description_cn": "10分钟内掉落率和金币获取量增加5%。"
+      },
+      {
+        "name_en": "Happy Jump",
+        "name_cn": "快乐跳跃",
+        "requiredLevel": 7,
+        "consumedPoints": 5,
+        "duration_en": "10 Minutes",
+        "duration_cn": "10 分钟",
+        "description_en": "Jump height increased by 50 for 10 minutes.",
+        "description_cn": "10分钟内跳跃高度增加50。"
+      },
+      {
+        "name_en": "Swift Recovery",
+        "name_cn": "快速恢复",
+        "requiredLevel": 9,
+        "consumedPoints": 7,
+        "duration_en": "10 Minutes",
+        "duration_cn": "10 分钟",
+        "description_en": "FP and MP recovery amount increased by 10% for 10 minutes.",
+        "description_cn": "10分钟内FP和MP恢复量增加10%。"
+      },
+      {
+        "name_en": "Stroll",
+        "name_cn": "瑞嘉漫步",
+        "requiredLevel": 11,
+        "consumedPoints": 10,
+        "duration_en": "10 Minutes",
+        "duration_cn": "10 分钟",
+        "description_en": "Movement speed increased by 5% for 10 minutes.",
+        "description_cn": "10分钟内移动速度增加5%。"
+      },
+      {
+        "name_en": "Stamina Boost",
+        "name_cn": "耐力提升",
+        "requiredLevel": 13,
+        "consumedPoints": 10,
+        "duration_en": "10 Minutes",
+        "duration_cn": "10 分钟",
+        "description_en": "All stats increased by 5 for 10 minutes.",
+        "description_cn": "10分钟内全属性增加5点。"
+      },
+      {
+        "name_en": "Blessing Sky",
+        "name_cn": "爱神祝福",
+        "requiredLevel": 15,
+        "consumedPoints": 15,
+        "duration_en": "5 Minutes",
+        "duration_cn": "5 分钟",
+        "description_en": "Basic flight speed increased by 3km/h for 5 minutes.",
+        "description_cn": "5分钟内基础飞行速度增加3km/h。"
+      }
+    ],
+    "coupleAnniversaryRewards": [
+      {
+        "days": 7,
+        "rewardName_en": "Couple Anniversary Gift 1",
+        "rewardName_cn": "情侣纪念日礼物 1",
+        "contents": [
+          { "item_en": "Rose Petals(10 points) x1", "item_cn": "玫瑰花瓣(10点) x1" },
+          { "item_en": "Heart Cracker x3", "item_cn": "爱心礼花 x3" }
+        ],
+        "repeatDays": null
+      },
+      {
+        "days": 15,
+        "rewardName_en": "Couple Anniversary Gift 2",
+        "rewardName_cn": "情侣纪念日礼物 2",
+        "contents": [
+          { "item_en": "Rose Petals(10 points) x2", "item_cn": "玫瑰花瓣(10点) x2" },
+          { "item_en": "Rocket Cracker x3", "item_cn": "火箭礼花 x3" }
+        ],
+        "repeatDays": null
+      },
+      {
+        "days": 30,
+        "rewardName_en": "Couple Anniversary Gift 3",
+        "rewardName_cn": "情侣纪念日礼物 3",
+        "contents": [
+          { "item_en": "Rose Petals(10 points) x3", "item_cn": "玫瑰花瓣(10点) x3" },
+          { "item_en": "Effect Select Box x5", "item_cn": "特效选择箱 x5" }
+        ],
+        "repeatDays": null
+      },
+      {
+        "days": 50,
+        "rewardName_en": "Couple Anniversary Gift 4",
+        "rewardName_cn": "情侣纪念日礼物 4",
+        "contents": [
+          { "item_en": "Small Bouquet of Roses x2 (20 points)", "item_cn": "小捧玫瑰 x2 (20点)" },
+          { "item_en": "Nyangnyang Trans x3", "item_cn": "喵喵变身球 x3" }
+        ],
+        "repeatDays": null
+      },
+      {
+        "days": 100,
+        "rewardName_en": "Couple Anniversary Gift 5",
+        "rewardName_cn": "情侣纪念日礼物 5",
+        "contents": [
+          { "item_en": "Large Bouquet of Roses x1 (50 points)", "item_cn": "大捧玫瑰 x1 (50点)" },
+          { "item_en": "Pink Heart Sunglasses x1", "item_cn": "粉色爱心太阳镜 x1" }
+        ],
+        "repeatDays": null
+      },
+      {
+        "days": 110,
+        "rewardName_en": "Couple Anniversary Gift 6",
+        "rewardName_cn": "情侣纪念日礼物 6",
+        "contents": [
+          { "item_en": "Rose Petals(10 points) x1", "item_cn": "玫瑰花瓣(10点) x1" },
+          { "item_en": "Heart Cracker x1", "item_cn": "爱心礼花 x1" }
+        ],
+        "repeatDays": 10
+      }
+    ],
+    "coupleDailyQuests": [
+      {
+        "group_description": "低等级 / 收集类任务",
+        "quests": [
+          {
+            "questName_en": "Collect Rainbow Flowers",
+            "questName_cn": "收集彩虹花",
+            "objective_en": "Head to the Plateau of Silence in Saint Morning, and retrieve the Wild Rainbow Flowers.",
+            "objective_cn": "前往晨光的寂静高原，收集野生彩虹花。",
+            "neededItem_en": "Wild Rainbow Flowers x10",
+            "neededItem_cn": "野生彩虹花 x10"
+          },
+          {
+            "questName_en": "Find Love Fish",
+            "questName_cn": "寻找爱情鱼",
+            "objective_en": "Find Love Fish",
+            "objective_cn": "寻找爱情鱼",
+            "neededItem_en": "Love Koi x3",
+            "neededItem_cn": "爱情锦鲤 x3"
+          },
+          {
+            "questName_en": "A Date on Mars!",
+            "questName_cn": "火星约会！",
+            "objective_en": "Go on a romantic date outside the entrance of Mars Mine!",
+            "objective_cn": "在矿洞入口外进行一次浪漫约会！",
+            "neededItem_en": "-",
+            "neededItem_cn": "-"
+          }
+        ],
+        "xp_reward_table": {
+          "1": "80%", "2": "40%", "3": "20%", "4": "10%", "5": "5.714286%", "6": "4%", "7": "3.076923%",
+          "8": "2.352941%", "9": "1.904762%", "10": "1.6%", "11": "1.333333%", "12": "1.142857%", "13": "0.8888889%", "14": "0.6666667%"
+        }
+      },
+      {
+        "group_description": "中等级击杀任务",
+        "quests": [
+          {
+            "questName_en": "Kill Tombstone Bearer",
+            "questName_cn": "击杀墓碑怪",
+            "neededItem_en": "Lv43 Tombstone Bearer x30",
+            "neededItem_cn": "Lv43 墓碑怪 x30"
+          },
+          {
+            "questName_en": "Kill Scorpion",
+            "questName_cn": "击杀蝎子",
+            "neededItem_en": "Lv43 Scorpion x30",
+            "neededItem_cn": "Lv43 蝎子 x30"
+          },
+          {
+            "questName_en": "Kill Steam Walker",
+            "questName_cn": "击杀蒸汽机甲",
+            "neededItem_en": "Lv53 Steam Walker x30",
+            "neededItem_cn": "Lv53 蒸汽机甲 x30"
+          },
+          {
+            "questName_en": "Kill Nutty Wheels",
+            "questName_cn": "击杀独轮蒸汽机",
+            "neededItem_en": "Lv57 Nutty Wheels x30",
+            "neededItem_cn": "Lv57 独轮蒸汽机 x30"
+          }
+        ],
+        "xp_reward_table": {
+          "1": "140%", "2": "70%", "3": "35%", "4": "17.5%", "5": "10%", "6": "7%", "7": "5.384615%",
+          "8": "4.117647%", "9": "3.333333%", "10": "2.8%", "11": "2.333333%", "12": "2%", "13": "1.555556%", "14": "1.166667%"
+        }
+      },
+      {
+        "group_description": "高等级收集任务",
+        "quests": [
+          {
+            "questName_en": "Collect Whispering Leaves from Risem",
+            "questName_cn": "从怒眼铁皮男收集低语之叶",
+            "neededItem_en": "Whispering Leaf x5 (from Lv59 Risem)",
+            "neededItem_cn": "低语之叶 x5 (来自 Lv59 怒眼铁皮男)"
+          }
+        ],
+        "xp_reward_table": {
+          "1": "160%", "2": "80%", "3": "40%", "4": "20%", "5": "11.42857%", "6": "8%", "7": "6.153846%",
+          "8": "4.705883%", "9": "3.809524%", "10": "3.2%", "11": "2.666667%", "12": "2.285714%", "13": "1.777778%", "14": "1.333333%"
+        }
+      },
+      {
+        "group_description": "各种怪物击杀任务",
+        "quests": [
+          { "questName_en": "Kill Demian Thieves", "questName_cn": "击杀迪米", "neededItem_en": "Lv9 Demian Thieves x30", "neededItem_cn": "Lv9 迪米 x30" },
+          { "questName_en": "Kill Doridoma", "questName_cn": "击杀蓝纹海马", "neededItem_en": "Lv11 Doridoma x30", "neededItem_cn": "Lv11 蓝纹海马 x30" },
+          { "questName_en": "Kill Fefern", "questName_cn": "击杀飞飞龙", "neededItem_en": "Lv15 Fefern x30", "neededItem_cn": "Lv15 飞飞龙 x30" },
+          { "questName_en": "Collect Heart Charms from Nyangnyang", "questName_cn": "从彩冠翎猫收集心形护身符", "neededItem_en": "Heart Charm x5 (from Lv17 Nyangnyang)", "neededItem_cn": "心形护身符 x5 (来自 Lv17 彩冠翎猫)" },
+          { "questName_en": "Kill Wagsaac", "questName_cn": "击杀食人草", "neededItem_en": "Lv21 Wagsaac x30", "neededItem_cn": "Lv21 食人草 x30" },
+          { "questName_en": "Kill Giggleboxes", "questName_cn": "击杀怪笑箱", "neededItem_en": "Lv31 Giggleboxes x30", "neededItem_cn": "Lv31 怪笑箱 x30" },
+          { "questName_en": "Kill Cardpuppets", "questName_cn": "击杀发条魔偶", "neededItem_en": "Lv41 Cardpuppets x30", "neededItem_cn": "Lv41 发条魔偶 x30" },
+          { "questName_en": "Kill Prankster", "questName_cn": "击杀小丑术士", "neededItem_en": "Lv47 Prankster x30", "neededItem_cn": "Lv47 小丑术士 x30" },
+          { "questName_en": "Kill Trangfoma", "questName_cn": "击杀淘金者", "neededItem_en": "Lv51 Trangfoma x30", "neededItem_cn": "Lv51 淘金者 x30" }
+        ],
+        "xp_reward_table": {
+          "1": "120%", "2": "60%", "3": "30%", "4": "15%", "5": "8.571428%", "6": "6%", "7": "4.615385%",
+          "8": "3.529412%", "9": "2.857143%", "10": "2.4%", "11": "2%", "12": "1.714286%", "13": "1.333333%", "14": "1%"
+        }
+      }
+    ]
+  }

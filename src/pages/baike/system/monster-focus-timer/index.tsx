@@ -38,21 +38,10 @@ export const MonsterFocusTimer = () => {
   return (
     <div className="baike-content">
       <div className="baike-section">
-        <div className="baike-source">
-          <p>
-            来源:
-            <a
-              href="https://universe.flyff.com/news/patchnotes106"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              游戏版本1.0.6更新说明
-            </a>
-          </p>
-        </div>
+
         <div className="baike-info-item">
           <p>
-            怪物仇恨计时器（它们在未命中的情况下追逐你的时间）现在基于同时关注同一玩家的怪物数量：
+          怪物的仇恨计时器（即攻击未命中时的追逐时长），现根据同时锁定同一玩家的怪物数量来判定：
           </p>
         </div>
 

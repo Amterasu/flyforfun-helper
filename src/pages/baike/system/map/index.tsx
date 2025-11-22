@@ -37,7 +37,7 @@ export const Map = () => {
           <div className="baike-info-item">
             <p>
               <HighlightText
-                text="某些大陆现在需要最低玩家等级：莱斯花园和达肯 3需要20级，雪地需要80级，珊瑚岛需要100级。请注意，等级要求不适用于安全区域，如雪地村庄、珊瑚村庄、荒野入口等。未达到等级要求的玩家将自动传送到帕里。"
+                text="目前部分大陆区域设有最低准入等级限制：莱斯花园、达肯3需玩家等级达到 20 级，雪地需 80 级，珊瑚岛需 100 级。需注意，该等级要求不适用于雪地村庄、珊瑚村庄、荒野入口等安全区域。未满足等级条件的玩家，将被自动传送至帕里。"
                 highlights={['20', '80', '100']}
               />
             </p>
@@ -45,21 +45,9 @@ export const Map = () => {
           <div className="baike-info-item">
             <p>
               <HighlightText
-                text="降低了使用城镇传送卷轴或Madrigal传送卷轴传送到海岛胖胖的等级要求，从120级降至110级。"
+                text="同时调整了城镇传送卷轴的使用规则：传送到海岛胖胖的等级要求从 120 级下调至 110 级。"
                 highlights={['120', '110']}
               />
-            </p>
-          </div>
-          <div className="baike-source">
-            <p>
-              来源:
-              <a
-                href="https://universe.flyff.com/news/patchnotes1311"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                游戏版本1.3.11更新说明
-              </a>
             </p>
           </div>
         </div>

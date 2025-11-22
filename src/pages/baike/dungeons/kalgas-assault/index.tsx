@@ -4,19 +4,6 @@ import { BaikeImage } from '../../../../components/BaikeImage';
 export const KalgasAssault = () => {
   return (
     <div className="baike-content">
-      <p key={2}>
-        <strong>
-          更多信息请参考{" "}
-          <a
-            href="https://gothante.wiki/?search=kalgas+assault"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gothante
-          </a>
-          。
-        </strong>
-      </p>
       <div className="baike-image-container" key={6}>
         <BaikeImage key={0} src="/dungeons/kalgas_assault/wdrealm.png" alt="wdrealm.png" maxWidth="100%" />
       </div>

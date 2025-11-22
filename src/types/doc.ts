@@ -5,5 +5,5 @@ export type DocNode = {
   children?: DocNode[]
 }
 
-export type MainNav = '社区' | '飞飞百科' | '助手' | '新闻' | '代练'
+export type MainNav = '首页' | '社区' | '飞飞百科' | '助手' | '新闻' | '代练'
 

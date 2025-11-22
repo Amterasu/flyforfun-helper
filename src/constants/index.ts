@@ -1,6 +1,6 @@
 import { DocNode, MainNav } from '../types/doc'
 
-export const mainNavTabs: MainNav[] = ['飞飞百科', '助手', '新闻', '社区', '代练']
+export const mainNavTabs: MainNav[] = ['首页', '飞飞百科', '助手', '新闻', '社区', '代练']
 
 export const docTree: DocNode[] = [
   {
@@ -51,8 +51,28 @@ export const docTree: DocNode[] = [
       { id: 'power-dice', title: '🎲 力量骰子' },
       { id: 'catcher', title: '🧤 矿' },
       { id: 'pity-system', title: '🥺 保底机制' },
-      { id: 'weaponarmor-upgrade', title: '🏹 武器&防具强化' },
-      { id: 'ultimate', title: '⚜️终极武器和首饰' },
+      { 
+        id: 'weaponarmor-upgrade', 
+        title: '🏹 武器&防具强化',
+        children: [
+          { id: 'weaponarmor-upgrade-data', title: '武器&防具强化数据' },
+          { id: 'weaponarmor-upgrade-event', title: '武器&防具强化活动' },
+          { id: 'upgrade-level-bonus', title: '强化等级加成' },
+          { id: 'weapon-attack-bonus', title: '武器攻击力加成' }
+        ]
+      },
+      { 
+        id: 'ultimate', 
+        title: '⚜️终极武器和首饰',
+        children: [
+          { id: 'ultimate-weapon-upgrade', title: '终极武器升级' },
+          { id: 'ultimate-weapon-event', title: '终极武器活动' },
+          { id: 'regular-ultimate-weapon', title: '普通终极武器' },
+          { id: 'fwc2025-golden-weapon', title: '2025年FWG黄金武器' },
+          { id: 'ultimate-jewelry-upgrade', title: '终极首饰升级' },
+          { id: 'ultimate-jewelry-event', title: '终极首饰活动' }
+        ]
+      },
       { id: 'new-horizon-equipment-sets', title: '🦾 150PVE' },
       { id: 'battle-for-madrigal-ultimate-jewels', title: '💎 符文宝石' },
       { id: 'jewelry-upgrade', title: '💍 首饰强化' },

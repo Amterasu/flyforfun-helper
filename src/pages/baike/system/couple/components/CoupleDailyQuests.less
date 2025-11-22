@@ -1,0 +1,124 @@
+@import '../../../../../styles/variables.less';
+
+.quests-table-wrapper {
+  margin: @spacing-lg 0;
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-lg;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+.baike-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: @spacing-md 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  min-width: 600px;
+
+  th,
+  td {
+    padding: @spacing-sm @spacing-md;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  tr {
+    &:nth-child(even) {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  .quest-name-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .quest-name-cn {
+      font-weight: 600;
+      color: rgba(255, 217, 77, 0.9);
+    }
+
+    .quest-name-en {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      font-style: italic;
+    }
+  }
+
+}
+
+.xp-reward-table-wrapper {
+  margin: @spacing-lg 0;
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-lg;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+.xp-reward-table {
+  width: 100%;
+  min-width: 600px;
+
+  .level-header {
+    text-align: center;
+    font-weight: 600;
+    color: rgba(255, 217, 77, 0.9);
+  }
+
+  .reward-label {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
+  }
+
+  .reward-percentage {
+    text-align: center;
+    font-weight: 600;
+    color: rgba(74, 144, 226, 0.9);
+  }
+}
+
+.quest-group-wrapper {
+  margin-bottom: @spacing-xl;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.quest-group-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 217, 77, 0.9);
+  margin: 0 0 @spacing-md 0;
+  padding-bottom: @spacing-xs;
+  border-bottom: 2px solid rgba(255, 217, 77, 0.2);
+}
+
+.baike-info-card {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.8), rgba(7, 9, 15, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-lg;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  margin-bottom: @spacing-lg;
+}
+

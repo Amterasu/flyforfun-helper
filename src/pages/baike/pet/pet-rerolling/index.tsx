@@ -5,9 +5,6 @@ export const PetRerolling = () => {
   return (
     <div className="baike-content">
     
-    <blockquote key={1} className="baike-blockquote">
-      <p key={0}>来源：<a href="https://universe.flyff.com/news/ver141 Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1" target="_blank" rel="noopener noreferrer">Madrigal之战扩展更新（Flyff Universe 1.4.1版本）</a>")</p>
-    </blockquote>
     <ul key={2} className="baike-list">
         <li key={0}>通过使用<a href="https://flyffipedia.com/items/details/21526 Pet Reroll Scroll&quot;" target="_blank" rel="noopener noreferrer">宠物重洗卷轴</a>，你可以将养成的宠物放入宠物槽中选择一个等级进行重洗，无需献祭宠物。此功能不影响在宠物训练师处使用献祭宠物进行的常规重洗。</li>
     </ul>
