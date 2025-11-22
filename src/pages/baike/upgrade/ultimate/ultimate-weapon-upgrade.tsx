@@ -52,9 +52,9 @@ export const UltimateWeaponUpgrade = () => {
                 <th style={{ whiteSpace: "nowrap", minWidth: "120px" }}>从+4平均尝试</th>
                 <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>武器攻击力</th>
                 <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>普通成功</th>
-                <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>完美成功</th>
+                <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>大成功</th>
                 <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>普通失败</th>
-                <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>完美失败</th>
+                <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>大失败</th>
                 <th style={{ whiteSpace: "nowrap", minWidth: "80px" }}>矿石</th>
                 <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>金币</th>
               </tr>

@@ -25,7 +25,7 @@ export const Fwc2025GoldenWeapon = () => {
   return (
     <div className="baike-content">
       <div className="baike-section">
-        <h2 className="baike-section-title">⚜️ 2025年FWG黄金武器</h2>
+        <h2 className="baike-section-title">⚜️ 2025年FWC黄金武器</h2>
         <div style={{ overflowX: "auto" }}>
           <table className="baike-table">
             <thead>

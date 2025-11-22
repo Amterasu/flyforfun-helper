@@ -1,0 +1,484 @@
+{
+    "jewelry_upgrade": [
+      {
+        "level": 1,
+        "required_level": 15,
+        "ring_stat": 2,
+        "necklace_hp_restoration": "118/2%",
+        "necklace_mp_consumption_recovery": "165/2%/32",
+        "necklace_fp_recovery": "265/4%",
+        "earring_damage": 24,
+        "earring_defense_magic_defense": "18/18",
+        "dice8": {
+          "average_chance": "90%",
+          "initial_chance": "88.8888889%",
+          "average_tries": 1.1121,
+          "reach_average_chance_tries": 1.0125,
+          "reach_100_percent_tries": 1.1250
+        },
+        "dice10": {
+          "average_chance": "100%",
+          "initial_chance": "100%",
+          "average_tries": 1.0000,
+          "reach_average_chance_tries": 1,
+          "reach_100_percent_tries": 1
+        }
+      },
+      {
+        "level": 2,
+        "required_level": 20,
+        "ring_stat": 3,
+        "necklace_hp_restoration": "154/3%",
+        "necklace_mp_consumption_recovery": "173/3%/36",
+        "necklace_fp_recovery": "273/6%",
+        "earring_damage": 39,
+        "earring_defense_magic_defense": "30/30",
+        "dice8": {
+          "average_chance": "85%",
+          "initial_chance": "82.35294118%",
+          "average_tries": 1.1100,
+          "reach_average_chance_tries": 1.0321,
+          "reach_100_percent_tries": 1.2143
+        },
+        "dice10": {
+          "average_chance": "100%",
+          "initial_chance": "100%",
+          "average_tries": 1.0000,
+          "reach_average_chance_tries": 1,
+          "reach_100_percent_tries": 1
+        }
+      },
+      {
+        "level": 3,
+        "required_level": 25,
+        "ring_stat": 4,
+        "necklace_hp_restoration": "190/4%",
+        "necklace_mp_consumption_recovery": "181/4%/40",
+        "necklace_fp_recovery": "281/8%",
+        "earring_damage": 54,
+        "earring_defense_magic_defense": "41/41",
+        "dice8": {
+          "average_chance": "63%",
+          "initial_chance": "45.8104440%",
+          "average_tries": 1.5916,
+          "reach_average_chance_tries": 1.3752,
+          "reach_100_percent_tries": 2.1829
+        },
+        "dice10": {
+          "average_chance": "69.3%",
+          "initial_chance": "55.69985570%",
+          "average_tries": 1.4443,
+          "reach_average_chance_tries": 1.2442,
+          "reach_100_percent_tries": 1.7953
+        }
+      },
+      {
+        "level": 4,
+        "required_level": 30,
+        "ring_stat": 5,
+        "necklace_hp_restoration": "226/5%",
+        "necklace_mp_consumption_recovery": "189/5%/44",
+        "necklace_fp_recovery": "289/10%",
+        "earring_damage": 69,
+        "earring_defense_magic_defense": "69/69",
+        "dice8": {
+          "average_chance": "45%",
+          "initial_chance": "24.93069984%",
+          "average_tries": 2.2188,
+          "reach_average_chance_tries": 1.8050,
+          "reach_100_percent_tries": 4.0111
+        },
+        "dice10": {
+          "average_chance": "49.5%",
+          "initial_chance": "29.68258491%",
+          "average_tries": 2.0184,
+          "reach_average_chance_tries": 1.6676,
+          "reach_100_percent_tries": 3.3690
+        }
+      },
+      {
+        "level": 5,
+        "required_level": 35,
+        "ring_stat": 6,
+        "necklace_hp_restoration": "262/6%",
+        "necklace_mp_consumption_recovery": "197/6%/48",
+        "necklace_fp_recovery": "297/12%",
+        "earring_damage": 84,
+        "earring_defense_magic_defense": "86/86",
+        "dice8": {
+          "average_chance": "33%",
+          "initial_chance": "14.18051957%",
+          "average_tries": 3.0367,
+          "reach_average_chance_tries": 2.3271,
+          "reach_100_percent_tries": 7.0519
+        },
+        "dice10": {
+          "average_chance": "36.3%",
+          "initial_chance": "16.88875608%",
+          "average_tries": 2.7311,
+          "reach_average_chance_tries": 2.1494,
+          "reach_100_percent_tries": 5.9211
+        }
+      },
+      {
+        "level": 6,
+        "required_level": 40,
+        "ring_stat": 7,
+        "necklace_hp_restoration": "298/7%",
+        "necklace_mp_consumption_recovery": "205/7%/52",
+        "necklace_fp_recovery": "305/14%",
+        "earring_damage": 99,
+        "earring_defense_magic_defense": "97/97",
+        "dice8": {
+          "average_chance": "26%",
+          "initial_chance": "9.11834609%",
+          "average_tries": 3.8442,
+          "reach_average_chance_tries": 2.8514,
+          "reach_100_percent_tries": 10.9669
+        },
+        "dice10": {
+          "average_chance": "28.6%",
+          "initial_chance": "10.88714130%",
+          "average_tries": 3.4755,
+          "reach_average_chance_tries": 2.6270,
+          "reach_100_percent_tries": 9.1851
+        }
+      },
+      {
+        "level": 7,
+        "required_level": 45,
+        "ring_stat": 8,
+        "necklace_hp_restoration": "334/8%",
+        "necklace_mp_consumption_recovery": "213/8%/56",
+        "necklace_fp_recovery": "313/16%",
+        "earring_damage": 114,
+        "earring_defense_magic_defense": "108/108",
+        "dice8": {
+          "average_chance": "21%",
+          "initial_chance": "6.10808317%",
+          "average_tries": 4.7528,
+          "reach_average_chance_tries": 3.4381,
+          "reach_100_percent_tries": 16.3717
+        },
+        "dice10": {
+          "average_chance": "23%",
+          "initial_chance": "7.24875434%",
+          "average_tries": 4.3703,
+          "reach_average_chance_tries": 3.1730,
+          "reach_100_percent_tries": 13.7955
+        }
+      },
+      {
+        "level": 8,
+        "required_level": 50,
+        "ring_stat": 9,
+        "necklace_hp_restoration": "370/9%",
+        "necklace_mp_consumption_recovery": "221/9%/60",
+        "necklace_fp_recovery": "321/18%",
+        "earring_damage": 129,
+        "earring_defense_magic_defense": "119/119",
+        "dice8": {
+          "average_chance": "17%",
+          "initial_chance": "4.09199117%",
+          "average_tries": 5.8828,
+          "reach_average_chance_tries": 4.1545,
+          "reach_100_percent_tries": 24.4380
+        },
+        "dice10": {
+          "average_chance": "19%",
+          "initial_chance": "5.05493442%",
+          "average_tries": 5.2443,
+          "reach_average_chance_tries": 3.7587,
+          "reach_100_percent_tries": 19.7827
+        }
+      },
+      {
+        "level": 9,
+        "required_level": 55,
+        "ring_stat": 10,
+        "necklace_hp_restoration": "418/10%",
+        "necklace_mp_consumption_recovery": "229/10%/64",
+        "necklace_fp_recovery": "329/20%",
+        "earring_damage": 144,
+        "earring_defense_magic_defense": "134/134",
+        "dice8": {
+          "average_chance": "14%",
+          "initial_chance": "2.82296525%",
+          "average_tries": 7.1179,
+          "reach_average_chance_tries": 4.9593,
+          "reach_100_percent_tries": 35.4237
+        },
+        "dice10": {
+          "average_chance": "15%",
+          "initial_chance": "3.22209144%",
+          "average_tries": 6.6991,
+          "reach_average_chance_tries": 4.6554,
+          "reach_100_percent_tries": 31.0357
+        }
+      },
+      {
+        "level": 10,
+        "required_level": 60,
+        "ring_stat": 11,
+        "necklace_hp_restoration": "466/11%",
+        "necklace_mp_consumption_recovery": "237/11%/68",
+        "necklace_fp_recovery": "337/22%",
+        "earring_damage": 159,
+        "earring_defense_magic_defense": "149/149",
+        "dice8": {
+          "average_chance": "11%",
+          "initial_chance": "1.77362748%",
+          "average_tries": 9.0780,
+          "reach_average_chance_tries": 6.2020,
+          "reach_100_percent_tries": 56.3816
+        },
+        "dice10": {
+          "average_chance": "12%",
+          "initial_chance": "2.09832282%",
+          "average_tries": 8.3185,
+          "reach_average_chance_tries": 5.7189,
+          "reach_100_percent_tries": 47.6571
+        }
+      },
+      {
+        "level": 11,
+        "required_level": 65,
+        "ring_stat": 13,
+        "necklace_hp_restoration": "514/12%",
+        "necklace_mp_consumption_recovery": "246/12%/72",
+        "necklace_fp_recovery": "346/24%",
+        "earring_damage": 179,
+        "earring_defense_magic_defense": "164/164",
+        "dice8": {
+          "average_chance": "9%",
+          "initial_chance": "1.20163682%",
+          "average_tries": 11.0981,
+          "reach_average_chance_tries": 7.4898,
+          "reach_100_percent_tries": 83.2198
+        },
+        "dice10": {
+          "average_chance": "10.8%",
+          "initial_chance": "1.71175271%",
+          "average_tries": 9.3238,
+          "reach_average_chance_tries": 6.3093,
+          "reach_100_percent_tries": 58.4197
+        }
+      },
+      {
+        "level": 12,
+        "required_level": 70,
+        "ring_stat": 15,
+        "necklace_hp_restoration": "562/13%",
+        "necklace_mp_consumption_recovery": "255/13%/76",
+        "necklace_fp_recovery": "355/26%",
+        "earring_damage": 199,
+        "earring_defense_magic_defense": "179/179",
+        "dice8": {
+          "average_chance": "8%",
+          "initial_chance": "0.95524157%",
+          "average_tries": 12.4889,
+          "reach_average_chance_tries": 8.3748,
+          "reach_100_percent_tries": 104.6856
+        },
+        "dice10": {
+          "average_chance": "9.6%",
+          "initial_chance": "1.36224870%",
+          "average_tries": 10.4684,
+          "reach_average_chance_tries": 7.0472,
+          "reach_100_percent_tries": 73.4080
+        }
+      },
+      {
+        "level": 13,
+        "required_level": 85,
+        "ring_stat": 17,
+        "necklace_hp_restoration": "610/14%",
+        "necklace_mp_consumption_recovery": "264/14%/82",
+        "necklace_fp_recovery": "364/28%",
+        "earring_damage": 219,
+        "earring_defense_magic_defense": "194/194",
+        "dice8": {
+          "average_chance": "6%",
+          "initial_chance": "0.54401086%",
+          "average_tries": 16.6601,
+          "reach_average_chance_tries": 11.0292,
+          "reach_100_percent_tries": 183.8199
+        },
+        "dice10": {
+          "average_chance": "7.2%",
+          "initial_chance": "0.77755964%",
+          "average_tries": 13.8645,
+          "reach_average_chance_tries": 9.2597,
+          "reach_100_percent_tries": 128.6075
+        }
+      },
+      {
+        "level": 14,
+        "required_level": 90,
+        "ring_stat": 19,
+        "necklace_hp_restoration": "658/15%",
+        "necklace_mp_consumption_recovery": "273/15%/87",
+        "necklace_fp_recovery": "373/30%",
+        "earring_damage": 239,
+        "earring_defense_magic_defense": "213/213",
+        "dice8": {
+          "average_chance": "5%",
+          "initial_chance": "0.38016583%",
+          "average_tries": 20.0027,
+          "reach_average_chance_tries": 13.1522,
+          "reach_100_percent_tries": 263.0431
+        },
+        "dice10": {
+          "average_chance": "6%",
+          "initial_chance": "0.54401086%",
+          "average_tries": 16.7061,
+          "reach_average_chance_tries": 11.0292,
+          "reach_100_percent_tries": 183.8199
+        }
+      },
+      {
+        "level": 15,
+        "required_level": 95,
+        "ring_stat": 21,
+        "necklace_hp_restoration": "706/16%",
+        "necklace_mp_consumption_recovery": "282/16%/91",
+        "necklace_fp_recovery": "382/32%",
+        "earring_damage": 259,
+        "earring_defense_magic_defense": "231/231",
+        "dice8": {
+          "average_chance": "4%",
+          "initial_chance": "0.24485555%",
+          "average_tries": 24.9882,
+          "reach_average_chance_tries": 16.3362,
+          "reach_100_percent_tries": 408.4041
+        },
+        "dice10": {
+          "average_chance": "4.8%",
+          "initial_chance": "0.35080404%",
+          "average_tries": 20.8736,
+          "reach_average_chance_tries": 13.6829,
+          "reach_100_percent_tries": 285.0594
+        }
+      },
+      {
+        "level": 16,
+        "required_level": 100,
+        "ring_stat": 24,
+        "necklace_hp_restoration": "766/17%",
+        "necklace_mp_consumption_recovery": "291/17%/96",
+        "necklace_fp_recovery": "391/34%",
+        "earring_damage": 284,
+        "earring_defense_magic_defense": "250/250",
+        "dice8": {
+          "average_chance": "3%",
+          "initial_chance": "0.13861777%",
+          "average_tries": 33.3847,
+          "reach_average_chance_tries": 21.6422,
+          "reach_100_percent_tries": 721.4082
+        },
+        "dice10": {
+          "average_chance": "3.6%",
+          "initial_chance": "0.19884101%",
+          "average_tries": 27.8770,
+          "reach_average_chance_tries": 18.1049,
+          "reach_100_percent_tries": 502.9144
+        }
+      },
+      {
+        "level": 17,
+        "required_level": 105,
+        "ring_stat": 27,
+        "necklace_hp_restoration": "826/18%",
+        "necklace_mp_consumption_recovery": "300/18%/100",
+        "necklace_fp_recovery": "400/36%",
+        "earring_damage": 309,
+        "earring_defense_magic_defense": "269/269",
+        "dice8": {
+          "average_chance": "2%",
+          "initial_chance": "0.06200876%",
+          "average_tries": 50.0163,
+          "reach_average_chance_tries": 32.2535,
+          "reach_100_percent_tries": 1612.6753
+        },
+        "dice10": {
+          "average_chance": "2.4%",
+          "initial_chance": "0.08906052%",
+          "average_tries": 41.6652,
+          "reach_average_chance_tries": 26.9480,
+          "reach_100_percent_tries": 1122.8320
+        }
+      },
+      {
+        "level": 18,
+        "required_level": 110,
+        "ring_stat": 31,
+        "necklace_hp_restoration": "886/20%",
+        "necklace_mp_consumption_recovery": "345/20%/105",
+        "necklace_fp_recovery": "445/38%",
+        "earring_damage": 334,
+        "earring_defense_magic_defense": "310/310",
+        "dice8": {
+          "average_chance": "1%",
+          "initial_chance": "0.01560417%",
+          "average_tries": 100.1615,
+          "reach_average_chance_tries": 64.0854,
+          "reach_100_percent_tries": 6408.5437
+        },
+        "dice10": {
+          "average_chance": "1.2%",
+          "initial_chance": "0.02244043%",
+          "average_tries": 83.1911,
+          "reach_average_chance_tries": 53.4749,
+          "reach_100_percent_tries": 4456.2432
+        }
+      },
+      {
+        "level": 19,
+        "required_level": 115,
+        "ring_stat": 35,
+        "necklace_hp_restoration": "946/22%",
+        "necklace_mp_consumption_recovery": "390/22%/109",
+        "necklace_fp_recovery": "490/40%",
+        "earring_damage": 359,
+        "earring_defense_magic_defense": "342/342",
+        "dice8": {
+          "average_chance": "0.7%",
+          "initial_chance": "0.00766121%",
+          "average_tries": 143.1719,
+          "reach_average_chance_tries": 91.3694,
+          "reach_100_percent_tries": 13052.7752
+        },
+        "dice10": {
+          "average_chance": "0.84%",
+          "initial_chance": "0.01102193%",
+          "average_tries": 119.0228,
+          "reach_average_chance_tries": 76.2117,
+          "reach_100_percent_tries": 9072.8190
+        }
+      },
+      {
+        "level": 20,
+        "required_level": 120,
+        "ring_stat": 40,
+        "necklace_hp_restoration": "1018/25%",
+        "necklace_mp_consumption_recovery": "450/25%/114",
+        "necklace_fp_recovery": "550/42%",
+        "earring_damage": 395,
+        "earring_defense_magic_defense": "375/375",
+        "dice8": {
+          "average_chance": "0.1%",
+          "initial_chance": "0.00015698%",
+          "average_tries": 1000.6142,
+          "reach_average_chance_tries": 637.0441,
+          "reach_100_percent_tries": 637044.0897
+        },
+        "dice10": {
+          "average_chance": "0.12%",
+          "initial_chance": "0.00022601%",
+          "average_tries": 834.0259,
+          "reach_average_chance_tries": 530.9408,
+          "reach_100_percent_tries": 442450.6459
+        }
+      }
+    ]
+  }

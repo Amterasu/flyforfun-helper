@@ -59,7 +59,6 @@ const RegularUltimateWeapon = lazy(() => import('./upgrade/ultimate/regular-ulti
 const Fwc2025GoldenWeapon = lazy(() => import('./upgrade/ultimate/fwc2025-golden-weapon').then(m => ({ default: m.Fwc2025GoldenWeapon })))
 const UltimateJewelryUpgrade = lazy(() => import('./upgrade/ultimate/ultimate-jewelry-upgrade').then(m => ({ default: m.UltimateJewelryUpgrade })))
 const UltimateJewelryEvent = lazy(() => import('./upgrade/ultimate/ultimate-jewelry-event').then(m => ({ default: m.UltimateJewelryEvent })))
-const NewHorizonEquipmentSets = lazy(() => import('./upgrade/new-horizon-equipment-sets').then(m => ({ default: m.NewHorizonEquipmentSets })))
 const BattleForMadrigalUltimateJewels = lazy(() => import('./upgrade/battle-for-madrigal-ultimate-jewels').then(m => ({ default: m.BattleForMadrigalUltimateJewels })))
 const JewelryUpgrade = lazy(() => import('./upgrade/jewelry-upgrade').then(m => ({ default: m.JewelryUpgrade })))
 const ElementUpgrade = lazy(() => import('./upgrade/element-upgrade').then(m => ({ default: m.ElementUpgrade })))
@@ -157,7 +156,6 @@ const componentMap: Record<string, React.LazyExoticComponent<React.ComponentType
   'fwc2025-golden-weapon': Fwc2025GoldenWeapon,
   'ultimate-jewelry-upgrade': UltimateJewelryUpgrade,
   'ultimate-jewelry-event': UltimateJewelryEvent,
-  'new-horizon-equipment-sets': NewHorizonEquipmentSets,
   'battle-for-madrigal-ultimate-jewels': BattleForMadrigalUltimateJewels,
   'jewelry-upgrade': JewelryUpgrade,
   'element-upgrade': ElementUpgrade,

@@ -37,7 +37,7 @@ export const WeaponarmorUpgradeData = () => {
   return (
     <div className="baike-content">
       <div className="baike-section">
-        <h2 className="baike-section-title">武器&防具强化</h2>
+        <h2 className="baike-section-title">武器&防具强化概率</h2>
         <div style={{ overflowX: "auto" }}>
           <table className="baike-table">
             <thead>

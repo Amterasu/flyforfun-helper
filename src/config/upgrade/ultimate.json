@@ -1,7 +1,7 @@
 {
     "fwc2025_golden_ultimate_weapons": [
       {
-        "name": "2025 FWC Golden Lusaka's Heavy Crystal Sword (2025 FWC 黄金鲁萨卡重型水晶剑)",
+        "name": "2025 FWC Golden Lusaka's Heavy Crystal Sword (2025 FWC 黄金路查卡重型水晶剑)",
         "abilities": [
           "攻击力 705~714",
           "暴击伤害 +62~81.2%",
@@ -19,7 +19,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Heavy Crystal Axe (2025 FWC 黄金鲁萨卡重型水晶斧)",
+        "name": "2025 FWC Golden Lusaka's Heavy Crystal Axe (2025 FWC 黄金路查卡重型水晶斧)",
         "abilities": [
           "攻击力 705~714",
           "暴击伤害 +55~73.5%",
@@ -38,7 +38,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Crystal Sword (2025 FWC 黄金鲁萨卡水晶单手剑)",
+        "name": "2025 FWC Golden Lusaka's Crystal Sword (2025 FWC 黄金路查卡水晶单手剑)",
         "abilities": [
           "攻击力 522~524",
           "暴击伤害 +53~72.3%",
@@ -56,7 +56,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Crystal Axe (2025 FWC 黄金鲁萨卡水晶单手斧)",
+        "name": "2025 FWC Golden Lusaka's Crystal Axe (2025 FWC 黄金路查卡水晶单手斧)",
         "abilities": [
           "攻击力 544~546",
           "暴击伤害 +55~73.5%",
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Crystal Stick (2025 FWC 黄金鲁萨卡水晶棒)",
+        "name": "2025 FWC Golden Lusaka's Crystal Stick (2025 FWC 黄金路查卡水晶棒)",
         "abilities": [
           "攻击力 547~549",
           "攻击力 +12~20%",
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Crystal Fist (2025 FWC 黄金鲁萨卡水晶拳套)",
+        "name": "2025 FWC Golden Lusaka's Crystal Fist (2025 FWC 黄金路查卡水晶拳套)",
         "abilities": [
           "攻击力 563~565",
           "暴击伤害 +55~73.5%",
@@ -122,7 +122,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Crystal Bow (2025 FWC 黄金鲁萨卡水晶弓)",
+        "name": "2025 FWC Golden Lusaka's Crystal Bow (2025 FWC 黄金路查卡水晶弓)",
         "abilities": [
           "攻击力 531~532",
           "暴击伤害 +58~78%",
@@ -144,7 +144,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Crystal Yo-Yo (2025 FWC 黄金鲁萨卡水晶溜溜球)",
+        "name": "2025 FWC Golden Lusaka's Crystal Yo-Yo (2025 FWC 黄金路查卡水晶溜溜球)",
         "abilities": [
           "攻击力 476~478",
           "暴击伤害 +57~75.7%",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Crystal Staff (2025 FWC 黄金鲁萨卡水晶法杖)",
+        "name": "2025 FWC Golden Lusaka's Crystal Staff (2025 FWC 黄金路查卡水晶法杖)",
         "abilities": [
           "攻击力 587~590",
           "全属性精通 +20~29%",
@@ -192,7 +192,7 @@
         ]
       },
       {
-        "name": "2025 FWC Golden Lusaka's Crystal Wand (2025 FWC 黄金鲁萨卡水晶魔杖)",
+        "name": "2025 FWC Golden Lusaka's Crystal Wand (2025 FWC 黄金路查卡水晶魔杖)",
         "abilities": [
           "攻击力 595~597",
           "攻击力 +17~26%",
@@ -217,7 +217,7 @@
     ],
     "ultimate_weapons": [
       {
-        "name": "Lusaka's Heavy Crystal Sword (鲁萨卡的重型水晶剑)",
+        "name": "Lusaka's Heavy Crystal Sword (路查卡的重型水晶剑)",
         "abilities": [
           "攻击力 705~714",
           "暴击伤害 +62~72%",
@@ -228,7 +228,7 @@
         "possible_random_stats": "暴击伤害 +3~10%\n无视格挡 +3~10%\n暴击率 +3~10%\n攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%"
       },
       {
-        "name": "Lusaka's Heavy Sword (鲁萨卡的重型剑)",
+        "name": "Lusaka's Heavy Sword (路查卡的重型剑)",
         "abilities": [
           "攻击力 705~714",
           "最大生命值 +22~30%",
@@ -251,7 +251,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Heavy Crystal Axe (鲁萨卡的重型水晶斧)",
+        "name": "Lusaka's Heavy Crystal Axe (路查卡的重型水晶斧)",
         "abilities": [
           "攻击力 705~714",
           "暴击伤害 +55~65%",
@@ -263,7 +263,7 @@
         "possible_random_stats": "力量 +2~4\n体质 +2~4\n敏捷 +2~4\n格挡率 +2~6%\nPvP伤害 +2~6%\nPvE伤害 +2~6%"
       },
       {
-        "name": "Lusaka's Heavy Axe (鲁萨卡的重型斧)",
+        "name": "Lusaka's Heavy Axe (路查卡的重型斧)",
         "abilities": [
           "攻击力 705~714",
           "最大生命值 +22~30%",
@@ -286,7 +286,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Crystal Sword (鲁萨卡的水晶单手剑)",
+        "name": "Lusaka's Crystal Sword (路查卡的水晶单手剑)",
         "abilities": [
           "攻击力 522~524",
           "暴击伤害 +53~63%",
@@ -297,7 +297,7 @@
         "possible_random_stats": "暴击率 +2~5%\n暴击伤害 +1.5~5%\n无视格挡 +1.5~5%\n攻击力 +2~4%\n窃取生命 +0.4~0.8%\n最大生命值 +2~4%"
       },
       {
-        "name": "Lusaka's Sword (鲁萨卡的单手剑)",
+        "name": "Lusaka's Sword (路查卡的单手剑)",
         "abilities": [
           "攻击力 522~524",
           "最大生命值 +20~28%",
@@ -319,7 +319,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Crystal Axe (鲁萨卡的水晶单手斧)",
+        "name": "Lusaka's Crystal Axe (路查卡的水晶单手斧)",
         "abilities": [
           "攻击力 544~546",
           "暴击伤害 +55~65%",
@@ -330,7 +330,7 @@
         "possible_random_stats": "力量 +2~4\n体质 +2~4\n敏捷 +2~4\n格挡率 +2~4%\nPvP伤害 +2~4%\nPvE伤害 +2~4%"
       },
       {
-        "name": "Lusaka's Axe (鲁萨卡的单手斧)",
+        "name": "Lusaka's Axe (路查卡的单手斧)",
         "abilities": [
           "攻击力 544~546",
           "最大生命值 +20~28%",
@@ -352,7 +352,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Crystal Stick (鲁萨卡的水晶棒)",
+        "name": "Lusaka's Crystal Stick (路查卡的水晶棒)",
         "abilities": [
           "攻击力 547~549",
           "攻击力 +12~17%",
@@ -363,7 +363,7 @@
         "possible_random_stats": "攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n体质 +2~4\n智力 +2~4\n格挡率 +2~6%\nPvP伤害 +2~6%\nPvE伤害 +2~6%\n减少施法时间 +3~10%\n治疗量 +3~8%"
       },
       {
-        "name": "Lusaka's Stick (鲁萨卡的棒)",
+        "name": "Lusaka's Stick (路查卡的棒)",
         "abilities": [
           "攻击力 547~549",
           "最大生命值 +22~30%",
@@ -386,7 +386,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Crystal Fist (鲁萨卡的水晶拳套)",
+        "name": "Lusaka's Crystal Fist (路查卡的水晶拳套)",
         "abilities": [
           "攻击力 563~565",
           "暴击伤害 +55~65%",
@@ -398,7 +398,7 @@
         "possible_random_stats": "暴击伤害 +3~10%\n无视格挡 +3~10%\n暴击率 +3~10%\n攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n力量 +2~4\n体质 +2~4\n敏捷 +2~4\n智力 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%"
       },
       {
-        "name": "Lusaka's Fist (鲁萨卡的拳套)",
+        "name": "Lusaka's Fist (路查卡的拳套)",
         "abilities": [
           "攻击力 563~565",
           "最大生命值 +20~28%",
@@ -420,7 +420,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Crystal Bow (鲁萨卡的水晶弓)",
+        "name": "Lusaka's Crystal Bow (路查卡的水晶弓)",
         "abilities": [
           "攻击力 531~532",
           "暴击伤害 +58~68%",
@@ -431,7 +431,7 @@
         "possible_random_stats": "暴击伤害 +3~10%\n无视格挡 +3~10%\n攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n体质 +2~4\n敏捷 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%"
       },
       {
-        "name": "Lusaka's Bow (鲁萨卡的弓)",
+        "name": "Lusaka's Bow (路查卡的弓)",
         "abilities": [
           "攻击力 531~532",
           "最大生命值 +20~28%",
@@ -453,7 +453,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Crystal Yo-Yo (鲁萨卡的水晶溜溜球)",
+        "name": "Lusaka's Crystal Yo-Yo (路查卡的水晶溜溜球)",
         "abilities": [
           "攻击力 476~478",
           "暴击伤害 +57~67%",
@@ -464,7 +464,7 @@
         "possible_random_stats": "暴击伤害 +3~10%\n无视格挡 +3~10%\n暴击率 +3~10%\n攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n力量 +2~4\n体质 +2~4\n敏捷 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%\n移动速度 +2~10%"
       },
       {
-        "name": "Lusaka's Yo-Yo (鲁萨卡的溜溜球)",
+        "name": "Lusaka's Yo-Yo (路查卡的溜溜球)",
         "abilities": [
           "攻击力 476~478",
           "最大生命值 +21~30%",
@@ -486,7 +486,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Crystal Staff (鲁萨卡的水晶法杖)",
+        "name": "Lusaka's Crystal Staff (路查卡的水晶法杖)",
         "abilities": [
           "攻击力 587~590",
           "全属性精通 +20~25%",
@@ -497,7 +497,7 @@
         "possible_random_stats": "攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n体质 +2~4\n智力 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%\n减少施法时间 +3~10%\n全属性精通 +3~6%\n移动速度 +2~10%"
       },
       {
-        "name": "Lusaka's Staff (鲁萨卡的法杖)",
+        "name": "Lusaka's Staff (路查卡的法杖)",
         "abilities": [
           "攻击力 587~590",
           "最大生命值 +21~30%",
@@ -519,7 +519,7 @@
         "possible_random_stats": "同上"
       },
       {
-        "name": "Lusaka's Crystal Wand (鲁萨卡的水晶魔杖)",
+        "name": "Lusaka's Crystal Wand (路查卡的水晶魔杖)",
         "abilities": [
           "攻击力 595~597",
           "攻击力 +17~22%",
@@ -530,7 +530,7 @@
         "possible_random_stats": "攻击力 +3~6%\n窃取生命 +0.4~0.8%\n最大生命值 +3~6%\n体质 +2~4\n智力 +2~4\n格挡率 +3~6%\nPvP伤害 +3~6%\nPvE伤害 +3~6%\n减少施法时间 +3~10%\n反射伤害 +10~20%\n移动速度 +2~10%"
       },
       {
-        "name": "Lusaka's Wand (鲁萨卡的魔杖)",
+        "name": "Lusaka's Wand (路查卡的魔杖)",
         "abilities": [
           "攻击力 595~597",
           "最大生命值 +20~28%",
@@ -805,7 +805,7 @@
           { "type": "Necklace (项链)", "cursed_jewelry_fragment": 486 }
         ]
       },
-      "note": "究极饰品拆解会返还90%的原始材料（珠宝粉末和诅咒珠宝碎片）。"
+      "note": "终极饰品拆解会返还90%的原始材料（粉尘和首饰碎片）。"
     },
     "ultimate_weapon_upgrade": {
       "upgrade_data": [
@@ -876,9 +876,9 @@
         }
       ],
       "notes": [
-        "与普通装备不同，所有究极装备在升级过程中使用 太阳石 (Sunstone)、矿石 (Minerals) 和 X保护卷轴 (Scroll of XProtect)。",
-        "一旦武器转换为究极武器，它将获得额外的两个不同的随机属性（包括属性类型和数值）。",
-        "由于失败时会降低强化等级（类似于低级S保护卷轴），究极武器升级没有保底机制。",
+        "与普通装备不同，所有终极装备在升级过程中使用 太阳石 (Sunstone)、矿石 (Minerals) 和 X保护卷轴 (Scroll of XProtect)。",
+        "一旦武器转换为终极武器，它将获得额外的两个不同的随机属性（包括属性类型和数值）。",
+        "由于失败时会降低强化等级（类似于low装备保护卷轴），终极武器升级没有保底机制。",
         "失败会使强化等级降低 1。",
         "大失败或大成功将分别使强化等级降低或增加 2。"
       ]

@@ -1,0 +1,141 @@
+@import '../../../../styles/variables.less';
+
+// Awake styles
+.awake-weapon-nav {
+  display: flex;
+  gap: @spacing-xs;
+  margin: @spacing-md 0;
+  overflow-x: auto;
+  padding: @spacing-xs 0;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 217, 77, 0.5);
+    border-radius: 2px;
+
+    &:hover {
+      background: rgba(255, 217, 77, 0.7);
+    }
+  }
+}
+
+.awake-nav-button {
+  padding: @spacing-xs @spacing-md;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: @border-radius-md;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: all @transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+
+  &.active {
+    background: rgba(255, 217, 77, 0.15);
+    color: rgba(255, 217, 77, 0.9);
+    border-color: rgba(255, 217, 77, 0.4);
+    font-weight: 600;
+  }
+}
+
+.awake-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: @spacing-sm;
+  margin-top: @spacing-md;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+.awake-skill-card {
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.8), rgba(7, 9, 15, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-md;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  transition: all @transition-fast;
+  min-height: 80px;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+  }
+}
+
+.awake-skill-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.awake-skill-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.awake-skill-name {
+  margin: 0 0 4px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.3;
+}
+
+.awake-skill-level {
+  margin: 0 0 6px 0;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.awake-skill-rarities {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .awake-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .awake-weapon-nav {
+    gap: @spacing-xs;
+  }
+
+  .awake-nav-button {
+    padding: @spacing-xs @spacing-sm;
+    font-size: 0.85rem;
+  }
+}
+

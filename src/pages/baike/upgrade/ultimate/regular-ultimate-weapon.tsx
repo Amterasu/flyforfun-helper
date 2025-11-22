@@ -25,7 +25,7 @@ export const RegularUltimateWeapon = () => {
   return (
     <div className="baike-content">
       <div className="baike-section">
-        <h2 className="baike-section-title">普通终极武器</h2>
+        <h2 className="baike-section-title">150终极武器</h2>
         <div style={{ overflowX: "auto" }}>
           <table className="baike-table">
             <thead>

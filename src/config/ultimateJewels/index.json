@@ -1,0 +1,259 @@
+{
+    "ultimate_jewels": {
+      "meta": {
+        "required_level": 105
+      },
+      "jewel_attributes": [
+        {
+          "grade": 1,
+          "rarity_en": "Uncommon",
+          "rarity_cn": "优秀",
+          "shining_ruby": "力量(STR)+1",
+          "shining_amethyst": "体质(STA)+1",
+          "shining_emerald": "敏捷(DEX)+1",
+          "shining_sapphire": "智力(INT)+1",
+          "shining_topaz": "防御力+5",
+          "shining_diamond": "最大生命值+50",
+          "shining_onyx": "攻击力+10"
+        },
+        {
+          "grade": 2,
+          "rarity_en": "Uncommon",
+          "rarity_cn": "优秀",
+          "shining_ruby": "力量(STR)+2",
+          "shining_amethyst": "体质(STA)+2",
+          "shining_emerald": "敏捷(DEX)+2",
+          "shining_sapphire": "智力(INT)+2",
+          "shining_topaz": "防御力+10",
+          "shining_diamond": "最大生命值+100",
+          "shining_onyx": "攻击力+20"
+        },
+        {
+          "grade": 3,
+          "rarity_en": "Uncommon",
+          "rarity_cn": "优秀",
+          "shining_ruby": "力量(STR)+3",
+          "shining_amethyst": "体质(STA)+3",
+          "shining_emerald": "敏捷(DEX)+3",
+          "shining_sapphire": "智力(INT)+3",
+          "shining_topaz": "防御力+15",
+          "shining_diamond": "最大生命值+150",
+          "shining_onyx": "攻击力+30"
+        },
+        {
+          "grade": 4,
+          "rarity_en": "Rare",
+          "rarity_cn": "稀有",
+          "shining_ruby": "力量(STR)+4",
+          "shining_amethyst": "体质(STA)+4",
+          "shining_emerald": "敏捷(DEX)+4",
+          "shining_sapphire": "智力(INT)+4",
+          "shining_topaz": "防御力+20",
+          "shining_diamond": "最大生命值+200",
+          "shining_onyx": "攻击力+40"
+        },
+        {
+          "grade": 5,
+          "rarity_en": "Rare",
+          "rarity_cn": "稀有",
+          "shining_ruby": "力量(STR)+5",
+          "shining_amethyst": "体质(STA)+5",
+          "shining_emerald": "敏捷(DEX)+5",
+          "shining_sapphire": "智力(INT)+5",
+          "shining_topaz": "防御力+25",
+          "shining_diamond": "最大生命值+250",
+          "shining_onyx": "攻击力+50"
+        },
+        {
+          "grade": 6,
+          "rarity_en": "Rare",
+          "rarity_cn": "稀有",
+          "shining_ruby": "力量(STR)+6",
+          "shining_amethyst": "体质(STA)+6",
+          "shining_emerald": "敏捷(DEX)+6",
+          "shining_sapphire": "智力(INT)+6",
+          "shining_topaz": "防御力+30",
+          "shining_diamond": "最大生命值+300",
+          "shining_onyx": "攻击力+60"
+        },
+        {
+          "grade": 7,
+          "rarity_en": "Very Rare",
+          "rarity_cn": "史诗",
+          "shining_ruby": "力量(STR)+7",
+          "shining_amethyst": "体质(STA)+7",
+          "shining_emerald": "敏捷(DEX)+7",
+          "shining_sapphire": "智力(INT)+7",
+          "shining_topaz": "防御力+35",
+          "shining_diamond": "最大生命值+350",
+          "shining_onyx": "攻击力+70"
+        },
+        {
+          "grade": 8,
+          "rarity_en": "Very Rare",
+          "rarity_cn": "史诗",
+          "shining_ruby": "力量(STR)+8",
+          "shining_amethyst": "体质(STA)+8",
+          "shining_emerald": "敏捷(DEX)+8",
+          "shining_sapphire": "智力(INT)+8",
+          "shining_topaz": "防御力+40",
+          "shining_diamond": "最大生命值+400",
+          "shining_onyx": "攻击力+80"
+        },
+        {
+          "grade": 9,
+          "rarity_en": "Very Rare",
+          "rarity_cn": "史诗",
+          "shining_ruby": "力量(STR)+9",
+          "shining_amethyst": "体质(STA)+9",
+          "shining_emerald": "敏捷(DEX)+9",
+          "shining_sapphire": "智力(INT)+9",
+          "shining_topaz": "防御力+45",
+          "shining_diamond": "最大生命值+450",
+          "shining_onyx": "攻击力+90"
+        },
+        {
+          "grade": 10,
+          "rarity_en": "Unique",
+          "rarity_cn": "传说",
+          "shining_ruby": "力量(STR)+10",
+          "shining_amethyst": "体质(STA)+10",
+          "shining_emerald": "敏捷(DEX)+10",
+          "shining_sapphire": "智力(INT)+10",
+          "shining_topaz": "防御力+50",
+          "shining_diamond": "最大生命值+500",
+          "shining_onyx": "攻击力+100"
+        }
+      ],
+      "runes_attributes": {
+        "note": "符文属性为固定值，不随等级变化 (Based on chart visual)",
+        "defense": "防御力 +10%",
+        "attack": "攻击力 +10%",
+        "magic_resist": "魔法抗性 +10%",
+        "critical_resistance": "暴击抵抗 +10%",
+        "attack_speed_rate": "攻击速度 +10%"
+      },
+      "notes": [
+        "随着终极武器的每一次强化，将解锁一个宝石/随着终极武器的每一次强化，将逐步解锁宝石 / 符文插槽，最多可累积解锁 5 个。游戏内提供多种类型的宝石，每种宝石均设有 10 个等级",
+        "无论宝石等级高低，同一武器中不可镶嵌多个相同类型的宝石",
+        "若武器强化等级下降（如强化失败降级），已解锁的插槽将永久保留，但未达到对应强化等级前，该插槽中已镶嵌的宝石 / 符文效果将暂时禁用",
+        "移除已镶嵌的终极宝石需消耗 5,000,000 金币，且移除后宝石会直接销毁；若需保留宝石，可使用商城道具「宝石镊子（Jewel Tweezers）」进行无损移除"
+      ]
+    },
+    "ultimate_jewels_fusion": {
+      "fusion_data": [
+        {
+          "target_grades": "2, 3",
+          "using_3_jewels": {
+            "chance": "24%",
+            "penya": "2,000,000",
+            "average_tries": 4.16,
+            "average_penya": "8,320,000"
+          },
+          "using_4_jewels": {
+            "chance": "32%",
+            "penya": "3,000,000",
+            "average_tries": 3.12,
+            "average_penya": "9,360,000"
+          },
+          "using_5_jewels": {
+            "chance": "40%",
+            "penya": "4,000,000",
+            "average_tries": 2.5,
+            "average_penya": "10,000,000"
+          },
+          "using_6_jewels": {
+            "chance": "48%",
+            "penya": "5,000,000",
+            "average_tries": 2.08,
+            "average_penya": "10,400,000"
+          }
+        },
+        {
+          "target_grades": "4, 5, 6",
+          "using_3_jewels": {
+            "chance": "18%",
+            "penya": "3,000,000",
+            "average_tries": 5.55,
+            "average_penya": "16,650,000"
+          },
+          "using_4_jewels": {
+            "chance": "24%",
+            "penya": "4,000,000",
+            "average_tries": 4.16,
+            "average_penya": "16,640,000"
+          },
+          "using_5_jewels": {
+            "chance": "30%",
+            "penya": "5,000,000",
+            "average_tries": 3.33,
+            "average_penya": "16,650,000"
+          },
+          "using_6_jewels": {
+            "chance": "36%",
+            "penya": "6,000,000",
+            "average_tries": 2.77,
+            "average_penya": "16,620,000"
+          }
+        },
+        {
+          "target_grades": "7, 8, 9",
+          "using_3_jewels": {
+            "chance": "12%",
+            "penya": "4,000,000",
+            "average_tries": 8.33,
+            "average_penya": "33,320,000"
+          },
+          "using_4_jewels": {
+            "chance": "16%",
+            "penya": "5,000,000",
+            "average_tries": 6.25,
+            "average_penya": "31,250,000"
+          },
+          "using_5_jewels": {
+            "chance": "20%",
+            "penya": "6,000,000",
+            "average_tries": 5,
+            "average_penya": "30,000,000"
+          },
+          "using_6_jewels": {
+            "chance": "24%",
+            "penya": "7,000,000",
+            "average_tries": 4.16,
+            "average_penya": "29,120,000"
+          }
+        },
+        {
+          "target_grades": "10",
+          "using_3_jewels": {
+            "chance": "6%",
+            "penya": "5,000,000",
+            "average_tries": 16.66,
+            "average_penya": "83,300,000"
+          },
+          "using_4_jewels": {
+            "chance": "8%",
+            "penya": "6,000,000",
+            "average_tries": 12.5,
+            "average_penya": "75,000,000"
+          },
+          "using_5_jewels": {
+            "chance": "10%",
+            "penya": "7,000,000",
+            "average_tries": 10,
+            "average_penya": "70,000,000"
+          },
+          "using_6_jewels": {
+            "chance": "12%",
+            "penya": "8,000,000",
+            "average_tries": 8.33,
+            "average_penya": "66,640,000"
+          }
+        }
+      ],
+      "notes": [
+        "如果你拥有至少3个相同等级的完整宝石，你可以将它们合成为下一个等级的宝石。",
+        "你可以融合 3 到 6 个宝石，使用的宝石越多，成功几率越高。失败时，你将返还 0 到 3 个用于合成过程的宝石；如果使用商城物品“高级魔法石 (Advanced Mana Stone)”，则返还范围变为 1 到 3 个。"
+      ]
+    }
+  }

@@ -25,8 +25,8 @@ export const UltimateJewelryEvent = () => {
         <div className="baike-info-card">
           <ul className="baike-list">
             <li>
-              <strong>Enhance Upgrade Event (Ultimate)</strong> applies only for{" "}
-              <strong>Ultimate Weapons &amp; Accessories</strong>.
+              <strong>终极强化升级活动</strong> 仅适用于
+              <strong>终极武器和终极首饰</strong>.
             </li>
           </ul>
         </div>

@@ -1,0 +1,234 @@
+@import '../../../../styles/variables.less';
+
+// Raised Pet styles
+.raised-pet-layout {
+  display: flex;
+  gap: @spacing-lg;
+  margin-top: @spacing-md;
+  align-items: flex-start;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+// 左侧宠物列表
+.raised-pet-sidebar {
+  flex-shrink: 0;
+  width: 240px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.raised-pet-list {
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-lg;
+  padding: @spacing-sm;
+}
+
+.raised-pet-list-item {
+  display: flex;
+  align-items: center;
+  gap: @spacing-sm;
+  padding: @spacing-sm;
+  margin-bottom: @spacing-xs;
+  border-radius: @border-radius-md;
+  cursor: pointer;
+  transition: all @transition-fast;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  &.active {
+    background: rgba(255, 217, 77, 0.15);
+    border-color: rgba(255, 217, 77, 0.4);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.raised-pet-list-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.raised-pet-list-name {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .raised-pet-list-item.active & {
+    color: rgba(255, 217, 77, 0.9);
+    font-weight: 600;
+  }
+}
+
+// 右侧内容区域
+.raised-pet-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.raised-pet-container {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-lg;
+}
+
+.raised-pet-header {
+  display: flex;
+  align-items: center;
+  gap: @spacing-md;
+  margin-bottom: @spacing-lg;
+  padding-bottom: @spacing-md;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.raised-pet-icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.raised-pet-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.raised-pet-name {
+  margin: 0 0 @spacing-xs 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(255, 217, 77, 0.9);
+}
+
+.raised-pet-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+.raised-pet-perfect-value {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.raised-pet-parameter {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.raised-pet-section {
+  margin-top: @spacing-lg;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.raised-pet-section-title {
+  margin: 0 0 @spacing-md 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 217, 77, 0.9);
+}
+
+// 确保表格有清晰的边框并横向撑满
+.baike-table {
+  width: 100% !important;
+  table-layout: auto;
+  
+  th,
+  td {
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    text-align: left;
+    padding: @spacing-sm;
+    font-size: 0.9rem;
+  }
+
+  th {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 217, 77, 0.9);
+    font-weight: 600;
+  }
+
+  td {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+@media (max-width: 768px) {
+  .raised-pet-layout {
+    gap: @spacing-md;
+  }
+
+  .raised-pet-sidebar {
+    width: 100%;
+  }
+
+  .raised-pet-list {
+    max-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: @spacing-xs;
+  }
+
+  .raised-pet-list-item {
+    margin-bottom: 0;
+  }
+
+  .raised-pet-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .raised-pet-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .raised-pet-name {
+    font-size: 1.1rem;
+  }
+}

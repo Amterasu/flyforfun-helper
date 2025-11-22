@@ -40,9 +40,9 @@ export const UltimateWeaponEvent = () => {
               <tr>
                 <th style={{ whiteSpace: "nowrap", minWidth: "80px" }}>等级</th>
                 <th colSpan={2}>普通成功</th>
-                <th colSpan={2}>完美成功</th>
+                <th colSpan={2}>大成功</th>
                 <th colSpan={2}>普通失败</th>
-                <th colSpan={2}>完美失败</th>
+                <th colSpan={2}>大失败</th>
                 <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>提升</th>
               </tr>
               <tr>

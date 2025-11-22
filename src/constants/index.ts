@@ -67,13 +67,12 @@ export const docTree: DocNode[] = [
         children: [
           { id: 'ultimate-weapon-upgrade', title: '终极武器升级' },
           { id: 'ultimate-weapon-event', title: '终极武器活动' },
-          { id: 'regular-ultimate-weapon', title: '普通终极武器' },
-          { id: 'fwc2025-golden-weapon', title: '2025年FWG黄金武器' },
+          { id: 'regular-ultimate-weapon', title: '150终极武器' },
+          { id: 'fwc2025-golden-weapon', title: '2025年FWC黄金武器' },
           { id: 'ultimate-jewelry-upgrade', title: '终极首饰升级' },
           { id: 'ultimate-jewelry-event', title: '终极首饰活动' }
         ]
       },
-      { id: 'new-horizon-equipment-sets', title: '🦾 150PVE' },
       { id: 'battle-for-madrigal-ultimate-jewels', title: '💎 符文宝石' },
       { id: 'jewelry-upgrade', title: '💍 首饰强化' },
       { id: 'element-upgrade', title: '🔥 元素强化' },
