@@ -1,0 +1,578 @@
+@import "../../../styles/variables.less";
+
+// 定义颜色变量
+@primary-color: #3b82f6;
+@primary-light: #60a5fa;
+@text-primary: #ffffff;
+@text-secondary: rgba(255, 255, 255, 0.7);
+@color-purple: #d980fa;
+@color-cyan: #00ffff;
+@color-light-yellow: #fceaaa;
+@color-deep-yellow: #ffd700;
+@color-orange: #ff8c00;
+@color-pink: #cb93f6;
+@color-white: #ffffff;
+@color-gray: #aaaaaa;
+@color-red: #ff4d4f;
+@tooltip-bg: rgba(0, 0, 0, 0.85);
+
+.weapon-tool {
+  padding: 0;
+  min-height: 100vh;
+}
+
+.weapon-tool-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: @spacing-lg;
+
+  @media (max-width: 1024px) {
+    padding: @spacing-md;
+  }
+}
+
+.weapon-tool-center {
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-md;
+}
+
+.weapon-tool-section {
+  background: linear-gradient(
+    145deg,
+    rgba(15, 18, 28, 0.6),
+    rgba(7, 9, 15, 0.6)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-lg;
+  padding: @spacing-lg;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.weapon-tool-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 @spacing-md 0;
+  padding-bottom: @spacing-sm;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.weapon-tool-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+}
+
+.weapon-log-btn {
+  height: 24px;
+  padding: 0 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: @text-light;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all @transition-fast;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  &:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// 武器选择器
+.weapon-selector {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.weapon-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: @spacing-xs;
+  flex: 1;
+  overflow-y: auto;
+  padding: @spacing-xs;
+  min-height: 0;
+}
+
+.weapon-selector-item {
+  display: flex;
+  align-items: center;
+  gap: @spacing-xs;
+  padding: @spacing-xs;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-sm;
+  cursor: pointer;
+  transition: all @transition-fast;
+  text-align: left;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: @primary-color;
+    transform: translateY(-1px);
+  }
+
+  &.is-selected {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: @primary-color;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+  }
+}
+
+.weapon-selector-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: @border-radius-sm;
+  padding: 2px;
+}
+
+.weapon-selector-name {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+// 武器结果展示
+.weapon-result {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 0;
+  overflow-y: auto;
+  padding: @spacing-md 0;
+}
+
+.weapon-tooltip-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.weapon-display-image {
+  width: 64px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .weapon-preview-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+// Tooltip 样式复刻
+.weapon-tooltip {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #bba369;
+  box-shadow: inset 0 0 0 1px #000, 0 0 0 1px #000, 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 1px;
+  width: 250px;
+  color: @color-white;
+  font-family: "Microsoft YaHei", sans-serif;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.weapon-tooltip-border-container {
+  border: #3f361c solid 1px;
+  border-radius: 3px;
+  width: 246px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.ultimate-badge {
+  /* 文字样式 */
+  font-family: "Microsoft YaHei", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 2px #000;
+  border-radius: 4px;
+  width: 50px;
+  height: 14px;
+
+
+  /* 多层背景渐变：模拟粉紫渐变 + 光泽感 */
+  background-image: linear-gradient(to bottom, #cd79a2 0%, #9f2152 100%), /* 主渐变 */ linear-gradient(to bottom, #fff 0%, #fff 1px, transparent 1px);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
+  background-size: 100% 100%, 100% 1px;
+
+  /* 多层边框：金色外框 + 深色内框 */
+  border: 1px solid #d4af37;
+  box-shadow: 0 0 0 1px #333, /* 内层深色边框 */ 0 2px 4px rgba(0, 0, 0, 0.5); /* 外层阴影增强立体 */
+}
+.weapon-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: @color-purple;
+}
+.stat-row-label {
+  color: #fff;
+}
+
+.weapon-type {
+  color: @color-white;
+}
+
+
+.stat-row {
+
+  &.cyan {
+    color: @color-cyan;
+  }
+  &.white {
+    color: @color-white;
+  }
+  &.purple {
+    color: @color-purple;
+  }
+  &.light-yellow {
+    color: @color-light-yellow;
+  }
+  &.deep-yellow {
+    color: @color-deep-yellow;
+  }
+  &.orange {
+    color: @color-orange;
+  }
+  &.red {
+    color: @color-red;
+  }
+  &.pink {
+    color: @color-pink;
+  }
+}
+
+.weapon-description-block {
+  color: @color-white;
+  white-space: pre-wrap;
+}
+
+
+// 操作按钮
+.weapon-actions-content {
+  margin-top: @spacing-md;
+  padding-top: @spacing-md;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: @spacing-md;
+}
+
+.weapon-select-item {
+  display: flex;
+  justify-content: center;
+}
+
+.weapon-select-slot {
+  width: 36px;
+  height: 36px;
+  background: #222;
+  border: 1px solid #5c4628;
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #d4af37;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+  }
+
+  &.has-weapon {
+    border-color: rgba(255, 217, 77, 0.5);
+    box-shadow: 0 0 4px rgba(255, 217, 77, 0.3);
+  }
+}
+
+.weapon-select-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+.weapon-select-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  text-align: center;
+  padding: 2px;
+}
+
+.weapon-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: @spacing-sm;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.weapon-action-btn {
+  height: 36px;
+  padding: 0 @spacing-md;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: @border-radius-sm;
+  background: rgba(59, 130, 246, 0.1);
+  color: @primary-light;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all @transition-fast;
+  white-space: nowrap;
+
+  &:hover:not(:disabled) {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: @primary-color;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.weapon-empty-state {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: @border-radius-md;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+// 日志弹窗
+.weapon-log-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: @spacing-md;
+}
+
+.weapon-log-modal {
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  background: #1a1d26;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-lg;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.weapon-log-modal__header {
+  padding: @spacing-md;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weapon-log-modal__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: @text-primary;
+}
+
+.weapon-log-modal__close {
+  background: none;
+  border: none;
+  color: @text-secondary;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+
+  &:hover {
+    color: @text-primary;
+  }
+}
+
+.weapon-log-modal__content {
+  flex: 1;
+  overflow-y: auto;
+  padding: @spacing-md;
+}
+
+.weapon-log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.weapon-log-item {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease;
+  border: 1px solid transparent;
+
+  &-info {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+  }
+
+  &-success {
+    background: rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.2);
+    color: #86efac;
+  }
+
+  &-warning {
+    background: rgba(234, 179, 8, 0.1);
+    border-color: rgba(234, 179, 8, 0.2);
+    color: #fde047;
+  }
+}
+
+.weapon-log-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+// 武器选择器（紧凑布局）
+.weapon-selector-grid-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 6px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: @spacing-xs;
+}
+
+.weapon-selector-item-compact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-sm;
+  cursor: pointer;
+  transition: all @transition-fast;
+
+  &:hover {
+    background: rgba(255, 217, 77, 0.1);
+    border-color: rgba(255, 217, 77, 0.3);
+    transform: translateY(-1px);
+  }
+
+  &.is-selected {
+    background: rgba(255, 217, 77, 0.2);
+    border-color: rgba(255, 217, 77, 0.6);
+    box-shadow: 0 0 8px rgba(255, 217, 77, 0.4);
+  }
+}
+
+.weapon-selector-icon-compact {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.weapon-selector-name-compact {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.red-text {
+  color: #ff2c7e
+}

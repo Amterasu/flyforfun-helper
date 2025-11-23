@@ -1,6 +1,40 @@
 @import '../../../../styles/variables.less';
 
 // Pet Transmutation styles
+.pet-transmutation-group {
+  margin-bottom: @spacing-xl;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pet-transmutation-group-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgba(255, 217, 77, 0.9);
+  margin: 0 0 @spacing-md 0;
+  padding-bottom: @spacing-sm;
+  border-bottom: 2px solid rgba(255, 217, 77, 0.3);
+}
+
+.pet-transmutation-name-group {
+  margin-bottom: @spacing-lg;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pet-transmutation-name-group-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 @spacing-sm 0;
+  padding-left: @spacing-xs;
+  border-left: 3px solid rgba(255, 217, 77, 0.5);
+}
+
 .pet-transmutation-cards-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -32,11 +66,44 @@
   background: rgba(0, 0, 0, 0.2);
   padding: @spacing-xs;
   overflow: hidden;
+  position: relative;
 
   img {
     max-width: 100%;
     height: auto;
     border-radius: @border-radius-sm;
+  }
+}
+
+.pet-transmutation-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: @border-radius-sm;
+}
+
+.pet-transmutation-limited-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #1a1a1a;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+  z-index: 1;
+}
+
+.pet-transmutation-card-limited {
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.2);
+
+  &:hover {
+    border-color: rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
   }
 }
 
@@ -65,24 +132,11 @@
   }
 }
 
-.pet-transmutation-periods {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.pet-transmutation-period {
-  code {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: @border-radius-sm;
-    padding: 3px 6px;
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: 'Courier New', monospace;
-    display: inline-block;
-    line-height: 1.4;
-  }
+.pet-transmutation-name-en {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  margin-top: 2px;
 }
 
 @media (max-width: 1200px) {

@@ -3,6 +3,7 @@ import { assistantNavItems } from '../../constants/assistant'
 import { AssistantNavId } from '../../types/assistant'
 import { Bless } from './bless'
 import { PetTool } from './pet'
+import { WeaponTool } from './weapon'
 import './index.less'
 
 const renderContent = (activeNav: AssistantNavId) => {
@@ -11,6 +12,8 @@ const renderContent = (activeNav: AssistantNavId) => {
       return <Bless />
     case 'pet-tool':
       return <PetTool />
+    case 'weapon-tool':
+      return <WeaponTool />
     default:
       return null
   }

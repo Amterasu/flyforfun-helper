@@ -1049,7 +1049,7 @@ export const Bless = () => {
         >
           <div className="target-selector" onClick={(e) => e.stopPropagation()}>
             <div className="target-selector__header">
-              <h4>选择目标属性</h4>
+              <h4 className="target-selector__title">选择目标属性</h4>
               <button
                 className="target-selector__close"
                 onClick={() => setShowTargetSelector(null)}

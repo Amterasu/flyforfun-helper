@@ -1,4 +1,4 @@
-export type AssistantNavId = 'fashion-awakening' | 'pet-tool'
+export type AssistantNavId = 'fashion-awakening' | 'pet-tool' | 'weapon-tool'
 
 export type AssistantNavItem = {
   id: AssistantNavId

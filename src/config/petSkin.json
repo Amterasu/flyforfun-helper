@@ -1,0 +1,1070 @@
+{
+    "items": [
+        {
+            "skillChanceSkill": [],
+            "id": 6296,
+            "name": {
+                "en": "King Crab Cage",
+                "cns": "帝王蟹"
+            },
+            "description": {
+                "en": "Crustacean with incredible claw strength. Don't put anything between those claws!",
+                "cns": "爪部力量惊人的甲壳动物。不要把任何东西放在它们的爪子之间!"
+            },
+            "icon": "petkingcrab01_1.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 148,
+            "name": {
+                "en": "Unicorn Corral",
+                "cns": "独角兽"
+            },
+            "description": {
+                "en": "Look! Ugly one-horned mule!",
+                "cns": "看啊！丑陋的独角骡子！"
+            },
+            "icon": "petunicorn01_00.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 885,
+            "name": {
+                "en": "Dragon Cage",
+                "cns": "飞龙"
+            },
+            "description": {
+                "en": "Meddle not in the affairs of the dragon; for you are crunchy and taste good with ketchup.",
+                "cns": "不要干涉飞龙的事；因为你很松脆，涂上番茄酱后很美味。"
+            },
+            "icon": "petdragon01_00.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 1644,
+            "name": {
+                "en": "Angel Cage",
+                "cns": "天使"
+            },
+            "description": {
+                "en": "By the Angel's grace.",
+                "cns": "承蒙天使的庇护。"
+            },
+            "icon": "petangel01_01.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 4817,
+            "name": {
+                "en": "Fox Cage",
+                "cns": "狐狸"
+            },
+            "description": {
+                "en": "A fox is a wolf who sends flowers.",
+                "cns": "狐狸是送花的狼。"
+            },
+            "icon": "petninefox01_00.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 5471,
+            "name": {
+                "en": "Rabbit Coop",
+                "cns": "兔子"
+            },
+            "description": {
+                "en": "That’s the most foul, cruel and bad tempered rodent you ever set eyes on!",
+                "cns": "这是你见过的最邪恶、最残忍、脾气最差的啮齿动物！"
+            },
+            "icon": "petrabbit02_00.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 2079,
+            "name": {
+                "en": "Tiger Cage",
+                "cns": "老虎"
+            },
+            "description": {
+                "en": "This ferocious Tiger is GGGREAT!",
+                "cns": "这只凶猛的老虎超超超级强！"
+            },
+            "icon": "petwhitetiger01_02.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 2923,
+            "limited": true,
+            "name": {
+                "en": "Draco Cage",
+                "cns": "走地鸡"
+            },
+            "description": {
+                "en": "The mythical dragon, extremely rare sighting!",
+                "cns": "神话中的龙，非常罕见！"
+            },
+            "icon": "petdraco.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 3765,
+            "name": {
+                "en": "Fox Cage",
+                "cns": "狐狸"
+            },
+            "description": {
+                "en": "A fox is a wolf who sends flowers.",
+                "cns": "狐狸是送花的狼。"
+            },
+            "icon": "petninefox01_01.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 5851,
+            "name": {
+                "en": "Tiger Cage",
+                "cns": "老虎"
+            },
+            "description": {
+                "en": "This ferocious Tiger is GGGREAT!",
+                "cns": "这只凶猛的老虎超超超级强！"
+            },
+            "icon": "petwhitetiger01_00.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 9040,
+            "limited": true,
+            "name": {
+                "en": "Crystal Iphrine Shell",
+                "cns": "蒜头王八"
+            },
+            "description": {
+                "en": "The extremely rare, limited Crystal Iphrine. Besides all the benefits he definitely gives a confidence boost!",
+                "cns": "极其罕见，限量的水晶艾芙莉娜。除了所有的好处，他一定会增强信心！"
+            },
+            "icon": "petcrystaliphrine.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 9941,
+            "name": {
+                "en": "Lion Cage",
+                "cns": "狮子"
+            },
+            "description": {
+                "en": "Good thing these Lions come with courage!",
+                "cns": "还好这些狮子是带着勇气来的！"
+            },
+            "icon": "petbarbarylion01_00.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 10710,
+            "limited": true,
+            "name": {
+                "en": "White Lion Cage",
+                "cns": "白狮子"
+            },
+            "description": {
+                "en": "An elegant mythical creature. Very rare sighting!",
+                "cns": "一个优雅的神话生物。非常罕见！"
+            },
+            "icon": "petwhitelion.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 15854,
+            "limited": true,
+            "name": {
+                "en": "Hantiger Cage",
+                "cns": "小老虎"
+            },
+            "description": {
+                "en": "The extremely rare, limited Hantiger. Besides all the benefits he definitely gives a confidence boost!",
+                "cns": "极其罕见，有限的恶虎。除了所有的好处，他一定会增强信心！"
+            },
+            "icon": "pethantiger.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 17941,
+            "limited": true,
+            "name": {
+                "en": "Skating Cat Cage",
+                "cns": "溜冰猫"
+            },
+            "description": {
+                "en": "The coolest cat there ever was.",
+                "cns": "有史以来最酷的猫。"
+            },
+            "icon": "petskatingcat.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 241,
+            "name": {
+                "en": "Rabbit Coop",
+                "cns": "兔子"
+            },
+            "description": {
+                "en": "That’s the most foul, cruel and bad tempered rodent you ever set eyes on!",
+                "cns": "这是你见过的最邪恶、最残忍、脾气最差的啮齿动物！"
+            },
+            "icon": "petrabbit02_01.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 975,
+            "name": {
+                "en": "Angel Cage",
+                "cns": "天使"
+            },
+            "description": {
+                "en": "By the Angel's grace.",
+                "cns": "承蒙天使的庇护。"
+            },
+            "icon": "petangel01_02.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 1025,
+            "name": {
+                "en": "Rabbit Coop",
+                "cns": "兔子"
+            },
+            "description": {
+                "en": "That’s the most foul, cruel and bad tempered rodent you ever set eyes on!",
+                "cns": "这是你见过的最邪恶、最残忍、脾气最差的啮齿动物！"
+            },
+            "icon": "petrabbit02_02.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 1127,
+            "limited": true,
+            "name": {
+                "en": "Primgon Cage",
+                "cns": "卡拉卡拉"
+            },
+            "description": {
+                "en": "The extremely rare, limited Primgon. Besides all the benefits he definitely gives a confidence boost!",
+                "cns": "极其罕见，有限的普里姆贡。除了所有的好处，他一定会增强信心！"
+            },
+            "icon": "petprimgon.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 1681,
+            "name": {
+                "en": "King Crab Cage",
+                "cns": "帝王蟹"
+            },
+            "description": {
+                "en": "Crustacean with incredible claw strength. Don't put anything between those claws!",
+                "cns": "爪部力量惊人的甲壳动物。不要把任何东西放在它们的爪子之间!"
+            },
+            "icon": "petkingcrab01_3.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 2563,
+            "name": {
+                "en": "Griffin Cage",
+                "cns": "狮鸠"
+            },
+            "description": {
+                "en": "RAWR!!!",
+                "cns": "嗷呜!!!"
+            },
+            "icon": "peteagle01_00.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 3350,
+            "name": {
+                "en": "Unicorn Corral",
+                "cns": "独角兽"
+            },
+            "description": {
+                "en": "Look! Ugly one-horned mule!",
+                "cns": "看啊！丑陋的独角骡子！"
+            },
+            "icon": "petunicorn01_01.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 3732,
+            "name": {
+                "en": "Angel Cage",
+                "cns": "天使"
+            },
+            "description": {
+                "en": "By the Angel's grace.",
+                "cns": "承蒙天使的庇护。"
+            },
+            "icon": "petangel01_03.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 5253,
+            "name": {
+                "en": "Griffin Cage",
+                "cns": "狮鸠"
+            },
+            "description": {
+                "en": "RAWR!!!",
+                "cns": "嗷呜!!!"
+            },
+            "icon": "peteagle01_02.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 6226,
+            "name": {
+                "en": "Dragon Cage",
+                "cns": "飞龙"
+            },
+            "description": {
+                "en": "Meddle not in the affairs of the dragon; for you are crunchy and taste good with ketchup.",
+                "cns": "不要干涉飞龙的事；因为你很松脆，涂上番茄酱后很美味。"
+            },
+            "icon": "petdragon01_01.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 6279,
+            "name": {
+                "en": "Dragon Cage",
+                "cns": "飞龙"
+            },
+            "description": {
+                "en": "Meddle not in the affairs of the dragon; for you are crunchy and taste good with ketchup.",
+                "cns": "不要干涉飞龙的事；因为你很松脆，涂上番茄酱后很美味。"
+            },
+            "icon": "petdragon01_02.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 6387,
+            "name": {
+                "en": "Griffin Cage",
+                "cns": "狮鸠"
+            },
+            "description": {
+                "en": "RAWR!!!",
+                "cns": "嗷呜!!!"
+            },
+            "icon": "peteagle01_01.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 6582,
+            "name": {
+                "en": "King Crab Cage",
+                "cns": "帝王蟹"
+            },
+            "description": {
+                "en": "Crustacean with incredible claw strength. Don't put anything between those claws!",
+                "cns": "爪部力量惊人的甲壳动物。不要把任何东西放在它们的爪子之间!"
+            },
+            "icon": "petkingcrab01_2.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 7239,
+            "name": {
+                "en": "Unicorn Corral",
+                "cns": "独角兽"
+            },
+            "description": {
+                "en": "Look! Ugly one-horned mule!",
+                "cns": "看啊！丑陋的独角骡子！"
+            },
+            "icon": "petunicorn01_02.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 7435,
+            "name": {
+                "en": "Tiger Cage",
+                "cns": "老虎"
+            },
+            "description": {
+                "en": "This ferocious Tiger is GGGREAT!",
+                "cns": "这只凶猛的老虎超超超级强！"
+            },
+            "icon": "petwhitetiger01_01.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 7805,
+            "name": {
+                "en": "Lion Cage",
+                "cns": "狮子"
+            },
+            "description": {
+                "en": "Good thing these Lions come with courage!",
+                "cns": "还好这些狮子是带着勇气来的！"
+            },
+            "icon": "petbarbarylion01_02.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 9003,
+            "limited": true,
+            "name": {
+                "en": "Ninja Toad Cage",
+                "cns": "忍者蛙（暂未开放）"
+            },
+            "description": {
+                "en": "An extremely powerful toad. Very rare sighting!",
+                "cns": "一只非常强大的青蛙。非常罕见！"
+            },
+            "icon": "petninjatoad.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 9153,
+            "name": {
+                "en": "Lion Cage",
+                "cns": "狮子"
+            },
+            "description": {
+                "en": "Good thing these Lions come with courage!",
+                "cns": "还好这些狮子是带着勇气来的！"
+            },
+            "icon": "petbarbarylion01_01.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 9385,
+            "name": {
+                "en": "Fox Cage",
+                "cns": "狐狸"
+            },
+            "description": {
+                "en": "A fox is a wolf who sends flowers.",
+                "cns": "狐狸是送花的狼。"
+            },
+            "icon": "petninefox01_02.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 11025,
+            "limited": true,
+            "name": {
+                "en": "Fox Spirit Cage",
+                "cns": "狐灵"
+            },
+            "description": {
+                "en": "A cute lost spirit. Rare sighting!",
+                "cns": "一个可爱的迷失灵魂。非常罕见！"
+            },
+            "icon": "petgumi.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "limited": true,
+            "id": 11407,
+            "name": {
+                "en": "Tonge Cage",
+                "cns": "Tonge Cage"
+            },
+            "description": {
+                "en": "The extremely rare, limited Tonge. Besides all the benefits he definitely gives a confidence boost!",
+                "cns": "极其罕见，有限的Tonge。除了所有的好处，他一定会增强信心！"
+            },
+            "icon": "pettonge.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 14640,
+            "limited": true,
+            "name": {
+                "en": "Nine Tails Cage",
+                "cns": "伊布"
+            },
+            "description": {
+                "en": "A mythical creature. Once in a lifetime sight!",
+                "cns": "一种神秘的生物。一生难得一见！"
+            },
+            "icon": "petninetails.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 15362,
+            "limited": true,
+            "name": {
+                "en": "Phio Cage",
+                "cns": "Phio Cage(暂未开放)"
+            },
+            "description": {
+                "en": "ids_propitem_txt_724393",
+                "cns": "暂未开放"
+            },
+            "icon": "petphio.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        },
+        {
+            "skillChanceSkill": [],
+            "id": 15601,
+            "limited": true,
+            "name": {
+                "en": "Steambot Cage",
+                "cns": "尿壶"
+            },
+            "description": {
+                "en": "An intricate mechanism full of life. Very rare sighting!",
+                "cns": "一个复杂的机制充满了生命。非常罕见！"
+            },
+            "icon": "petsteam.png",
+            "category": 24,
+            "rarity": 0,
+            "level": 1,
+            "stack": 1,
+            "buyPrice": 0,
+            "sellPrice": 1,
+            "consumable": false,
+            "premium": true,
+            "deletable": true,
+            "tradable": true,
+            "shining": false,
+            "element": 9,
+            "durationRealTime": false,
+            "spawns": []
+        }
+    ],
+    "allItemsCount": 40
+}
