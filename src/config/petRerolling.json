@@ -1,0 +1,31 @@
+{
+    "pet_rerolling": {
+      "title_cn": "宠物重随 (Pet Rerolling)",
+      "data": [
+        {
+          "tier": "S",
+          "required_count": 8
+        },
+        {
+          "tier": "A",
+          "required_count": 6
+        },
+        {
+          "tier": "B",
+          "required_count": 4
+        },
+        {
+          "tier": "C",
+          "required_count": 3
+        },
+        {
+          "tier": "D",
+          "required_count": 2
+        },
+        {
+          "tier": "E",
+          "required_count": 1
+        }
+      ]
+    }
+  }

@@ -7,10 +7,9 @@ export const assistantNavItems: AssistantNavItem[] = [
     description: '女神的祝福'
   },
   {
-    id: 'pet-offering',
-    title: '宠物献祭',
-    description: '献祭平衡速查',
-    badge: 'NEW'
+    id: 'pet-tool',
+    title: '宠物工具',
+    description: '孵化、升级、献祭、洗外观'
   }
 ]
 

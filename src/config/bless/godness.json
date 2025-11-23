@@ -180,7 +180,7 @@
       },
       {
         "statType": "FP",
-        "statName": "能量值",
+        "statName": "FP",
         "stats": [
           { "chancePercent": 3, "statValue": 12 },
           { "chancePercent": 1.25, "statValue": 20 },

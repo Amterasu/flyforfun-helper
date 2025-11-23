@@ -1,0 +1,41 @@
+@import '../../../../styles/variables.less';
+
+// Kalgas Assault styles
+.kalgas-section {
+  margin-bottom: @spacing-lg;
+}
+
+.kalgas-section-title {
+  color: rgba(255, 217, 77, 0.9);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 @spacing-md 0;
+  padding-bottom: @spacing-xs;
+  border-bottom: 2px solid rgba(255, 217, 77, 0.3);
+}
+
+.kalgas-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: @spacing-md;
+  padding: @spacing-sm;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.4), rgba(7, 9, 15, 0.4));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+
+  img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: @border-radius-sm;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+

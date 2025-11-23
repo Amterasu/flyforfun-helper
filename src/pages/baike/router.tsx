@@ -67,21 +67,18 @@ const WeaponGlow = lazy(() => import('./upgrade/glowswinging/weapon-glow').then(
 const ArmorGlow = lazy(() => import('./upgrade/glowswinging/armor-glow').then(m => ({ default: m.ArmorGlow })))
 const Swinging = lazy(() => import('./upgrade/glowswinging/swinging').then(m => ({ default: m.Swinging })))
 const Piercing = lazy(() => import('./upgrade/piercing').then(m => ({ default: m.Piercing })))
-const Event1 = lazy(() => import('./upgrade/piercing/event-1').then(m => ({ default: m.Event1 })))
 const Craft = lazy(() => import('./upgrade/craft').then(m => ({ default: m.Craft })))
 const Blessing = lazy(() => import('./upgrade/blessing').then(m => ({ default: m.Blessing })))
 const StatScroll = lazy(() => import('./upgrade/stat-scroll').then(m => ({ default: m.StatScroll })))
 const Awake = lazy(() => import('./upgrade/awake').then(m => ({ default: m.Awake })))
 const Pet = lazy(() => import('./pet').then(m => ({ default: m.Pet })))
 const RaisedPet = lazy(() => import('./pet/raised-pet').then(m => ({ default: m.RaisedPet })))
-const GraceEffect = lazy(() => import('./pet/grace-effect').then(m => ({ default: m.GraceEffect })))
 const PetCandyRecipes = lazy(() => import('./pet/pet-candy-recipes').then(m => ({ default: m.PetCandyRecipes })))
 const PetDefectRecycling = lazy(() => import('./pet/pet-defect-recycling').then(m => ({ default: m.PetDefectRecycling })))
 const PetRerolling = lazy(() => import('./pet/pet-rerolling').then(m => ({ default: m.PetRerolling })))
 const BerryMap = lazy(() => import('./pet/berry-map').then(m => ({ default: m.BerryMap })))
 const PetTransmutation = lazy(() => import('./pet/pet-transmutation').then(m => ({ default: m.PetTransmutation })))
 const Dungeons = lazy(() => import('./dungeons').then(m => ({ default: m.Dungeons })))
-const DungeonsLocation = lazy(() => import('./dungeons/dungeons-location').then(m => ({ default: m.DungeonsLocation })))
 const DungeonsDifficulties = lazy(() => import('./dungeons/dungeons-difficulties').then(m => ({ default: m.DungeonsDifficulties })))
 const StoryDungeons = lazy(() => import('./dungeons/story-dungeons').then(m => ({ default: m.StoryDungeons })))
 const DungeonCheckpoints = lazy(() => import('./dungeons/dungeon-checkpoints').then(m => ({ default: m.DungeonCheckpoints })))
@@ -91,9 +88,6 @@ const DungeonsCurses = lazy(() => import('./dungeons/dungeons-curses').then(m =>
 const TheWilds = lazy(() => import('./dungeons/dungeons-curses/the-wilds').then(m => ({ default: m.TheWilds })))
 const DungeonsDrops = lazy(() => import('./dungeons/dungeons-drops').then(m => ({ default: m.DungeonsDrops })))
 const ForsakenTower = lazy(() => import('./dungeons/forsaken-tower').then(m => ({ default: m.ForsakenTower })))
-const GuildSiege = lazy(() => import('./dungeons/guild-siege').then(m => ({ default: m.GuildSiege })))
-const RedChip = lazy(() => import('./dungeons/guild-siege/red-chip').then(m => ({ default: m.RedChip })))
-const Maps = lazy(() => import('./dungeons/guild-siege/maps').then(m => ({ default: m.Maps })))
 const KalgasAssault = lazy(() => import('./dungeons/kalgas-assault').then(m => ({ default: m.KalgasAssault })))
 const Housing = lazy(() => import('./housing').then(m => ({ default: m.Housing })))
 const Template = lazy(() => import('./housing/template').then(m => ({ default: m.Template })))
@@ -164,21 +158,18 @@ const componentMap: Record<string, React.LazyExoticComponent<React.ComponentType
   'armor-glow': ArmorGlow,
   'swinging': Swinging,
   'piercing': Piercing,
-  'event-1': Event1,
   'craft': Craft,
   'blessing': Blessing,
   'stat-scroll': StatScroll,
   'awake': Awake,
   'pet': Pet,
   'raised-pet': RaisedPet,
-  'grace-effect': GraceEffect,
   'pet-candy-recipes': PetCandyRecipes,
   'pet-defect-recycling': PetDefectRecycling,
   'pet-rerolling': PetRerolling,
   'berry-map': BerryMap,
   'pet-transmutation': PetTransmutation,
   'dungeons': Dungeons,
-  'dungeons-location': DungeonsLocation,
   'dungeons-difficulties': DungeonsDifficulties,
   'story-dungeons': StoryDungeons,
   'dungeon-checkpoints': DungeonCheckpoints,
@@ -188,9 +179,6 @@ const componentMap: Record<string, React.LazyExoticComponent<React.ComponentType
   'the-wilds': TheWilds,
   'dungeons-drops': DungeonsDrops,
   'forsaken-tower': ForsakenTower,
-  'guild-siege': GuildSiege,
-  'red-chip': RedChip,
-  'maps': Maps,
   'kalgas-assault': KalgasAssault,
   'housing': Housing,
   'template': Template,

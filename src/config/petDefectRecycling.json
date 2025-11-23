@@ -1,0 +1,63 @@
+{
+    "pet_defect_recycling": {
+      "title": "宠物献祭 (概率表)",
+      "recycling_data": [
+        {
+          "target_pet_tier": "E",
+          "sacrificed_pets": [
+            { "tier": "E", "probabilities": { "Lv1": "70%", "Lv2": "30%" } },
+            { "tier": "D", "probabilities": { "Lv1": "60%", "Lv2": "40%" } },
+            { "tier": "C", "probabilities": { "Lv1": "50%", "Lv2": "50%" } },
+            { "tier": "B", "probabilities": { "Lv1": "40%", "Lv2": "60%" } },
+            { "tier": "A", "probabilities": { "Lv1": "30%", "Lv2": "70%" } },
+            { "tier": "S", "probabilities": { "Lv1": "20%", "Lv2": "80%" } }
+          ]
+        },
+        {
+          "target_pet_tier": "D",
+          "sacrificed_pets": [
+            { "tier": "D", "probabilities": { "Lv1": "57%", "Lv2": "25%", "Lv3": "18%" } },
+            { "tier": "C", "probabilities": { "Lv1": "35%", "Lv2": "47%", "Lv3": "18%" } },
+            { "tier": "B", "probabilities": { "Lv1": "25%", "Lv2": "50%", "Lv3": "25%" } },
+            { "tier": "A", "probabilities": { "Lv1": "23%", "Lv2": "45%", "Lv3": "32%" } },
+            { "tier": "S", "probabilities": { "Lv1": "20%", "Lv2": "35%", "Lv3": "45%" } }
+          ]
+        },
+        {
+          "target_pet_tier": "C",
+          "sacrificed_pets": [
+            { "tier": "C", "probabilities": { "Lv1": "45%", "Lv2": "31%", "Lv3": "18%", "Lv4": "6%" } },
+            { "tier": "B", "probabilities": { "Lv1": "31%", "Lv2": "45%", "Lv3": "18%", "Lv4": "6%" } },
+            { "tier": "A", "probabilities": { "Lv1": "18%", "Lv2": "28%", "Lv3": "45%", "Lv4": "9%" } },
+            { "tier": "S", "probabilities": { "Lv1": "15%", "Lv2": "27%", "Lv3": "43%", "Lv4": "15%" } }
+          ]
+        },
+        {
+          "target_pet_tier": "B",
+          "sacrificed_pets": [
+            { "tier": "B", "probabilities": { "Lv1": "40%", "Lv2": "28%", "Lv3": "18%", "Lv4": "10%", "Lv5": "4%" } },
+            { "tier": "A", "probabilities": { "Lv1": "28%", "Lv2": "35%", "Lv3": "18%", "Lv4": "13%", "Lv5": "6%" } },
+            { "tier": "S", "probabilities": { "Lv1": "18%", "Lv2": "25%", "Lv3": "33%", "Lv4": "15%", "Lv5": "9%" } }
+          ]
+        },
+        {
+          "target_pet_tier": "A",
+          "sacrificed_pets": [
+            { "tier": "A", "probabilities": { "Lv1": "35%", "Lv2": "23%", "Lv3": "17%", "Lv4": "12%", "Lv5": "7%", "Lv6": "4%", "Lv7": "2%" } },
+            { "tier": "S", "probabilities": { "Lv1": "11%", "Lv2": "15%", "Lv3": "26%", "Lv4": "25%", "Lv5": "14%", "Lv6": "6%", "Lv7": "3%" } }
+          ]
+        },
+        {
+          "target_pet_tier": "S",
+          "sacrificed_pets": [
+            { "tier": "S", "probabilities": { "Lv1": "27%", "Lv2": "21%", "Lv3": "17%", "Lv4": "13%", "Lv5": "9%", "Lv6": "6%", "Lv7": "4%", "Lv8": "2%", "Lv9": "1%" } }
+          ]
+        }
+      ],
+      "notes": [
+        "要重置(Reroll)宠物的等级，使用的献祭宠物(材料)必须至少是同阶级或更高阶级。",
+        "如果随机出的等级低于当前等级，重置操作将不会覆盖宠物的当前等级。",
+        "例如：如果你的宠物当前等级是7，而你随出了1，你的宠物等级不会改变，并且你会收到消息通知。"
+      ]
+    }
+  }

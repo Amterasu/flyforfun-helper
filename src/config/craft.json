@@ -1,0 +1,181 @@
+{
+    "create_unique_weapon": {
+      "creation_rates": {
+        "title_cn": "制作武器成功率",
+        "data": [
+          {
+            "gem_en": "Topaz",
+            "gem_cn": "黄玉",
+            "level": 60,
+            "regular_chance": "1.5%",
+            "shining_dice12_chance": "2.5%"
+          },
+          {
+            "gem_en": "Topaz",
+            "gem_cn": "黄玉",
+            "level": 65,
+            "regular_chance": "2%",
+            "shining_dice12_chance": "3%"
+          },
+          {
+            "gem_en": "Topaz",
+            "gem_cn": "黄玉",
+            "level": 70,
+            "regular_chance": "2.5%",
+            "shining_dice12_chance": "4%"
+          },
+          {
+            "gem_en": "Ruby",
+            "gem_cn": "红宝石",
+            "level": 75,
+            "regular_chance": "1.5%",
+            "shining_dice12_chance": "2.5%"
+          },
+          {
+            "gem_en": "Ruby",
+            "gem_cn": "红宝石",
+            "level": 80,
+            "regular_chance": "2%",
+            "shining_dice12_chance": "3%"
+          },
+          {
+            "gem_en": "Ruby",
+            "gem_cn": "红宝石",
+            "level": 85,
+            "regular_chance": "2.5%",
+            "shining_dice12_chance": "4%"
+          },
+          {
+            "gem_en": "Sapphire",
+            "gem_cn": "蓝宝石",
+            "level": 90,
+            "regular_chance": "1.5%",
+            "shining_dice12_chance": "2.5%"
+          },
+          {
+            "gem_en": "Sapphire",
+            "gem_cn": "蓝宝石",
+            "level": 95,
+            "regular_chance": "2%",
+            "shining_dice12_chance": "3%"
+          },
+          {
+            "gem_en": "Sapphire",
+            "gem_cn": "蓝宝石",
+            "level": 100,
+            "regular_chance": "2.5%",
+            "shining_dice12_chance": "4%"
+          },
+          {
+            "gem_en": "Emerald",
+            "gem_cn": "祖母绿",
+            "level": 110,
+            "regular_chance": "1.5%",
+            "shining_dice12_chance": "2%"
+          },
+          {
+            "gem_en": "Emerald",
+            "gem_cn": "祖母绿",
+            "level": 120,
+            "regular_chance": "2%",
+            "shining_dice12_chance": "3%"
+          },
+          {
+            "gem_en": "Diamond",
+            "gem_cn": "钻石",
+            "level": 120,
+            "regular_chance": "1.5%",
+            "shining_dice12_chance": "2%"
+          },
+          {
+            "gem_en": "Diamond",
+            "gem_cn": "钻石",
+            "level": 140,
+            "regular_chance": "2%",
+            "shining_dice12_chance": "3%"
+          },
+          {
+            "gem_en": "Amethyst",
+            "gem_cn": "紫水晶",
+            "icon": "syssysscrscrapamethyst.png",
+            "level": 160,
+            "regular_chance": "0.001%",
+            "shining_dice12_chance": "0.0015%"
+          },
+          {
+            "gem_en": "Brilliant Amethyst",
+            "gem_cn": "光辉紫水晶",
+            "icon": "syssysscrscrapamethystbrilliant.png",
+            "level": 160,
+            "regular_chance": "2%",
+            "shining_dice12_chance": "3%"
+          }
+        ]
+      },
+      "gem_creation": {
+        "title_cn": "制作宝石（通过普通武器分解为宝石）",
+        "data": [
+          {
+            "weapon_upgrade_level": 0,
+            "chance": "5%",
+            "number_of_gems": "--"
+          },
+          {
+            "weapon_upgrade_level": 1,
+            "chance": "10%",
+            "number_of_gems": "--"
+          },
+          {
+            "weapon_upgrade_level": 2,
+            "chance": "15%",
+            "number_of_gems": "--"
+          },
+          {
+            "weapon_upgrade_level": 3,
+            "chance": "20%",
+            "number_of_gems": "--"
+          },
+          {
+            "weapon_upgrade_level": 4,
+            "chance": "50%",
+            "number_of_gems": "--"
+          },
+          {
+            "weapon_upgrade_level": 5,
+            "chance": "100%",
+            "number_of_gems": 1
+          },
+          {
+            "weapon_upgrade_level": 6,
+            "chance": "100%",
+            "number_of_gems": 2
+          },
+          {
+            "weapon_upgrade_level": 7,
+            "chance": "100%",
+            "number_of_gems": 3
+          },
+          {
+            "weapon_upgrade_level": 8,
+            "chance": "100%",
+            "number_of_gems": 5
+          },
+          {
+            "weapon_upgrade_level": 9,
+            "chance": "100%",
+            "number_of_gems": 10
+          },
+          {
+            "weapon_upgrade_level": 10,
+            "chance": "100%",
+            "number_of_gems": 20
+          }
+        ]
+      },
+      "notes": [
+        "武器强化等级不同，分解得到的宝石数量不同。",
+        "使用 141~160 级的武器可以转换为紫水晶 (Amethyst)。",
+        "使用 145 级的武器、闪亮力量骰子 (Shining Power Dice) 以及 紫水晶 (Amethyst) / 光辉紫水晶 (Brilliant Amethyst) 可以制作珊瑚武器。"
+      ]
+    }
+  }

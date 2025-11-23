@@ -1,0 +1,525 @@
+{
+  "pet_candy_recipes": {
+    "single_craft_recipe": {
+      "title_cn": "宠物糖果配方 (制作某等级糖果消耗)",
+      "data": [
+        {
+          "tier": "F",
+          "materials": [
+            {
+              "name": "云莓",
+              "quantity": 25
+            }
+          ],
+          "penya": "200,000"
+        },
+        {
+          "tier": "E (由F升级)",
+          "materials": [
+            {
+              "name": "F级糖果",
+              "quantity": 1
+            },
+            {
+              "name": "云莓",
+              "quantity": 50
+            }
+          ],
+          "penya": "500,000"
+        },
+        {
+          "tier": "D (由E升级)",
+          "materials": [
+            {
+              "name": "E级糖果",
+              "quantity": 1
+            },
+            {
+              "name": "灯莓",
+              "quantity": 50
+            }
+          ],
+          "penya": "800,000"
+        },
+        {
+          "tier": "C (由D升级)",
+          "materials": [
+            {
+              "name": "D级糖果",
+              "quantity": 1
+            },
+            {
+              "name": "灯莓",
+              "quantity": 50
+            }
+          ],
+          "penya": "1,000,000"
+        },
+        {
+          "tier": "B (由C升级)",
+          "materials": [
+            {
+              "name": "C级糖果",
+              "quantity": 1
+            },
+            {
+              "name": "灯莓",
+              "quantity": 50
+            }
+          ],
+          "penya": "1,500,000"
+        },
+        {
+          "tier": "A (由B升级)",
+          "materials": [
+            {
+              "name": "B级糖果",
+              "quantity": 1
+            },
+            {
+              "name": "奇艺莓",
+              "quantity": 100
+            }
+          ],
+          "penya": "2,500,000"
+        }
+      ]
+    },
+    "total_craft_cost_per_candy": {
+      "title_cn": "宠物糖果配方 (制作单个的总计消耗)",
+      "data": [
+        {
+          "tier": "F",
+          "xp_percent": "蛋:10% / F级宠物:5%",
+          "total_materials": [
+            {
+              "name": "云莓",
+              "quantity": 25
+            }
+          ],
+          "total_penya": "200,000"
+        },
+        {
+          "tier": "E",
+          "xp_percent": "5%",
+          "total_materials": [
+            {
+              "name": "云莓",
+              "quantity": 75
+            }
+          ],
+          "total_penya": "700,000"
+        },
+        {
+          "tier": "D",
+          "xp_percent": "4%",
+          "total_materials": [
+            {
+              "name": "云莓",
+              "quantity": 75
+            },
+            {
+              "name": "灯莓",
+              "quantity": 50
+            }
+          ],
+          "total_penya": "1,500,000"
+        },
+        {
+          "tier": "C",
+          "xp_percent": "4%",
+          "total_materials": [
+            {
+              "name": "云莓",
+              "quantity": 75
+            },
+            {
+              "name": "灯莓",
+              "quantity": 100
+            }
+          ],
+          "total_penya": "2,500,000"
+        },
+        {
+          "tier": "B",
+          "xp_percent": "4%",
+          "total_materials": [
+            {
+              "name": "云莓",
+              "quantity": 75
+            },
+            {
+              "name": "灯莓",
+              "quantity": 150
+            }
+          ],
+          "total_penya": "4,000,000"
+        },
+        {
+          "tier": "A",
+          "xp_percent": "2%",
+          "total_materials": [
+            {
+              "name": "云莓",
+              "quantity": 75
+            },
+            {
+              "name": "灯莓",
+              "quantity": 150
+            },
+            {
+              "name": "奇艺莓",
+              "quantity": 100
+            }
+          ],
+          "total_penya": "6,500,000"
+        }
+      ]
+    },
+    "pet_rank_up_cost": {
+      "title_cn": "宠物进阶 (升级消耗)",
+      "data": [
+        {
+          "rank_up": {
+            "from": "蛋",
+            "to": "F"
+          },
+          "required_candy": {
+            "name": "F级糖果",
+            "quantity": 10
+          },
+          "total_materials_value": [
+            {
+              "name": "云莓",
+              "quantity": 250
+            }
+          ],
+          "total_penya_value": "2,000,000"
+        },
+        {
+          "rank_up": {
+            "from": "F",
+            "to": "E"
+          },
+          "required_candy": {
+            "name": "F级糖果",
+            "quantity": 20
+          },
+          "total_materials_value": [
+            {
+              "name": "云莓",
+              "quantity": 500
+            }
+          ],
+          "total_penya_value": "4,000,000"
+        },
+        {
+          "rank_up": {
+            "from": "E",
+            "to": "D"
+          },
+          "required_candy": {
+            "name": "E级糖果",
+            "quantity": 20
+          },
+          "total_materials_value": [
+            {
+              "name": "云莓",
+              "quantity": 1500
+            }
+          ],
+          "total_penya_value": "14,000,000"
+        },
+        {
+          "rank_up": {
+            "from": "D",
+            "to": "C"
+          },
+          "required_candy": {
+            "name": "D级糖果",
+            "quantity": 25
+          },
+          "total_materials_value": [
+            {
+              "name": "云莓",
+              "quantity": 1875
+            },
+            {
+              "name": "灯莓",
+              "quantity": 1250
+            }
+          ],
+          "total_penya_value": "37,500,000"
+        },
+        {
+          "rank_up": {
+            "from": "C",
+            "to": "B"
+          },
+          "required_candy": {
+            "name": "C级糖果",
+            "quantity": 25
+          },
+          "total_materials_value": [
+            {
+              "name": "云莓",
+              "quantity": 1875
+            },
+            {
+              "name": "灯莓",
+              "quantity": 2500
+            }
+          ],
+          "total_penya_value": "62,500,000"
+        },
+        {
+          "rank_up": {
+            "from": "B",
+            "to": "A"
+          },
+          "required_candy": {
+            "name": "B级糖果",
+            "quantity": 25
+          },
+          "total_materials_value": [
+            {
+              "name": "云莓",
+              "quantity": 1875
+            },
+            {
+              "name": "灯莓",
+              "quantity": 3750
+            }
+          ],
+          "total_penya_value": "100,000,000"
+        },
+        {
+          "rank_up": {
+            "from": "A",
+            "to": "S"
+          },
+          "required_candy": {
+            "name": "A级糖果",
+            "quantity": 50
+          },
+          "total_materials_value": [
+            {
+              "name": "云莓",
+              "quantity": 3750
+            },
+            {
+              "name": "灯莓",
+              "quantity": 7500
+            },
+            {
+              "name": "奇艺莓",
+              "quantity": 5000
+            }
+          ],
+          "total_penya_value": "325,000,000"
+        }
+      ]
+    },
+    "pet_total_raised_cost": {
+      "title_cn": "宠物培养 (累计总消耗)",
+      "data": [
+        {
+          "tier_reached": "F",
+          "cumulative_candies": [
+            {
+              "name": "F级糖果",
+              "quantity": 10
+            }
+          ],
+          "cumulative_materials": [
+            {
+              "name": "云莓",
+              "quantity": 250
+            }
+          ],
+          "cumulative_penya": "2,000,000"
+        },
+        {
+          "tier_reached": "E",
+          "cumulative_candies": [
+            {
+              "name": "F级糖果",
+              "quantity": 30
+            }
+          ],
+          "cumulative_materials": [
+            {
+              "name": "云莓",
+              "quantity": 750
+            }
+          ],
+          "cumulative_penya": "6,000,000"
+        },
+        {
+          "tier_reached": "D",
+          "cumulative_candies": [
+            {
+              "name": "F级糖果",
+              "quantity": 30
+            },
+            {
+              "name": "E级糖果",
+              "quantity": 20
+            }
+          ],
+          "cumulative_materials": [
+            {
+              "name": "云莓",
+              "quantity": 2250
+            }
+          ],
+          "cumulative_penya": "20,000,000"
+        },
+        {
+          "tier_reached": "C",
+          "cumulative_candies": [
+            {
+              "name": "F级糖果",
+              "quantity": 30
+            },
+            {
+              "name": "E级糖果",
+              "quantity": 20
+            },
+            {
+              "name": "D级糖果",
+              "quantity": 25
+            }
+          ],
+          "cumulative_materials": [
+            {
+              "name": "云莓",
+              "quantity": 4125
+            },
+            {
+              "name": "灯莓",
+              "quantity": 1250
+            }
+          ],
+          "cumulative_penya": "57,500,000"
+        },
+        {
+          "tier_reached": "B",
+          "cumulative_candies": [
+            {
+              "name": "F级糖果",
+              "quantity": 30
+            },
+            {
+              "name": "E级糖果",
+              "quantity": 20
+            },
+            {
+              "name": "D级糖果",
+              "quantity": 25
+            },
+            {
+              "name": "C级糖果",
+              "quantity": 25
+            }
+          ],
+          "cumulative_materials": [
+            {
+              "name": "云莓",
+              "quantity": 6000
+            },
+            {
+              "name": "灯莓",
+              "quantity": 3750
+            }
+          ],
+          "cumulative_penya": "120,000,000"
+        },
+        {
+          "tier_reached": "A",
+          "cumulative_candies": [
+            {
+              "name": "F级糖果",
+              "quantity": 30
+            },
+            {
+              "name": "E级糖果",
+              "quantity": 20
+            },
+            {
+              "name": "D级糖果",
+              "quantity": 25
+            },
+            {
+              "name": "C级糖果",
+              "quantity": 25
+            },
+            {
+              "name": "B级糖果",
+              "quantity": 25
+            }
+          ],
+          "cumulative_materials": [
+            {
+              "name": "云莓",
+              "quantity": 7875
+            },
+            {
+              "name": "灯莓",
+              "quantity": 7500
+            }
+          ],
+          "cumulative_penya": "220,000,000"
+        },
+        {
+          "tier_reached": "S",
+          "cumulative_candies": [
+            {
+              "name": "F级糖果",
+              "quantity": 30
+            },
+            {
+              "name": "E级糖果",
+              "quantity": 20
+            },
+            {
+              "name": "D级糖果",
+              "quantity": 25
+            },
+            {
+              "name": "C级糖果",
+              "quantity": 25
+            },
+            {
+              "name": "B级糖果",
+              "quantity": 25
+            },
+            {
+              "name": "A级糖果",
+              "quantity": 50
+            }
+          ],
+          "cumulative_materials": [
+            {
+              "name": "云莓",
+              "quantity": 11625
+            },
+            {
+              "name": "灯莓",
+              "quantity": 15000
+            },
+            {
+              "name": "奇艺莓",
+              "quantity": 5000
+            }
+          ],
+          "cumulative_penya": "545,000,000"
+        }
+      ]
+    },
+    "notes": [
+      "宠物糖果用于给你的宠物增加经验值。要制作宠物糖果，必须使用浆果、金币，有时还需要前一阶的宠物糖果。",
+      "宠物有能量值。当能量值达到0时，宠物将不再提供属性，直到能量值再次高于0（宠物不会死亡，能量达到0时也没有永久性影响）。"
+    ]
+  }
+}

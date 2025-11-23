@@ -1,142 +1,61 @@
 import React from 'react'
+import './index.less'
 
 export const Template = () => {
+  const templates = [
+    { templateCn: '空白世界', sizeCn: '小', priceCn: '💲1亿金币' },
+    { templateCn: '空白世界', sizeCn: '中', priceCn: '💲2亿金币' },
+    { templateCn: '空白世界', sizeCn: '大', priceCn: '💲22.5亿金币' },
+    { templateCn: '空白世界', sizeCn: '超大', priceCn: '💲40亿金币' },
+    { templateCn: '海滩世界', sizeCn: '小', priceCn: '💲4亿金币' },
+    {
+      templateCn: '黑暗世界\n森林世界\n火山世界\n雪地世界\n秋季世界',
+      sizeCn: '小',
+      priceCn: '💲1亿金币',
+    },
+    {
+      templateCn: '海滩世界\n黑暗世界\n森林世界\n火山世界\n雪地世界\n秋季世界',
+      sizeCn: '中',
+      priceCn: '💎1600 fCoins',
+    },
+    {
+      templateCn: '海滩世界\n黑暗世界\n森林世界\n火山世界\n雪地世界\n秋季世界',
+      sizeCn: '大',
+      priceCn: '💎3600 fCoins',
+    },
+    {
+      templateCn: '海滩世界\n黑暗世界\n森林世界\n火山世界\n雪地世界\n秋季世界',
+      sizeCn: '超大',
+      priceCn: '💎6400 fCoins',
+    },
+  ]
+
   return (
     <div className="baike-content">
-    
-    <table key={1} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Template</td>
-          <td key={1}>Size</td>
-          <td key={2}>Price</td>
-          <td key={3}>Template_cn</td>
-          <td key={4}>Size_cn</td>
-          <td key={5}>Price_cn</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={2} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>:---:</td>
-          <td key={1}>:---:</td>
-          <td key={2}>:---:</td>
-          <td key={3}>:---:</td>
-          <td key={4}>:---:</td>
-          <td key={5}>:---:</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={3} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Blank World</td>
-          <td key={1}>S</td>
-          <td key={2}>💲100,000,000 金币</td>
-          <td key={3}>空白世界</td>
-          <td key={4}>小</td>
-          <td key={5}>💲1亿金币</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={4} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Blank World</td>
-          <td key={1}>M</td>
-          <td key={2}>💲200,000,000 金币</td>
-          <td key={3}>空白世界</td>
-          <td key={4}>中</td>
-          <td key={5}>💲2亿金币</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={5} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Blank World</td>
-          <td key={1}>L</td>
-          <td key={2}>💲2,250,000,000 金币</td>
-          <td key={3}>空白世界</td>
-          <td key={4}>大</td>
-          <td key={5}>💲22.5亿金币</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={6} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Blank World</td>
-          <td key={1}>XL</td>
-          <td key={2}>💲4,000,000,000 金币</td>
-          <td key={3}>空白世界</td>
-          <td key={4}>超大</td>
-          <td key={5}>💲40亿金币</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={7} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Beach World</td>
-          <td key={1}>S</td>
-          <td key={2}>💲400,000,000 金币</td>
-          <td key={3}>海滩世界</td>
-          <td key={4}>小</td>
-          <td key={5}>💲4亿金币</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={8} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Darken WorldForest WorldVolcano WorldSnow WorldFall World</td>
-          <td key={1}>S</td>
-          <td key={2}>💲100,000,000 金币</td>
-          <td key={3}>黑暗世界森林世界火山世界雪地世界秋季世界</td>
-          <td key={4}>小</td>
-          <td key={5}>💲1亿金币</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={9} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Beach WorldDarken WorldForest WorldVolcano WorldSnow WorldFall World</td>
-          <td key={1}>M</td>
-          <td key={2}>💎1600 fCoins</td>
-          <td key={3}>海滩世界黑暗世界森林世界火山世界雪地世界秋季世界</td>
-          <td key={4}>中</td>
-          <td key={5}>💎1600 fCoins</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={10} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Beach WorldDarken WorldForest WorldVolcano WorldSnow WorldFall World</td>
-          <td key={1}>L</td>
-          <td key={2}>💎3600 fCoins</td>
-          <td key={3}>海滩世界黑暗世界森林世界火山世界雪地世界秋季世界</td>
-          <td key={4}>大</td>
-          <td key={5}>💎3600 fCoins</td>
-        </tr>
-      </tbody>
-    </table>
-    <table key={11} className="baike-table">
-      <tbody>
-        <tr key={0}>
-          <td key={0}>Beach WorldDarken WorldForest WorldVolcano WorldSnow WorldFall World</td>
-          <td key={1}>XL</td>
-          <td key={2}>💎6400 fCoins</td>
-          <td key={3}>海滩世界黑暗世界森林世界火山世界雪地世界秋季世界</td>
-          <td key={4}>超大</td>
-          <td key={5}>💎6400 fCoins</td>
-        </tr>
-      </tbody>
-    </table>
-    
+      <div className="template-cards-grid">
+        {templates.map((item, index) => (
+          <div key={index} className="template-card">
+            <div className="template-card-name">
+              {item.templateCn.split('\n').map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < item.templateCn.split('\n').length - 1 && <br />}
+                </React.Fragment>
+              ))}
+            </div>
+            <div className="template-card-info">
+              <div className="template-card-size">
+                <span className="template-card-label">尺寸：</span>
+                <span className="template-card-value">{item.sizeCn}</span>
+              </div>
+              <div className="template-card-price">
+                <span className="template-card-label">价格：</span>
+                <span className="template-card-value">{item.priceCn}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

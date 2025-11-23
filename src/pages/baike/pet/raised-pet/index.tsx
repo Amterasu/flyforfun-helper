@@ -91,21 +91,29 @@ export const RaisedPet = () => {
   // 格式化属性值显示
   const formatAbilityValue = (ability: {
     parameterLocalization?: {
-      cns: string;
-    };
-    add: number | null;
-    set: number | null;
-    rate: boolean | null;
+      cns?: string;
+    } | null;
+    add?: number | null;
+    set?: number | null;
+    rate?: boolean | null;
   }): string => {
+    if (!ability) return "--";
+    
     const paramName = ability.parameterLocalization?.cns || "";
+    const rate = ability.rate === true;
     let value = "";
     
-    if (ability.set !== null) {
-      value = `${ability.set}${ability.rate ? "%" : ""}`;
-    } else if (ability.add !== null) {
+    // 优先使用 set，如果 set 存在且不为 null/undefined
+    if (ability.set !== null && ability.set !== undefined && !isNaN(ability.set)) {
+      value = `${ability.set}${rate ? "%" : ""}`;
+    } 
+    // 其次使用 add，如果 add 存在且不为 null/undefined
+    else if (ability.add !== null && ability.add !== undefined && !isNaN(ability.add)) {
       const sign = ability.add >= 0 ? "+" : "";
-      value = `${sign}${ability.add}${ability.rate ? "%" : ""}`;
-    } else {
+      value = `${sign}${ability.add}${rate ? "%" : ""}`;
+    } 
+    // 如果都没有值，返回 "--"
+    else {
       return "--";
     }
     
@@ -122,7 +130,10 @@ export const RaisedPet = () => {
     if (pet.skill.id !== skillId) return null;
     const level = pet.skill.levels?.[skillLevel - 1];
     if (!level || !level.abilities || level.abilities.length === 0) return null;
-    return level.abilities[0];
+    const ability = level.abilities[0];
+    // 确保返回的 ability 对象有效
+    if (!ability) return null;
+    return ability;
   };
 
   // 渲染宠物详情
@@ -148,11 +159,10 @@ export const RaisedPet = () => {
           <div className="raised-pet-info">
             <h3 className="raised-pet-name">{pet.item.name?.cns || "未知宠物"}</h3>
             <div className="raised-pet-stats">
-              <span className="raised-pet-perfect-value">
-                完美值: +{perfectValue}
-              </span>
-              <span className="raised-pet-parameter">
-                参数: {pet.parameterLocalization?.cns || "未知"}
+              <span className="raised-pet-perfect-pet">
+                <span className="highlight-label">完美宠：</span>
+                <span className="highlight-attribute">{pet.parameterLocalization?.cns?.replace(/增加|减少/, "") || "未知"}</span>
+                <span className="highlight-value"> +{perfectValue}</span>
               </span>
             </div>
           </div>
@@ -160,71 +170,66 @@ export const RaisedPet = () => {
 
         {/* Level Bonus 部分 */}
         <div className="raised-pet-section">
-          <h4 className="raised-pet-section-title">等级加成</h4>
-          <div style={{ overflowX: "auto" }}>
-            <table className="baike-table">
-              <thead>
-                <tr>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "80px" }}>等级</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "150px" }}>
-                    {pet.parameterLocalization?.cns || "属性值"}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {pet.values.map((value, idx) => (
-                  <tr key={idx}>
-                    <td>{idx + 1}</td>
-                    <td>
-                      +{value}
-                      {pet.rate ? "%" : ""}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <h4 className="raised-pet-section-title">不同数字对应<span style={{ color: "rgba(238, 117, 30, 0.9)" }}>{pet.parameterLocalization?.cns?.replace(/增加|减少/, "") || "未知"}</span>数值</h4>
+          <div className="level-bonus-grid">
+            {pet.values.map((value, idx) => (
+              <div key={idx} className="level-bonus-item">
+                <span className="level-bonus-level">Lv.{idx + 1}</span>
+                <span className="level-bonus-value">
+                  +{value}
+                  {pet.rate ? "%" : ""}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Tier Data 部分 */}
         <div className="raised-pet-section">
           <h4 className="raised-pet-section-title">等级数据</h4>
-          <div style={{ overflowX: "auto" }}>
-            <table className="baike-table">
-              <thead>
-                <tr>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "60px" }}>等级</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "120px" }}>最大能量</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "80px" }}>经验值</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "150px" }}>所需糖果</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "100px" }}>祝福技能</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "150px" }}>祝福技能能力</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "120px" }}>持续时间</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "120px" }}>冷却时间</th>
-                  <th style={{ whiteSpace: "nowrap", minWidth: "150px" }}>能量消耗</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pet.tiers.map((tier, tierIdx) => {
-                  const candyItem = getCandyItem(pet, tier.requiredCandyItem);
-                  const skillAbility = getGraceSkillAbility(
-                    pet,
-                    tier.graceSkill,
-                    tier.graceSkillLevel
-                  );
+          <div className="tier-cards-grid">
+            {pet.tiers.map((tier, tierIdx) => {
+              const candyItem = getCandyItem(pet, tier.requiredCandyItem);
+              const skillAbility = getGraceSkillAbility(
+                pet,
+                tier.graceSkill,
+                tier.graceSkillLevel
+              );
 
-                  return (
-                    <tr key={tierIdx}>
-                      <td>{tierLabels[tierIdx] || tierIdx + 1}</td>
-                      <td>{tier.maxEnergy} 分钟</td>
-                      <td>{tier.exp}</td>
-                      <td>
+              return (
+                <div key={tierIdx} className="tier-card">
+                  <div className="tier-card-header">
+                    <span className="tier-label">{tierLabels[tierIdx] || tierIdx + 1}</span>
+                    {pet.skill.id === tier.graceSkill && (
+                      <div className="tier-skill-icon">
+                        <img
+                          src={`https://flyffipedia.com/Icons/Skills/colored/${pet.skill.icon}`}
+                          alt={pet.skill.name?.cns}
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).style.display = "none";
+                          }}
+                        />
+                        <span className="tier-skill-level">{tier.graceSkillLevel}</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="tier-card-body">
+                    <div className="tier-info-row">
+                      <span className="tier-info-label">能量</span>
+                      <span className="tier-info-value">{tier.maxEnergy}</span>
+                    </div>
+                    <div className="tier-info-row">
+                      <span className="tier-info-label">经验</span>
+                      <span className="tier-info-value">{tier.exp}</span>
+                    </div>
+                    <div className="tier-info-row">
+                      <span className="tier-info-label">糖果</span>
+                      <span className="tier-info-value">
                         {candyItem ? (
-                          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                          <div className="tier-candy">
                             <img
                               src={`https://flyffipedia.com/Icons/Items/${candyItem.icon}`}
                               alt={candyItem.name?.cns}
-                              style={{ width: "24px", height: "24px" }}
                               onError={(e) => {
                                 (e.target as HTMLImageElement).style.display = "none";
                               }}
@@ -234,49 +239,32 @@ export const RaisedPet = () => {
                         ) : (
                           `糖果(${tierLabels[tierIdx]})`
                         )}
-                      </td>
-                      <td>
-                        {pet.skill.id === tier.graceSkill ? (
-                          <div style={{ position: "relative", display: "inline-block" }}>
-                            <img
-                              src={`https://flyffipedia.com/Icons/Skills/colored/${pet.skill.icon}`}
-                              alt={pet.skill.name?.cns}
-                              style={{ width: "32px", height: "32px" }}
-                              onError={(e) => {
-                                (e.target as HTMLImageElement).style.display = "none";
-                              }}
-                            />
-                            <span
-                              style={{
-                                position: "absolute",
-                                bottom: "0px",
-                                right: "0px",
-                                color: "#ffffff",
-                                fontSize: "10px",
-                                fontWeight: "bold",
-                                textShadow: "1px 1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8), 1px -1px 2px rgba(0, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 0, 0.8)",
-                              }}
-                            >
-                              {tier.graceSkillLevel}
-                            </span>
-                          </div>
-                        ) : (
-                          tier.graceSkillLevel
-                        )}
-                      </td>
-                      <td>
-                        {skillAbility
-                          ? formatAbilityValue(skillAbility)
-                          : "--"}
-                      </td>
-                      <td>{tier.graceSkillDuration} 秒</td>
-                      <td>{tier.graceSkillCooldown} 秒</td>
-                      <td>{tier.graceSkillEnergyConsumption} 分钟</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                      </span>
+                    </div>
+                    {skillAbility && (
+                      <div className="tier-info-row">
+                        <span className="tier-info-label">技能效果</span>
+                        <span className="tier-info-value tier-skill-effect">
+                          {formatAbilityValue(skillAbility)}
+                        </span>
+                      </div>
+                    )}
+                    <div className="tier-info-row">
+                      <span className="tier-info-label">持续</span>
+                      <span className="tier-info-value">{tier.graceSkillDuration}秒</span>
+                    </div>
+                    <div className="tier-info-row">
+                      <span className="tier-info-label">冷却</span>
+                      <span className="tier-info-value">{tier.graceSkillCooldown}秒</span>
+                    </div>
+                    <div className="tier-info-row">
+                      <span className="tier-info-label">消耗</span>
+                      <span className="tier-info-value">{tier.graceSkillEnergyConsumption}分钟</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -286,7 +274,7 @@ export const RaisedPet = () => {
   return (
     <div className="baike-content">
       <div className="baike-section">
-        <h2 className="baike-section-title">养成宠物</h2>
+        <h2 className="baike-section-title">宠物属性</h2>
 
         <div className="raised-pet-layout">
           {/* 左侧宠物列表 */}

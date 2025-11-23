@@ -97,7 +97,7 @@
 }
 
 .raised-pet-container {
-  padding: @spacing-md;
+  padding: @spacing-sm;
   background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: @border-radius-lg;
@@ -106,16 +106,16 @@
 .raised-pet-header {
   display: flex;
   align-items: center;
-  gap: @spacing-md;
-  margin-bottom: @spacing-lg;
-  padding-bottom: @spacing-md;
+  gap: @spacing-sm;
+  margin-bottom: @spacing-sm;
+  padding-bottom: @spacing-sm;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .raised-pet-icon {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: @border-radius-md;
@@ -137,8 +137,8 @@
 }
 
 .raised-pet-name {
-  margin: 0 0 @spacing-xs 0;
-  font-size: 1.3rem;
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
   font-weight: 600;
   color: rgba(255, 217, 77, 0.9);
 }
@@ -146,21 +146,33 @@
 .raised-pet-stats {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
+  font-size: 0.85rem;
+}
+
+.raised-pet-perfect-pet {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
   font-size: 0.9rem;
 }
 
-.raised-pet-perfect-value {
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: 500;
+.highlight-label {
+  color: rgba(255, 217, 77, 0.9);
+  font-weight: 600;
 }
 
-.raised-pet-parameter {
-  color: rgba(255, 255, 255, 0.7);
+.highlight-attribute {
+  color: rgba(100, 200, 255, 0.9);
+  font-weight: 600;
+}
+
+.highlight-value {
+  color: rgba(100, 255, 150, 0.9);
+  font-weight: 600;
 }
 
 .raised-pet-section {
-  margin-top: @spacing-lg;
+  margin-top: @spacing-sm;
 
   &:first-of-type {
     margin-top: 0;
@@ -168,10 +180,151 @@
 }
 
 .raised-pet-section-title {
-  margin: 0 0 @spacing-md 0;
-  font-size: 1.1rem;
+  margin: 0 0 @spacing-xs 0;
+  font-size: 1rem;
   font-weight: 600;
   color: rgba(255, 217, 77, 0.9);
+}
+
+// 等级加成网格
+.level-bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 6px;
+}
+
+.level-bonus-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 4px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-sm;
+  font-size: 0.8rem;
+}
+
+.level-bonus-level {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.7rem;
+  margin-bottom: 2px;
+}
+
+.level-bonus-value {
+  color: rgba(255, 217, 77, 0.9);
+  font-weight: 600;
+}
+
+// 等级数据卡片网格
+.tier-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: @spacing-xs;
+}
+
+.tier-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+  padding: @spacing-xs;
+  transition: all @transition-fast;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.tier-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tier-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255, 217, 77, 0.9);
+  min-width: 24px;
+}
+
+.tier-skill-icon {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.tier-skill-level {
+  position: absolute;
+  bottom: 0px;
+  right: 3px;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8), 1px -1px 2px rgba(0, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.tier-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tier-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  gap: 8px;
+}
+
+.tier-info-label {
+  color: rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+  min-width: 50px;
+}
+
+.tier-info-value {
+  color: rgba(255, 255, 255, 0.85);
+  text-align: right;
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.tier-skill-effect {
+  color: rgba(255, 217, 77, 0.9);
+  font-weight: 500;
+}
+
+.tier-candy {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: flex-end;
+
+  img {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 // 确保表格有清晰的边框并横向撑满
@@ -183,14 +336,15 @@
   td {
     border: 1px solid rgba(255, 255, 255, 0.15) !important;
     text-align: left;
-    padding: @spacing-sm;
-    font-size: 0.9rem;
+    padding: 6px 8px;
+    font-size: 0.85rem;
   }
 
   th {
     background: rgba(255, 255, 255, 0.05);
     color: rgba(255, 217, 77, 0.9);
     font-weight: 600;
+    font-size: 0.8rem;
   }
 
   td {
@@ -230,5 +384,13 @@
 
   .raised-pet-name {
     font-size: 1.1rem;
+  }
+
+  .level-bonus-grid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
+
+  .tier-cards-grid {
+    grid-template-columns: 1fr;
   }
 }

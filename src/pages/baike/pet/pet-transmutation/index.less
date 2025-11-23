@@ -1,0 +1,105 @@
+@import '../../../../styles/variables.less';
+
+// Pet Transmutation styles
+.pet-transmutation-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: @spacing-sm;
+  margin-top: @spacing-md;
+}
+
+.pet-transmutation-card {
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-lg;
+  overflow: hidden;
+  transition: all @transition-fast;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+}
+
+.pet-transmutation-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: @spacing-xs;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: @border-radius-sm;
+  }
+}
+
+.pet-transmutation-content {
+  padding: @spacing-sm;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.pet-transmutation-name {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pet-transmutation-link {
+  color: rgba(255, 217, 77, 0.9);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: rgba(255, 217, 77, 1);
+    text-decoration: underline;
+  }
+}
+
+.pet-transmutation-periods {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pet-transmutation-period {
+  code {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: @border-radius-sm;
+    padding: 3px 6px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Courier New', monospace;
+    display: inline-block;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pet-transmutation-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pet-transmutation-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .pet-transmutation-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

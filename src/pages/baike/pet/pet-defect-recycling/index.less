@@ -1,0 +1,198 @@
+@import '../../../../styles/variables.less';
+
+// Pet Defect Recycling styles
+.pet-defect-recycling-container {
+  padding: @spacing-lg;
+}
+
+.pet-defect-recycling-title {
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 217, 77, 0.9);
+  padding-bottom: @spacing-xs;
+  margin-bottom: @spacing-md;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 217, 77, 0.9);
+}
+
+.pet-defect-recycling-flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.pet-defect-recycling-side-label-box {
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pet-defect-recycling-side-label-left {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.pet-defect-recycling-side-label-right {
+  writing-mode: vertical-rl;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+// Grid 表格核心
+.pet-defect-recycling-grid-table {
+  display: grid;
+  grid-template-columns: 55px repeat(9, 1fr) 40px;
+  gap: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: @border-radius-md;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+// 表头/表尾单元格
+.pet-defect-recycling-header-corner {
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+}
+
+.pet-defect-recycling-level-header {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.pet-defect-recycling-lv-small {
+  font-size: 0.65rem;
+  font-weight: normal;
+  margin-right: 2px;
+  margin-top: 2px;
+}
+
+// 左侧 Target Tier 单元格
+.pet-defect-recycling-target-tier-cell {
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pet-defect-recycling-tier-badge {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, rgba(194, 154, 105, 0.8), rgba(194, 154, 105, 0.6));
+  color: rgba(255, 217, 77, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: @border-radius-sm;
+  box-shadow: 
+    inset 2px 2px 4px rgba(255, 255, 255, 0.2),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 217, 77, 0.3);
+}
+
+// 中间数据单元格
+.pet-defect-recycling-rate-cell {
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.8), rgba(7, 9, 15, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  min-height: 32px;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: linear-gradient(145deg, rgba(20, 25, 35, 0.9), rgba(12, 15, 25, 0.9));
+  }
+}
+
+// 右侧 Sacrifice Tier 单元格
+.pet-defect-recycling-sacrifice-tier-cell {
+  background: linear-gradient(135deg, rgba(242, 177, 134, 0.6), rgba(242, 177, 134, 0.4));
+  color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// 底部注释
+.pet-defect-recycling-notes-container {
+  margin-top: @spacing-md;
+  padding-top: @spacing-sm;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.pet-defect-recycling-note-item {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+// 响应式设计
+@media (max-width: 1024px) {
+  .pet-defect-recycling-grid-table {
+    grid-template-columns: 50px repeat(9, 1fr) 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pet-defect-recycling-container {
+    padding: @spacing-md;
+  }
+
+  .pet-defect-recycling-grid-table {
+    grid-template-columns: 50px repeat(9, 1fr) 40px;
+    font-size: 0.8rem;
+  }
+
+  .pet-defect-recycling-level-header {
+    font-size: 0.9rem;
+    height: 35px;
+  }
+
+  .pet-defect-recycling-rate-cell {
+    font-size: 0.75rem;
+    min-height: 35px;
+  }
+
+  .pet-defect-recycling-tier-badge {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .pet-defect-recycling-side-label-box {
+    width: 30px;
+  }
+
+  .pet-defect-recycling-side-label-left,
+  .pet-defect-recycling-side-label-right {
+    font-size: 0.75rem;
+  }
+}

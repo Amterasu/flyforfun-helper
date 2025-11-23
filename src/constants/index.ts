@@ -89,13 +89,12 @@ export const docTree: DocNode[] = [
     title: '🐶 宠物',
     description: '宠物、糖果与异化玩法集合',
     children: [
-      { id: 'raised-pet', title: '🦮 养成宠物' },
-      { id: 'grace-effect', title: '🕊️ 恩典效果' },
+      { id: 'raised-pet', title: '🦮 宠物属性' },
       { id: 'pet-candy-recipes', title: '🍭 宠物糖果配方' },
       { id: 'pet-defect-recycling', title: '🐾 宠物献祭' },
       { id: 'pet-rerolling', title: '🐾 宠物重铸' },
       { id: 'berry-map', title: '🌿 浆果地图' },
-      { id: 'pet-transmutation', title: '💫 宠物转化' }
+      { id: 'pet-transmutation', title: '💫 宠物皮肤' }
     ]
   },
   {
@@ -103,7 +102,6 @@ export const docTree: DocNode[] = [
     title: '🐉 副本',
     description: '副本机制、掉落与限时活动',
     children: [
-      { id: 'dungeons-location', title: '📌 副本位置' },
       { id: 'dungeons-difficulties', title: '🚩 副本难度' },
       { id: 'story-dungeons', title: '📚 故事模式' },
       { id: 'dungeon-checkpoints', title: '📍 副本传送点' },
@@ -112,7 +110,6 @@ export const docTree: DocNode[] = [
       { id: 'dungeons-curses', title: '💥 副本诅咒' },
       { id: 'dungeons-drops', title: '💎 副本掉落' },
       { id: 'forsaken-tower', title: '🗼 每日任务' },
-      { id: 'guild-siege', title: '🏆 工会战' },
       { id: 'kalgas-assault', title: '🏆 卡尔加斯突袭' }
     ]
   },

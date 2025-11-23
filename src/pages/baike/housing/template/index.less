@@ -1,0 +1,65 @@
+@import '../../../../styles/variables.less';
+
+.template-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: @spacing-lg;
+  margin-top: @spacing-md;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: @spacing-md;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.template-card {
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.4), rgba(7, 9, 15, 0.4));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+  padding: @spacing-lg;
+  transition: all @transition-fast;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(145deg, rgba(15, 18, 28, 0.5), rgba(7, 9, 15, 0.5));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.template-card-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: @spacing-md;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.template-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-sm;
+}
+
+.template-card-size,
+.template-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: @spacing-xs;
+  font-size: 0.9rem;
+}
+
+.template-card-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.template-card-value {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}

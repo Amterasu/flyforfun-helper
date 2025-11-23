@@ -658,7 +658,8 @@ export const Bless = () => {
           });
         }
       }
-  }, [leftResult, isAutoRolling, generateRollList]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [leftResult, isAutoRolling]);
 
   useEffect(() => {
     if (!isAutoRolling && rightResult) {
@@ -679,7 +680,8 @@ export const Bless = () => {
           });
         }
       }
-  }, [rightResult, isAutoRolling, generateRollList]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rightResult, isAutoRolling]);
 
   // 格式化属性显示文本，去掉属性名中的"(%)"
   const formatStatDisplay = useCallback((statName: string, statValue: number | string): string => {

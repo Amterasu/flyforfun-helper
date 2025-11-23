@@ -1,0 +1,27 @@
+@import '../../../../styles/variables.less';
+
+// Pet Candy Recipes styles
+// 确保表格有清晰的边框并横向撑满
+.baike-table {
+  width: 100% !important;
+  table-layout: auto;
+
+  th,
+  td {
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    text-align: left;
+    padding: @spacing-sm;
+    font-size: 0.85rem;
+  }
+
+  th {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 217, 77, 0.9);
+    font-weight: 600;
+  }
+
+  td {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+

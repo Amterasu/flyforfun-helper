@@ -2,15 +2,15 @@ import { Link, useParams } from 'react-router-dom'
 import { assistantNavItems } from '../../constants/assistant'
 import { AssistantNavId } from '../../types/assistant'
 import { Bless } from './bless'
-import { PetOffering } from './PetOffering'
+import { PetTool } from './pet'
 import './index.less'
 
 const renderContent = (activeNav: AssistantNavId) => {
   switch (activeNav) {
     case 'fashion-awakening':
       return <Bless />
-    case 'pet-offering':
-      return <PetOffering />
+    case 'pet-tool':
+      return <PetTool />
     default:
       return null
   }
@@ -27,13 +27,14 @@ export const ToolsPage = ({ activeNav }: ToolsPageProps) => {
 
   return (
     <div className="tool-stage">
-      <aside className="tool-stage__nav">
+      <div className="tool-stage__nav">
         <div className="tool-stage__nav-list">
           {assistantNavItems.map((item) => (
             <Link
               key={item.id}
               to={`/tool/${item.id}`}
               className={item.id === currentNavId ? 'nav-card is-active' : 'nav-card'}
+              title={item.description}
             >
               <div className="nav-card__texts">
                 <span className="nav-card__title">{item.title}</span>
@@ -43,8 +44,10 @@ export const ToolsPage = ({ activeNav }: ToolsPageProps) => {
             </Link>
           ))}
         </div>
-      </aside>
-      <section className="tool-stage__panel">{renderContent(currentNavId)}</section>
+      </div>
+      <section className="tool-stage__panel">
+        <div className="tool-stage__content">{renderContent(currentNavId)}</div>
+      </section>
     </div>
   )
 }
