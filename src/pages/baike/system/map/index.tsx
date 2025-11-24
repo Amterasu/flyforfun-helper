@@ -32,7 +32,7 @@ export const Map = () => {
   return (
     <div className="baike-content">
       <div className="baike-section">
-        <h2 className="baike-section-title">瑞嘉大陆最低等级限制</h2>
+        <h2 className="baike-section-title">瑞加大陆最低等级限制</h2>
         <div className="baike-info-card">
           <div className="baike-info-item">
             <p>
@@ -61,7 +61,7 @@ export const Map = () => {
       </div>
 
       <div className="baike-section">
-        <h2 className="baike-section-title">瑞嘉大陆</h2>
+        <h2 className="baike-section-title">瑞加大陆</h2>
         <div className="baike-image-thumbnail">
           <BaikeImage src="/system/map/wdmadrigal.png" alt="wdmadrigal.png" maxWidth="600px" />
         </div>

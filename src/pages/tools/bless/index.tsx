@@ -849,7 +849,7 @@ export const Bless = () => {
           <div className="bless__actions-content">
             <div className="actions-main">
             <button
-              className="bless__start-btn"
+              className="flyff-button"
                 onClick={handleStartRollWithPreset}
                 disabled={isAutoRolling}
             >

@@ -926,7 +926,7 @@ export const PetTool = () => {
                   </div>
                   <div className="actions-main">
                     <button
-                      className="pet-start-btn"
+                      className="flyff-button"
                       onClick={startSacrifice}
                       disabled={isProcessing || !nowPet || !selectedPetId}
                     >
@@ -986,7 +986,7 @@ export const PetTool = () => {
                   </div>
                   <div className="actions-main">
                     <button
-                      className="pet-start-btn"
+                      className="flyff-button"
                       onClick={startWashSkin}
                       disabled={isWashingSkin || !nowPet || !selectedPetId}
                     >

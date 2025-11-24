@@ -7,21 +7,21 @@ const serverChanges = [
     server: 'LAWOLF',
     changes: [
       { content: '彩虹竞速（道具）', current: '周六 18:00', new: '周六 19:00' },
-      { content: '瑞嘉竞赛', current: '每日 21:00', new: '每日 20:00' },
+      { content: '瑞加竞赛', current: '每日 21:00', new: '每日 20:00' },
     ],
   },
   {
     server: 'MIA',
     changes: [
       { content: '彩虹竞速（道具）', current: '周六 18:00', new: '周六 19:00' },
-      { content: '瑞嘉竞赛', current: '每日 21:00', new: '每日 20:00' },
+      { content: '瑞加竞赛', current: '每日 21:00', new: '每日 20:00' },
     ],
   },
   {
     server: 'GLAPHAN',
     changes: [
       { content: '彩虹竞速（道具）', current: '周六 18:00', new: '周六 19:00' },
-      { content: '瑞嘉竞赛', current: '每日 21:00', new: '每日 20:00' },
+      { content: '瑞加竞赛', current: '每日 21:00', new: '每日 20:00' },
     ],
   },
   {
@@ -42,27 +42,27 @@ const serverChanges = [
     server: 'FLARINE',
     changes: [
       { content: '彩虹竞速（道具）', current: '周六 18:00', new: '周六 19:00' },
-      { content: '瑞嘉竞赛', current: '每日 21:00', new: '每日 20:00' },
+      { content: '瑞加竞赛', current: '每日 21:00', new: '每日 20:00' },
     ],
   },
   {
     server: 'リシス',
     changes: [
       { content: '彩虹竞速（道具）', current: '周六 18:00', new: '周六 17:00' },
-      { content: '瑞嘉竞赛', current: '每日 21:00', new: '每日 20:00' },
+      { content: '瑞加竞赛', current: '每日 21:00', new: '每日 20:00' },
     ],
   },
   {
     server: '獨眼蝙蝠',
     changes: [
       { content: '彩虹竞速（道具）', current: '周六 18:00', new: '周六 17:00' },
-      { content: '瑞嘉竞赛', current: '每日 21:00', new: '每日 20:00' },
+      { content: '瑞加竞赛', current: '每日 21:00', new: '每日 20:00' },
     ],
   },
   {
     server: 'GENESE',
     changes: [
-      { content: '瑞嘉竞赛', current: '每日 21:00', new: '每日 20:00' },
+      { content: '瑞加竞赛', current: '每日 21:00', new: '每日 20:00' },
     ],
   },
 ]
@@ -186,7 +186,7 @@ const allServerSchedule = {
       },
     },
     {
-      name: '瑞嘉竞赛',
+      name: '瑞加竞赛',
       times: {
         LAWOLF: '每日 20:00',
         MIA: '每日 20:00',

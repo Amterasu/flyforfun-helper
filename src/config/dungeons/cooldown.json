@@ -1,0 +1,137 @@
+[
+    {
+      "dungeon": "Big Muscle",
+      "dungeon_cn": "大肌肉 (Big Muscle)",
+      "level": "1 ~ 30",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Day",
+      "cooldown_cn": "1天"
+    },
+    {
+      "dungeon": "Krrr",
+      "dungeon_cn": "克尔 (Krrr)",
+      "level": "1 ~ 40",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Day",
+      "cooldown_cn": "1天"
+    },
+    {
+      "dungeon": "Mushmoot",
+      "dungeon_cn": "蘑菇怪 (Mushmoot)",
+      "level": "1 ~ 50",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Day",
+      "cooldown_cn": "1天"
+    },
+    {
+      "dungeon": "Iblis Leanes",
+      "dungeon_cn": "伊布利斯 (Iblis Leanes)",
+      "level": "1 ~ 75",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Day",
+      "cooldown_cn": "1天"
+    },
+    {
+      "dungeon": "Clockworks War",
+      "dungeon_cn": "钟表之战 (Clockworks War)",
+      "level": "1 ~ 165",
+      "type": "Guild or Solo",
+      "type_cn": "公会或单人",
+      "cooldown": "2 Days",
+      "cooldown_cn": "2天"
+    },
+    {
+      "dungeon": "Meteonyker",
+      "dungeon_cn": "流星 (Meteonyker)",
+      "level": "1 ~ 165",
+      "type": "Guild or Solo",
+      "type_cn": "公会或单人",
+      "cooldown": "2 Days",
+      "cooldown_cn": "2天"
+    },
+    {
+      "dungeon": "Secret Room",
+      "dungeon_cn": "密室 (Secret Room)",
+      "level": "30 ~ 165",
+      "type": "Guild",
+      "type_cn": "公会",
+      "cooldown": "Week",
+      "cooldown_cn": "每周"
+    },
+    {
+      "dungeon": "Red Meteonyker",
+      "dungeon_cn": "红流星 (Red Meteonyker)",
+      "level": "1 ~ 165",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Day",
+      "cooldown_cn": "1天"
+    },
+    {
+      "dungeon": "Leren Chasm",
+      "dungeon_cn": "莱伦峡谷 (Leren Chasm)",
+      "level": "16 ~ 165",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Hour",
+      "cooldown_cn": "1小时"
+    },
+    {
+      "dungeon": "Rhisis Catacombs",
+      "dungeon_cn": "瑞加地下墓穴 (Rhisis Catacombs)",
+      "level": "31 ~ 165",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Hour",
+      "cooldown_cn": "1小时"
+    },
+    {
+      "dungeon": "Envy Depths",
+      "dungeon_cn": "嫉妒深渊 (Envy Depths)",
+      "level": "61 ~ 165",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Hour",
+      "cooldown_cn": "1小时"
+    },
+    {
+      "dungeon": "Guardiane Sanctuary",
+      "dungeon_cn": "守护者圣殿 (Guardiane Sanctuary)",
+      "level": "91 ~ 165",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Hour",
+      "cooldown_cn": "1小时"
+    },
+    {
+      "dungeon": "Storm Peak",
+      "dungeon_cn": "风暴之巅 (Storm Peak)",
+      "level": "121 ~ 165",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Hour",
+      "cooldown_cn": "1小时"
+    },
+    {
+      "dungeon": "The Wilds",
+      "dungeon_cn": "荒野 (The Wilds)",
+      "level": "141 ~ 165",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Hour",
+      "cooldown_cn": "1小时"
+    },
+    {
+      "dungeon": "[Shade Lieutenant] Kriton",
+      "dungeon_cn": "[暗影中尉] 克里顿 ([Shade Lieutenant] Kriton)",
+      "level": "1 ~ 165",
+      "type": "Party or Solo",
+      "type_cn": "组队或单人",
+      "cooldown": "1 Day",
+      "cooldown_cn": "1天"
+    }
+  ]

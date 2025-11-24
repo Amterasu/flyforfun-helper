@@ -1,0 +1,78 @@
+@import "../../../styles/variables.less";
+
+.action-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-xs;
+}
+
+.action-button-item {
+  display: flex;
+  gap: 4px;
+  align-items: stretch;
+  
+  .action-button-main {
+    flex: 1;
+  }
+}
+
+.action-button-main {
+  height: 32px;
+  padding: 0 @spacing-sm;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: @border-radius-sm;
+  background: rgba(59, 130, 246, 0.1);
+  color: #60a5fa;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all @transition-fast;
+  white-space: nowrap;
+
+  &:hover:not(:disabled) {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.2);
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.action-button-preset {
+  height: 32px;
+  padding: 0 8px;
+  min-width: 42px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: @border-radius-sm;
+  background: rgba(212, 175, 55, 0.1);
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all @transition-fast;
+  white-space: nowrap;
+  flex-shrink: 0;
+
+  &:hover:not(:disabled) {
+    background: rgba(212, 175, 55, 0.2);
+    border-color: #d4af37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
