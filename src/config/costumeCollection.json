@@ -1,0 +1,366 @@
+[
+  { "src": "/costume_collection/03.Elf.jpg", "name": "Elf", "name_cn": "精灵" },
+  { "src": "/costume_collection/04.Music Beat.jpg", "name": "Music Beat", "name_cn": "音乐节拍" },
+  {
+    "src": "/costume_collection/05.Alien Octopus.jpg",
+    "name": "Alien Octopus",
+    "name_cn": "外星章鱼"
+  },
+  { "src": "/costume_collection/06.Rider.jpg", "name": "Rider", "name_cn": "骑手" },
+  { "src": "/costume_collection/07.Baby Shark.jpg", "name": "Baby Shark", "name_cn": "小鲨鱼" },
+  { "src": "/costume_collection/08.Shade Child.jpg", "name": "Shade Child", "name_cn": "阴影之子" },
+  { "src": "/costume_collection/09.Menhera Kei.jpg", "name": "Menhera Kei", "name_cn": "病娇系" },
+  { "src": "/costume_collection/10.Gummy Bear.jpg", "name": "Gummy Bear", "name_cn": "软糖熊" },
+  { "src": "/costume_collection/11.Autumn.jpg", "name": "Autumn", "name_cn": "秋季" },
+  {
+    "src": "/costume_collection/12.Halloween Bat.jpg",
+    "name": "Halloween Bat",
+    "name_cn": "万圣节蝙蝠"
+  },
+  { "src": "/costume_collection/13.Sport Pop.jpg", "name": "Sport Pop", "name_cn": "运动流行" },
+  { "src": "/costume_collection/14.Disco.jpg", "name": "Disco", "name_cn": "迪斯科" },
+  { "src": "/costume_collection/15.jpg", "name": "Rabbit and wolf", "name_cn": "兔与狼" },
+  {
+    "src": "/costume_collection/16.Winter Wizard.jpg",
+    "name": "Winter Wizard",
+    "name_cn": "冬之法师"
+  },
+  {
+    "src": "/costume_collection/17.Winter Casual.jpg",
+    "name": "Winter Casual",
+    "name_cn": "冬季休闲"
+  },
+  { "src": "/costume_collection/18.Foxy.jpg", "name": "Foxy", "name_cn": "狐狸" },
+  {
+    "src": "/costume_collection/19.Valentine Rabbit.jpg",
+    "name": "Valentine's Rabbit",
+    "name_cn": "情人节兔子"
+  },
+  { "src": "/costume_collection/20.Cacti.jpg", "name": "Cacti", "name_cn": "仙人掌" },
+  {
+    "src": "/costume_collection/21.Modern Sportswear.jpg",
+    "name": "Modern Sportswear",
+    "name_cn": "现代运动装"
+  },
+  {
+    "src": "/costume_collection/22.Future Runner.jpg",
+    "name": "Future Runner",
+    "name_cn": "未来跑者"
+  },
+  {
+    "src": "/costume_collection/23.Easter Gambler.jpg",
+    "name": "Easter Gambler",
+    "name_cn": "复活节赌徒"
+  },
+  { "src": "/costume_collection/24.Easter Magic.jpg", "name": "Easter Magic", "name_cn": "复活节魔法" },
+  {
+    "src": "/costume_collection/25.White Stripes.jpg",
+    "name": "White Stripes",
+    "name_cn": "白色条纹"
+  },
+  {
+    "src": "/costume_collection/26.Japanese Uniform.jpg",
+    "name": "Japanese Uniform",
+    "name_cn": "日式校服"
+  },
+  {
+    "src": "/costume_collection/27.Madrigal Guardians.jpg",
+    "name": "Madrigal Guardians",
+    "name_cn": "马德里加尔守护者"
+  },
+  { "src": "/costume_collection/28.Neo.jpg", "name": "Neo", "name_cn": "尼奥" },
+  { "src": "/costume_collection/29.Idol.jpg", "name": "Idol", "name_cn": "偶像" },
+  { "src": "/costume_collection/30.AI Frog.jpg", "name": "AI Frog", "name_cn": "AI 青蛙" },
+  { "src": "/costume_collection/31.Cake Kingdom.jpg", "name": "Cake Kingdom", "name_cn": "蛋糕王国" },
+  { "src": "/costume_collection/32.AI Casual.jpg", "name": "AI Casual", "name_cn": "AI 休闲" },
+  { "src": "/costume_collection/33.AI Yukata.jpg", "name": "AI Yukata", "name_cn": "AI 浴衣" },
+  { "src": "/costume_collection/34.Police.jpg", "name": "Police", "name_cn": "警察" },
+  { "src": "/costume_collection/35.2023 Summer.jpg", "name": "2023 Summer", "name_cn": "2023 夏日" },
+  { "src": "/costume_collection/36.Star.jpg", "name": "Star", "name_cn": "星星" },
+  { "src": "/costume_collection/37.Oni.jpg", "name": "Oni", "name_cn": "鬼" },
+  { "src": "/costume_collection/38.Exorcist.jpg", "name": "Exorcist", "name_cn": "驱魔师" },
+  {
+    "src": "/costume_collection/39.Modern Halloween.jpg",
+    "name": "Modern Halloween",
+    "name_cn": "现代万圣节"
+  },
+  {
+    "src": "/costume_collection/40.Military 2023.jpg",
+    "name": "Military 2023",
+    "name_cn": "2023 军事"
+  },
+  {
+    "src": "/costume_collection/41.Thanks_Giving_Costume.jpg",
+    "name": "Thanks_Giving_Costume",
+    "name_cn": "感恩节服装"
+  },
+  {
+    "src": "/costume_collection/42.Carnival_Traveler.jpg",
+    "name": "Carnival_Traveler",
+    "name_cn": "嘉年华旅行者"
+  },
+  { "src": "/costume_collection/43.Candy_Cane.jpg", "name": "Candy_Cane", "name_cn": "拐杖糖" },
+  { "src": "/costume_collection/44.Artificial.jpg", "name": "Artificial", "name_cn": "人工" },
+  {
+    "src": "/costume_collection/45.Emerald_Explorer.jpg",
+    "name": "Emerald_Explorer",
+    "name_cn": "翡翠探险家"
+  },
+  { "src": "/costume_collection/46.Snowy.jpg", "name": "Snowy", "name_cn": "雪白" },
+  {
+    "src": "/costume_collection/47.Valentine_2024.jpg",
+    "name": "Valentine_2024",
+    "name_cn": "2024 情人节"
+  },
+  {
+    "src": "/costume_collection/48.Teddy_Bear_2024.jpg",
+    "name": "Teddy_Bear_2024",
+    "name_cn": "2024 泰迪熊"
+  },
+  { "src": "/costume_collection/49.Glitch_Pop.jpg", "name": "Glitch_Pop", "name_cn": "故障流行" },
+  {
+    "src": "/costume_collection/50.Tiger_Stripes.jpg",
+    "name": "Tiger_Stripes",
+    "name_cn": "虎纹"
+  },
+  {
+    "src": "/costume_collection/51.Tuxedo_Luxury.jpg",
+    "name": "Tuxedo_Luxury",
+    "name_cn": "奢华燕尾服"
+  },
+  {
+    "src": "/costume_collection/52.Future_Easter.jpg",
+    "name": "Future_Easter",
+    "name_cn": "未来复活节"
+  },
+  {
+    "src": "/costume_collection/53.Shadow_Hunter.jpg",
+    "name": "Shadow_Hunter",
+    "name_cn": "暗影猎手"
+  },
+  {
+    "src": "/costume_collection/54.Safari_Explorer.jpg",
+    "name": "Safari_Explorer",
+    "name_cn": "狩猎探险家"
+  },
+  {
+    "src": "/costume_collection/55.Spring_Bunny_2024.jpg",
+    "name": "Spring_Bunny_2024",
+    "name_cn": "2024 春季兔子"
+  },
+  {
+    "src": "/costume_collection/56.Anniversary_2024.jpg",
+    "name": "Anniversary_2024",
+    "name_cn": "2024 周年纪念"
+  },
+  {
+    "src": "/costume_collection/57.2024_School_Uniform.jpg",
+    "name": "2024_School_Uniform",
+    "name_cn": "2024 校服"
+  },
+  { "src": "/costume_collection/58.Spring_Qipao.jpg", "name": "Spring_Qipao", "name_cn": "春季旗袍" },
+  { "src": "/costume_collection/59.Magical_Kid.jpg", "name": "Magical_Kid", "name_cn": "魔法小孩" },
+  {
+    "src": "/costume_collection/60.Big_Wave_Surfing.jpg",
+    "name": "Big_Wave_Surfing",
+    "name_cn": "巨浪冲浪"
+  },
+  {
+    "src": "/costume_collection/61.Space_Engineer.jpg",
+    "name": "Space_Engineer",
+    "name_cn": "太空工程师"
+  },
+  {
+    "src": "/costume_collection/62.Steampunk_Wizard.jpg",
+    "name": "Steampunk_Wizard",
+    "name_cn": "蒸汽朋克法师"
+  },
+  {
+    "src": "/costume_collection/63.Little_Butterflies.jpg",
+    "name": "Little_Butterflies",
+    "name_cn": "小蝴蝶"
+  },
+  {
+    "src": "/costume_collection/64.Eastern_Warrior.jpg",
+    "name": "Eastern_Warrior",
+    "name_cn": "东方战士"
+  },
+  { "src": "/costume_collection/65.Overalls.jpg", "name": "Overalls", "name_cn": "背带裤" },
+  { "src": "/costume_collection/66.Banana_Hero.jpg", "name": "Banana_Hero", "name_cn": "香蕉英雄" },
+  { "src": "/costume_collection/67.Navy_2024.jpg", "name": "Navy_2024", "name_cn": "2024 海军" },
+  {
+    "src": "/costume_collection/68.Persian_Warrior.jpg",
+    "name": "Persian_Warrior",
+    "name_cn": "波斯战士"
+  },
+  { "src": "/costume_collection/69.Necromancer.jpg", "name": "Necromancer", "name_cn": "死灵法师" },
+  { "src": "/costume_collection/70.Wickedstein.jpg", "name": "Wickedstein", "name_cn": "邪恶斯坦" },
+  {
+    "src": "/costume_collection/71.Medieval_Knight.jpg",
+    "name": "Medieval_Knight",
+    "name_cn": "中世纪骑士"
+  },
+  {
+    "src": "/costume_collection/72.Turkeylicious.jpg",
+    "name": "Turkeylicious",
+    "name_cn": "火鸡美味"
+  },
+  {
+    "src": "/costume_collection/73.Xmas_2024_White_Edition.jpg",
+    "name": "Xmas_2024_White_Edition",
+    "name_cn": "2024 圣诞白色版"
+  },
+  {
+    "src": "/costume_collection/74.Christmas_Star.jpg",
+    "name": "Christmas_Star",
+    "name_cn": "圣诞之星"
+  },
+  {
+    "src": "/costume_collection/75.Northern_Warrior.jpg",
+    "name": "Northern_Warrior",
+    "name_cn": "北方战士"
+  },
+  {
+    "src": "/costume_collection/76.Snake_Samurai.jpg",
+    "name": "Snake_Samurai",
+    "name_cn": "蛇武士"
+  },
+  {
+    "src": "/costume_collection/77.Luxury_Winter.jpg",
+    "name": "Luxury_Winter",
+    "name_cn": "奢华冬季"
+  },
+  {
+    "src": "/costume_collection/78.Neon_Valentine.jpg",
+    "name": "Neon_Valentine",
+    "name_cn": "霓虹情人节"
+  },
+  { "src": "/costume_collection/79.Hanbok_2025.jpg", "name": "Hanbok_2025", "name_cn": "2025 韩服" },
+  {
+    "src": "/costume_collection/80.Cyberpunk_2025.jpg",
+    "name": "Cyberpunk_2025",
+    "name_cn": "2025 赛博朋克"
+  },
+  {
+    "src": "/costume_collection/81.Spring_Picnic.jpg",
+    "name": "Spring_Picnic",
+    "name_cn": "春季野餐"
+  },
+  {
+    "src": "/costume_collection/82.Easter_Rabbit_2025.jpg",
+    "name": "Easter_Rabbit_2025",
+    "name_cn": "2025 复活节兔子"
+  },
+  {
+    "src": "/costume_collection/83.Easter_Bunny_2025.jpg",
+    "name": "Easter_Bunny_2025",
+    "name_cn": "2025 复活节小兔"
+  },
+  { "src": "/costume_collection/84.Pastel.jpg", "name": "Pastel", "name_cn": "粉彩" },
+  {
+    "src": "/costume_collection/85.3rd_Anniversary_Mecha.jpg",
+    "name": "3rd_Anniversary_Mecha",
+    "name_cn": "三周年机甲"
+  },
+  { "src": "/costume_collection/86.Ruby_Yukata.jpg", "name": "Ruby_Yukata", "name_cn": "红宝石浴衣" },
+  { "src": "/costume_collection/87.Modern_Alien.jpg", "name": "Modern_Alien", "name_cn": "现代外星人" },
+  {
+    "src": "/costume_collection/88.Forest_Spirit.jpg",
+    "name": "Forest_Spirit",
+    "name_cn": "森林精灵"
+  },
+  {
+    "src": "/costume_collection/89.2025_Swimsuit.jpg",
+    "name": "2025_Swimsuit",
+    "name_cn": "2025 泳装"
+  },
+  {
+    "src": "/costume_collection/90.Fantasy_Guardian.jpg",
+    "name": "Fantasy_Guardian",
+    "name_cn": "幻想守护者"
+  },
+  {
+    "src": "/costume_collection/91.Botanist_Musician.jpg",
+    "name": "Botanist_Musician",
+    "name_cn": "植物学家音乐家"
+  },
+  { "src": "/costume_collection/92.Nobility.jpg", "name": "Nobility", "name_cn": "贵族" },
+  {
+    "src": "/costume_collection/93.Obsidian_Flame.jpg",
+    "name": "Obsidian_Flame",
+    "name_cn": "黑曜石火焰"
+  },
+  { "src": "/costume_collection/94.FireFighter.jpg", "name": "FireFighter", "name_cn": "消防员" },
+  {
+    "src": "/costume_collection/95.Aero_Streetwear.jpg",
+    "name": "Aero_Streetwear",
+    "name_cn": "航空街头风"
+  },
+  {
+    "src": "/costume_collection/96.Knotty_Scarecrow.jpg",
+    "name": "Knotty_Scarecrow",
+    "name_cn": "节疤稻草人"
+  },
+  { "src": "/costume_collection/97.Sewn_Demon.jpg", "name": "Sewn_Demon", "name_cn": "缝制恶魔" },
+  { "src": "/costume_collection/98.Spellbat.jpg", "name": "Spellbat", "name_cn": "法术蝙蝠" },
+  {
+    "src": "/costume_collection/Casual_Costume_Box.png",
+    "name": "Casual_Costume_Box",
+    "name_cn": "休闲套装盒",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/Cute_Costume_Box.png",
+    "name": "Cute_Costume_Box",
+    "name_cn": "可爱套装盒",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/Fantasy_Costume_Box.png",
+    "name": "Fantasy_Costume_Box",
+    "name_cn": "幻想套装盒",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/Memorial_Summer_F.png",
+    "name": "Memorial_Summer_F",
+    "name_cn": "纪念夏日（女）",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/Memorial_Summer_M.png",
+    "name": "Memorial_Summer_M",
+    "name_cn": "纪念夏日（男）",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/School_Life_Costume_Box.png",
+    "name": "School_Life_Costume_Box",
+    "name_cn": "校园生活套装盒",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/Summer_Costume_Box.png",
+    "name": "Summer_Costume_Box",
+    "name_cn": "夏日套装盒",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/black_friday_special_sales_2023.png",
+    "name": "black_friday_special_sales_2023",
+    "name_cn": "2023 黑色星期五特卖",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/black_friday_special_sales_2024.png",
+    "name": "black_friday_special_sales_2024",
+    "name_cn": "2024 黑色星期五特卖",
+    "type": "activity_box"
+  },
+  {
+    "src": "/costume_collection/fashionsale_20240321.png",
+    "name": "fashionsale_20240321",
+    "name_cn": "2024/03/21 时装特卖",
+    "type": "activity_box"
+  }
+]

@@ -1,0 +1,650 @@
+@import '../../styles/variables.less';
+
+.dungeons-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.95), rgba(7, 9, 15, 0.95));
+  padding: @spacing-lg;
+}
+
+// 顶部副本导航栏 - 紧凑样式，参考图示
+.dungeons-nav-bar {
+  display: flex;
+  gap: 8px;
+  padding: 8px 4px;
+  background: transparent;
+  margin-bottom: @spacing-md;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 217, 77, 0.3);
+    border-radius: 2px;
+  }
+
+  .dungeon-nav-item {
+    flex-shrink: 0;
+  }
+}
+
+.dungeon-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  width: 146px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  position: relative;
+  background: transparent;
+
+  &:hover {
+    .dungeon-nav-image {
+      border-color: rgba(255, 217, 77, 0.4);
+    }
+  }
+
+  &.active {
+    .dungeon-nav-image {
+      border-color: rgba(255, 217, 77, 0.9);
+      box-shadow: 0 0 12px rgba(255, 217, 77, 0.5);
+    }
+  }
+
+  .dungeon-nav-image {
+    width: 146px;
+    height: 90px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .dungeon-nav-name {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3;
+    padding: 0;
+
+    .dungeon-nav-item.active & {
+      color: rgba(255, 217, 77, 1);
+      font-weight: 600;
+    }
+  }
+}
+
+// 副本标题和基本信息区域
+.dungeon-header-section {
+  margin-bottom: @spacing-md;
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.8), rgba(7, 9, 15, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+
+  .dungeon-header-content {
+    display: flex;
+    flex-direction: column;
+    gap: @spacing-md;
+    margin-top: @spacing-sm;
+  }
+}
+
+// 上方信息区：世界信息、地图
+.dungeons-top-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: @spacing-md;
+  margin-bottom: @spacing-md;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dungeon-header {
+  margin-bottom: @spacing-md;
+
+  .dungeon-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgba(255, 217, 77, 0.9);
+    margin: 0 0 @spacing-xs 0;
+  }
+
+  .dungeon-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.dungeon-map-container {
+  min-height: 350px;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+  overflow: hidden;
+  padding: @spacing-md;
+
+  .dungeon-map {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    position: relative;
+
+    .map-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      min-height: 300px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1rem;
+
+      .map-info {
+        font-size: 0.9rem;
+        margin-top: @spacing-sm;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+.dungeon-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: @spacing-sm;
+  padding: @spacing-md;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .info-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .info-value {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 600;
+    }
+  }
+}
+
+// 诅咒技能 - 基础信息区域内的紧凑样式
+.dungeon-curse-skills-inline {
+  padding: @spacing-sm @spacing-md;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: @border-radius-sm;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  .curse-skills-inline-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 @spacing-xs 0;
+  }
+
+  .curse-skills-list-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: @spacing-sm;
+  }
+
+  .curse-skill-item-inline {
+    display: flex;
+    align-items: center;
+    gap: @spacing-xs;
+    padding: @spacing-xs;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: @border-radius-sm;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+      border-color: rgba(255, 217, 77, 0.3);
+    }
+
+    .curse-skill-icon-inline {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      border-radius: @border-radius-sm;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .curse-skill-name-inline {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 500;
+    }
+  }
+}
+
+.dungeon-mods {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 217, 77, 0.9);
+    margin: 0 0 @spacing-md 0;
+  }
+
+  .mods-list {
+    display: flex;
+    flex-direction: column;
+    gap: @spacing-sm;
+
+    .mod-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: @spacing-xs;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: @border-radius-sm;
+
+      .mod-label {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .mod-value {
+        font-size: 0.9rem;
+        font-weight: 600;
+
+        &.positive {
+          color: #4ade80;
+        }
+
+        &.negative {
+          color: #f87171;
+        }
+      }
+    }
+  }
+}
+
+// 怪物修改器区域
+.dungeon-mods-section {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+  margin-bottom: @spacing-md;
+
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 217, 77, 0.9);
+    margin: 0 0 @spacing-md 0;
+  }
+
+  .mods-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: @spacing-sm;
+
+    .mod-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: @spacing-xs @spacing-sm;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: @border-radius-sm;
+      min-width: 200px;
+
+      .mod-label {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .mod-value {
+        font-size: 0.9rem;
+        font-weight: 600;
+
+        &.positive {
+          color: #4ade80;
+        }
+
+        &.negative {
+          color: #f87171;
+        }
+      }
+    }
+  }
+}
+
+// 怪物卡片区域
+.dungeons-monsters-section {
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255, 217, 77, 0.9);
+    margin: 0 0 @spacing-md 0;
+    padding-bottom: @spacing-sm;
+    border-bottom: 2px solid rgba(255, 217, 77, 0.2);
+  }
+}
+
+.monsters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: @spacing-md;
+
+  .no-monsters {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: @spacing-lg;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.monster-item {
+  display: flex;
+  gap: @spacing-sm;
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.8), rgba(7, 9, 15, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background: linear-gradient(145deg, rgba(15, 18, 28, 0.9), rgba(7, 9, 15, 0.9));
+    border-color: rgba(255, 217, 77, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .monster-icon {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: @border-radius-sm;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .monster-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .monster-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .monster-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: @spacing-xs;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 4px;
+
+      span {
+        padding: 2px 6px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 3px;
+      }
+
+      .monster-element {
+        color: rgba(255, 217, 77, 0.8);
+        font-weight: 600;
+      }
+    }
+
+    .monster-stats-detail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: @spacing-xs;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 4px;
+
+      span {
+        padding: 2px 6px;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 3px;
+      }
+    }
+
+    .monster-resist {
+      font-size: 0.8rem;
+      color: rgba(255, 217, 77, 0.7);
+      margin-top: 2px;
+      padding: 2px 6px;
+      background: rgba(255, 217, 77, 0.05);
+      border-radius: 3px;
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    .monster-attacks,
+    .monster-location,
+    .monster-spawns,
+    .monster-gold,
+    .monster-skills,
+    .monster-summoned,
+    .monster-berserk,
+    .monster-attributes,
+    .monster-combat,
+    .monster-speed,
+    .monster-exp {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 4px;
+
+      .attacks-label {
+        color: rgba(255, 255, 255, 0.6);
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.dungeon-world-info {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+  min-width: 200px;
+
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 217, 77, 0.9);
+    margin: 0 0 @spacing-md 0;
+    padding-bottom: @spacing-sm;
+    border-bottom: 2px solid rgba(255, 217, 77, 0.2);
+  }
+
+  .world-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: @spacing-sm;
+
+    .world-info-item {
+      display: flex;
+      justify-content: space-between;
+      padding: @spacing-xs;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: @border-radius-sm;
+
+      .world-info-label {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .world-info-value {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.dungeon-curse-skills {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-md;
+  min-width: 280px;
+  max-height: 400px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 217, 77, 0.3);
+    border-radius: 3px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 217, 77, 0.9);
+    margin: 0 0 @spacing-md 0;
+    padding-bottom: @spacing-sm;
+    border-bottom: 2px solid rgba(255, 217, 77, 0.2);
+  }
+}
+
+.curse-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-sm;
+}
+
+.curse-skill-item {
+  display: flex;
+  gap: @spacing-sm;
+  padding: @spacing-sm;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: @border-radius-sm;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 217, 77, 0.3);
+  }
+
+  .curse-skill-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: @border-radius-sm;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .curse-skill-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .curse-skill-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .curse-skill-description {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.4;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dungeons-page {
+    padding: @spacing-md;
+    padding-top: calc(80px + @spacing-md);
+  }
+
+  .dungeons-content {
+    grid-template-columns: 1fr;
+  }
+
+  .dungeon-nav-item {
+    min-width: 80px;
+
+    .dungeon-nav-image {
+      width: 60px;
+      height: 60px;
+    }
+
+    .dungeon-nav-name {
+      font-size: 0.75rem;
+      max-width: 80px;
+    }
+  }
+}
+

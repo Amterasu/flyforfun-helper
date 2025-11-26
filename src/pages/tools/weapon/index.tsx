@@ -1282,8 +1282,8 @@ export const WeaponTool = () => {
         <div className="weapon-header-bar">
           <h2 className="weapon-page-title">武器洗练工具</h2>
           <div className="weapon-log-buttons">
-            <button
-              className="weapon-log-btn"
+              <button
+                className="weapon-log-btn"
               onClick={() => {
                 setLogModalType("abilities");
                 setShowLogModal(true);
@@ -1340,8 +1340,8 @@ export const WeaponTool = () => {
               属性唤醒{" "}
               {attributeWakeUpMessages.length > 0 &&
                 `(${attributeWakeUpMessages.length})`}
-            </button>
-          </div>
+              </button>
+            </div>
         </div>
 
         {/* 主要内容区域 */}
@@ -1360,7 +1360,7 @@ export const WeaponTool = () => {
                   onClick={() => setShowWeaponSelectorModal(true)}
                   style={{ cursor: "pointer" }}
                 >
-                  {currentWeapon ? (
+              {currentWeapon ? (
                     <img
                       src={currentWeapon.imgUrl}
                       alt={currentWeapon.name}
@@ -1373,7 +1373,7 @@ export const WeaponTool = () => {
                   ) : (
                     <div className="weapon-select-placeholder">选择武器</div>
                   )}
-                </div>
+                  </div>
               </div>
             </div>
             <div className="weapon-result">
@@ -1509,7 +1509,7 @@ export const WeaponTool = () => {
                 <div className="weapon-empty-state">请先选择一把武器</div>
               )}
             </div>
-          </div>
+            </div>
 
           {/* 右侧：预设和操作区域 */}
           <div className="weapon-control-panel">
@@ -1517,7 +1517,7 @@ export const WeaponTool = () => {
               <h3 className="weapon-panel-title">预设与操作</h3>
             </div>
             <div className="weapon-control-content">
-              {currentWeapon ? (
+                  {currentWeapon ? (
                 <div className="weapon-preset-list">
                   <PresetDisplay
                     title="基础词条"
@@ -1662,8 +1662,8 @@ export const WeaponTool = () => {
                             ? stopAutoCleanWakeUp
                             : autoWakeUp,
                           disabled:
-                            !currentWeapon ||
-                            !currentWeapon?.wakeUpList ||
+                    !currentWeapon ||
+                    !currentWeapon?.wakeUpList ||
                             currentWeapon.wakeUpList.length === 0,
                           count: wakeUpNum,
                         }}
@@ -1698,7 +1698,7 @@ export const WeaponTool = () => {
                       count: attributeWakeUpNum,
                     }}
                   />
-                </div>
+              </div>
               ) : (
                 <div className="weapon-control-empty">
                   <p>请先选择一把武器</p>
@@ -1834,18 +1834,18 @@ export const WeaponTool = () => {
                     break;
                 }
                 return messages.length > 0 ? (
-                  <div className="weapon-log-list">
-                    {messages.map((msg) => (
-                      <div
-                        key={msg.id}
-                        className={`weapon-log-item weapon-log-item-${msg.type}`}
-                      >
-                        {msg.text}
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="weapon-log-empty">暂无日志</div>
+                <div className="weapon-log-list">
+                  {messages.map((msg) => (
+                    <div
+                      key={msg.id}
+                      className={`weapon-log-item weapon-log-item-${msg.type}`}
+                    >
+                      {msg.text}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="weapon-log-empty">暂无日志</div>
                 );
               })()}
             </div>
@@ -1932,7 +1932,7 @@ export const WeaponTool = () => {
                             <span className="weapon-preset-range">
                               ({minDisplay}~{maxDisplay})
                             </span>
-                          </div>
+          </div>
                           <div className="weapon-preset-tolerance-input">
                             <label className="tolerance-label">误差范围:</label>
                             <input
@@ -1966,8 +1966,8 @@ export const WeaponTool = () => {
                       </div>
                     );
                   })}
-                </div>
-              )}
+        </div>
+      )}
 
               {presetModalType === "yellow" && (
                 <div className="weapon-preset-modal-form">
@@ -2065,7 +2065,7 @@ export const WeaponTool = () => {
                                     <span className="weapon-preset-range">
                                       ({minDisplay}~{maxDisplay})
                                     </span>
-                                  </div>
+    </div>
                                   <div className="weapon-preset-tolerance-input">
                                     <label className="tolerance-label">
                                       误差范围:

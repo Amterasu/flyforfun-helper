@@ -27,10 +27,10 @@ export const TopHeader = ({ activeTab }: TopHeaderProps) => {
       }
       case '社区':
         return '/community'
+      case '副本':
+        return '/dungeons'
       case '助手':
         return '/tool/fashion-awakening'
-      case '新闻':
-        return '/news'
       case '代练':
         return '/coaching'
       default:

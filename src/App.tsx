@@ -11,6 +11,7 @@ import { ToolsPage } from './pages/tools'
 import { PlaceholderBoard } from './components/PlaceholderBoard'
 import { CoachingPage } from './pages/CoachingPage'
 import { HomePage } from './pages/HomePage'
+import { DungeonsPage } from './pages/dungeons'
 import { docTree } from './constants'
 import type { MainNav } from './types/doc'
 
@@ -38,7 +39,7 @@ function App() {
     if (path === '/index' || path.startsWith('/index')) return '首页'
     if (path.startsWith('/community')) return '社区'
     if (path.startsWith('/tool')) return '助手'
-    if (path.startsWith('/news')) return '新闻'
+    if (path.startsWith('/dungeons')) return '副本'
     if (path.startsWith('/coaching')) return '代练'
     if (path.startsWith('/baike') || path === '/') return '飞飞百科'
     return '飞飞百科'
@@ -138,12 +139,12 @@ function App() {
             }
           />
 
-          {/* 新闻路由 */}
+          {/* 副本路由 */}
           <Route
-            path="/news"
+            path="/dungeons"
             element={
               <div className="doc-wrapper">
-                <PlaceholderBoard title="新闻" />
+                <DungeonsPage />
               </div>
             }
           />
