@@ -10,7 +10,9 @@ interface PresetDisplayProps {
     onClick: () => void;
     disabled?: boolean;
     count?: number;
+    totalCount?: number;
   };
+  customContent?: React.ReactNode;
 }
 
 export const PresetDisplay: React.FC<PresetDisplayProps> = ({
@@ -18,6 +20,7 @@ export const PresetDisplay: React.FC<PresetDisplayProps> = ({
   items,
   onClick,
   actionButton,
+  customContent,
 }) => {
   const hasValue = items.some((item) => item.value !== null);
 
@@ -38,12 +41,16 @@ export const PresetDisplay: React.FC<PresetDisplayProps> = ({
             disabled={actionButton.disabled}
             title={actionButton.label}
           >
-            {actionButton.label} ({actionButton.count ?? 0})
+            {actionButton.label} {actionButton.totalCount !== undefined 
+              ? `(${actionButton.count ?? 0}/${actionButton.totalCount})` 
+              : `(${actionButton.count ?? 0})`}
           </button>
         )}
       </div>
       <div className="preset-display-content" onClick={onClick} style={onClick ? { cursor: "pointer" } : undefined}>
-        {hasValue ? (
+        {customContent ? (
+          customContent
+        ) : hasValue ? (
           items
             .filter((item) => item.value !== null)
             .map((item, idx) => (

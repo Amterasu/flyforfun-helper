@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import './styles/global.less'
 import { TopHeader } from './components/TopHeader'
+import { Footer } from './components/Footer'
 import { Hero } from './components/Hero'
 import { PrimaryNavBar } from './components/PrimaryNavBar'
 import { DocStage } from './components/DocStage'
@@ -12,6 +13,7 @@ import { PlaceholderBoard } from './components/PlaceholderBoard'
 import { CoachingPage } from './pages/CoachingPage'
 import { HomePage } from './pages/HomePage'
 import { DungeonsPage } from './pages/dungeons'
+import { NewVersionPage } from './pages/NewVersionPage'
 import { docTree } from './constants'
 import type { MainNav } from './types/doc'
 
@@ -41,6 +43,7 @@ function App() {
     if (path.startsWith('/tool')) return '助手'
     if (path.startsWith('/dungeons')) return '副本'
     if (path.startsWith('/coaching')) return '代练'
+    if (path.startsWith('/new-version')) return '新版本'
     if (path.startsWith('/baike') || path === '/') return '飞飞百科'
     return '飞飞百科'
   }, [location.pathname])
@@ -159,6 +162,16 @@ function App() {
             }
           />
 
+          {/* 新版本路由 */}
+          <Route
+            path="/new-version"
+            element={
+              <div className="doc-wrapper">
+                <NewVersionPage />
+              </div>
+            }
+          />
+
           {/* 404 路由 */}
           <Route
             path="*"
@@ -179,6 +192,7 @@ function App() {
           />
         </Routes>
       </div>
+      <Footer />
     </>
   )
 }

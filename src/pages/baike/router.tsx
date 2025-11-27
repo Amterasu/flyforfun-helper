@@ -15,7 +15,6 @@ const Wdmadrigal = lazy(() => import('./system/map/wdmadrigal').then(m => ({ def
 const CoralIslandMonster = lazy(() => import('./system/map/coral-island-monster').then(m => ({ default: m.CoralIslandMonster })))
 const HerneosMonster = lazy(() => import('./system/map/herneos-monster').then(m => ({ default: m.HerneosMonster })))
 const PixelPerfectCursorPrecision = lazy(() => import('./system/pixel-perfect-cursor-precision').then(m => ({ default: m.PixelPerfectCursorPrecision })))
-const ProvisionalDamageHp = lazy(() => import('./system/provisional-damage-hp').then(m => ({ default: m.ProvisionalDamageHp })))
 const Theme = lazy(() => import('./system/theme').then(m => ({ default: m.Theme })))
 const ChattingFilter = lazy(() => import('./system/chatting-filter').then(m => ({ default: m.ChattingFilter })))
 const Commands = lazy(() => import('./system/commands').then(m => ({ default: m.Commands })))
@@ -27,7 +26,6 @@ const ItemRarity = lazy(() => import('./system/item-rarity').then(m => ({ defaul
 const Trade = lazy(() => import('./system/trade').then(m => ({ default: m.Trade })))
 const SearchShop = lazy(() => import('./system/search-shop').then(m => ({ default: m.SearchShop })))
 const FittingRoom = lazy(() => import('./system/fitting-room').then(m => ({ default: m.FittingRoom })))
-const SkillPoint = lazy(() => import('./system/skill-point').then(m => ({ default: m.SkillPoint })))
 const BuffScale = lazy(() => import('./system/buff-scale').then(m => ({ default: m.BuffScale })))
 const OfficeQuest = lazy(() => import('./system/office-quest').then(m => ({ default: m.OfficeQuest })))
 const Couple = lazy(() => import('./system/couple').then(m => ({ default: m.Couple })))
@@ -106,7 +104,6 @@ const componentMap: Record<string, React.LazyExoticComponent<React.ComponentType
   'coral-island-monster': CoralIslandMonster,
   'herneos-monster': HerneosMonster,
   'pixel-perfect-cursor-precision': PixelPerfectCursorPrecision,
-  'provisional-damage-hp': ProvisionalDamageHp,
   'theme': Theme,
   'chatting-filter': ChattingFilter,
   'commands': Commands,
@@ -118,7 +115,6 @@ const componentMap: Record<string, React.LazyExoticComponent<React.ComponentType
   'trade': Trade,
   'search-shop': SearchShop,
   'fitting-room': FittingRoom,
-  'skill-point': SkillPoint,
   'buff-scale': BuffScale,
   'office-quest': OfficeQuest,
   'couple': Couple,

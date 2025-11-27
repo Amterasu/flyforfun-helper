@@ -1,6 +1,6 @@
 import { DocNode, MainNav } from '../types/doc'
 
-export const mainNavTabs: MainNav[] = ['首页', '飞飞百科', '副本', '助手', '社区', '代练']
+export const mainNavTabs: MainNav[] = ['首页', '飞飞百科', '副本', '助手', '社区', '代练', '新版本']
 
 export const docTree: DocNode[] = [
   {
@@ -12,7 +12,6 @@ export const docTree: DocNode[] = [
       { id: 'time', title: '🕙 时间' },
       { id: 'map', title: '🗺️ 地图' },
       { id: 'pixel-perfect-cursor-precision', title: '🖱️ 像素级光标精度' },
-      { id: 'provisional-damage-hp', title: '❤️ 临时伤害与生命值' },
       { id: 'theme', title: '🎨 主题' },
       { id: 'chatting-filter', title: '💬 聊天过滤' },
       { id: 'commands', title: '👩🏻‍💻 指令' },
@@ -31,7 +30,6 @@ export const docTree: DocNode[] = [
       { id: 'costume-collection', title: '👗 往期时装' },
       { id: 'monster-focus-timer', title: '⏳ 怪物仇恨' },
       { id: 'herd-damage-reduction', title: '🐑 群体伤害减免' },
-      { id: 'skill-point', title: '🧠 技能点' },
       { id: 'buff-scale', title: '💪 Buff强度' },
       { id: 'office-quest', title: '❓ 事务所任务' },
       { id: 'level-reach-rewards', title: '💯 等级达成奖励' },

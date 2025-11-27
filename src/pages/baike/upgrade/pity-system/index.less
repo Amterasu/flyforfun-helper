@@ -1,0 +1,248 @@
+@import '../../../../styles/variables.less';
+
+.pity-section {
+  margin-bottom: @spacing-xl;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pity-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgba(255, 217, 77, 0.9);
+  margin: @spacing-lg 0 @spacing-md 0;
+  padding-bottom: @spacing-xs;
+  border-bottom: 1px solid rgba(255, 217, 77, 0.15);
+}
+
+.pity-summary {
+  margin-bottom: @spacing-lg;
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.6), rgba(7, 9, 15, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(255, 217, 77, 0.6);
+  border-radius: @border-radius-md;
+
+  .pity-summary-text {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    font-size: 0.95rem;
+
+    strong {
+      color: rgba(255, 217, 77, 0.9);
+      font-weight: 600;
+    }
+
+    code {
+      background: rgba(255, 217, 77, 0.15);
+      color: rgba(255, 217, 77, 0.9);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      font-family: 'Courier New', monospace;
+    }
+  }
+}
+
+.pity-breakdown {
+  .pity-breakdown-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 @spacing-sm 0;
+  }
+
+  .pity-list {
+    margin: 0;
+    padding-left: 24px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+
+    li {
+      margin-bottom: @spacing-sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      strong {
+        color: rgba(255, 217, 77, 0.9);
+        font-weight: 600;
+      }
+
+      code {
+        background: rgba(255, 217, 77, 0.15);
+        color: rgba(255, 217, 77, 0.9);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        font-family: 'Courier New', monospace;
+      }
+    }
+  }
+}
+
+.pity-formula-group {
+  margin-bottom: @spacing-lg;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .pity-formula-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 @spacing-md 0;
+  }
+}
+
+.pity-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: @spacing-md 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  overflow-x: auto;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: table;
+  }
+
+  thead {
+    display: table-header-group;
+
+    th {
+      background: rgba(255, 217, 77, 0.15);
+      font-weight: 600;
+      color: rgba(255, 217, 77, 0.9);
+      padding: @spacing-sm @spacing-md;
+      text-align: left;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      white-space: nowrap;
+    }
+  }
+
+  tbody {
+    display: table-row-group;
+
+    tr {
+      &:nth-child(even) {
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      &:hover {
+        background: rgba(255, 217, 77, 0.08);
+      }
+    }
+
+    td {
+      padding: @spacing-sm @spacing-md;
+      text-align: left;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      vertical-align: top;
+
+      code {
+        background: rgba(255, 217, 77, 0.15);
+        color: rgba(255, 217, 77, 0.9);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        font-family: 'Courier New', monospace;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.pity-example {
+  padding: @spacing-md;
+  background: linear-gradient(145deg, rgba(15, 18, 28, 0.4), rgba(7, 9, 15, 0.4));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: @border-radius-md;
+  margin-top: @spacing-md;
+
+  p {
+    margin: 0 0 @spacing-md 0;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+  }
+
+  .pity-steps {
+    margin: 0;
+    padding-left: 24px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+
+    li {
+      margin-bottom: @spacing-sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      code {
+        background: rgba(255, 217, 77, 0.15);
+        color: rgba(255, 217, 77, 0.9);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        font-family: 'Courier New', monospace;
+      }
+
+      strong {
+        color: rgba(255, 217, 77, 0.9);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.pity-reminders {
+  margin: 0;
+  padding-left: 24px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+
+  li {
+    margin-bottom: @spacing-sm;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    code {
+      background: rgba(255, 217, 77, 0.15);
+      color: rgba(255, 217, 77, 0.9);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      font-family: 'Courier New', monospace;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pity-table {
+    font-size: 0.85rem;
+
+    thead th,
+    tbody td {
+      padding: @spacing-xs @spacing-sm;
+    }
+  }
+
+  .pity-summary {
+    padding: @spacing-sm;
+  }
+
+  .pity-example {
+    padding: @spacing-sm;
+  }
+}
+

@@ -1,11 +1,20 @@
+import { useState } from "react";
 import "./index.less";
 
 export const Hero = () => {
-  const handleJoinQQGroup = () => {
-    const qqGroupNumber = "564385722";
-    // 使用 QQ 群链接，支持 PC 和移动端
-    const qqGroupUrl = `https://qm.qq.com/q/${qqGroupNumber}`;
-    window.open(qqGroupUrl, "_blank", "noopener,noreferrer");
+  const [copied, setCopied] = useState(false);
+  const groupNumber = "564385722";
+
+  const handleCopyGroupNumber = async () => {
+    try {
+      await navigator.clipboard.writeText(groupNumber);
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    } catch (err) {
+      console.error("复制失败:", err);
+    }
   };
 
   return (
@@ -15,15 +24,24 @@ export const Hero = () => {
         <h1>飞飞百科</h1>
         <p className="lede">即点即用的攻略、系统说明与版本资讯。</p>
         <div className="hero-actions">
-          <button className="solid-btn" onClick={handleJoinQQGroup}>
-            <a
-              style={{ textDecoration: "none", color: "inherit" }}
-              target="_blank"
-              href="https://qm.qq.com/cgi-bin/qm/qr?k=BBJpZeKOSiY45OPv4sVCZjoKX0yuuim_&jump_from=webapi&authKey=teAIRv+hxx8SmAnknRBNwRODb060pxV2foiB3qyOTnLhOMg7V2fmWKukTMt/EJOt"
-            >
-              点击加群
-            </a>
-          </button>
+          <div className="hero-info">
+            <div className="hero-info-item">
+              <span className="hero-info-label">作者</span>
+              <span className="hero-info-value">一区月月</span>
+            </div>
+            <div className="hero-info-item">
+              <span className="hero-info-label">交流群</span>
+              <span
+                className="hero-info-value hero-info-value-copyable"
+                onClick={handleCopyGroupNumber}
+                title="点击复制群号"
+              >
+                {groupNumber}
+                <span className="copy-icon">📋</span>
+                {copied && <span className="copy-tooltip">已复制!</span>}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

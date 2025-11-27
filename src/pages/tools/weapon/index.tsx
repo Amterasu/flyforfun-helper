@@ -1,5 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import weaponData from "../../../config/weapon.json";
+import ultimate190Data from "../../../config/upgrade/ulimate190.json";
 import { PresetDisplay } from "./PresetDisplay";
 import "./index.less";
 
@@ -130,7 +131,7 @@ export const WeaponTool = () => {
   >([]);
   const [showLogModal, setShowLogModal] = useState(false);
   const [logModalType, setLogModalType] = useState<
-    "abilities" | "yellow" | "orange" | "wakeUp" | "attributeWakeUp" | null
+    "abilities" | "yellow" | "orange" | "wakeUp" | "attributeWakeUp" | "upgrade" | null
   >(null);
   const [showWeaponSelectorModal, setShowWeaponSelectorModal] = useState(false);
   const [showPresetModal, setShowPresetModal] = useState(false);
@@ -144,6 +145,30 @@ export const WeaponTool = () => {
   const [cleanOrangeNum, setCleanOrangeNum] = useState(0); // 洗橙字次数
   const [wakeUpNum, setWakeUpNum] = useState(0); // 技能唤醒次数
   const [attributeWakeUpNum, setAttributeWakeUpNum] = useState(0); // 属性唤醒次数
+  
+  // 强化相关状态
+  const [upgradeLevel, setUpgradeLevel] = useState(0); // 当前强化等级
+  const [targetUpgradeLevel, setTargetUpgradeLevel] = useState<number | null>(10); // 目标强化等级，默认10
+  const [upgradeFailureCount, setUpgradeFailureCount] = useState(0); // 累计失败次数
+  const [isAutoUpgrading, setIsAutoUpgrading] = useState(false); // 是否正在自动强化
+  const [upgradeMessages, setUpgradeMessages] = useState<WeaponMessage[]>([]); // 强化日志
+  const [currentLevelTries, setCurrentLevelTries] = useState(0); // 当前等级尝试次数
+  const [levelSuccessTries, setLevelSuccessTries] = useState<Record<number, number>>({}); // 每级成功时的次数 {level: tries}
+  const [upgradeStats, setUpgradeStats] = useState({
+    totalTries: 0, // 总尝试次数
+    totalSuccess: 0, // 总成功次数
+    totalPenyaCost: 0, // 总金币消耗
+    totalBlueMineral: 0, // 总蓝矿消耗
+    totalGreenMineral: 0, // 总绿矿消耗
+    totalXP: 0, // 总XP消耗
+    totalSunstone: 0, // 总太阳石消耗
+  });
+  const autoUpgradeTimerRef = useRef<number | null>(null);
+  const autoUpgradeStopRef = useRef(false);
+  const targetUpgradeLevelRef = useRef<number | null>(null);
+  const upgradeLevelRef = useRef(0); // 存储最新的强化等级
+  const upgradeFailureCountRef = useRef(0); // 存储最新的失败次数
+  const currentLevelTriesRef = useRef(0); // 存储当前等级尝试次数
 
   // 预设值状态
   const [presetAbilities, setPresetAbilities] = useState<
@@ -162,7 +187,7 @@ export const WeaponTool = () => {
   const [presetAttributeWakeUp, setPresetAttributeWakeUp] = useState<{
     attributeIndex: number | null; // 0:智力 1:体质 2:力量 3:敏捷
     value: string | null; // +1, +2, +3, +4
-  }>({ attributeIndex: null, value: null }); // 属性唤醒预设值
+  }>({ attributeIndex: 0, value: null }); // 属性唤醒预设值，默认选中智力
 
   // 自动洗练状态 - 每个操作独立的状态
   const [isAutoCleaningAbilities, setIsAutoCleaningAbilities] = useState(false);
@@ -193,7 +218,7 @@ export const WeaponTool = () => {
     (
       text: string,
       type: "info" | "success" | "warning" = "info",
-      logType: "abilities" | "yellow" | "orange" | "wakeUp" | "attributeWakeUp"
+      logType: "abilities" | "yellow" | "orange" | "wakeUp" | "attributeWakeUp" | "upgrade"
     ) => {
       const message = { id: messageIdRef.current++, text, type };
       switch (logType) {
@@ -211,6 +236,9 @@ export const WeaponTool = () => {
           break;
         case "attributeWakeUp":
           setAttributeWakeUpMessages((prev) => [message, ...prev]);
+          break;
+        case "upgrade":
+          setUpgradeMessages((prev) => [message, ...prev]);
           break;
       }
     },
@@ -255,11 +283,39 @@ export const WeaponTool = () => {
       const abilities = weapon.abilities.map((ability) =>
         generateRandomAbility(ability)
       );
+      
+      // 初始化黄字（默认生成2条）
+      const arr = [...weapon.possibleRandomStats];
+      const value1 = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
+      const value2 = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
+      const yellowStats = [value1, value2].map((ability) =>
+        generateRandomAbility(ability)
+      );
+      
       setCurrentStats({
         abilities,
-        yellowStats: [],
+        yellowStats,
         orangeStats: [],
         attributeWakeUp: [],
+      });
+
+      // 重置强化等级
+      upgradeLevelRef.current = 0;
+      upgradeFailureCountRef.current = 0;
+      currentLevelTriesRef.current = 0;
+      setUpgradeLevel(0);
+      setTargetUpgradeLevel(10); // 默认目标等级为10
+      setUpgradeFailureCount(0);
+      setCurrentLevelTries(0);
+      setLevelSuccessTries({});
+      setUpgradeStats({
+        totalTries: 0,
+        totalSuccess: 0,
+        totalPenyaCost: 0,
+        totalBlueMineral: 0,
+        totalGreenMineral: 0,
+        totalXP: 0,
+        totalSunstone: 0,
       });
 
       // 初始化预设值（默认为空）
@@ -273,7 +329,7 @@ export const WeaponTool = () => {
       setPresetYellowStats([]);
       setPresetOrangeStats([]);
       setPresetWakeUp({ name: null, percentage: null });
-      setPresetAttributeWakeUp({ attributeIndex: null, value: null });
+      setPresetAttributeWakeUp({ attributeIndex: 0, value: null }); // 默认选中智力
 
       // 重置统计
       setCleanNum(0);
@@ -282,12 +338,30 @@ export const WeaponTool = () => {
       setWakeUpNum(0);
       setAttributeWakeUpNum(0);
 
+      // 重置强化相关
+      upgradeLevelRef.current = 0;
+      upgradeFailureCountRef.current = 0;
+      currentLevelTriesRef.current = 0;
+      setUpgradeLevel(0);
+      setTargetUpgradeLevel(10); // 默认目标等级为10
+      setUpgradeFailureCount(0);
+      setUpgradeStats({
+        totalTries: 0,
+        totalSuccess: 0,
+        totalPenyaCost: 0,
+        totalBlueMineral: 0,
+        totalGreenMineral: 0,
+        totalXP: 0,
+        totalSunstone: 0,
+      });
+
       // 清空所有日志
       setAbilitiesMessages([]);
       setYellowMessages([]);
       setOrangeMessages([]);
       setWakeUpMessages([]);
       setAttributeWakeUpMessages([]);
+      setUpgradeMessages([]);
 
       // 停止所有自动洗练
       if (autoCleanAbilitiesTimerRef.current) {
@@ -316,6 +390,14 @@ export const WeaponTool = () => {
       setIsAutoCleaningOrange(false);
       setIsAutoCleaningWakeUp(false);
       setIsAutoCleaningAttributeWakeUp(false);
+      
+      // 停止自动强化
+      if (autoUpgradeTimerRef.current) {
+        window.clearInterval(autoUpgradeTimerRef.current);
+        autoUpgradeTimerRef.current = null;
+      }
+      setIsAutoUpgrading(false);
+      autoUpgradeStopRef.current = false;
 
       autoCleanAbilitiesStopRef.current = false;
       autoCleanYellowStopRef.current = false;
@@ -763,21 +845,44 @@ export const WeaponTool = () => {
   );
 
   // 洗橙字（逻辑和洗黄字一样，但数值上限是黄字的一半）
+  // 强化等级6时只有一条属性，10时有两条属性
   const cleanOrangeStats = useCallback(() => {
     if (!currentWeapon) {
       addMessage("请先选择武器！", "warning", "orange");
       return;
     }
 
-    const arr = [...currentWeapon.possibleRandomStats];
-    const value1 = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
-    const value2 = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
+    // 检查强化等级
+    if (upgradeLevelRef.current < 6) {
+      addMessage("需要强化到+6才能洗橙字！", "warning", "orange");
+      return;
+    }
 
-    const orangeStats = [value1, value2].map((ability) => {
+    // 过滤掉"生命偷取"属性，橙字不包含此属性
+    const arr = [...currentWeapon.possibleRandomStats].filter(
+      (ability) => ability.name !== "生命偷取"
+    );
+    
+    if (arr.length === 0) {
+      addMessage("没有可用的橙字属性！", "warning", "orange");
+      return;
+    }
+    
+    // 根据强化等级决定洗几条属性：6-9级洗1条，10级洗2条
+    const count = upgradeLevelRef.current >= 10 ? 2 : 1;
+    
+    const orangeStats: Array<{
+      name: string;
+      value: number;
+      display: string;
+      range: string;
+    }> = [];
+    for (let i = 0; i < count; i++) {
+      const ability = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
       // 数值上限是黄字的一半
       const maxLimit = Math.floor(ability.max / 2);
-      return generateRandomAbilityWithLimit(ability, maxLimit);
-    });
+      orangeStats.push(generateRandomAbilityWithLimit(ability, maxLimit));
+    }
 
     setCurrentStats((prev) => ({
       ...prev,
@@ -799,6 +904,12 @@ export const WeaponTool = () => {
   const autoCleanOrangeStats = useCallback(() => {
     if (!currentWeapon) {
       addMessage("请先选择武器！", "warning", "orange");
+      return;
+    }
+
+    // 检查强化等级
+    if (upgradeLevelRef.current < 6) {
+      addMessage("需要强化到+6才能洗橙字！", "warning", "orange");
       return;
     }
 
@@ -827,14 +938,45 @@ export const WeaponTool = () => {
         return;
       }
 
-      const arr = [...currentWeapon.possibleRandomStats];
-      const value1 = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
-      const value2 = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
+      // 检查强化等级
+      if (upgradeLevelRef.current < 6) {
+        setIsAutoCleaningOrange(false);
+        if (autoCleanOrangeTimerRef.current) {
+          clearInterval(autoCleanOrangeTimerRef.current);
+          autoCleanOrangeTimerRef.current = null;
+        }
+        return;
+      }
 
-      const orangeStats = [value1, value2].map((ability) => {
+      // 过滤掉"生命偷取"属性，橙字不包含此属性
+      const arr = [...currentWeapon.possibleRandomStats].filter(
+        (ability) => ability.name !== "生命偷取"
+      );
+      
+      if (arr.length === 0) {
+        setIsAutoCleaningOrange(false);
+        if (autoCleanOrangeTimerRef.current) {
+          clearInterval(autoCleanOrangeTimerRef.current);
+          autoCleanOrangeTimerRef.current = null;
+        }
+        addMessage("没有可用的橙字属性！", "warning", "orange");
+        return;
+      }
+      
+      // 根据强化等级决定洗几条属性：6-9级洗1条，10级洗2条
+      const count = upgradeLevelRef.current >= 10 ? 2 : 1;
+      
+      const orangeStats: Array<{
+        name: string;
+        value: number;
+        display: string;
+        range: string;
+      }> = [];
+      for (let i = 0; i < count; i++) {
+        const ability = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
         const maxLimit = Math.floor(ability.max / 2);
-        return generateRandomAbilityWithLimit(ability, maxLimit);
-      });
+        orangeStats.push(generateRandomAbilityWithLimit(ability, maxLimit));
+      }
 
       setCurrentStats((prev) => ({
         ...prev,
@@ -1198,6 +1340,14 @@ export const WeaponTool = () => {
     const cleanOnce = () => {
       if (autoCleanAttributeWakeUpStopRef.current) {
         setIsAutoCleaningAttributeWakeUp(false);
+      
+      // 停止自动强化
+      if (autoUpgradeTimerRef.current) {
+        window.clearInterval(autoUpgradeTimerRef.current);
+        autoUpgradeTimerRef.current = null;
+      }
+      setIsAutoUpgrading(false);
+      autoUpgradeStopRef.current = false;
         if (autoCleanAttributeWakeUpTimerRef.current) {
           clearInterval(autoCleanAttributeWakeUpTimerRef.current);
           autoCleanAttributeWakeUpTimerRef.current = null;
@@ -1238,6 +1388,14 @@ export const WeaponTool = () => {
         selectedValue === presetAttributeWakeUp.value
       ) {
         setIsAutoCleaningAttributeWakeUp(false);
+      
+      // 停止自动强化
+      if (autoUpgradeTimerRef.current) {
+        window.clearInterval(autoUpgradeTimerRef.current);
+        autoUpgradeTimerRef.current = null;
+      }
+      setIsAutoUpgrading(false);
+      autoUpgradeStopRef.current = false;
         if (autoCleanAttributeWakeUpTimerRef.current) {
           clearInterval(autoCleanAttributeWakeUpTimerRef.current);
           autoCleanAttributeWakeUpTimerRef.current = null;
@@ -1275,6 +1433,184 @@ export const WeaponTool = () => {
     stopAutoCleanAttributeWakeUp,
   ]);
 
+  // 强化功能
+  const upgradeWeapon = useCallback(() => {
+    if (!currentWeapon) {
+      addMessage("请先选择武器！", "warning", "upgrade");
+      return;
+    }
+
+    // 使用 ref 获取最新值，确保在快速连续调用时也能获取到最新状态
+    const currentLevel = upgradeLevelRef.current;
+    const currentFailureCount = upgradeFailureCountRef.current;
+    const currentTries = currentLevelTriesRef.current;
+
+    if (currentLevel >= 10) {
+      addMessage("武器已达到最高强化等级！", "warning", "upgrade");
+      return;
+    }
+
+    const nextLevel = currentLevel + 1;
+    const upgradeData = ultimate190Data.upgrade_data.find(d => d.level === nextLevel);
+    
+    if (!upgradeData || !upgradeData.upgrade_info.initial_chance_percent) {
+      addMessage("无法获取强化数据！", "warning", "upgrade");
+      return;
+    }
+
+    const initialChance = upgradeData.upgrade_info.initial_chance_percent / 100; // 转换为小数
+    // 计算当前成功率：(累计失败次数 + 1) × 初始成功率
+    const currentChance = (currentFailureCount + 1) * initialChance;
+    const success = Math.random() < currentChance || currentChance >= 1;
+
+    // 消耗统计
+    const penyaCost = upgradeData.upgrade_info.penya_cost;
+    const mineralCost = upgradeData.upgrade_info.mineral_cost;
+
+    // 更新当前等级尝试次数
+    const newCurrentLevelTries = currentTries + 1;
+    currentLevelTriesRef.current = newCurrentLevelTries;
+    setCurrentLevelTries(newCurrentLevelTries);
+
+    setUpgradeStats(prev => ({
+      totalTries: prev.totalTries + 1,
+      totalSuccess: prev.totalSuccess + (success ? 1 : 0),
+      totalPenyaCost: prev.totalPenyaCost + penyaCost,
+      totalBlueMineral: prev.totalBlueMineral + mineralCost,
+      totalGreenMineral: prev.totalGreenMineral + mineralCost,
+      totalXP: prev.totalXP + 1,
+      totalSunstone: prev.totalSunstone + 1,
+    }));
+
+    if (success) {
+      // 强化成功 - 记录该级成功时的次数
+      setLevelSuccessTries(prev => ({
+        ...prev,
+        [nextLevel]: newCurrentLevelTries,
+      }));
+      upgradeLevelRef.current = nextLevel;
+      upgradeFailureCountRef.current = 0;
+      currentLevelTriesRef.current = 0;
+      setUpgradeLevel(nextLevel);
+      setUpgradeFailureCount(0);
+      setCurrentLevelTries(0); // 重置当前等级尝试次数
+      
+      // 升级到+6时，自动生成一条橙字属性
+      if (nextLevel === 6 && currentWeapon) {
+        // 过滤掉"生命偷取"属性，橙字不包含此属性
+        const arr = [...currentWeapon.possibleRandomStats].filter(
+          (ability) => ability.name !== "生命偷取"
+        );
+        
+        if (arr.length > 0) {
+          const ability = arr[Math.floor(Math.random() * arr.length)];
+          const maxLimit = Math.floor(ability.max / 2);
+          const orangeStat = generateRandomAbilityWithLimit(ability, maxLimit);
+          
+          setCurrentStats((prev) => ({
+            ...prev,
+            orangeStats: [orangeStat],
+          }));
+          
+          addMessage(`强化到+6，自动生成橙字属性：${orangeStat.display}`, "success", "orange");
+        }
+      }
+      
+      // 升级到+10时，如果只有一条橙字属性，自动生成第二条
+      if (nextLevel === 10 && currentWeapon) {
+        setCurrentStats((prev) => {
+          if (prev.orangeStats.length === 1) {
+            // 过滤掉"生命偷取"属性，橙字不包含此属性
+            const arr = [...currentWeapon.possibleRandomStats].filter(
+              (ability) => ability.name !== "生命偷取"
+            );
+            // 排除已存在的属性
+            const existingStat = prev.orangeStats[0];
+            const availableAbilities = arr.filter(
+              (a) => a.name !== existingStat.name
+            );
+            
+            if (availableAbilities.length > 0) {
+              const ability = availableAbilities[Math.floor(Math.random() * availableAbilities.length)];
+              const maxLimit = Math.floor(ability.max / 2);
+              const secondOrangeStat = generateRandomAbilityWithLimit(ability, maxLimit);
+              
+              addMessage(`强化到+10，自动生成第二条橙字属性：${secondOrangeStat.display}`, "success", "orange");
+              
+              return {
+                ...prev,
+                orangeStats: [...prev.orangeStats, secondOrangeStat],
+              };
+            }
+          }
+          return prev;
+        });
+      }
+    } else {
+      // 强化失败
+      const newFailureCount = currentFailureCount + 1;
+      upgradeFailureCountRef.current = newFailureCount;
+      setUpgradeFailureCount(newFailureCount);
+    }
+  }, [currentWeapon, addMessage, generateRandomAbilityWithLimit]);
+
+  const stopAutoUpgrade = useCallback(() => {
+    autoUpgradeStopRef.current = true;
+    setIsAutoUpgrading(false);
+    if (autoUpgradeTimerRef.current) {
+      window.clearInterval(autoUpgradeTimerRef.current);
+      autoUpgradeTimerRef.current = null;
+    }
+  }, []);
+
+  const autoUpgrade = useCallback(() => {
+    if (!currentWeapon) {
+      addMessage("请先选择武器！", "warning", "upgrade");
+      return;
+    }
+
+    if (isAutoUpgrading) {
+      stopAutoUpgrade();
+      return;
+    }
+
+    if (targetUpgradeLevel === null || targetUpgradeLevel <= upgradeLevel) {
+      addMessage("请先选择目标强化等级！", "warning", "upgrade");
+      return;
+    }
+
+    setIsAutoUpgrading(true);
+    autoUpgradeStopRef.current = false;
+    targetUpgradeLevelRef.current = targetUpgradeLevel;
+
+    const upgradeOnce = () => {
+      if (autoUpgradeStopRef.current) {
+        setIsAutoUpgrading(false);
+        if (autoUpgradeTimerRef.current) {
+          clearInterval(autoUpgradeTimerRef.current);
+          autoUpgradeTimerRef.current = null;
+        }
+        return;
+      }
+
+      // 使用 ref 检查是否达到目标等级（确保获取最新值）
+      if (upgradeLevelRef.current >= targetUpgradeLevelRef.current!) {
+        setIsAutoUpgrading(false);
+        if (autoUpgradeTimerRef.current) {
+          clearInterval(autoUpgradeTimerRef.current);
+          autoUpgradeTimerRef.current = null;
+        }
+        return;
+      }
+      
+      // 执行强化
+      upgradeWeapon();
+    };
+
+    upgradeOnce();
+    autoUpgradeTimerRef.current = window.setInterval(upgradeOnce, 50);
+  }, [currentWeapon, isAutoUpgrading, targetUpgradeLevel, upgradeLevel, upgradeWeapon, addMessage, stopAutoUpgrade]);
+
   return (
     <div className="weapon-tool">
       <div className="weapon-tool-container">
@@ -1282,8 +1618,8 @@ export const WeaponTool = () => {
         <div className="weapon-header-bar">
           <h2 className="weapon-page-title">武器洗练工具</h2>
           <div className="weapon-log-buttons">
-              <button
-                className="weapon-log-btn"
+            <button
+              className="weapon-log-btn"
               onClick={() => {
                 setLogModalType("abilities");
                 setShowLogModal(true);
@@ -1340,8 +1676,8 @@ export const WeaponTool = () => {
               属性唤醒{" "}
               {attributeWakeUpMessages.length > 0 &&
                 `(${attributeWakeUpMessages.length})`}
-              </button>
-            </div>
+            </button>
+          </div>
         </div>
 
         {/* 主要内容区域 */}
@@ -1360,7 +1696,7 @@ export const WeaponTool = () => {
                   onClick={() => setShowWeaponSelectorModal(true)}
                   style={{ cursor: "pointer" }}
                 >
-              {currentWeapon ? (
+                  {currentWeapon ? (
                     <img
                       src={currentWeapon.imgUrl}
                       alt={currentWeapon.name}
@@ -1373,7 +1709,7 @@ export const WeaponTool = () => {
                   ) : (
                     <div className="weapon-select-placeholder">选择武器</div>
                   )}
-                  </div>
+                </div>
               </div>
             </div>
             <div className="weapon-result">
@@ -1387,7 +1723,12 @@ export const WeaponTool = () => {
                         <div className="weapon-name">
                           <span className="name-text">
                             <span className="ultimate-badge">Ultimate</span>
-                            {currentWeapon.name} 智力的 +10 (10/10)
+                            {currentWeapon.name}{" "}
+                            {currentStats.attributeWakeUp &&
+                            currentStats.attributeWakeUp.length > 0
+                              ? `${currentStats.attributeWakeUp[0].name}的 `
+                              : ""}
+                            {upgradeLevel > 0 ? `+${upgradeLevel} ` : ""}(10/10)
                           </span>
                         </div>
                         <div className="weapon-type">{currentWeapon.type}</div>
@@ -1397,7 +1738,15 @@ export const WeaponTool = () => {
                       <div className="weapon-stats-block">
                         <div className="stat-row cyan">
                           <span className="stat-row-label">攻击力:</span>{" "}
-                          {currentWeapon.minAttack} ~ {currentWeapon.maxAttack}
+                          {(() => {
+                            const upgradeData = ultimate190Data.upgrade_data.find(d => d.level === upgradeLevel);
+                            const attackBonus = upgradeData ? parseFloat(upgradeData.weapon_attack.replace('%', '')) : 0;
+                            const baseMin = currentWeapon.minAttack;
+                            const baseMax = currentWeapon.maxAttack;
+                            const bonusMin = Math.floor(baseMin * attackBonus / 100);
+                            const bonusMax = Math.floor(baseMax * attackBonus / 100);
+                            return `${baseMin + bonusMin} ~ ${baseMax + bonusMax}`;
+                          })()}
                         </div>
                         <div className="stat-row white">
                           基础攻击力:{" "}
@@ -1509,15 +1858,134 @@ export const WeaponTool = () => {
                 <div className="weapon-empty-state">请先选择一把武器</div>
               )}
             </div>
-            </div>
+          </div>
 
           {/* 右侧：预设和操作区域 */}
           <div className="weapon-control-panel">
             <div className="weapon-control-header">
               <h3 className="weapon-panel-title">预设与操作</h3>
+              <button
+                className="weapon-reset-btn"
+                onClick={() => {
+                  // 重置除了武器之外的所有内容
+                  // 重置当前统计
+                  // 生成黄字（默认生成2条）
+                  const yellowStats = currentWeapon
+                    ? (() => {
+                        const arr = [...currentWeapon.possibleRandomStats];
+                        const value1 = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
+                        const value2 = arr.splice(Math.floor(Math.random() * arr.length), 1)[0];
+                        return [value1, value2].map((ability) =>
+                          generateRandomAbility(ability)
+                        );
+                      })()
+                    : [];
+                  
+                  setCurrentStats({
+                    abilities: currentWeapon
+                      ? currentWeapon.abilities.map((ability) =>
+                          generateRandomAbility(ability)
+                        )
+                      : [],
+                    yellowStats,
+                    orangeStats: [],
+                    attributeWakeUp: [],
+                  });
+
+                  // 重置预设值
+                  setPresetAbilities(
+                    currentWeapon
+                      ? currentWeapon.abilities.map((ability) => ({
+                          name: ability.name,
+                          value: null,
+                          tolerance: ability.fixed === 10 ? 0.1 : 1,
+                        }))
+                      : []
+                  );
+                  setPresetYellowStats([]);
+                  setPresetOrangeStats([]);
+                  setPresetWakeUp({ name: null, percentage: null });
+                  setPresetAttributeWakeUp({ attributeIndex: 0, value: null }); // 默认选中智力
+
+                  // 重置统计
+                  setCleanNum(0);
+                  setCleanUNum(0);
+                  setCleanOrangeNum(0);
+                  setWakeUpNum(0);
+                  setAttributeWakeUpNum(0);
+
+                  // 清空所有日志
+                  setAbilitiesMessages([]);
+                  setYellowMessages([]);
+                  setOrangeMessages([]);
+                  setWakeUpMessages([]);
+                  setAttributeWakeUpMessages([]);
+                  setUpgradeMessages([]);
+
+                  // 重置强化相关
+                  upgradeLevelRef.current = 0;
+                  upgradeFailureCountRef.current = 0;
+                  currentLevelTriesRef.current = 0;
+                  setUpgradeLevel(0);
+                  setTargetUpgradeLevel(10); // 默认目标等级为10
+                  setUpgradeFailureCount(0);
+                  setCurrentLevelTries(0);
+                  setLevelSuccessTries({});
+                  setUpgradeStats({
+                    totalTries: 0,
+                    totalSuccess: 0,
+                    totalPenyaCost: 0,
+                    totalBlueMineral: 0,
+                    totalGreenMineral: 0,
+                    totalXP: 0,
+                    totalSunstone: 0,
+                  });
+
+                  // 停止所有自动洗练
+                  if (autoCleanAbilitiesTimerRef.current) {
+                    window.clearInterval(autoCleanAbilitiesTimerRef.current);
+                    autoCleanAbilitiesTimerRef.current = null;
+                  }
+                  if (autoCleanYellowTimerRef.current) {
+                    window.clearInterval(autoCleanYellowTimerRef.current);
+                    autoCleanYellowTimerRef.current = null;
+                  }
+                  if (autoCleanOrangeTimerRef.current) {
+                    window.clearInterval(autoCleanOrangeTimerRef.current);
+                    autoCleanOrangeTimerRef.current = null;
+                  }
+                  if (autoCleanWakeUpTimerRef.current) {
+                    window.clearInterval(autoCleanWakeUpTimerRef.current);
+                    autoCleanWakeUpTimerRef.current = null;
+                  }
+                  if (autoCleanAttributeWakeUpTimerRef.current) {
+                    window.clearInterval(
+                      autoCleanAttributeWakeUpTimerRef.current
+                    );
+                    autoCleanAttributeWakeUpTimerRef.current = null;
+                  }
+
+                  setIsAutoCleaningAbilities(false);
+                  setIsAutoCleaningYellow(false);
+                  setIsAutoCleaningOrange(false);
+                  setIsAutoCleaningWakeUp(false);
+                  setIsAutoCleaningAttributeWakeUp(false);
+      
+      // 停止自动强化
+      if (autoUpgradeTimerRef.current) {
+        window.clearInterval(autoUpgradeTimerRef.current);
+        autoUpgradeTimerRef.current = null;
+      }
+      setIsAutoUpgrading(false);
+      autoUpgradeStopRef.current = false;
+                }}
+                disabled={!currentWeapon}
+              >
+                重置
+              </button>
             </div>
             <div className="weapon-control-content">
-                  {currentWeapon ? (
+              {currentWeapon ? (
                 <div className="weapon-preset-list">
                   <PresetDisplay
                     title="基础词条"
@@ -1604,6 +2072,12 @@ export const WeaponTool = () => {
                       tolerance: p.tolerance,
                     }))}
                     onClick={() => {
+                      // 检查强化等级
+                      if (upgradeLevel < 6) {
+                        addMessage("需要强化到+6才能设置橙字预设！", "warning", "orange");
+                        return;
+                      }
+                      
                       // 如果预设值为空，设置为最大值
                       if (
                         presetOrangeStats.length === 0 ||
@@ -1611,8 +2085,14 @@ export const WeaponTool = () => {
                           (p) => !p.name || p.value === null
                         )
                       ) {
-                        const newPresets = currentWeapon.possibleRandomStats
-                          .slice(0, 2)
+                        // 根据强化等级决定预设值数量：6-9级1条，10级2条
+                        const count = upgradeLevel >= 10 ? 2 : 1;
+                        // 过滤掉"生命偷取"属性，橙字不包含此属性
+                        const availableStats = currentWeapon.possibleRandomStats.filter(
+                          (ability) => ability.name !== "生命偷取"
+                        );
+                        const newPresets = availableStats
+                          .slice(0, count)
                           .map((ability) => {
                             const maxLimit = Math.floor(ability.max / 2);
                             const maxValue = ability.fixed
@@ -1630,11 +2110,13 @@ export const WeaponTool = () => {
                       setShowPresetModal(true);
                     }}
                     actionButton={{
-                      label: isAutoCleaningOrange ? "停止" : "洗橙字",
+                      label: upgradeLevel < 6 
+                        ? "先强化到+6" 
+                        : (isAutoCleaningOrange ? "停止" : "洗橙字"),
                       onClick: isAutoCleaningOrange
                         ? stopAutoCleanOrange
                         : autoCleanOrangeStats,
-                      disabled: !currentWeapon,
+                      disabled: !currentWeapon || upgradeLevel < 6,
                       count: cleanOrangeNum,
                     }}
                   />
@@ -1662,8 +2144,8 @@ export const WeaponTool = () => {
                             ? stopAutoCleanWakeUp
                             : autoWakeUp,
                           disabled:
-                    !currentWeapon ||
-                    !currentWeapon?.wakeUpList ||
+                            !currentWeapon ||
+                            !currentWeapon?.wakeUpList ||
                             currentWeapon.wakeUpList.length === 0,
                           count: wakeUpNum,
                         }}
@@ -1698,7 +2180,155 @@ export const WeaponTool = () => {
                       count: attributeWakeUpNum,
                     }}
                   />
-              </div>
+                  <PresetDisplay
+                    title="武器强化"
+                    items={[
+                      {
+                        name: `当前等级: +${upgradeLevel}`,
+                        value: upgradeLevel < 10 ? `当前成功率: ${(() => {
+                          const nextLevel = upgradeLevel + 1;
+                          const upgradeData = ultimate190Data.upgrade_data.find(d => d.level === nextLevel);
+                          if (!upgradeData || !upgradeData.upgrade_info.initial_chance_percent) return "-";
+                          const initialChance = upgradeData.upgrade_info.initial_chance_percent / 100;
+                          const currentChance = (upgradeFailureCount + 1) * initialChance;
+                          return `${(currentChance * 100).toFixed(2)}%`;
+                        })()}` : "已满级",
+                      },
+                    ]}
+                    onClick={() => {
+                      // 点击打开目标等级选择
+                    }}
+                    actionButton={{
+                      label: isAutoUpgrading ? "停止" : "强化",
+                      onClick: isAutoUpgrading ? stopAutoUpgrade : autoUpgrade,
+                      disabled: !currentWeapon || upgradeLevel >= 10 || (targetUpgradeLevel === null && !isAutoUpgrading),
+                      count: upgradeStats.totalSuccess,
+                      totalCount: upgradeStats.totalTries,
+                    }}
+                    customContent={
+                      <div className="weapon-upgrade-custom">
+                        {upgradeLevel < 10 && (
+                          <div className="upgrade-target-select">
+                            <label>目标等级:</label>
+                            <select
+                              className="upgrade-level-select"
+                              value={targetUpgradeLevel ?? ""}
+                              onChange={(e) => {
+                                const value = e.target.value === "" ? null : parseInt(e.target.value);
+                                if (value !== null && value > upgradeLevel) {
+                                  setTargetUpgradeLevel(value);
+                                } else {
+                                  setTargetUpgradeLevel(null);
+                                }
+                              }}
+                            >
+                              <option value="">选择目标等级</option>
+                              {Array.from({ length: 10 - upgradeLevel }, (_, i) => upgradeLevel + i + 1).map(level => (
+                                <option key={level} value={level}>
+                                  +{level}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        )}
+                        <div className="upgrade-stats-info">
+                          <div className="upgrade-stat-row">
+                            <span className="stat-label">当前成功率:</span>
+                            <span className="stat-value">
+                              {(() => {
+                                const nextLevel = upgradeLevel + 1;
+                                const upgradeData = ultimate190Data.upgrade_data.find(d => d.level === nextLevel);
+                                if (!upgradeData || !upgradeData.upgrade_info.initial_chance_percent) return "-";
+                                const initialChance = upgradeData.upgrade_info.initial_chance_percent / 100;
+                                const currentChance = (upgradeFailureCount + 1) * initialChance;
+                                return `${(currentChance * 100).toFixed(2)}%`;
+                              })()}
+                            </span>
+                          </div>
+                          <div className="upgrade-stat-row">
+                            <span className="stat-label">总次数:</span>
+                            <span className="stat-value">{upgradeStats.totalTries}</span>
+                          </div>
+                          <div className="upgrade-stat-row">
+                            <span className="stat-label">当前等级次数:</span>
+                            <span className="stat-value">{currentLevelTries}</span>
+                          </div>
+                          {Object.keys(levelSuccessTries).length > 0 && (
+                            <div className="upgrade-level-success-list">
+                              <span className="stat-label">每级成功次数:</span>
+                              <div className="level-success-items">
+                                {Object.entries(levelSuccessTries)
+                                  .sort(([a], [b]) => parseInt(a) - parseInt(b))
+                                  .map(([level, tries]) => (
+                                    <span key={level} className="level-success-item">
+                                      +{level}: {tries}次
+                                    </span>
+                                  ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                        <div className="upgrade-cost-display">
+                          <div className="upgrade-cost-item">
+                            <span className="cost-label">每次消耗:</span>
+                            <div className="cost-icons">
+                              {(() => {
+                                const nextLevel = upgradeLevel + 1;
+                                const upgradeData = ultimate190Data.upgrade_data.find(d => d.level === nextLevel);
+                                if (!upgradeData) return null;
+                                return (
+                                  <>
+                                    <span className="cost-icon-wrapper">
+                                      <img src="https://flyforfun.oss-cn-beijing.aliyuncs.com/static_img/minera.png" alt="蓝矿" className="cost-icon" />
+                                      <span className="cost-value">{upgradeData.upgrade_info.mineral_cost}</span>
+                                    </span>
+                                    <span className="cost-icon-wrapper">
+                                      <img src="https://flyforfun.oss-cn-beijing.aliyuncs.com/static_img/erons.png" alt="绿矿" className="cost-icon" />
+                                      <span className="cost-value">{upgradeData.upgrade_info.mineral_cost}</span>
+                                    </span>
+                                    <span className="cost-icon-wrapper">
+                                      <img src="https://flyforfun.oss-cn-beijing.aliyuncs.com/static_img/xp.png" alt="XP" className="cost-icon" />
+                                      <span className="cost-value">1</span>
+                                    </span>
+                                    <span className="cost-icon-wrapper">
+                                      <img src="https://flyforfun.oss-cn-beijing.aliyuncs.com/static_img/sunstone.png" alt="太阳石" className="cost-icon" />
+                                      <span className="cost-value">1</span>
+                                    </span>
+                                    <span className="cost-penya">{upgradeData.upgrade_info.penya_cost.toLocaleString()}</span>
+                                  </>
+                                );
+                              })()}
+                            </div>
+                          </div>
+                          <div className="upgrade-total-stats">
+                            <div className="total-stats-item">
+                              <span className="total-stats-label">总消耗:</span>
+                              <div className="total-stats-icons">
+                                <span className="cost-icon-wrapper">
+                                  <img src="https://flyforfun.oss-cn-beijing.aliyuncs.com/static_img/minera.png" alt="蓝矿" className="cost-icon" />
+                                  <span className="cost-value">{upgradeStats.totalBlueMineral}</span>
+                                </span>
+                                <span className="cost-icon-wrapper">
+                                  <img src="https://flyforfun.oss-cn-beijing.aliyuncs.com/static_img/erons.png" alt="绿矿" className="cost-icon" />
+                                  <span className="cost-value">{upgradeStats.totalGreenMineral}</span>
+                                </span>
+                                <span className="cost-icon-wrapper">
+                                  <img src="https://flyforfun.oss-cn-beijing.aliyuncs.com/static_img/xp.png" alt="XP" className="cost-icon" />
+                                  <span className="cost-value">{upgradeStats.totalXP}</span>
+                                </span>
+                                <span className="cost-icon-wrapper">
+                                  <img src="https://flyforfun.oss-cn-beijing.aliyuncs.com/static_img/sunstone.png" alt="太阳石" className="cost-icon" />
+                                  <span className="cost-value">{upgradeStats.totalSunstone}</span>
+                                </span>
+                                <span className="cost-penya">{upgradeStats.totalPenyaCost.toLocaleString()}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                  />
+                </div>
               ) : (
                 <div className="weapon-control-empty">
                   <p>请先选择一把武器</p>
@@ -1729,32 +2359,56 @@ export const WeaponTool = () => {
               </button>
             </div>
             <div className="weapon-log-modal__content">
-              <div className="weapon-selector-grid-compact">
-                {weapons.map((weapon) => (
-                  <div
-                    key={weapon.id}
-                    className={`weapon-selector-item-compact ${
-                      selectedWeaponId === weapon.id ? "is-selected" : ""
-                    }`}
-                    onClick={() => {
-                      setSelectedWeaponId(weapon.id);
-                      setShowWeaponSelectorModal(false);
-                    }}
-                  >
-                    <img
-                      src={weapon.imgUrl}
-                      alt={weapon.name}
-                      className="weapon-selector-icon-compact"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = "/img/items/default.png";
-                      }}
-                    />
-                    <span className="weapon-selector-name-compact">
-                      {weapon.name}
-                    </span>
-                  </div>
-                ))}
+              <div className="weapon-selector-grouped">
+                {(() => {
+                  // 按 type 分组武器
+                  const groupedWeapons = weapons.reduce((acc, weapon) => {
+                    const type = weapon.type || "其他";
+                    if (!acc[type]) {
+                      acc[type] = [];
+                    }
+                    acc[type].push(weapon);
+                    return acc;
+                  }, {} as Record<string, Weapon[]>);
+
+                  // 按类型名称排序
+                  const sortedTypes = Object.keys(groupedWeapons).sort();
+
+                  return sortedTypes.map((type) => (
+                    <div key={type} className="weapon-selector-group">
+                      <div className="weapon-selector-group-title">{type}</div>
+                      <div className="weapon-selector-grid-compact">
+                        {groupedWeapons[type].map((weapon) => (
+                          <div
+                            key={weapon.id}
+                            className={`weapon-selector-item-compact ${
+                              selectedWeaponId === weapon.id
+                                ? "is-selected"
+                                : ""
+                            }`}
+                            onClick={() => {
+                              setSelectedWeaponId(weapon.id);
+                              setShowWeaponSelectorModal(false);
+                            }}
+                          >
+                            <img
+                              src={weapon.imgUrl}
+                              alt={weapon.name}
+                              className="weapon-selector-icon-compact"
+                              onError={(e) => {
+                                const target = e.target as HTMLImageElement;
+                                target.src = "/img/items/default.png";
+                              }}
+                            />
+                            <span className="weapon-selector-name-compact">
+                              {weapon.name}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ));
+                })()}
               </div>
             </div>
           </div>
@@ -1781,6 +2435,7 @@ export const WeaponTool = () => {
                 {logModalType === "orange" && "橙字日志"}
                 {logModalType === "wakeUp" && "技能唤醒日志"}
                 {logModalType === "attributeWakeUp" && "属性唤醒日志"}
+                {logModalType === "upgrade" && "强化日志"}
                 {(() => {
                   let messages: WeaponMessage[] = [];
                   switch (logModalType) {
@@ -1798,6 +2453,9 @@ export const WeaponTool = () => {
                       break;
                     case "attributeWakeUp":
                       messages = attributeWakeUpMessages;
+                      break;
+                    case "upgrade":
+                      messages = upgradeMessages;
                       break;
                   }
                   return ` (${messages.length}条)`;
@@ -1832,20 +2490,23 @@ export const WeaponTool = () => {
                   case "attributeWakeUp":
                     messages = attributeWakeUpMessages;
                     break;
+                  case "upgrade":
+                    messages = upgradeMessages;
+                    break;
                 }
                 return messages.length > 0 ? (
-                <div className="weapon-log-list">
-                  {messages.map((msg) => (
-                    <div
-                      key={msg.id}
-                      className={`weapon-log-item weapon-log-item-${msg.type}`}
-                    >
-                      {msg.text}
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div className="weapon-log-empty">暂无日志</div>
+                  <div className="weapon-log-list">
+                    {messages.map((msg) => (
+                      <div
+                        key={msg.id}
+                        className={`weapon-log-item weapon-log-item-${msg.type}`}
+                      >
+                        {msg.text}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="weapon-log-empty">暂无日志</div>
                 );
               })()}
             </div>
@@ -1932,7 +2593,7 @@ export const WeaponTool = () => {
                             <span className="weapon-preset-range">
                               ({minDisplay}~{maxDisplay})
                             </span>
-          </div>
+                          </div>
                           <div className="weapon-preset-tolerance-input">
                             <label className="tolerance-label">误差范围:</label>
                             <input
@@ -1966,8 +2627,8 @@ export const WeaponTool = () => {
                       </div>
                     );
                   })}
-        </div>
-      )}
+                </div>
+              )}
 
               {presetModalType === "yellow" && (
                 <div className="weapon-preset-modal-form">
@@ -2065,7 +2726,7 @@ export const WeaponTool = () => {
                                     <span className="weapon-preset-range">
                                       ({minDisplay}~{maxDisplay})
                                     </span>
-    </div>
+                                  </div>
                                   <div className="weapon-preset-tolerance-input">
                                     <label className="tolerance-label">
                                       误差范围:
@@ -2112,7 +2773,11 @@ export const WeaponTool = () => {
 
               {presetModalType === "orange" && (
                 <div className="weapon-preset-modal-form">
-                  {[0, 1].map((idx) => {
+                  {(() => {
+                    // 根据强化等级决定显示几个属性输入框：6-9级1个，10级2个
+                    const count = upgradeLevel >= 10 ? 2 : 1;
+                    return Array.from({ length: count }, (_, i) => i);
+                  })().map((idx) => {
                     const preset = presetOrangeStats[idx];
                     return (
                       <div key={idx} className="weapon-preset-modal-item">
@@ -2150,11 +2815,13 @@ export const WeaponTool = () => {
                             }}
                           >
                             <option value="">选择属性</option>
-                            {currentWeapon.possibleRandomStats.map((a) => (
-                              <option key={a.name} value={a.name}>
-                                {a.name}
-                              </option>
-                            ))}
+                            {currentWeapon.possibleRandomStats
+                              .filter((a) => a.name !== "生命偷取") // 橙字不包含生命偷取属性
+                              .map((a) => (
+                                <option key={a.name} value={a.name}>
+                                  {a.name}
+                                </option>
+                              ))}
                           </select>
                           {preset?.name &&
                             (() => {

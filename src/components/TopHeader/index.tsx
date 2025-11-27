@@ -33,6 +33,8 @@ export const TopHeader = ({ activeTab }: TopHeaderProps) => {
         return '/tool/fashion-awakening'
       case '代练':
         return '/coaching'
+      case '新版本':
+        return '/new-version'
       default:
         return '/'
     }
@@ -61,6 +63,7 @@ export const TopHeader = ({ activeTab }: TopHeaderProps) => {
         {mainNavTabs.map((tab) => {
           const path = getTabPath(tab)
           const isActive = tab === activeTab
+          const isNewVersion = tab === '新版本'
           return (
             <Link
               key={tab}
@@ -68,6 +71,7 @@ export const TopHeader = ({ activeTab }: TopHeaderProps) => {
               className={isActive ? 'active' : ''}
             >
               {tab}
+              {isNewVersion && <span className="nav-new-badge">NEW</span>}
             </Link>
           )
         })}

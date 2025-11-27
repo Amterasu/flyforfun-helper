@@ -15,14 +15,14 @@ body {
 }
 
 .app-shell {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   // TopHeader 不再是 fixed，所以不需要预留顶部空间
   padding: @spacing-md clamp(16px, 5vw, 72px) 32px;
   display: flex;
   flex-direction: column;
   gap: @spacing-md;
   max-width: @app-shell-max-width;
-  margin: 0 auto 80px;
+  margin: 0 auto;
 }
 
 .doc-wrapper {

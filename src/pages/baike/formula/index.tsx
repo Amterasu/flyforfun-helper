@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export const Formula = () => {
   return (
     <div className="baike-content">
-    <p key={0}><a href="#universe-document">🔝 Back to top</a></p>
-    <summary key={2}>📁 formula details</summary>
-    
+      <p key={0}>
+        还没做
+      </p>
     </div>
-  )
-}
+  );
+};

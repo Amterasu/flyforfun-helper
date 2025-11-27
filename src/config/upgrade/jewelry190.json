@@ -1,0 +1,330 @@
+{
+    "table_info": {
+      "name": "Ultimate Jewelry Upgrade",
+      "name_cn": "终极首饰升级表",
+      "description": "Upgrade stats, success rates, and costs for Ultimate Jewelry in Flyff.",
+      "description_cn": "飞飞（Flyff）终极首饰的升级属性、成功率及消耗表。"
+    },
+    "upgrade_materials": [
+      {
+        "name": "Sunstone",
+        "name_cn": "太阳石",
+        "usage": "Used in the upgrading process."
+      },
+      {
+        "name": "Scroll of XProtect",
+        "name_cn": "防爆卷轴",
+        "usage": "Used to protect equipment from breaking."
+      }
+    ],
+    "currency": {
+      "name": "Penya",
+      "name_cn": "游戏币 (Penya)"
+    },
+    "equipment_definitions": [
+      {
+        "id": "champion_marksman",
+        "name": "Champion (STR) / Marksman (DEX)",
+        "name_cn": "力戒",
+        "type": "Ring",
+        "attributes": "Stat Increase / Critical Damage %"
+      },
+      {
+        "id": "champion_marksman",
+        "name": "Champion (STR) / Marksman (DEX)",
+        "name_cn": "敏戒",
+        "type": "Ring",
+        "attributes": "Stat Increase / Critical Damage %"
+      },
+      {
+        "id": "defender",
+        "name": "Defender (STA)",
+        "name_cn": "体戒",
+        "type": "Ring",
+        "attributes": "Stat Increase / HP %"
+      },
+      {
+        "id": "adept",
+        "name": "Adept (INT)",
+        "name_cn": "智戒",
+        "type": "Ring",
+        "attributes": "Stat Increase / MATK %"
+      },
+      {
+        "id": "gore",
+        "name": "Gore Necklace",
+        "name_cn": "血项链",
+        "type": "Necklace",
+        "attributes": "Max HP / HP Restoration"
+      },
+      {
+        "id": "mental",
+        "name": "Mental Necklace",
+        "name_cn": "蓝项链",
+        "type": "Necklace",
+        "attributes": "Max MP / Decreased MP Consumption / MP Recovery After Kill"
+      },
+      {
+        "id": "peision",
+        "name": "Peision Necklace",
+        "name_cn": "FP项链",
+        "type": "Necklace",
+        "attributes": "Max FP / FP Recovery Auto Attack"
+      },
+      {
+        "id": "demol",
+        "name": "Demol Earring",
+        "name_cn": "白银耳环",
+        "type": "Earring",
+        "attributes": "Damage"
+      },
+      {
+        "id": "plug",
+        "name": "Plug Earring",
+        "name_cn": "金刚耳环",
+        "type": "Earring",
+        "attributes": "Defense / Magic Defense"
+      }
+    ],
+    "upgrade_data": [
+      {
+        "level": 0,
+        "required_level": 120,
+        "stats": {
+          "champion_marksman": "45/5%",
+          "defender": "45/3%",
+          "adept": "45/5%",
+          "gore": "1180/32%",
+          "mental": "540/32%/140",
+          "peision": "580/45",
+          "demol": "460",
+          "plug": "440/440"
+        },
+        "upgrade_info": {
+          "average_chance_percent": null,
+          "initial_chance_percent": null,
+          "penya_cost": 0
+        }
+      },
+      {
+        "level": 1,
+        "required_level": 125,
+        "stats": {
+          "champion_marksman": "47/5%",
+          "defender": "47/3%",
+          "adept": "47/5%",
+          "gore": "1245/34%",
+          "mental": "560/33%/145",
+          "peision": "620/50",
+          "demol": "470",
+          "plug": "450/450"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 7.0,
+          "initial_chance_percent": 0.73587053,
+          "average_tries": 14.2857,
+          "reach_100_percent_tries": 135.8935,
+          "penya_cost": 20000,
+          "average_penya_cost": 285714
+        }
+      },
+      {
+        "level": 2,
+        "required_level": 130,
+        "stats": {
+          "champion_marksman": "49/5%",
+          "defender": "49/3%",
+          "adept": "49/5%",
+          "gore": "1310/36%",
+          "mental": "580/34%/150",
+          "peision": "660/55",
+          "demol": "480",
+          "plug": "460/460"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 6.0,
+          "initial_chance_percent": 0.54401086,
+          "average_tries": 16.6667,
+          "reach_100_percent_tries": 183.8199,
+          "penya_cost": 40000,
+          "average_penya_cost": 666668
+        }
+      },
+      {
+        "level": 3,
+        "required_level": 135,
+        "stats": {
+          "champion_marksman": "51/6%",
+          "defender": "51/4%",
+          "adept": "51/6%",
+          "gore": "1385/38%",
+          "mental": "600/35%/155",
+          "peision": "700/60",
+          "demol": "490",
+          "plug": "470/470"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 4.5,
+          "initial_chance_percent": 0.30891066,
+          "average_tries": 22.2222,
+          "reach_100_percent_tries": 323.7182,
+          "penya_cost": 80000,
+          "average_penya_cost": 1777776
+        }
+      },
+      {
+        "level": 4,
+        "required_level": 140,
+        "stats": {
+          "champion_marksman": "55/6%",
+          "defender": "55/4%",
+          "adept": "55/6%",
+          "gore": "1450/40%",
+          "mental": "620/36%/160",
+          "peision": "740/65",
+          "demol": "500",
+          "plug": "480/480"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 3.4,
+          "initial_chance_percent": 0.17758901,
+          "average_tries": 29.4118,
+          "reach_100_percent_tries": 563.0979,
+          "penya_cost": 150000,
+          "average_penya_cost": 4411770
+        }
+      },
+      {
+        "level": 5,
+        "required_level": 145,
+        "stats": {
+          "champion_marksman": "60/7%",
+          "defender": "60/5%",
+          "adept": "60/7%",
+          "gore": "1550/45%",
+          "mental": "650/40%/170",
+          "peision": "800/70",
+          "demol": "540",
+          "plug": "525/525"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 2.5,
+          "initial_chance_percent": 0.09657416,
+          "average_tries": 40.0000,
+          "reach_100_percent_tries": 1035.4737,
+          "penya_cost": 300000,
+          "average_penya_cost": 12000000
+        }
+      },
+      {
+        "level": 6,
+        "required_level": 150,
+        "stats": {
+          "champion_marksman": "64/8%",
+          "defender": "64/6%",
+          "adept": "64/8%",
+          "gore": "1630/50%",
+          "mental": "670/42%/175",
+          "peision": "840/75",
+          "demol": "560",
+          "plug": "550/550"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 1.8,
+          "initial_chance_percent": 0.05029272,
+          "average_tries": 55.5556,
+          "reach_100_percent_tries": 1988.3593,
+          "penya_cost": 500000,
+          "average_penya_cost": 27777800
+        }
+      },
+      {
+        "level": 7,
+        "required_level": 155,
+        "stats": {
+          "champion_marksman": "68/8%",
+          "defender": "68/6%",
+          "adept": "68/8%",
+          "gore": "1710/54%",
+          "mental": "690/44%/180",
+          "peision": "880/80",
+          "demol": "580",
+          "plug": "560/560"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 1.4,
+          "initial_chance_percent": 0.03050380,
+          "average_tries": 71.4286,
+          "reach_100_percent_tries": 3278.2801,
+          "penya_cost": 750000,
+          "average_penya_cost": 53571450
+        }
+      },
+      {
+        "level": 8,
+        "required_level": 160,
+        "stats": {
+          "champion_marksman": "72/9%",
+          "defender": "72/7%",
+          "adept": "72/9%",
+          "gore": "1790/58%",
+          "mental": "710/46%/185",
+          "peision": "920/85",
+          "demol": "600",
+          "plug": "570/570"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 0.95,
+          "initial_chance_percent": 0.01408741,
+          "average_tries": 105.2632,
+          "reach_100_percent_tries": 7098.5369,
+          "penya_cost": 900000,
+          "average_penya_cost": 94736880
+        }
+      },
+      {
+        "level": 9,
+        "required_level": 165,
+        "stats": {
+          "champion_marksman": "76/9%",
+          "defender": "76/7%",
+          "adept": "76/9%",
+          "gore": "1870/62%",
+          "mental": "730/48%/190",
+          "peision": "960/90",
+          "demol": "620",
+          "plug": "580/580"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 0.7,
+          "initial_chance_percent": 0.00766121,
+          "average_tries": 142.8571,
+          "reach_100_percent_tries": 13052.7684,
+          "penya_cost": 1200000,
+          "average_penya_cost": 171428520
+        }
+      },
+      {
+        "level": 10,
+        "required_level": 170,
+        "stats": {
+          "champion_marksman": "82/10%",
+          "defender": "82/8%",
+          "adept": "82/10%",
+          "gore": "2000/68%",
+          "mental": "790/52%/195",
+          "peision": "1000/95",
+          "demol": "680",
+          "plug": "610/610"
+        },
+        "upgrade_info": {
+          "average_chance_percent": 0.5,
+          "initial_chance_percent": 0.00391396,
+          "average_tries": 200.0000,
+          "reach_100_percent_tries": 25549.5713,
+          "penya_cost": 1500000,
+          "average_penya_cost": 300000000
+        }
+      }
+    ]
+  }

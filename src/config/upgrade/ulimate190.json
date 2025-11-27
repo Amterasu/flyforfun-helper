@@ -1,0 +1,188 @@
+{
+    "table_info": {
+      "name": "Ultimate Weapon Upgrade",
+      "name_cn": "终极武器升级表",
+      "description": "Upgrade stats, success rates, material costs, and Penya costs for Ultimate Weapons.",
+      "description_cn": "终极武器的升级属性、成功率、材料消耗及游戏币消耗表。"
+    },
+    "upgrade_materials": [
+      {
+        "name": "Sunstone",
+        "name_cn": "太阳石",
+        "usage": "Core upgrade material."
+      },
+      {
+        "name": "Minerals",
+        "name_cn": "矿物",
+        "usage": "Required quantity increases with level."
+      },
+      {
+        "name": "Scroll of XProtect",
+        "name_cn": "防爆卷轴",
+        "usage": "Prevents item destruction."
+      }
+    ],
+    "currency": {
+      "name": "Penya",
+      "name_cn": "游戏币 (Penya)"
+    },
+    "notes": [
+      {
+        "text": "Unlike regular equipment, all Ultimate equipment uses Sunstone, Minerals and Scroll of XProtect in the upgrading process.",
+        "text_cn": "与普通装备不同，所有终极装备在升级过程中都需要消耗太阳石、矿物和防爆卷轴。"
+      },
+      {
+        "text": "Once a weapon is converted to Ultimate, it gains an additional two different random stats (both the stat and its amount).",
+        "text_cn": "当武器转换为终极武器后，它会额外获得两个不同的随机属性（包括属性类型和数值）。"
+      },
+      {
+        "text": "At levels 6 and 10, the weapon gains an additional orange random stats.",
+        "text_cn": "在等级达到 +6 和 +10 时，武器会获得额外的橙色随机属性。"
+      }
+    ],
+    "upgrade_data": [
+      {
+        "level": 0,
+        "weapon_attack": "24%",
+        "upgrade_info": {
+          "average_chance_percent": null,
+          "initial_chance_percent": null,
+          "average_tries": null,
+          "reach_100_percent_tries": null,
+          "mineral_cost": 0,
+          "penya_cost": 0,
+          "average_penya_cost": 0
+        }
+      },
+      {
+        "level": 1,
+        "weapon_attack": "27%",
+        "upgrade_info": {
+          "average_chance_percent": 13.0,
+          "initial_chance_percent": 2.44824095,
+          "average_tries": 7.6923,
+          "reach_100_percent_tries": 40.8457,
+          "mineral_cost": 50,
+          "penya_cost": 20000,
+          "average_penya_cost": 153846
+        }
+      },
+      {
+        "level": 2,
+        "weapon_attack": "30%",
+        "upgrade_info": {
+          "average_chance_percent": 11.0,
+          "initial_chance_percent": 1.77362748,
+          "average_tries": 9.0909,
+          "reach_100_percent_tries": 56.3816,
+          "mineral_cost": 100,
+          "penya_cost": 40000,
+          "average_penya_cost": 363636
+        }
+      },
+      {
+        "level": 3,
+        "weapon_attack": "33%",
+        "upgrade_info": {
+          "average_chance_percent": 9.5,
+          "initial_chance_percent": 1.33482050,
+          "average_tries": 10.5263,
+          "reach_100_percent_tries": 74.9164,
+          "mineral_cost": 150,
+          "penya_cost": 80000,
+          "average_penya_cost": 842104
+        }
+      },
+      {
+        "level": 4,
+        "weapon_attack": "36%",
+        "upgrade_info": {
+          "average_chance_percent": 8.2,
+          "initial_chance_percent": 1.00237399,
+          "average_tries": 12.1951,
+          "reach_100_percent_tries": 99.7632,
+          "mineral_cost": 200,
+          "penya_cost": 150000,
+          "average_penya_cost": 1829265
+        }
+      },
+      {
+        "level": 5,
+        "weapon_attack": "39%",
+        "upgrade_info": {
+          "average_chance_percent": 7.0,
+          "initial_chance_percent": 0.73587053,
+          "average_tries": 14.2857,
+          "reach_100_percent_tries": 135.8935,
+          "mineral_cost": 250,
+          "penya_cost": 300000,
+          "average_penya_cost": 4285710
+        }
+      },
+      {
+        "level": 6,
+        "weapon_attack": "41%",
+        "upgrade_info": {
+          "average_chance_percent": 6.0,
+          "initial_chance_percent": 0.54401086,
+          "average_tries": 16.6667,
+          "reach_100_percent_tries": 183.8199,
+          "mineral_cost": 300,
+          "penya_cost": 500000,
+          "average_penya_cost": 8333350
+        }
+      },
+      {
+        "level": 7,
+        "weapon_attack": "43%",
+        "upgrade_info": {
+          "average_chance_percent": 5.0,
+          "initial_chance_percent": 0.38016583,
+          "average_tries": 20.0000,
+          "reach_100_percent_tries": 263.0431,
+          "mineral_cost": 350,
+          "penya_cost": 750000,
+          "average_penya_cost": 15000000
+        }
+      },
+      {
+        "level": 8,
+        "weapon_attack": "45%",
+        "upgrade_info": {
+          "average_chance_percent": 3.6,
+          "initial_chance_percent": 0.19884101,
+          "average_tries": 27.7778,
+          "reach_100_percent_tries": 502.9144,
+          "mineral_cost": 400,
+          "penya_cost": 900000,
+          "average_penya_cost": 25000020
+        }
+      },
+      {
+        "level": 9,
+        "weapon_attack": "47%",
+        "upgrade_info": {
+          "average_chance_percent": 2.3,
+          "initial_chance_percent": 0.08184658,
+          "average_tries": 43.4783,
+          "reach_100_percent_tries": 1221.7981,
+          "mineral_cost": 450,
+          "penya_cost": 1200000,
+          "average_penya_cost": 52173960
+        }
+      },
+      {
+        "level": 10,
+        "weapon_attack": "50%",
+        "upgrade_info": {
+          "average_chance_percent": 1.4,
+          "initial_chance_percent": 0.03050380,
+          "average_tries": 71.4286,
+          "reach_100_percent_tries": 3278.2801,
+          "mineral_cost": 500,
+          "penya_cost": 1500000,
+          "average_penya_cost": 107142900
+        }
+      }
+    ]
+  }
