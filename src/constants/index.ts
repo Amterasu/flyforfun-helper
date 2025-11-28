@@ -1,6 +1,6 @@
 import { DocNode, MainNav } from '../types/doc'
 
-export const mainNavTabs: MainNav[] = ['首页', '飞飞百科', '副本', '助手', '社区', '代练', '新版本']
+export const mainNavTabs: MainNav[] = ['首页', '飞飞百科', '副本', '助手', '社区', '代练', '新版本', '会战']
 
 export const docTree: DocNode[] = [
   {

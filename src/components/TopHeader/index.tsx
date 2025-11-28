@@ -35,6 +35,8 @@ export const TopHeader = ({ activeTab }: TopHeaderProps) => {
         return '/coaching'
       case '新版本':
         return '/new-version'
+      case '会战':
+        return '/siege'
       default:
         return '/'
     }

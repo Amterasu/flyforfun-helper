@@ -14,6 +14,7 @@ import { CoachingPage } from './pages/CoachingPage'
 import { HomePage } from './pages/HomePage'
 import { DungeonsPage } from './pages/dungeons'
 import { NewVersionPage } from './pages/NewVersionPage'
+import SiegePage from './pages/siege'
 import { docTree } from './constants'
 import type { MainNav } from './types/doc'
 
@@ -44,6 +45,7 @@ function App() {
     if (path.startsWith('/dungeons')) return '副本'
     if (path.startsWith('/coaching')) return '代练'
     if (path.startsWith('/new-version')) return '新版本'
+    if (path.startsWith('/siege')) return '会战'
     if (path.startsWith('/baike') || path === '/') return '飞飞百科'
     return '飞飞百科'
   }, [location.pathname])
@@ -168,6 +170,16 @@ function App() {
             element={
               <div className="doc-wrapper">
                 <NewVersionPage />
+              </div>
+            }
+          />
+
+          {/* 会战路由 */}
+          <Route
+            path="/siege/*"
+            element={
+              <div className="doc-wrapper">
+                <SiegePage />
               </div>
             }
           />

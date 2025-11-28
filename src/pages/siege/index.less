@@ -1,0 +1,495 @@
+@import '../../styles/variables.less';
+
+.siege-page {
+  color: rgba(255, 255, 255, 0.85);
+  
+  .siege-header {
+    padding: @spacing-xl 0 @spacing-lg;
+    
+    h1 {
+      margin: 0 0 @spacing-xs 0;
+      font-size: 28px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.95);
+    }
+    
+    p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+    }
+  }
+
+  .siege-dashboard {
+    .ant-card {
+      background: linear-gradient(135deg, rgba(34, 38, 56, 0.95), rgba(17, 20, 33, 0.95));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: @border-radius-lg;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      
+      .ant-card-head {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: @spacing-lg @spacing-xl;
+        
+        .ant-card-head-title {
+          color: rgba(255, 255, 255, 0.9);
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+      
+      .ant-card-body {
+        color: rgba(255, 255, 255, 0.85);
+        padding: @spacing-xl;
+      }
+    }
+
+    .guild-stats-card {
+      .guild-chart-container {
+        padding: @spacing-xl;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: @border-radius-md;
+      }
+
+      .guild-table-container {
+        padding: @spacing-xl;
+        background: rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        margin-top: @spacing-lg;
+      }
+    }
+
+    .guild-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      flex-shrink: 0;
+      
+      .ant-avatar {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        flex-shrink: 0;
+      }
+    }
+
+    // 职业图标样式
+    .job-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      flex-shrink: 0;
+      object-fit: contain;
+      image-rendering: crisp-edges;
+      border-radius: 2px;
+      background: rgba(0, 0, 0, 0.2);
+      
+      &.small {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+      }
+    }
+
+    .focus-cell {
+      .focus-icons {
+        display: flex;
+        gap: @spacing-sm;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+        .focus-icon-item {
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          padding: 6px 10px;
+          border-radius: @border-radius-sm;
+          background: rgba(255, 255, 255, 0.05);
+          cursor: pointer;
+          transition: all @transition-fast;
+          white-space: nowrap;
+          
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-1px);
+          }
+          
+          .icon-kill {
+            color: #ff4d4f;
+            font-size: 14px;
+          }
+          
+          .icon-death {
+            color: #52c41a;
+            font-size: 14px;
+          }
+          
+          .icon-count {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+          }
+        }
+      }
+    }
+
+    .focus-popover {
+      .focus-list {
+        max-height: 300px;
+        overflow-y: auto;
+        
+        .focus-list-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 8px 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          .focus-guild-name {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 13px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex: 1;
+            min-width: 0;
+          }
+          
+          .focus-count {
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 13px;
+            flex-shrink: 0;
+            margin-left: 8px;
+          }
+        }
+      }
+      
+      .focus-list-header {
+        padding: 8px 0;
+        margin-bottom: 8px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    // 表格样式优化
+    .ant-table-wrapper {
+      .ant-table {
+        background: transparent;
+        font-size: 14px;
+        
+        .ant-table-container {
+          background: transparent;
+        }
+        
+        .ant-table-thead {
+          > tr {
+            > th {
+              background: rgba(0, 0, 0, 0.3) !important;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+              color: rgba(255, 255, 255, 0.85) !important;
+              font-weight: 600;
+              padding: 16px !important;
+              white-space: nowrap;
+              
+              &.ant-table-column-sort {
+                background: rgba(0, 0, 0, 0.3) !important;
+              }
+              
+              &:hover {
+                background: rgba(0, 0, 0, 0.4) !important;
+              }
+              
+              .ant-table-column-sorter {
+                color: rgba(255, 255, 255, 0.5);
+                
+                &:hover {
+                  color: rgba(255, 255, 255, 0.8);
+                }
+              }
+              
+              .ant-table-column-sorter-up,
+              .ant-table-column-sorter-down {
+                &.on {
+                  color: rgba(255, 217, 77, 0.9) !important;
+                }
+              }
+            }
+            
+            &:hover {
+              > th {
+                background: rgba(0, 0, 0, 0.4) !important;
+              }
+            }
+          }
+        }
+        
+        .ant-table-tbody {
+          > tr {
+            background: transparent !important;
+            
+            &:hover {
+              background: rgba(255, 255, 255, 0.03) !important;
+              
+              > td {
+                background: rgba(255, 255, 255, 0.03) !important;
+              }
+            }
+            
+            > td {
+              background: transparent !important;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+              color: rgba(255, 255, 255, 0.85);
+              padding: 14px 16px !important;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              
+              // 允许某些列折行
+              &.allow-wrap {
+                white-space: normal;
+                word-break: break-word;
+              }
+            }
+            
+            // 移除选中行样式
+            &.ant-table-row-selected {
+              background: transparent !important;
+              
+              > td {
+                background: transparent !important;
+              }
+            }
+          }
+        }
+      }
+      
+      // 分页器样式
+      .ant-pagination {
+        margin-top: @spacing-lg;
+        
+        .ant-pagination-item {
+          background: rgba(0, 0, 0, 0.3);
+          border-color: rgba(255, 255, 255, 0.1);
+          
+          a {
+            color: rgba(255, 255, 255, 0.85);
+          }
+          
+          &:hover {
+            border-color: rgba(255, 217, 77, 0.5);
+            
+            a {
+              color: rgba(255, 217, 77, 0.9);
+            }
+          }
+          
+          &.ant-pagination-item-active {
+            background: rgba(255, 217, 77, 0.2);
+            border-color: rgba(255, 217, 77, 0.9);
+            
+            a {
+              color: rgba(255, 217, 77, 0.9);
+            }
+          }
+        }
+        
+        .ant-pagination-prev,
+        .ant-pagination-next {
+          .ant-pagination-item-link {
+            background: rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.85);
+            
+            &:hover {
+              border-color: rgba(255, 217, 77, 0.5);
+              color: rgba(255, 217, 77, 0.9);
+            }
+          }
+        }
+      }
+    }
+
+    .ant-tabs {
+      margin-top: @spacing-xl;
+      
+      .ant-tabs-nav {
+        margin-bottom: @spacing-lg;
+        
+        &::before {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .ant-tabs-tab {
+          padding: 12px 20px;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 15px;
+          
+          &:hover {
+            color: rgba(255, 255, 255, 0.85) !important;
+          }
+          
+          &.ant-tabs-tab-active {
+            .ant-tabs-tab-btn {
+              color: rgba(255, 217, 77, 0.9) !important;
+              font-weight: 600;
+            }
+          }
+        }
+        
+        .ant-tabs-ink-bar {
+          background: rgba(255, 217, 77, 0.9);
+        }
+      }
+      
+      .ant-tabs-content-holder {
+        .ant-tabs-content {
+          .ant-tabs-tabpane {
+            padding-top: 0;
+          }
+        }
+      }
+      
+      // Card 类型的 tabs
+      &.ant-tabs-card {
+        .ant-tabs-nav {
+          .ant-tabs-tab {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.6);
+            
+            &:hover {
+              color: rgba(255, 255, 255, 0.85) !important;
+            }
+            
+            &.ant-tabs-tab-active {
+              background: rgba(255, 217, 77, 0.15);
+              border-color: rgba(255, 217, 77, 0.5);
+              
+              .ant-tabs-tab-btn {
+                color: rgba(255, 217, 77, 0.9) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ant-popover {
+      .ant-popover-inner {
+        background: linear-gradient(135deg, rgba(34, 38, 56, 0.98), rgba(17, 20, 33, 0.98));
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      }
+      
+      .ant-popover-title {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.9);
+        padding: 12px 16px;
+        font-weight: 600;
+      }
+      
+      .ant-popover-inner-content {
+        color: rgba(255, 255, 255, 0.85);
+        padding: 12px 16px;
+      }
+    }
+    
+    // Tag 样式优化
+    .ant-tag {
+      margin: 0 2px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 8px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+}
+
+// ECharts 主题适配
+.echarts-tooltip {
+  background: linear-gradient(135deg, rgba(34, 38, 56, 0.98), rgba(17, 20, 33, 0.98)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+@media (max-width: 768px) {
+  .siege-page {
+    .siege-dashboard {
+      .guild-stats-card {
+        .guild-table-container {
+          border-left: none;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+          margin-top: @spacing-lg;
+          padding-top: @spacing-lg;
+        }
+      }
+      
+      .ant-table-wrapper {
+        .ant-table {
+          .ant-table-thead > tr > th,
+          .ant-table-tbody > tr > td {
+            padding: 10px 8px !important;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  // 玩家生命详情抽屉样式
+  .player-life-drawer {
+    .ant-drawer-content-wrapper {
+      .ant-drawer-content {
+        background: linear-gradient(135deg, rgba(34, 38, 56, 0.98), rgba(17, 20, 33, 0.98));
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+        .ant-drawer-header {
+          background: transparent;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          padding: @spacing-lg @spacing-xl;
+
+          .ant-drawer-title {
+            color: rgba(255, 255, 255, 0.9);
+          }
+        }
+
+        .ant-drawer-body {
+          padding: @spacing-xl;
+          color: rgba(255, 255, 255, 0.85);
+
+          .ant-list {
+            .ant-list-item {
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+              padding: @spacing-lg 0;
+
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ant-drawer-close {
+      color: rgba(255, 255, 255, 0.65);
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.9);
+      }
+    }
+  }
+}
